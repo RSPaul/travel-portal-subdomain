@@ -1,0 +1,783 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="css/custom.css">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+    <!-- Owl Stylesheets -->
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/owl.theme.default.min.css">
+    <!--Animation Stylesheet-->
+    <link rel="stylesheet" type="text/css" href="css/animate.css">
+    <!--Custom select Stylesheet-->
+    <link rel="stylesheet" type="text/css" href="css/jquery_select.css">
+
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.3.0/css/datepicker.css" rel="stylesheet" type="text/css" />
+
+    <title>Tripheist</title>
+  </head>
+  <body>
+
+    <header class="main_header">
+      <nav class="navbar navbar-expand-sm">
+        <div class="container">
+          <a class="navbar-brand" href="#"><img src="images/logo.png" alt="logo"></a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExample03" aria-controls="navbarsExample03" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <div class="collapse navbar-collapse" id="navbarsExample03">
+            <ul class="navbar-nav mr-auto">
+              <li class="nav-item active">
+                <a class="nav-link" href="#"><img class="unselected_img" src="images/flight_unselected.png" alt="flight"><img class="selected_img" src="images/flight_selected.png" alt="flights"><span>Flights</span></a>
+              </li>
+              <li class="nav-item"><a class="nav-link" href="#"><img class="unselected_img" src="images/hotel_unselected.png" alt="flight"><img class="selected_img" src="images/hotel_selected.png" alt="flights"><span>Hotels</span></a></li>
+              <li class="nav-item"><a class="nav-link" href="#"><img class="unselected_img" src="images/hotel_unselected.png" alt="flight"><img class="selected_img" src="images/hotel_selected.png" alt="flights"><span>Villas &amp; Apts</span></a></li>
+              <li class="nav-item"><a class="nav-link" href="#"><img class="unselected_img" src="images/hotel_unselected.png" alt="flight"><img class="selected_img" src="images/hotel_selected.png" alt="flights"><span>Cabs</span></a></li>
+              <li class="nav-item"><a class="nav-link" href="#"><img class="unselected_img" src="images/hotel_unselected.png" alt="flight"><img class="selected_img" src="images/hotel_selected.png" alt="flights"><span>Holidays</span></a></li>
+              <li class="nav-item"><a class="nav-link" href="#"><img class="unselected_img" src="images/hotel_unselected.png" alt="flight"><img class="selected_img" src="images/hotel_selected.png" alt="flights"><span>Trains</span></a></li>
+              <li class="nav-item dropdown more_menu">
+                <a class="nav-link dropdown-toggle" href="#" id="moreDropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i>+</i> More</a>
+                <div class="dropdown-menu" aria-labelledby="moreDropdown">
+                  <a class="dropdown-item" href="#">Buses</a>
+                  <a class="dropdown-item" href="#">Visa</a>
+                  <a class="dropdown-item" href="#">Buses</a>
+                  <a class="dropdown-item" href="#">Visa</a>
+                  <a class="dropdown-item" href="#">Buses</a>
+                  <a class="dropdown-item" href="#">Visa</a>
+                </div>
+              </li>
+              
+            </ul>
+            <div class="right_menu">
+              <ul class="navbar-nav list-inline">
+                <li class="nav-item dropdown more_menu support_menus">
+                  <div class="new_added_menu">New</div>
+                  <a class="nav-link dropdown-toggle" href="#" id="moreDropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Support <i class="fa fa-angle-down" aria-hidden="true"></i></a>
+                  <div class="dropdown-menu" aria-labelledby="moreDropdown">
+                    <a class="dropdown-item" href="#"><i class="fa fa-caret-right" aria-hidden="true"></i> Talk to us</a>
+                    <a class="dropdown-item" href="#"><i class="fa fa-caret-right" aria-hidden="true"></i> Contact Us</a>
+                    <a class="dropdown-item" href="#"><i class="fa fa-caret-right" aria-hidden="true"></i> Complete Booking</a>
+                    <a class="dropdown-item" href="#"><i class="fa fa-caret-right" aria-hidden="true"></i> Make a Payment</a>
+                  </div>
+                </li>
+                <li class="nav-item dropdown my_account_menu">
+                  <button type="button" class="nav-link dropdown-toggle" id="moreDropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">My Account <i class="fa fa-angle-down" aria-hidden="true"></i></button>
+                  <div class="dropdown-menu" aria-labelledby="moreDropdown">
+                    <a class="dropdown-item" href="#"><i class="fa fa-caret-right" aria-hidden="true"></i> Talk to us</a>
+                    <a class="dropdown-item" href="#"><i class="fa fa-caret-right" aria-hidden="true"></i> Contact Us</a>
+                    <a class="dropdown-item" href="#"><i class="fa fa-caret-right" aria-hidden="true"></i> Complete Booking</a>
+                    <a class="dropdown-item" href="#"><i class="fa fa-caret-right" aria-hidden="true"></i> Make a Payment</a>
+                  </div>
+                </li>
+              </ul>              
+            </div>
+          </div>
+        </nav>
+      </div>
+    </header>
+
+    <section class="banner_data">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <div class="slider_test_heading">
+              <h1>Find deals on hotels, homes, and much more...</h1>
+              <p>From cozy country homes to funky city apartments</p>
+            </div>
+
+            <div class="form_tab_data">
+
+              <ul class="nav nav-tabs">
+                <li class="nav-item">
+                  <a class="nav-link" data-toggle="tab" href="#home">One Way</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link active" data-toggle="tab" href="#menu1">Round Trip</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" data-toggle="tab" href="#menu2">Multi-City</a>
+                </li>
+              </ul>
+
+              <!-- Tab panes -->
+              <div class="tab-content">
+                <div id="home" class="tab-pane fade">
+                  <div class="round_triping_data">
+                    <h4>One Way Data</h4>
+                  </div>
+                </div>
+                <div id="menu1" class="tab-pane active">
+                  <div class="round_triping_data">
+                    <h4>Book Domestic and International flights</h4>
+                    <div class="rounding_form_info">
+                      <div class="form-group">
+                        <label>Depart From</label>
+                        <select name="">
+                            <option value="1">Bangalore</option>
+                            <option value="2">Delhi</option>
+                            <option value="3">Dehradun</option>
+                            <option value="4">Karnatka</option>
+                            <option value="1">Bangalore</option>
+                            <option value="2">Delhi</option>
+                            <option value="3">Dehradun</option>
+                            <option value="4">Karnatka</option>
+                        </select>
+                        <div class="small_station_info">BLR, Kempegowda International</div>
+                        <div class="switcher_data"><img src="images/switch_icon.png" alt="switcher"></div>
+                      </div>
+                      <div class="form-group some_space">
+                        <label>Going To</label>
+                        <select name="">
+                            <option value="2">Delhi</option>
+                            <option value="3">Dehradun</option>
+                            <option value="4">Karnatka</option>
+                            <option value="1">Bangalore</option>
+                            <option value="2">Delhi</option>
+                            <option value="3">Dehradun</option>
+                            <option value="4">Karnatka</option>
+                        </select>
+                        <div class="small_station_info">DEL, Delhi Airport India</div>
+                      </div>
+                      <div class="form-group">
+                        <label>Departure <i class="fa fa-angle-down" aria-hidden="true"></i></label>
+                        <div class="input-group date datepicker" data-date-format="mm-dd-yyyy">
+                            <input class="form-control" type="text" readonly />
+                            <span class="input-group-addon"><i class="glyphicon glyphicon-calendar"></i></span>
+                        </div>
+                        <div class="small_station_info">Sunday</div>
+                      </div>
+                      <div class="form-group">
+                        <label>Return <i class="fa fa-angle-down" aria-hidden="true"></i></label>
+                        <div class="input-group date datepicker" data-date-format="mm-dd-yyyy">
+                            <input class="form-control" type="text" readonly />
+                            <span class="input-group-addon"><i class="glyphicon glyphicon-calendar"></i></span>
+                        </div>
+                        <div class="small_station_info">Monday</div>
+                      </div>
+                      <div class="form-group">
+                        <label>Traveller &amp; Class</label>
+                        <select name="">
+                            <option value="2">1 Traveller</option>
+                            <option value="3">2 Traveller</option>
+                            <option value="4">3 Traveller</option>
+                        </select>
+                        <div class="small_station_info">Economy/Premium Economy</div>
+                      </div>                     
+                    </div>
+                    <div class="trending_searches">
+                      <label>Trending Searches:</label>
+                      <ul class="list-inline">
+                        <li><a href="javascript:void(0);">Chennai <img src="images/black_right_arrow.png" alt="icon">Mumbai</a></li>
+                        <li><a href="javascript:void(0);">Chennai <img src="images/black_right_arrow.png" alt="icon">Hyderabad</a></li>
+                        <li><a href="javascript:void(0);">Chennai <img src="images/black_right_arrow.png" alt="icon">Delhi</a></li>
+                      </ul>
+                    </div>
+                    <div class="search_btns">
+                      <button type="submit" class="btn btn-primary">Search <img src="images/search_arrow.png" alt="search"></button>
+                    </div>
+                  </div>
+                </div>
+                <div id="menu2" class="tab-pane fade">
+                  <div class="round_triping_data">
+                    <h4>Multi City Data</h4>
+                  </div>
+                </div>
+              </div>
+            </div>           
+
+          </div>
+        </div>        
+      </div>
+    </section>
+
+    <section class="news_sliders_sec">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <div class="owl-carousel owl-theme news_sliders">
+              <div class="item">
+                <div class="inner-news_data">
+                  <img src="images/plane_icon.png" alt="plane">
+                  <div class="plane_content">
+                    <h5>Good News: International travel is now open.</h5>
+                    <a href="javascript:void(0);">Click here to read guidelines</a>
+                  </div>
+                </div>
+              </div>
+              <div class="item">
+                <div class="inner-news_data">
+                  <img src="images/plane_icon.png" alt="plane">
+                  <div class="plane_content">
+                    <h5>Good News: International travel is now open.</h5>
+                    <a href="javascript:void(0);">Click here to read guidelines</a>
+                  </div>
+                </div>
+              </div>
+              <div class="item">
+                <div class="inner-news_data">
+                  <img src="images/plane_icon.png" alt="plane">
+                  <div class="plane_content">
+                    <h5>Good News: International travel is now open.</h5>
+                    <a href="javascript:void(0);">Click here to read guidelines</a>
+                  </div>
+                </div>
+              </div>
+              <div class="item">
+                <div class="inner-news_data">
+                  <img src="images/plane_icon.png" alt="plane">
+                  <div class="plane_content">
+                    <h5>Good News: International travel is now open.</h5>
+                    <a href="javascript:void(0);">Click here to read guidelines</a>
+                  </div>
+                </div>
+              </div>
+              <div class="item">
+                <div class="inner-news_data">
+                  <img src="images/plane_icon.png" alt="plane">
+                  <div class="plane_content">
+                    <h5>Good News: International travel is now open.</h5>
+                    <a href="javascript:void(0);">Click here to read guidelines</a>
+                  </div>
+                </div>
+              </div>
+              <div class="item">
+                <div class="inner-news_data">
+                  <img src="images/plane_icon.png" alt="plane">
+                  <div class="plane_content">
+                    <h5>Good News: International travel is now open.</h5>
+                    <a href="javascript:void(0);">Click here to read guidelines</a>
+                  </div>
+                </div>
+              </div>
+            </div>        
+          </div>
+        </div>
+      </div>      
+    </section>
+
+    <section class="ads_upper_data">
+      <div class="container">
+        <img class="img-fluid" src="images/ad_banner.png" alt="ad">
+      </div>
+    </section>
+
+    <section class="special_offer_data">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <div class="popular_heading_data">
+              <h2>Special Offers</h2>
+            </div>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-md-12">
+            <div class="owl-carousel owl-theme special_flights owl-btn-same">
+              <div class="item">
+                <div class="inner_special_data">
+                  <div class="special_img_data">
+                    <img src="images/special_offer_01.png" alt="special">
+                  </div>
+                  <div class="special_inner_cont">
+                    <h3>Yay! BOOKINGS OPEN for Flights to the USA & London...</h3>
+                    <p>On Air India, for Indian citizens with valid Visas.</p>
+                    <a href="javascript:void(0);" class="btn btn-primary">Book Now</a>
+                  </div>
+                </div>
+              </div>
+              <div class="item">
+                <div class="inner_special_data">
+                  <div class="special_img_data">
+                    <img src="images/special_offer_02.png" alt="special">
+                  </div>
+                  <div class="special_inner_cont">
+                    <h3>Yay! BOOKINGS OPEN for Flights to the USA & London...</h3>
+                    <p>On Air India, for Indian citizens with valid Visas.</p>
+                    <a href="javascript:void(0);" class="btn btn-primary">Book Now</a>
+                  </div>
+                </div>
+              </div>
+              <div class="item">
+                <div class="inner_special_data">
+                  <div class="special_img_data">
+                    <img src="images/special_offer_03.png" alt="special">
+                  </div>
+                  <div class="special_inner_cont">
+                    <h3>Yay! BOOKINGS OPEN for Flights to the USA & London...</h3>
+                    <p>On Air India, for Indian citizens with valid Visas.</p>
+                    <a href="javascript:void(0);" class="btn btn-primary">Book Now</a>
+                  </div>
+                </div>
+              </div>
+              <div class="item">
+                <div class="inner_special_data">
+                  <div class="special_img_data">
+                    <img src="images/special_offer_01.png" alt="special">
+                  </div>
+                  <div class="special_inner_cont">
+                    <h3>Yay! BOOKINGS OPEN for Flights to the USA & London...</h3>
+                    <p>On Air India, for Indian citizens with valid Visas.</p>
+                    <a href="javascript:void(0);" class="btn btn-primary">Book Now</a>
+                  </div>
+                </div>
+              </div>
+              <div class="item">
+                <div class="inner_special_data">
+                  <div class="special_img_data">
+                    <img src="images/special_offer_02.png" alt="special">
+                  </div>
+                  <div class="special_inner_cont">
+                    <h3>Yay! BOOKINGS OPEN for Flights to the USA & London...</h3>
+                    <p>On Air India, for Indian citizens with valid Visas.</p>
+                    <a href="javascript:void(0);" class="btn btn-primary">Book Now</a>
+                  </div>
+                </div>
+              </div>         
+            </div>
+          </div>          
+        </div>
+
+        <div class="row">
+          <div class="col-md-12">
+            <div class="view_all_btns text-center"><a href="javascript:void(0);" class="btn btn-primary all_news_btn">Explore all offers</a></div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <section class="state_flight_info">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-4">
+            <div class="state_flight_inner_info">
+              <img src="images/chennai_flight.png" alt="chennai flight">
+              <div class="inner_chenn_data">
+                <h4>Chennai Flights</h4>
+                <p>Via - Delhi, Mumbai, Coimbatore, Madurai</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="state_flight_inner_info">
+              <img src="images/chennai_flight.png" alt="chennai flight">
+              <div class="inner_chenn_data">
+                <h4>Chennai Flights</h4>
+                <p>Via - Delhi, Mumbai, Coimbatore, Madurai</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="state_flight_inner_info">
+              <img src="images/chennai_flight.png" alt="chennai flight">
+              <div class="inner_chenn_data">
+                <h4>Chennai Flights</h4>
+                <p>Via - Delhi, Mumbai, Coimbatore, Madurai</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="state_flight_inner_info">
+              <img src="images/chennai_flight.png" alt="chennai flight">
+              <div class="inner_chenn_data">
+                <h4>Chennai Flights</h4>
+                <p>Via - Delhi, Mumbai, Coimbatore, Madurai</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="state_flight_inner_info">
+              <img src="images/chennai_flight.png" alt="chennai flight">
+              <div class="inner_chenn_data">
+                <h4>Chennai Flights</h4>
+                <p>Via - Delhi, Mumbai, Coimbatore, Madurai</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="state_flight_inner_info">
+              <img src="images/chennai_flight.png" alt="chennai flight">
+              <div class="inner_chenn_data">
+                <h4>Chennai Flights</h4>
+                <p>Via - Delhi, Mumbai, Coimbatore, Madurai</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="state_flight_inner_info">
+              <img src="images/chennai_flight.png" alt="chennai flight">
+              <div class="inner_chenn_data">
+                <h4>Chennai Flights</h4>
+                <p>Via - Delhi, Mumbai, Coimbatore, Madurai</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="state_flight_inner_info">
+              <img src="images/chennai_flight.png" alt="chennai flight">
+              <div class="inner_chenn_data">
+                <h4>Chennai Flights</h4>
+                <p>Via - Delhi, Mumbai, Coimbatore, Madurai</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="state_flight_inner_info">
+              <img src="images/chennai_flight.png" alt="chennai flight">
+              <div class="inner_chenn_data">
+                <h4>Chennai Flights</h4>
+                <p>Via - Delhi, Mumbai, Coimbatore, Madurai</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="popular_international_flights">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <div class="popular_heading_data">
+              <h2>Popular International Flight Routes</h2>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-12">
+            <div class="owl-carousel owl-theme popular_flights owl-btn-same">
+              <div class="item">
+                <div class="inner_popular_data">
+                  <div class="pick_point">
+                    <h4>New Delhi <span>Thu, 17 Sep</span></h4>
+                    <h4>Singapore</h4>
+                  </div>
+                  <div class="border_dot"></div>
+                  <div class="price_data">
+                    <p>Starting from</p>
+                    <h2>₹ 4,835</h2>
+                  </div>
+                </div>
+              </div>
+              <div class="item">
+                <div class="inner_popular_data">
+                  <div class="pick_point">
+                    <h4>New Delhi <span>Thu, 17 Sep</span></h4>
+                    <h4>Singapore</h4>
+                  </div>
+                  <div class="border_dot"></div>
+                  <div class="price_data">
+                    <p>Starting from</p>
+                    <h2>₹ 4,835</h2>
+                  </div>
+                </div>
+              </div>
+              <div class="item">
+                <div class="inner_popular_data">
+                  <div class="pick_point">
+                    <h4>New Delhi <span>Thu, 17 Sep</span></h4>
+                    <h4>Singapore</h4>
+                  </div>
+                  <div class="border_dot"></div>
+                  <div class="price_data">
+                    <p>Starting from</p>
+                    <h2>₹ 4,835</h2>
+                  </div>
+                </div>
+              </div>
+              <div class="item">
+                <div class="inner_popular_data">
+                  <div class="pick_point">
+                    <h4>New Delhi <span>Thu, 17 Sep</span></h4>
+                    <h4>Singapore</h4>
+                  </div>
+                  <div class="border_dot"></div>
+                  <div class="price_data">
+                    <p>Starting from</p>
+                    <h2>₹ 4,835</h2>
+                  </div>
+                </div>
+              </div>
+              <div class="item">
+                <div class="inner_popular_data">
+                  <div class="pick_point">
+                    <h4>New Delhi <span>Thu, 17 Sep</span></h4>
+                    <h4>Singapore</h4>
+                  </div>
+                  <div class="border_dot"></div>
+                  <div class="price_data">
+                    <p>Starting from</p>
+                    <h2>₹ 4,835</h2>
+                  </div>
+                </div>
+              </div>
+              <div class="item">
+                <div class="inner_popular_data">
+                  <div class="pick_point">
+                    <h4>New Delhi <span>Thu, 17 Sep</span></h4>
+                    <h4>Singapore</h4>
+                  </div>
+                  <div class="border_dot"></div>
+                  <div class="price_data">
+                    <p>Starting from</p>
+                    <h2>₹ 4,835</h2>
+                  </div>
+                </div>
+              </div>
+            </div>
+            
+          </div>          
+        </div>
+      </div>
+    </section>
+
+    <section class="travel_news">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <div class="heading_text text-center"><h2>Travel News</h2></div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-4">
+            <div class="travel_blog_data">
+              <div class="blog_img"><img class="img-fluid" src="images/blog_01.png" alt="blog"></div>
+              <div class="blog_content">
+                <h3>Your One-Stop Resource For Country-Wise Travel Guidelin...</h3>
+                <a href="#" class="read_more_btn">Read More...</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="travel_blog_data">
+              <div class="blog_img"><img class="img-fluid" src="images/blog_02.png" alt="blog"></div>
+              <div class="blog_content">
+                <h3>Your One-Stop Resource For Country-Wise Travel Guidelin...</h3>
+                <a href="#" class="read_more_btn">Read More...</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="travel_blog_data">
+              <div class="blog_img"><img class="img-fluid" src="images/blog_03.png" alt="blog"></div>
+              <div class="blog_content">
+                <h3>Your One-Stop Resource For Country-Wise Travel Guidelin...</h3>
+                <a href="#" class="read_more_btn">Read More...</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-md-12">
+            <div class="view_all_btns text-center"><a href="javascript:void(0);" class="btn btn-primary all_news_btn">View all news</a></div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <section class="about_trip_payment">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-8">
+            <div class="about_trip_data">
+              <h2>Why My Trip?</h2>
+              <p>7 Brilliant reasons Trip should be your one-stop-shop!</p>
+              <h5>Book Flights, Hotels, Trains, Buses, Cruise and Holiday Packages</h5>
+              <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English.</p>
+              <a href="#" class="read_more_btn">Read More...</a>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="payment_method">
+              <h2>Security &amp; Payments</h2>
+              <img class="img-fluid" src="images/payment_method.png" alt="payment">
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="main_footer">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-4">
+            <div class="footer_inner_data">
+              <h3>Product Offering</h3>
+              <ul class="list-inline">
+                <li><a href="javascript:void(0);"><i class="fa fa-angle-right" aria-hidden="true"></i>Flight</a></li>
+                <li><a href="javascript:void(0);"><i class="fa fa-angle-right" aria-hidden="true"></i>International Flights</a></li>
+                <li><a href="javascript:void(0);"><i class="fa fa-angle-right" aria-hidden="true"></i>Book Flights From US</a></li>
+                <li><a href="javascript:void(0);"><i class="fa fa-angle-right" aria-hidden="true"></i>Book Flights From UAE</a></li>
+                <li><a href="javascript:void(0);"><i class="fa fa-angle-right" aria-hidden="true"></i>Hotels</a></li>
+              </ul>
+              <ul class="list-inline">
+                <li><a href="javascript:void(0);"><i class="fa fa-angle-right" aria-hidden="true"></i>Cheap Flights</a></li>
+                <li><a href="javascript:void(0);"><i class="fa fa-angle-right" aria-hidden="true"></i>Delhi Goa Flights</a></li>
+                <li><a href="javascript:void(0);"><i class="fa fa-angle-right" aria-hidden="true"></i>Mumbai Jaipur Flights</a></li>
+                <li><a href="javascript:void(0);"><i class="fa fa-angle-right" aria-hidden="true"></i>Chandigarh Flights</a></li>
+                <li><a href="javascript:void(0);"><i class="fa fa-angle-right" aria-hidden="true"></i>Kashmir Packages</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="footer_inner_data">
+              <h3>About the site</h3>
+              <ul class="list-inline">
+                <li><a href="javascript:void(0);"><i class="fa fa-angle-right" aria-hidden="true"></i>Contact Us</a></li>
+                <li><a href="javascript:void(0);"><i class="fa fa-angle-right" aria-hidden="true"></i>Privacy Policy</a></li>
+                <li><a href="javascript:void(0);"><i class="fa fa-angle-right" aria-hidden="true"></i>User Agreements</a></li>
+                <li><a href="javascript:void(0);"><i class="fa fa-angle-right" aria-hidden="true"></i>Terms of Service</a></li>
+                <li><a href="javascript:void(0);"><i class="fa fa-angle-right" aria-hidden="true"></i>Payment Security</a></li>
+              </ul>
+              <ul class="list-inline">
+                <li><a href="javascript:void(0);"><i class="fa fa-angle-right" aria-hidden="true"></i>Visa Information</a></li>
+                <li><a href="javascript:void(0);"><i class="fa fa-angle-right" aria-hidden="true"></i>More Offices</a></li>
+                <li><a href="javascript:void(0);"><i class="fa fa-angle-right" aria-hidden="true"></i>Make a Payment</a></li>
+                <li><a href="javascript:void(0);"><i class="fa fa-angle-right" aria-hidden="true"></i>Report a Defect</a></li>
+                <li><a href="javascript:void(0);"><i class="fa fa-angle-right" aria-hidden="true"></i>Work From Home</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="footer_inner_data">
+              <h3>Important Links</h3>
+              <ul class="list-inline">
+                <li><a href="javascript:void(0);"><i class="fa fa-angle-right" aria-hidden="true"></i>Visa Information</a></li>
+                <li><a href="javascript:void(0);"><i class="fa fa-angle-right" aria-hidden="true"></i>More Offices</a></li>
+                <li><a href="javascript:void(0);"><i class="fa fa-angle-right" aria-hidden="true"></i>Make a Payment</a></li>
+                <li><a href="javascript:void(0);"><i class="fa fa-angle-right" aria-hidden="true"></i>Report a Defect</a></li>
+                <li><a href="javascript:void(0);"><i class="fa fa-angle-right" aria-hidden="true"></i>Work From Home</a></li>
+              </ul>
+              <ul class="list-inline">
+                <li><a href="javascript:void(0);"><i class="fa fa-angle-right" aria-hidden="true"></i>Visa Information</a></li>
+                <li><a href="javascript:void(0);"><i class="fa fa-angle-right" aria-hidden="true"></i>More Offices</a></li>
+                <li><a href="javascript:void(0);"><i class="fa fa-angle-right" aria-hidden="true"></i>Make a Payment</a></li>
+                <li><a href="javascript:void(0);"><i class="fa fa-angle-right" aria-hidden="true"></i>Report a Defect</a></li>
+                <li><a href="javascript:void(0);"><i class="fa fa-angle-right" aria-hidden="true"></i>Work From Home</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-md-12">
+            <div class="bottom_footer">
+              <p class="copyright_data">Copyright © 2020 Trip Online Private Limited, India. All rights reserved</p>
+              <ul class="footer_social">
+                <li>Keep In Touch: </li>
+                <li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+                <li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+                <li><a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </footer>
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery_select.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
+    <script>
+      $(document).ready(function() {
+        $('.popular_flights').owlCarousel({
+          loop: true,
+          margin: 10,
+          autoplay: true,
+          responsiveClass: true,
+          responsive: {
+            0: {
+              items: 1,
+              nav: true
+            },
+            600: {
+              items: 2,
+              nav: false
+            },
+            1000: {
+              items: 4,
+              nav: true,
+              loop: false,
+              margin: 10
+            }
+          }
+        });
+        $('.special_flights').owlCarousel({
+          loop: true,
+          margin: 10,
+          autoplay: true,
+          responsiveClass: true,
+          responsive: {
+            0: {
+              items: 1,
+              nav: true
+            },
+            600: {
+              items: 2,
+              nav: false
+            },
+            1000: {
+              items: 3,
+              nav: true,
+              loop: false,
+              margin: 10
+            }
+          }
+        });
+
+        $('.news_sliders').owlCarousel({
+          loop: true,
+          margin: 5,
+          autoplay: true,
+          responsiveClass: true,
+          responsive: {
+            0: {
+              items: 1,
+              nav: true
+            },
+            600: {
+              items: 2,
+              nav: false
+            },
+            1000: {
+              items: 3,
+              nav: true,
+              loop: false,
+              margin: 5
+            }
+          }
+        });        
+      })
+    </script>
+    <script src="js/wow.min.js"></script>
+    <script>
+      new WOW().init();
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.3.0/js/bootstrap-datepicker.js"></script>
+    <script type="text/javascript">
+      $(function () {
+        $(".datepicker").datepicker({ 
+              autoclose: true, 
+              todayHighlight: true
+        }).datepicker('update', new Date());
+      });
+    </script>
+
+  </body>
+</html>

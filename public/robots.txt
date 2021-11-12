@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+Disallow: /admin/*
+Disallow: /tr9XAiphCaVZeist3ESU7FgmspyX/
+Disallow: /tr2iO63OdUdAWRDiph2QLwMvFgmspyXuhiest7BrtobM4MAa2QL/

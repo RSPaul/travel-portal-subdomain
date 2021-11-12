@@ -1,0 +1,483 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="css/custom.css">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+    <!-- Owl Stylesheets -->
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/owl.theme.default.min.css">
+    <!--Animation Stylesheet-->
+    <link rel="stylesheet" type="text/css" href="css/animate.css">
+    <!--Custom select Stylesheet-->
+    <link rel="stylesheet" type="text/css" href="css/jquery_select.css">
+
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.3.0/css/datepicker.css" rel="stylesheet" type="text/css" />
+
+    <title>Hotel Listing</title>
+  </head>
+  <body>
+
+    <header class="main_header">
+      <nav class="navbar navbar-expand-sm">
+        <div class="container">
+          <a class="navbar-brand" href="#"><img src="images/logo.png" alt="logo"></a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExample03" aria-controls="navbarsExample03" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <div class="collapse navbar-collapse" id="navbarsExample03">
+            <ul class="navbar-nav mr-auto">
+              <li class="nav-item active">
+                <a class="nav-link" href="#"><img class="unselected_img" src="images/flight_unselected.png" alt="flight"><img class="selected_img" src="images/flight_selected.png" alt="flights"><span>Flights</span></a>
+              </li>
+              <li class="nav-item"><a class="nav-link" href="#"><img class="unselected_img" src="images/hotel_unselected.png" alt="flight"><img class="selected_img" src="images/hotel_selected.png" alt="flights"><span>Hotels</span></a></li>
+              <li class="nav-item"><a class="nav-link" href="#"><img class="unselected_img" src="images/hotel_unselected.png" alt="flight"><img class="selected_img" src="images/hotel_selected.png" alt="flights"><span>Villas &amp; Apts</span></a></li>
+              <li class="nav-item"><a class="nav-link" href="#"><img class="unselected_img" src="images/hotel_unselected.png" alt="flight"><img class="selected_img" src="images/hotel_selected.png" alt="flights"><span>Cabs</span></a></li>
+              <li class="nav-item"><a class="nav-link" href="#"><img class="unselected_img" src="images/hotel_unselected.png" alt="flight"><img class="selected_img" src="images/hotel_selected.png" alt="flights"><span>Holidays</span></a></li>
+              <li class="nav-item"><a class="nav-link" href="#"><img class="unselected_img" src="images/hotel_unselected.png" alt="flight"><img class="selected_img" src="images/hotel_selected.png" alt="flights"><span>Trains</span></a></li>
+              <li class="nav-item dropdown more_menu">
+                <a class="nav-link dropdown-toggle" href="#" id="moreDropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i>+</i> More</a>
+                <div class="dropdown-menu" aria-labelledby="moreDropdown">
+                  <a class="dropdown-item" href="#">Buses</a>
+                  <a class="dropdown-item" href="#">Visa</a>
+                  <a class="dropdown-item" href="#">Buses</a>
+                  <a class="dropdown-item" href="#">Visa</a>
+                  <a class="dropdown-item" href="#">Buses</a>
+                  <a class="dropdown-item" href="#">Visa</a>
+                </div>
+              </li>
+              
+            </ul>
+            <div class="right_menu">
+              <ul class="navbar-nav list-inline">
+                <li class="nav-item dropdown more_menu support_menus">
+                  <div class="new_added_menu">New</div>
+                  <a class="nav-link dropdown-toggle" href="#" id="moreDropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Support <i class="fa fa-angle-down" aria-hidden="true"></i></a>
+                  <div class="dropdown-menu" aria-labelledby="moreDropdown">
+                    <a class="dropdown-item" href="#"><i class="fa fa-caret-right" aria-hidden="true"></i> Talk to us</a>
+                    <a class="dropdown-item" href="#"><i class="fa fa-caret-right" aria-hidden="true"></i> Contact Us</a>
+                    <a class="dropdown-item" href="#"><i class="fa fa-caret-right" aria-hidden="true"></i> Complete Booking</a>
+                    <a class="dropdown-item" href="#"><i class="fa fa-caret-right" aria-hidden="true"></i> Make a Payment</a>
+                  </div>
+                </li>
+                <li class="nav-item dropdown my_account_menu">
+                  <button type="button" class="nav-link dropdown-toggle" id="moreDropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">My Account <i class="fa fa-angle-down" aria-hidden="true"></i></button>
+                  <div class="dropdown-menu" aria-labelledby="moreDropdown">
+                    <a class="dropdown-item" href="#"><i class="fa fa-caret-right" aria-hidden="true"></i> Talk to us</a>
+                    <a class="dropdown-item" href="#"><i class="fa fa-caret-right" aria-hidden="true"></i> Contact Us</a>
+                    <a class="dropdown-item" href="#"><i class="fa fa-caret-right" aria-hidden="true"></i> Complete Booking</a>
+                    <a class="dropdown-item" href="#"><i class="fa fa-caret-right" aria-hidden="true"></i> Make a Payment</a>
+                  </div>
+                </li>
+              </ul>              
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+   <section class="listing_banner_forms">
+     <div class="container">
+       <div class="row">
+         <div class="col-md-12">
+           <div class="listing_inner_forms">
+             <div class="rounding_form_info">
+                <div class="form-group">
+                  <label>City, Area or Property <i class="fa fa-angle-down" aria-hidden="true"></i></label>
+                  <select name="">
+                      <option value="1">Bangalore</option>
+                      <option value="2">Delhi</option>
+                      <option value="3">Dehradun</option>
+                      <option value="4">Karnatka</option>
+                      <option value="1">Bangalore</option>
+                      <option value="2">Delhi</option>
+                      <option value="3">Dehradun</option>
+                      <option value="4">Karnatka</option>
+                  </select>
+                </div>
+                <div class="form-group">
+                  <label>Check In <i class="fa fa-angle-down" aria-hidden="true"></i></label>
+                  <div class="input-group date datepicker" data-date-format="mm-dd-yyyy">
+                      <input class="form-control" type="text" readonly />
+                      <span class="input-group-addon"><i class="glyphicon glyphicon-calendar"></i></span>
+                  </div>
+                </div>
+                <div class="form-group">
+                  <label>Check Out <i class="fa fa-angle-down" aria-hidden="true"></i></label>
+                  <div class="input-group date datepicker" data-date-format="mm-dd-yyyy">
+                      <input class="form-control" type="text" readonly />
+                      <span class="input-group-addon"><i class="glyphicon glyphicon-calendar"></i></span>
+                  </div>
+                </div>
+                <div class="form-group">
+                  <label>Room &amp; Guests <i class="fa fa-angle-down" aria-hidden="true"></i></label>
+                  <select name="">
+                      <option value="2">2 Rooms, 3 Adults</option>
+                      <option value="3">2 Traveller</option>
+                      <option value="4">3 Traveller</option>
+                  </select>
+                </div> 
+                <div class="search_btns_listing"><button type="submit" class="btn btn-primary">Search</button></div>
+              </div>
+           </div>
+         </div>
+       </div>
+     </div>
+   </section>
+
+   <section class="hotel_detail_sec">
+     <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <div class="inner_hotel_yep">
+           <div class="row">
+             <div class="col-lg-5">
+               <div class="hotel_slilder_data">
+                <div class="owl-carousel owl-theme hotel-sliders">
+                  <div class="item">
+                    <div class="hotel_slider_data_check">
+                      <img src="images/hotel_det_img.jpg" alt="hotel">
+                    </div>
+                  </div>
+                  <div class="item">
+                    <div class="hotel_slider_data_check">
+                      <img src="images/hotel_det_img.jpg" alt="hotel">
+                    </div>
+                  </div>
+                  <div class="item">
+                    <div class="hotel_slider_data_check">
+                      <img src="images/hotel_det_img.jpg" alt="hotel">
+                    </div>
+                  </div>
+                  <div class="item">
+                    <div class="hotel_slider_data_check">
+                      <img src="images/hotel_det_img.jpg" alt="hotel">
+                    </div>
+                  </div>
+                  <div class="item">
+                    <div class="hotel_slider_data_check">
+                      <img src="images/hotel_det_img.jpg" alt="hotel">
+                    </div>
+                  </div>
+                </div>             
+               </div>
+             </div>
+             <div class="col-lg-7">
+               <div class="right_hotel_specification">
+                <div class="hotel_room_imgs">
+                  <div class="hotel_modal_data">
+                    <div class="ht_imgs">
+                      <img class="img-fluid" src="images/hotel_det_img.jpg" alt="hotel">
+                    </div>
+                    <div class="overlay_text_md">
+                      <a href="javascript:void(0);">Room Images</a>
+                    </div>
+                  </div>
+                  <div class="gift_cards_maps">
+                    <div class="gift_cards">
+                      <img src="images/gifts.png" alt="gifts">
+                      <h4>Special Secret Deal for you</h4>
+                      <a href="javascript:void(0);">Unlock Now</a>
+                    </div>
+                    <div class="view_maps">
+                      <img class="img-fluid" src="images/view_map_img.jpg" alt="map">
+                      <div class="overlay_map_view">
+                        <a href="javascript:void(0);">View Map</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="hotel_room_prcs">
+                  <div class="room_ht_dets"><!--room details start-->
+                    <div class="room_upper_data">
+                      <div class="room_lft_data">
+                        <h3>Superior Room</h3>
+                        <p>Per Night</p>
+                        <ul class="list-inline room_features">
+                          <li class="non_refundable"><i class="fa fa-minus-circle" aria-hidden="true"></i> Non Refundable</li>
+                          <li class="room_only_text"><i class="fa fa-check-circle" aria-hidden="true"></i> Room Only</li>
+                        </ul>
+                      </div>
+                      <div class="room_rt_data">
+                        <p class="cut_price">INR 5,025</p>
+                        <h4 class="main_room_price">INR 2,124</h4>
+                        <p class="deal_applies">Deal Applied<br> Saving INR 2,845</p>
+                      </div>
+                    </div>
+                    <div class="room_bottom_features">
+                      <h5>Other Rooms</h5>
+                      <a href="javascript:void();" class="btn btn_book_now">Book this now</a>
+                    </div>
+                  </div><!--room details close-->
+                  <div class="room_review_ratings"><!--Review Rating start-->
+                    <h3>User Rating &amp; Reviews <span>2365 Reviews</span></h3>
+                    <p>Visited Dubai on a business trip in May 2019. <a href="javascript:void(0);">Read More..</a></p>
+                  </div><!--Review Rating close-->
+                </div>
+               </div>
+             </div>
+           </div>
+          </div>
+         </div>
+       </div>
+     </div>
+   </section>
+
+   <section class="about_detail_hotels">
+     <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <div class="inner_about_hotels_data">
+            <h2>About The Hotel</h2>
+            <ul class="list-inline">
+              <li>CHECK IN 3 PM</li>
+              <li>CHECK OUT 12 PM</li>
+            </ul>
+            <p> Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).</p>
+            <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English.</p>
+          </div>
+        </div>
+      </div>       
+     </div>
+   </section>
+
+   <section class="room_type_data">
+     <div class="container">
+       <div class="row">
+         <div class="col-md-12">
+           <div class="inner_room_type_data">
+             <ul class="list-inline">
+               <li>
+                 <div class="innr_tb_sec_data">
+                   <table class="table">
+                    <tr>
+                       <th style="width: 25%;">Room Type</th>
+                       <th style="width: 20%;">Options</th>
+                       <th style="width: 20%;">Included in this Price</th>
+                       <th style="width: 35%;">Price</th>
+                     </tr>
+                     <tr>
+                       <td>
+                         <div class="room_ty_title_data">
+                           <h4>Superior Room - Double Bed</h4>
+                           <a href="javascript:void(0);"><img src="images/room_type_imga.webp" alt="image"></a>
+                           <ul class="list-inline room_influences">
+                             <li>Room Size: 409 sq.ft</li>
+                              <li>Bed Type: King Bed</li>
+                              <li>Air Conditioning</li>
+                              <li>24-hour Room Service</li>
+                              <li>Interconnected Room</li>
+                              <li>Wi-Fi</li>
+                           </ul>
+                           <div class="more_room_detail"><a href="javascript:void(0);">More About this room</a></div>
+                         </div>
+                       </td>
+                       <td>
+                        <div class="option_clarity_data_tech">
+                           <div class="option_data_text">
+                             <h4>Option 1 <span class="recommended">Recommended</span></h4>
+                             <ul class="option_list">
+                               <li><a href="javascript:void(0);" data-toggle="tooltip" data-placement="top" title="Handpicked rates with exclusive benefits">Staycation Deal</a></li>
+                               <li>Room Only</li>
+                               <li>Non-refundable <a href="javascript:void(0);">Read More</a></li>
+                             </ul>
+                           </div>
+                           <div class="option_data_text">
+                             <h4>Option 2 <span class="recommended">Recommended</span></h4>
+                             <ul class="option_list">
+                               <li>Staycation Deal</li>
+                               <li>Room Only</li>
+                               <li>Non-refundable <a href="javascript:void(0);">Read More</a></li>
+                             </ul>
+                           </div>
+                         </div>
+                       </td>
+                       <td>
+                        <div class="included_inn_sec">
+                          <div class="included_data_text">Free Breakfast</div>
+                          <div class="included_data_text">Free Breakfast</div>
+                        </div>
+                       </td>
+                       <td>
+                         <div class="price_dat_table">
+                           <div class="deal_day_text">
+                             <h5>DEAL OF THE DAY <span>Book now for extra savings!</span></h5>
+                           </div>
+                           <div class="get_thisPrice_data">
+                             <div class="inr_price_text">
+                               <h5 class="cut_price">INR 5,025</h5>
+                               <h3 class="main_price_t">INR 2,181<span>Per night</span></h3>
+                               <h6 class="login_now_data">To Get this @ INR 2,146 or less <a href="javascript:void(0);">Login Now</a></h6>
+                             </div>
+                             <div class="select_room_data">
+                               <a href="javascript:void(0);" class="btn btn_select_room">Select Room</a>
+                             </div>
+                           </div>
+                         </div>
+                         <div class="price_dat_table">
+                           <div class="deal_day_text">
+                             <h5>DEAL OF THE DAY <span>Book now for extra savings!</span></h5>
+                           </div>
+                           <div class="get_thisPrice_data">
+                             <div class="inr_price_text">
+                               <h5 class="cut_price">INR 5,025</h5>
+                               <h3 class="main_price_t">INR 2,181<span>Per night</span></h3>
+                               <h6 class="login_now_data">To Get this @ INR 2,146 or less <a href="javascript:void(0);">Login Now</a></h6>
+                             </div>
+                             <div class="select_room_data">
+                               <a href="javascript:void(0);" class="btn btn_select_room">Select Room</a>
+                             </div>
+                           </div>
+                         </div>
+
+                       </td>
+                     </tr>
+                   </table>
+                 </div>
+               </li>
+             </ul>
+           </div>
+         </div>
+       </div>
+     </div>
+   </section>
+
+
+
+    <footer class="main_footer">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-4">
+            <div class="footer_inner_data">
+              <h3>Product Offering</h3>
+              <ul class="list-inline">
+                <li><a href="javascript:void(0);"><i class="fa fa-angle-right" aria-hidden="true"></i>Flight</a></li>
+                <li><a href="javascript:void(0);"><i class="fa fa-angle-right" aria-hidden="true"></i>International Flights</a></li>
+                <li><a href="javascript:void(0);"><i class="fa fa-angle-right" aria-hidden="true"></i>Book Flights From US</a></li>
+                <li><a href="javascript:void(0);"><i class="fa fa-angle-right" aria-hidden="true"></i>Book Flights From UAE</a></li>
+                <li><a href="javascript:void(0);"><i class="fa fa-angle-right" aria-hidden="true"></i>Hotels</a></li>
+              </ul>
+              <ul class="list-inline">
+                <li><a href="javascript:void(0);"><i class="fa fa-angle-right" aria-hidden="true"></i>Cheap Flights</a></li>
+                <li><a href="javascript:void(0);"><i class="fa fa-angle-right" aria-hidden="true"></i>Delhi Goa Flights</a></li>
+                <li><a href="javascript:void(0);"><i class="fa fa-angle-right" aria-hidden="true"></i>Mumbai Jaipur Flights</a></li>
+                <li><a href="javascript:void(0);"><i class="fa fa-angle-right" aria-hidden="true"></i>Chandigarh Flights</a></li>
+                <li><a href="javascript:void(0);"><i class="fa fa-angle-right" aria-hidden="true"></i>Kashmir Packages</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="footer_inner_data">
+              <h3>About the site</h3>
+              <ul class="list-inline">
+                <li><a href="javascript:void(0);"><i class="fa fa-angle-right" aria-hidden="true"></i>Contact Us</a></li>
+                <li><a href="javascript:void(0);"><i class="fa fa-angle-right" aria-hidden="true"></i>Privacy Policy</a></li>
+                <li><a href="javascript:void(0);"><i class="fa fa-angle-right" aria-hidden="true"></i>User Agreements</a></li>
+                <li><a href="javascript:void(0);"><i class="fa fa-angle-right" aria-hidden="true"></i>Terms of Service</a></li>
+                <li><a href="javascript:void(0);"><i class="fa fa-angle-right" aria-hidden="true"></i>Payment Security</a></li>
+              </ul>
+              <ul class="list-inline">
+                <li><a href="javascript:void(0);"><i class="fa fa-angle-right" aria-hidden="true"></i>Visa Information</a></li>
+                <li><a href="javascript:void(0);"><i class="fa fa-angle-right" aria-hidden="true"></i>More Offices</a></li>
+                <li><a href="javascript:void(0);"><i class="fa fa-angle-right" aria-hidden="true"></i>Make a Payment</a></li>
+                <li><a href="javascript:void(0);"><i class="fa fa-angle-right" aria-hidden="true"></i>Report a Defect</a></li>
+                <li><a href="javascript:void(0);"><i class="fa fa-angle-right" aria-hidden="true"></i>Work From Home</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="footer_inner_data">
+              <h3>Important Links</h3>
+              <ul class="list-inline">
+                <li><a href="javascript:void(0);"><i class="fa fa-angle-right" aria-hidden="true"></i>Visa Information</a></li>
+                <li><a href="javascript:void(0);"><i class="fa fa-angle-right" aria-hidden="true"></i>More Offices</a></li>
+                <li><a href="javascript:void(0);"><i class="fa fa-angle-right" aria-hidden="true"></i>Make a Payment</a></li>
+                <li><a href="javascript:void(0);"><i class="fa fa-angle-right" aria-hidden="true"></i>Report a Defect</a></li>
+                <li><a href="javascript:void(0);"><i class="fa fa-angle-right" aria-hidden="true"></i>Work From Home</a></li>
+              </ul>
+              <ul class="list-inline">
+                <li><a href="javascript:void(0);"><i class="fa fa-angle-right" aria-hidden="true"></i>Visa Information</a></li>
+                <li><a href="javascript:void(0);"><i class="fa fa-angle-right" aria-hidden="true"></i>More Offices</a></li>
+                <li><a href="javascript:void(0);"><i class="fa fa-angle-right" aria-hidden="true"></i>Make a Payment</a></li>
+                <li><a href="javascript:void(0);"><i class="fa fa-angle-right" aria-hidden="true"></i>Report a Defect</a></li>
+                <li><a href="javascript:void(0);"><i class="fa fa-angle-right" aria-hidden="true"></i>Work From Home</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-md-12">
+            <div class="bottom_footer">
+              <p class="copyright_data">Copyright © 2020 Trip Online Private Limited, India. All rights reserved</p>
+              <ul class="footer_social">
+                <li>Keep In Touch: </li>
+                <li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+                <li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+                <li><a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </footer>
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery_select.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
+    <script>
+      $(document).ready(function() {
+        $('.hotel-sliders').owlCarousel({
+          loop: true,
+          margin: 0,
+          autoplay: true,
+          responsiveClass: true,
+          responsive: {
+            0: {
+              items: 1,
+              nav: true
+            },
+            600: {
+              items: 1,
+              nav: false
+            },
+            1000: {
+              items: 1,
+              nav: true,
+            }
+          }
+        });  
+
+      })
+    </script>
+    <script src="js/wow.min.js"></script>
+    <script>
+      new WOW().init();
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.3.0/js/bootstrap-datepicker.js"></script>
+    <script type="text/javascript">
+      $(function () {
+        $(".datepicker").datepicker({ 
+              autoclose: true, 
+              todayHighlight: true
+        }).datepicker('update', new Date());
+
+        $('[data-toggle="tooltip"]').tooltip()
+      });
+    </script>
+
+  </body>
+</html>

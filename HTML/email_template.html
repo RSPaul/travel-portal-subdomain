@@ -1,0 +1,422 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml" xmlns:v="urn:schemas-microsoft-com:vml" xmlns:o="urn:schemas-microsoft-com:office:office">
+<head>
+    <meta charset="utf-8"> <!-- utf-8 works for most cases -->
+    <meta name="viewport" content="width=device-width"> <!-- Forcing initial-scale shouldn't be necessary -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"> <!-- Use the latest (edge) version of IE rendering engine -->
+    <meta name="x-apple-disable-message-reformatting">  <!-- Disable auto-scale in iOS 10 Mail entirely -->
+    <title>Email Template</title> <!-- The title tag shows in email notifications, like Android 4.4. -->
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,500;0,600;0,700;0,800;1,300&display=swap" rel="stylesheet">
+
+    <!-- CSS Reset : BEGIN -->
+<style>
+html,
+body {
+    margin: 0 auto !important;
+    padding: 0 !important;
+    height: 100% !important;
+    width: 100% !important;
+    background: #f1f1f1;
+    font-family: 'Poppins', sans-serif;
+}
+/* What it does: Stops email clients resizing small text. */
+* {
+    -ms-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%;
+}
+/* What it does: Centers email on Android 4.4 */
+div[style*="margin: 16px 0"] {
+    margin: 0 !important;
+}
+/* What it does: Stops Outlook from adding extra spacing to tables. */
+table,
+td {
+    mso-table-lspace: 0pt !important;
+    mso-table-rspace: 0pt !important;
+}
+/* What it does: Fixes webkit padding issue. */
+table {
+    border-spacing: 0 !important;
+    border-collapse: collapse !important;
+    table-layout: fixed !important;
+    margin: 0 auto !important;
+}
+/* What it does: Uses a better rendering method when resizing images in IE. */
+img {
+    -ms-interpolation-mode:bicubic;
+}
+/* What it does: Prevents Windows 10 Mail from underlining links despite inline CSS. Styles for underlined links should be inline. */
+a {
+    text-decoration: none;
+}
+/* What it does: A work-around for email clients meddling in triggered links. */
+*[x-apple-data-detectors],  /* iOS */
+.unstyle-auto-detected-links *,
+.aBn {
+    border-bottom: 0 !important;
+    cursor: default !important;
+    color: inherit !important;
+    text-decoration: none !important;
+    font-size: inherit !important;
+    font-family: inherit !important;
+    font-weight: inherit !important;
+    line-height: inherit !important;
+}
+/* What it does: Prevents Gmail from displaying a download button on large, non-linked images. */
+.a6S {
+    display: none !important;
+    opacity: 0.01 !important;
+}
+/* What it does: Prevents Gmail from changing the text color in conversation threads. */
+.im {
+    color: inherit !important;
+}
+/* If the above doesn't work, add a .g-img class to any image in question. */
+img.g-img + div {
+    display: none !important;
+}
+/* What it does: Removes right gutter in Gmail iOS app: https://github.com/TedGoas/Cerberus/issues/89  */
+/* Create one of these media queries for each additional viewport size you'd like to fix */
+/* iPhone 4, 4S, 5, 5S, 5C, and 5SE */
+@media only screen and (min-device-width: 320px) and (max-device-width: 374px) {
+    u ~ div .email-container {
+        min-width: 320px !important;
+    }
+    .hero.bg_white h2 {
+	    font-size: 17px !important;
+	    line-height: 25px !important;
+	}
+	.text {
+	    padding: 0 1rem !important;
+	}
+	.hero.bg_white {
+	    background-size: 100% 100% !important;
+	    background-repeat: no-repeat;
+	}
+	.hero.bg_white h3 {
+	    font-size: 16px !important;
+	    line-height: 22px !important;
+	}
+	.text img {
+	    margin-top: 30px;
+	}
+	.services {
+	    width: 100%;
+	    display: block;
+	    margin-bottom: 10px;
+	}
+	.services table {
+	    width: 100%;
+	}
+	.services.botom_services table {
+	    width: 90%;
+	}
+	body {
+		overflow-x: hidden;
+	}
+}
+/* iPhone 6, 6S, 7, 8, and X */
+@media only screen and (min-device-width: 375px) and (max-device-width: 413px) {
+    u ~ div .email-container {
+        min-width: 375px !important;
+    }
+    .hero.bg_white h2 {
+	    font-size: 17px !important;
+	    line-height: 25px !important;
+	}
+	.text {
+	    padding: 0 1rem !important;
+	}
+	.hero.bg_white {
+	    background-size: 100% 100% !important;
+	    background-repeat: no-repeat;
+	}
+	.hero.bg_white h3 {
+	    font-size: 16px !important;
+	    line-height: 22px !important;
+	}
+	.text img {
+	    margin-top: 30px;
+	}
+	.services {
+	    width: 100%;
+	    display: block;
+	    margin-bottom: 10px;
+	}
+	.services table {
+	    width: 100%;
+	}
+	.services.botom_services table {
+	    width: 90%;
+	}
+	body {
+		overflow-x: hidden;
+	}
+}
+
+</style>
+
+<!-- CSS Reset : END -->
+
+<!-- Progressive Enhancements : BEGIN -->
+<style>
+.primary{
+	background: #0d0cb5;
+}
+.bg_white{
+	background: #ffffff;
+}
+.bg_light{
+	background: #fafafa;
+}
+.bg_black{
+	background: #000000;
+}
+.bg_dark{
+	background: rgba(0,0,0,.8);
+}
+.email-section{
+	padding: 20px 17px;
+}
+h1,h2,h3,h4,h5,h6{
+	font-family: 'Poppins', sans-serif;
+	color: #000000;
+	margin-top: 0;
+}
+body{
+	font-family: 'Poppins', sans-serif;
+	font-weight: 400;
+	font-size: 15px;
+	line-height: 1.8;
+	color: rgba(0,0,0,.4);
+}
+a{
+	color: #f48887;
+}
+</style>
+
+
+</head>
+
+<body width="100%" style="margin: 0; padding: 0 !important; mso-line-height-rule: exactly; background-color: #f1f1f1;">
+	<center style="width: 100%; background-color: #f1f1f1;">
+    <div style="max-width: 620px; margin: 10px auto 10px;" class="email-container">
+      <table align="center" role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%" style="margin: auto;">
+		<tr>
+          <td valign="top" class="hero bg_white" style="background-color: #4fbbff; width: 100%;">
+            <table width="100%" role="presentation" cellspacing="0" cellpadding="0" border="0">
+            	<tr>
+            		<td style="padding: 20px 25px; width: 40%;">
+            			<a href="#" style="color: #fff; text-decoration: none; font-size: 20px;">LOGO</a>
+            		</td>
+            		<td style="padding: 20px 25px; width: 60%; text-align: right;"><p style="margin: 0px; font-size: 14px; text-transform: uppercase; color: #fff;">TBO Reference Number(s) <strong style="display: block; font-size: 16px;">1721530831</strong></p></td>
+            	</tr>
+            </table>
+          </td>
+	    </tr>
+	    <tr>
+	    	<td valign="top" style="background-color: #fff; width: 100%; padding: 15px;">
+	    		<table width="100%" role="presentation" cellspacing="0" cellpadding="0" border="0">
+	    			<tr style="vertical-align: top;">
+		    			<td style="border: 1px solid #ddd; padding: 15px;">
+		    				<h3 style="color: #4fbbff; font-size: 16px; text-transform: uppercase; margin: 0px;">Dear Manoj,</h3>
+		    				<p style="font-size: 13px; color: #000; margin: 5px 0px 0px; line-height: 22px; font-weight: 400; text-transform: uppercase;">INIS Venture Private Limited (DELI059) SCO 136, Mansa Devi Complex, Sector 5, Panchkula</p>
+		    			</td>
+		    			<td style="border: 1px solid #ddd; padding: 15px;">
+		    				<h3 style="color: #4fbbff; font-size: 16px; text-transform: uppercase; margin: 0px;">Agent Ref:</h3>
+		    				<p style="font-size: 13px; color: #000; margin: 5px 0px 0px; line-height: 22px; font-weight: 400; text-transform: uppercase;">Dheeraj</p>
+		    			</td>
+	    			</tr>	    			
+	    		</table>
+	    	</td>
+	    </tr>
+	    <tr>
+	    	<td valign="top" style="background-color: #fff; width: 100%; padding: 0px 15px 15px;">
+	    		<table width="100%" role="presentation" cellspacing="0" cellpadding="0" border="0">
+	    			<tr style="vertical-align: top;">
+	    				<td><p style="margin: 0px; font-size: 13px; text-align: center; text-transform: uppercase; padding: 10px 20px; color: #333; background-color: #eee;border: 1px solid #ccc;">Thanks for booking with us, your booking has been "Confirmed" with <strong style="font-size: 13px; display: block;">Confirmation Number: 9198245896532</strong></p></td>
+	    			</tr>
+	    		</table>
+	    	</td>
+	    </tr>
+	    <tr>
+	    	<td valign="top" style="background-color: #fff; width: 100%; padding: 0px 15px 15px;">
+	    		<table width="100%" role="presentation" cellspacing="0" cellpadding="0" border="0">
+	    			<tr>
+	    				<td><h3 style="background-color: #eee; padding: 8px 10px; color: #333; font-size: 14px; text-transform: uppercase; margin: 0px; border: 1px solid #ddd; border-bottom: none;">Booking details:</h3></td>
+	    			</tr>
+	    			<tr>	    				
+	    				<td valign="top">
+	    					<table width="100%" role="presentation" cellspacing="0" cellpadding="0" border="0">
+	    						<tr>
+	    							<th style="border: 1px solid #ccc; padding: 8px 10px; font-size: 13px; text-align: left; color: #333; text-transform: uppercase;">Service Booked:</th>
+	    							<td style="border: 1px solid #ccc; padding: 8px 10px; font-size: 13px; text-align: left; color: #333;">Hotel</td>
+	    							<th style="border: 1px solid #ccc; padding: 8px 10px; font-size: 13px; text-align: left; color: #333; text-transform: uppercase;">Hotel Name:</th>
+	    							<td style="border: 1px solid #ccc; padding: 8px 10px; font-size: 13px; text-align: left; color: #333;">Dreamland Hotel</td>
+	    						</tr>
+	    						<tr>
+	    							<th style="border: 1px solid #ccc; padding: 8px 10px; font-size: 13px; text-align: left; color: #333; text-transform: uppercase;">Lead Guest:</th>
+	    							<td style="border: 1px solid #ccc; padding: 8px 10px; font-size: 13px; text-align: left; color: #333;">Dheeraj Cholli</td>
+	    							<th style="border: 1px solid #ccc; padding: 8px 10px; font-size: 13px; text-align: left; color: #333; text-transform: uppercase;">No of Guest:</th>
+	    							<td style="border: 1px solid #ccc; padding: 8px 10px; font-size: 13px; text-align: left; color: #333;">1</td>
+	    						</tr>
+	    						<tr>
+	    							<th style="border: 1px solid #ccc; padding: 8px 10px; font-size: 13px; text-align: left; color: #333; text-transform: uppercase;">No of rooms:</th>
+	    							<td style="border: 1px solid #ccc; padding: 8px 10px; font-size: 13px; text-align: left; color: #333;">1</td>
+	    							<th style="border: 1px solid #ccc; padding: 8px 10px; font-size: 13px; text-align: left; color: #333; text-transform: uppercase;">Price:</th>
+	    							<td style="border: 1px solid #ccc; padding: 8px 10px; font-size: 13px; text-align: left; color: #333;">Rs. 1425.76</td>
+	    						</tr>
+	    						<tr>
+	    							<th style="border: 1px solid #ccc; padding: 8px 10px; font-size: 13px; text-align: left; color: #333; text-transform: uppercase;">Check-In:</th>
+	    							<td style="border: 1px solid #ccc; padding: 8px 10px; font-size: 13px; text-align: left; color: #333;">Dec 17, 2020</td>
+	    							<th style="border: 1px solid #ccc; padding: 8px 10px; font-size: 13px; text-align: left; color: #333; text-transform: uppercase;">Checkout:</th>
+	    							<td style="border: 1px solid #ccc; padding: 8px 10px; font-size: 13px; text-align: left; color: #333;">Dec 18, 2020</td>
+	    						</tr>
+	    						<tr>
+	    							<th style="border: 1px solid #ccc; padding: 8px 10px; font-size: 13px; text-align: left; color: #333; text-transform: uppercase;">Duration:</th>
+	    							<td style="border: 1px solid #ccc; padding: 8px 10px; font-size: 13px; text-align: left; color: #333;">1 Night(s)</td>
+	    							<th style="border: 1px solid #ccc; padding: 8px 10px; font-size: 13px; text-align: left; color: #333; text-transform: uppercase;">City:</th>
+	    							<td style="border: 1px solid #ccc; padding: 8px 10px; font-size: 13px; text-align: left; color: #333;">Mumbai</td>
+	    						</tr>
+	    						<tr>
+	    							<th style="border: 1px solid #ccc; padding: 8px 10px; font-size: 13px; text-align: left; color: #333; text-transform: uppercase;">Hotel Address:</th>
+	    							<td style="border: 1px solid #ccc; padding: 8px 10px; font-size: 13px; text-align: left; color: #333;" colspan="3">163 P D'Mello Road, Fort, Mumbai, Maharashtra, IN Mumbai</td>
+	    						</tr>
+	    					</table>
+	    				</td>
+	    			</tr>	    			
+	    		</table>
+	    	</td>
+	    </tr>
+	    <tr>
+	    	<td valign="top" style="background-color: #fff; width: 100%; padding: 0px 15px 15px;">
+	    		<table width="100%" role="presentation" cellspacing="0" cellpadding="0" border="0">
+	    			<tr>	    				
+	    				<td valign="top">
+	    					<table width="100%" role="presentation" cellspacing="0" cellpadding="0" border="0" style="vertical-align: top;">
+	    						<tr valign="top">
+	    							<th style="border: 1px solid #ccc; padding: 8px 10px; font-size: 13px; text-align: left; color: #333; text-transform: uppercase; background-color: #eee;">Rooms</th>
+	    							<th style="border: 1px solid #ccc; padding: 8px 10px; font-size: 13px; text-align: left; color: #333; text-transform: uppercase; background-color: #eee;">Room Type</th>
+	    							<th style="border: 1px solid #ccc; padding: 8px 10px; font-size: 13px; text-align: left; color: #333; text-transform: uppercase; background-color: #eee;">No. of Guests</th>	    							
+	    						</tr>
+	    						<tr valign="top">
+	    							<td style="border: 1px solid #ccc; padding: 8px 10px; font-size: 13px; text-align: left; color: #333;">1</td>
+	    							<td style="border: 1px solid #ccc; padding: 8px 10px; font-size: 13px; text-align: left; color: #333;">
+	    								<p style="margin-top: 0px; margin-bottom: 5px; line-height: 20px;"><strong>Double Room (NON AC), 2 Twin Beds, Nonsmoking</strong></p>
+	    								<p style="margin-bottom: 0px; margin-top: 5px;"><strong>Inclusions</strong> Free WiFi</p>
+	    							</td>
+	    							<td style="border: 1px solid #ccc; padding: 8px 10px; font-size: 13px; text-align: left; color: #333;">
+	    								<p style="margin: 0px;">1 Adult(s) <br>0 Child (ren)</p>
+	    							</td>
+	    						</tr>
+	    					</table>
+	    				</td>
+	    			</tr>	    			
+	    		</table>
+	    	</td>
+	    </tr>
+	    <tr>
+	    	<td valign="top" style="background-color: #fff; width: 100%; padding: 0px 15px 15px;">
+	    		<table width="100%" role="presentation" cellspacing="0" cellpadding="0" border="0" style="border: 1px solid #ddd;">
+	    			<tr>
+	    				<td><h3 style="background-color: #eee; padding: 8px 10px; color: #333; font-size: 14px; text-transform: uppercase; margin: 0px; border-bottom: none;">Hotel Policy:</h3></td>
+	    			</tr>
+	    			<tr>	    				
+	    				<td valign="top">
+	    					<ul style="list-style-type: none; padding: 15px 20px; margin: 0px;">
+	    						<li style="font-size: 13px; font-weight: 400; color: #333; margin-bottom: 5px;">1. CheckIn Time-Begin: 12:00 PM</li>
+	    						<li style="font-size: 13px; font-weight: 400; color: #333; margin-bottom: 5px;">2. CheckIn Time-End: 12:00 PM</li>
+	    						<li style="font-size: 13px; font-weight: 400; color: #333; margin-bottom: 5px;">3. CheckOut Time: 11:00 AM</li>
+	    						<li style="font-size: 13px; font-weight: 400; color: #333; margin-bottom: 5px;">4. <strong>CheckIn Instructions:</strong> Extra-Person is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English.</li>
+	    						<li style="font-size: 13px; font-weight: 400; color: #333; margin-bottom: 5px;">5. <strong>Special Instructions:</strong> Front Desk staff is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.</li>
+	    						<li style="font-size: 13px; font-weight: 400; color: #333; margin-bottom: 5px;">6. <strong>Minimum CheckIn Age:</strong> 18</li>
+	    						<li style="font-size: 13px; font-weight: 400; color: #333; margin-bottom: 5px;">7. <strong>Optional Fees:</strong>
+	    							<p style="display: block; margin-top: 10px;">The Following fees and deposits are changed by the property at time of service, CheckIn or CheckOut.</p>
+	    							<ul style="margin-top: 10px;">
+	    								<li><strong>Rollaway bed fee:</strong> INR 300 per night</li>
+	    							</ul>
+	    							<p>The above list may not be comprehensive. Fees and deposits may not include tax and are subject to change.</p>
+	    						</li>
+	    						<li style="font-size: 13px; font-weight: 400; color: #333; margin-bottom: 5px;">8. It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.</li>
+	    						<li style="font-size: 13px; font-weight: 400; color: #333; margin-bottom: 5px;">9. It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.</li>
+	    						<li style="font-size: 13px; font-weight: 400; color: #333; margin-bottom: 0px;">10. It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.</li>
+	    					</ul>
+	    				</td>
+	    			</tr>	    			
+	    		</table>
+	    	</td>
+	    </tr>
+	    <tr>
+	    	<td valign="top" style="background-color: #fff; width: 100%; padding: 0px 15px 15px;">
+	    		<table width="100%" role="presentation" cellspacing="0" cellpadding="0" border="0" style="border: 1px solid #ddd;">
+	    			<tr>
+	    				<td><h3 style="background-color: #eee; padding: 8px 10px; color: #333; font-size: 14px; text-transform: uppercase; margin: 0px;  border-bottom: none;">Cancellation details:</h3></td>
+	    			</tr>
+	    			<tr>
+	    				<td><p style="font-size: 13px; font-weight: 500; color: #000; text-transform: uppercase; margin: 15px 15px 5px;">Room 01: Double Room (NON AC), 2 Twin Beds, Non Smoking</p></td>
+	    			</tr>
+	    			<tr>	    				
+	    				<td valign="top" style="padding: 0px 15px 15px;">
+	    					<table width="100%" role="presentation" cellspacing="0" cellpadding="0" border="0">
+	    						<tr valign="top">
+	    							<th style="border: 1px solid #ccc; padding: 8px 10px; font-size: 13px; text-align: left; color: #333; text-transform: uppercase; background-color: #eee; line-height: 18px;">Cancelled on or After</th>
+	    							<th style="border: 1px solid #ccc; padding: 8px 10px; font-size: 13px; text-align: left; color: #333; text-transform: uppercase; background-color: #eee; line-height: 18px;">Cancelled on or Before</th>
+	    							<th style="border: 1px solid #ccc; padding: 8px 10px; font-size: 13px; text-align: left; color: #333; text-transform: uppercase; background-color: #eee; line-height: 18px;">Cancelled Charges</th>
+	    						</tr>
+	    						<tr>
+	    							<td style="border: 1px solid #ccc; padding: 8px 10px; font-size: 13px; text-align: left; color: #333;">08 Dec 2020</td>
+	    							<td style="border: 1px solid #ccc; padding: 8px 10px; font-size: 13px; text-align: left; color: #333;">13 Dec 2020</td>
+	    							<td style="border: 1px solid #ccc; padding: 8px 10px; font-size: 13px; text-align: left; color: #333;">INR 0.00</td>
+	    						</tr>
+	    						<tr>
+	    							<td style="border: 1px solid #ccc; padding: 8px 10px; font-size: 13px; text-align: left; color: #333;">14 Dec 2020</td>
+	    							<td style="border: 1px solid #ccc; padding: 8px 10px; font-size: 13px; text-align: left; color: #333;">15 Dec 2020</td>
+	    							<td style="border: 1px solid #ccc; padding: 8px 10px; font-size: 13px; text-align: left; color: #333;">INR 100.00%</td>
+	    						</tr>
+	    						<tr>
+	    							<td style="border: 1px solid #ccc; padding: 8px 10px; font-size: 13px; text-align: left; color: #333;">16 Dec 2020</td>
+	    							<td style="border: 1px solid #ccc; padding: 8px 10px; font-size: 13px; text-align: left; color: #333;">18 Dec 2020</td>
+	    							<td style="border: 1px solid #ccc; padding: 8px 10px; font-size: 13px; text-align: left; color: #333;">INR 100.00%</td>
+	    						</tr>
+	    					</table>
+	    				</td>
+	    			</tr>	    			
+	    		</table>
+	    	</td>
+	    </tr>
+
+	    <tr>
+	    	<td valign="top" style="background-color: #fff; width: 100%; padding: 0px 15px 15px;">
+	    		<table width="100%" role="presentation" cellspacing="0" cellpadding="0" border="0">
+	    			<tr>
+	    				<td style="font-size: 13px; color: #000; line-height: 22px; text-transform: uppercase; font-style: italic;">
+	    					Thanks for choosing Trip Online<br>
+	    					Sincerly,<br>
+	    					<strong>Hotel Team<br>
+	    						Travel Trip Online<br>
+	    						Contact: 865985263</strong>
+	    				</td>
+	    			</tr>
+	    		</table>
+	    	</td>
+	    </tr>
+
+	    <tr>
+	    	<td valign="top" style="background-color: #4fbbff; border-top: 4px solid #efa47d; width: 100%; padding: 10px 15px;">
+	    		<table width="100%" role="presentation" cellspacing="0" cellpadding="0" border="0">
+	    			<tr>
+	    				<td style="font-size: 13px; color: #fff; line-height: 22px; text-transform: uppercase; text-align: center;">
+	    					This is an auto-generated mail. Please do not reply.
+	    				</td>
+	    			</tr>
+	    		</table>
+	    	</td>
+	    </tr>  
+
+      </table>
+    </div>
+  </center>
+</body>
+</html>

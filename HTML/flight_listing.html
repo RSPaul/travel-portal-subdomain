@@ -1,0 +1,625 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="css/custom.css">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+    <!-- Owl Stylesheets -->
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/owl.theme.default.min.css">
+    <!--Animation Stylesheet-->
+    <link rel="stylesheet" type="text/css" href="css/animate.css">
+    <!--Custom select Stylesheet-->
+    <link rel="stylesheet" type="text/css" href="css/jquery_select.css">
+
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.3.0/css/datepicker.css" rel="stylesheet" type="text/css" />
+
+    <title>Flight Lilsting</title>
+  </head>
+  <body>
+
+    <header class="main_header">
+      <nav class="navbar navbar-expand-sm">
+        <div class="container">
+          <a class="navbar-brand" href="#"><img src="images/logo.png" alt="logo"></a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExample03" aria-controls="navbarsExample03" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <div class="collapse navbar-collapse" id="navbarsExample03">
+            <ul class="navbar-nav mr-auto">
+              <li class="nav-item active">
+                <a class="nav-link" href="#"><img class="unselected_img" src="images/flight_unselected.png" alt="flight"><img class="selected_img" src="images/flight_selected.png" alt="flights"><span>Flights</span></a>
+              </li>
+              <li class="nav-item"><a class="nav-link" href="#"><img class="unselected_img" src="images/hotel_unselected.png" alt="flight"><img class="selected_img" src="images/hotel_selected.png" alt="flights"><span>Hotels</span></a></li>
+              <li class="nav-item"><a class="nav-link" href="#"><img class="unselected_img" src="images/hotel_unselected.png" alt="flight"><img class="selected_img" src="images/hotel_selected.png" alt="flights"><span>Villas &amp; Apts</span></a></li>
+              <li class="nav-item"><a class="nav-link" href="#"><img class="unselected_img" src="images/hotel_unselected.png" alt="flight"><img class="selected_img" src="images/hotel_selected.png" alt="flights"><span>Cabs</span></a></li>
+              <li class="nav-item"><a class="nav-link" href="#"><img class="unselected_img" src="images/hotel_unselected.png" alt="flight"><img class="selected_img" src="images/hotel_selected.png" alt="flights"><span>Holidays</span></a></li>
+              <li class="nav-item"><a class="nav-link" href="#"><img class="unselected_img" src="images/hotel_unselected.png" alt="flight"><img class="selected_img" src="images/hotel_selected.png" alt="flights"><span>Trains</span></a></li>
+              <li class="nav-item dropdown more_menu">
+                <a class="nav-link dropdown-toggle" href="#" id="moreDropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i>+</i> More</a>
+                <div class="dropdown-menu" aria-labelledby="moreDropdown">
+                  <a class="dropdown-item" href="#">Buses</a>
+                  <a class="dropdown-item" href="#">Visa</a>
+                  <a class="dropdown-item" href="#">Buses</a>
+                  <a class="dropdown-item" href="#">Visa</a>
+                  <a class="dropdown-item" href="#">Buses</a>
+                  <a class="dropdown-item" href="#">Visa</a>
+                </div>
+              </li>
+              
+            </ul>
+            <div class="right_menu">
+              <ul class="navbar-nav list-inline">
+                <li class="nav-item dropdown more_menu support_menus">
+                  <div class="new_added_menu">New</div>
+                  <a class="nav-link dropdown-toggle" href="#" id="moreDropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Support <i class="fa fa-angle-down" aria-hidden="true"></i></a>
+                  <div class="dropdown-menu" aria-labelledby="moreDropdown">
+                    <a class="dropdown-item" href="#"><i class="fa fa-caret-right" aria-hidden="true"></i> Talk to us</a>
+                    <a class="dropdown-item" href="#"><i class="fa fa-caret-right" aria-hidden="true"></i> Contact Us</a>
+                    <a class="dropdown-item" href="#"><i class="fa fa-caret-right" aria-hidden="true"></i> Complete Booking</a>
+                    <a class="dropdown-item" href="#"><i class="fa fa-caret-right" aria-hidden="true"></i> Make a Payment</a>
+                  </div>
+                </li>
+                <li class="nav-item dropdown my_account_menu">
+                  <button type="button" class="nav-link dropdown-toggle" id="moreDropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">My Account <i class="fa fa-angle-down" aria-hidden="true"></i></button>
+                  <div class="dropdown-menu" aria-labelledby="moreDropdown">
+                    <a class="dropdown-item" href="#"><i class="fa fa-caret-right" aria-hidden="true"></i> Talk to us</a>
+                    <a class="dropdown-item" href="#"><i class="fa fa-caret-right" aria-hidden="true"></i> Contact Us</a>
+                    <a class="dropdown-item" href="#"><i class="fa fa-caret-right" aria-hidden="true"></i> Complete Booking</a>
+                    <a class="dropdown-item" href="#"><i class="fa fa-caret-right" aria-hidden="true"></i> Make a Payment</a>
+                  </div>
+                </li>
+              </ul>              
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+   <section class="listing_banner_forms">
+     <div class="container">
+       <div class="row">
+         <div class="col-md-12">
+           <div class="listing_inner_forms">
+             <div class="rounding_form_info">
+                <div class="form-group">
+                  <label>City, Area or Property <i class="fa fa-angle-down" aria-hidden="true"></i></label>
+                  <select name="">
+                      <option value="1">Bangalore</option>
+                      <option value="2">Delhi</option>
+                      <option value="3">Dehradun</option>
+                      <option value="4">Karnatka</option>
+                      <option value="1">Bangalore</option>
+                      <option value="2">Delhi</option>
+                      <option value="3">Dehradun</option>
+                      <option value="4">Karnatka</option>
+                  </select>
+                </div>
+                <div class="form-group">
+                  <label>Check In <i class="fa fa-angle-down" aria-hidden="true"></i></label>
+                  <div class="input-group date datepicker" data-date-format="mm-dd-yyyy">
+                      <input class="form-control" type="text" readonly />
+                      <span class="input-group-addon"><i class="glyphicon glyphicon-calendar"></i></span>
+                  </div>
+                </div>
+                <div class="form-group">
+                  <label>Check Out <i class="fa fa-angle-down" aria-hidden="true"></i></label>
+                  <div class="input-group date datepicker" data-date-format="mm-dd-yyyy">
+                      <input class="form-control" type="text" readonly />
+                      <span class="input-group-addon"><i class="glyphicon glyphicon-calendar"></i></span>
+                  </div>
+                </div>
+                <div class="form-group">
+                  <label>Room &amp; Guests <i class="fa fa-angle-down" aria-hidden="true"></i></label>
+                  <select name="">
+                      <option value="2">2 Rooms, 3 Adults</option>
+                      <option value="3">2 Traveller</option>
+                      <option value="4">3 Traveller</option>
+                  </select>
+                </div> 
+                <div class="search_btns_listing"><button type="submit" class="btn btn-primary">Search</button></div>
+              </div>
+           </div>
+         </div>
+       </div>
+     </div>
+   </section>
+
+   <section class="flight_listing_section">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-3">
+            <div class="filter_data">
+
+              <div class="filter_heading">
+                <h3>Filter</h3>
+                <a href="javascript:void(0)" class="reste_all_btn">Reset All</a>
+              </div>
+
+              <div class="departure_data">
+                <h4>Departure</h4>
+                <div class="departure_time_info">
+                  <label class="current_time_det">
+                    <input type="checkbox" value="on_dep" class="form-control">
+                    <span>4am - 11am</span>                    
+                  </label>
+                  <label class="current_time_det">
+                    <input type="checkbox" value="on_dep2" class="form-control">
+                    <span>5am - 11am</span>                    
+                  </label>
+                  <label class="current_time_det">
+                    <input type="checkbox" value="on_dep3" class="form-control">
+                    <span>8am - 11am</span>                    
+                  </label>
+                  <label class="current_time_det">
+                    <input type="checkbox" value="on_dep4" class="form-control">
+                    <span>9am - 11am</span>                    
+                  </label>
+                </div>
+              </div>
+
+              <div class="departure_data">
+                <h4>Stops</h4>
+                <div class="departure_time_info">
+                  <label class="current_time_det">
+                    <input type="checkbox" value="on_dep5" class="form-control">
+                    <span><i class="stop_data">0</i>Stop</span>                    
+                  </label>
+                  <label class="current_time_det">
+                    <input type="checkbox" value="on_dep6" class="form-control">
+                    <span><i class="stop_data">1</i>Stop</span>                    
+                  </label>
+                </div>
+              </div>
+
+              <div class="departure_data">
+                <div class="filter_heading">
+                  <h4>Preferred Airlines</h4>
+                  <a href="javascript:void(0);" class="reste_all_btn">Reset</a>
+                </div>                
+                <div class="airline_filters">
+                  <div class="inner_check_air_data">
+                    <label class="container_airline">  
+                      <span class="airline_name">
+                        <img src="images/6E.gif" alt="img">
+                        <span class="air_name_set">IndiGo</span>
+                      </span>                    
+                      <input type="checkbox">
+                      <span class="checkmark"></span>
+                    </label>
+                    <span class="airline_price">₹3,943</span>
+                  </div>
+                  <div class="inner_check_air_data">
+                    <label class="container_airline">  
+                      <span class="airline_name">
+                        <img src="images/6E.gif" alt="img">
+                        <span class="air_name_set">IndiGo</span>
+                      </span>                    
+                      <input type="checkbox">
+                      <span class="checkmark"></span>
+                    </label>
+                    <span class="airline_price">₹3,943</span>
+                  </div>
+                  <div class="inner_check_air_data">
+                    <label class="container_airline">  
+                      <span class="airline_name">
+                        <img src="images/6E.gif" alt="img">
+                        <span class="air_name_set">IndiGo</span>
+                      </span>                    
+                      <input type="checkbox">
+                      <span class="checkmark"></span>
+                    </label>
+                    <span class="airline_price">₹3,943</span>
+                  </div>
+                  <div class="inner_check_air_data">
+                    <label class="container_airline">  
+                      <span class="airline_name">
+                        <img src="images/6E.gif" alt="img">
+                        <span class="air_name_set">IndiGo</span>
+                      </span>                    
+                      <input type="checkbox">
+                      <span class="checkmark"></span>
+                    </label>
+                    <span class="airline_price">₹3,943</span>
+                  </div>
+                  <div class="inner_check_air_data">
+                    <label class="container_airline">  
+                      <span class="airline_name">
+                        <img src="images/6E.gif" alt="img">
+                        <span class="air_name_set">IndiGo</span>
+                      </span>                    
+                      <input type="checkbox">
+                      <span class="checkmark"></span>
+                    </label>
+                    <span class="airline_price">₹3,943</span>
+                  </div>
+                  <div class="inner_check_air_data">
+                    <label class="container_airline">  
+                      <span class="airline_name">
+                        <img src="images/6E.gif" alt="img">
+                        <span class="air_name_set">IndiGo</span>
+                      </span>                    
+                      <input type="checkbox">
+                      <span class="checkmark"></span>
+                    </label>
+                    <span class="airline_price">₹3,943</span>
+                  </div>
+                  <div class="inner_check_air_data">
+                    <label class="container_airline">  
+                      <span class="airline_name">
+                        <img src="images/6E.gif" alt="img">
+                        <span class="air_name_set">IndiGo</span>
+                      </span>                    
+                      <input type="checkbox">
+                      <span class="checkmark"></span>
+                    </label>
+                    <span class="airline_price">₹3,943</span>
+                  </div>
+                  <div class="inner_check_air_data">
+                    <label class="container_airline">  
+                      <span class="airline_name">
+                        <img src="images/6E.gif" alt="img">
+                        <span class="air_name_set">IndiGo</span>
+                      </span>                    
+                      <input type="checkbox">
+                      <span class="checkmark"></span>
+                    </label>
+                    <span class="airline_price">₹3,943</span>
+                  </div>                  
+                </div>
+              </div>                        
+            </div>
+          </div>
+
+          <div class="col-md-9">
+            <div class="air_list_data">
+              <div class="row align-items-end">
+                <div class="col-md-9">
+                  <div class="flex_width_air">
+                    <div class="vistara_Data">
+                      <img src="images/UK.gif" alt="vistara">
+                      <span>Vistara</span>
+                    </div>
+                    <div class="main_flts_time">
+                      <div class="fllight_time_date">
+                        <h5>DEL <span>Delhi, India</span></h5>
+                        <div class="time_flts">12:00</div>
+                      </div>
+                      <div class="time_hr">2h 00m</div>
+                      <div class="fllight_time_date">
+                        <h5>BOM <span>Mumbai, India</span></h5>
+                        <div class="time_flts">12:00</div>
+                      </div>
+                      <div class="price_flight_datas">
+                        <h3>₹3,943 <span>No Cost EMI from ₹1,315</span></h3>                        
+                      </div>
+                    </div>                    
+                  </div>
+                </div>
+                <div class="col-md-3">
+                  <div class="book_data_btn">
+                    <a href="javascript:void(0);" class="btn btn_book">Book</a>
+                  </div>
+                </div>
+              </div>
+
+              <div class="row">
+                <div class="col-md-12">
+                  <div class="refundable_data">
+                    <span class="non_refundable">Non-Refundable</span>
+                    <a href="javascript:void(0);" class="btn btn_flight_details">Flight Details</a>
+                  </div>
+                </div>
+              </div>
+
+              <div class="flight_information_data" style="display: none;">
+                <nav>
+                  <div class="nav nav-tabs nav-fill" role="tablist">
+                    <a class="nav-item nav-link active" id="nav-flightInformation-tab" data-toggle="tab" href="#nav-flightInformation" role="tab" aria-controls="nav-flightInformation" aria-selected="true">Flight Information</a>
+                    <a class="nav-item nav-link" id="nav-fare-tab" data-toggle="tab" href="#nav-fare" role="tab" aria-controls="nav-fare" aria-selected="false">Fare Details</a>
+                    <a class="nav-item nav-link" id="nav-baggage-tab" data-toggle="tab" href="#nav-baggage" role="tab" aria-controls="nav-baggage" aria-selected="false">Baggage Rules</a>
+                    <a class="nav-item nav-link" id="nav-cancellation-tab" data-toggle="tab" href="#nav-cancellation" role="tab" aria-controls="nav-cancellation" aria-selected="false">Cancellation Rules</a>
+                  </div>
+                </nav>
+                <div class="tab-content">
+                  <div class="tab-pane fade show active" id="nav-flightInformation" role="tabpanel" aria-labelledby="nav-flightInformation-tab">
+                    <div class="inner_flight_tabs">
+                      <div class="flght_data_info">
+                        <div class="row">
+                          <div class="col-md-2">
+                            <div class="plane_data">
+                              <img src="images/UK.gif" alt="images">
+                            </div>
+                            <span class="flight_name">Air India</span>
+                            <span class="flight_serial_number">AI-887</span>
+                          </div>
+                          <div class="col-md-3 text-right">
+                            <div class="city_time">DEL <span>12:00</span></div>
+                            <div class="airpot_name_data">Delhi Airport, India</div>
+                          </div>
+                          <div class="col-md-4 text-center">
+                            <div class="flight_duration">
+                              <span>2h 00m</span> <i class="fa fa-plane" aria-hidden="true"></i>
+                            </div>
+                            <div class="flg_tech">Flight Duration</div>
+                          </div>
+                          <div class="col-md-3">
+                            <div class="city_time">BOM <span>14:00</span></div>
+                            <div class="airpot_name_data">Chhatrapati Shivaji International Airport India</div>
+                          </div>
+                        </div>
+                      </div>                      
+                    </div>                    
+                  </div>
+                  <div class="tab-pane fade" id="nav-fare" role="tabpanel" aria-labelledby="nav-fare-tab">
+                    <div class="inner_flight_tabs">
+                      <table class="table">
+                        <tr>
+                          <td>Base Fare (1 Adult)</td>
+                          <td>₹3,370</td>
+                        </tr>
+                        <tr>
+                          <td>Taxes and Fees (1 Adult)</td>
+                          <td>₹573</td>
+                        </tr>
+                        <tr>
+                          <th>Total Fare (1 Adult)</th>
+                          <th>₹3,943</th>
+                        </tr>                        
+                      </table>
+                    </div>                    
+                  </div>
+                  <div class="tab-pane fade" id="nav-baggage" role="tabpanel" aria-labelledby="nav-baggage-tab">
+                    <div class="inner_flight_tabs">
+                      <table class="table">
+                        <tr>
+                          <td>Baggage Type</td>
+                          <td>Check-In</td>
+                          <td>Cabin</td>
+                        </tr>
+                        <tr>
+                          <td>Adult</td>
+                          <td>20 Kgs</td>
+                          <td>7 Kgs</td>
+                        </tr>
+                      </table>
+                      <p class="baggage_data">* Only 1 check-in baggage allowed per passenger. You can buy excess baggage as allowed by the airline, however you might have to pay additional charges at airport.</p>
+                    </div>                    
+                  </div>
+                  <div class="tab-pane fade" id="nav-cancellation" role="tabpanel" aria-labelledby="nav-cancellation-tab">
+                    <div class="inner_flight_tabs">
+                      <div class="row">
+                        <div class="col-md-6">
+                          <table class="table">
+                            <tr>
+                              <td>Goibibo Fee</td>
+                              <td>₹300</td>
+                            </tr>
+                            <tr>
+                              <td>0-2 hours</td>
+                              <td>Non Refundable</td>
+                            </tr>
+                            <tr>
+                              <td>>2 hours</td>
+                              <td>Non Refundable</td>
+                            </tr>
+                          </table>
+                        </div>
+                        <div class="col-md-6">
+                          <table class="table">
+                            <tr>
+                              <td>Goibibo Fee</td>
+                              <td>₹300</td>
+                            </tr>
+                            <tr>
+                              <td>0-2 hours</td>
+                              <td>Non Refundable</td>
+                            </tr>
+                            <tr>
+                              <td>>2 hours</td>
+                              <td>Non Refundable</td>
+                            </tr>
+                          </table>
+                        </div>
+                      </div>
+                    </div>                    
+                  </div>                  
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+        </div>
+      </div>      
+    </section>
+
+   
+    <footer class="main_footer">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-4">
+            <div class="footer_inner_data">
+              <h3>Product Offering</h3>
+              <ul class="list-inline">
+                <li><a href="javascript:void(0);"><i class="fa fa-angle-right" aria-hidden="true"></i>Flight</a></li>
+                <li><a href="javascript:void(0);"><i class="fa fa-angle-right" aria-hidden="true"></i>International Flights</a></li>
+                <li><a href="javascript:void(0);"><i class="fa fa-angle-right" aria-hidden="true"></i>Book Flights From US</a></li>
+                <li><a href="javascript:void(0);"><i class="fa fa-angle-right" aria-hidden="true"></i>Book Flights From UAE</a></li>
+                <li><a href="javascript:void(0);"><i class="fa fa-angle-right" aria-hidden="true"></i>Hotels</a></li>
+              </ul>
+              <ul class="list-inline">
+                <li><a href="javascript:void(0);"><i class="fa fa-angle-right" aria-hidden="true"></i>Cheap Flights</a></li>
+                <li><a href="javascript:void(0);"><i class="fa fa-angle-right" aria-hidden="true"></i>Delhi Goa Flights</a></li>
+                <li><a href="javascript:void(0);"><i class="fa fa-angle-right" aria-hidden="true"></i>Mumbai Jaipur Flights</a></li>
+                <li><a href="javascript:void(0);"><i class="fa fa-angle-right" aria-hidden="true"></i>Chandigarh Flights</a></li>
+                <li><a href="javascript:void(0);"><i class="fa fa-angle-right" aria-hidden="true"></i>Kashmir Packages</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="footer_inner_data">
+              <h3>About the site</h3>
+              <ul class="list-inline">
+                <li><a href="javascript:void(0);"><i class="fa fa-angle-right" aria-hidden="true"></i>Contact Us</a></li>
+                <li><a href="javascript:void(0);"><i class="fa fa-angle-right" aria-hidden="true"></i>Privacy Policy</a></li>
+                <li><a href="javascript:void(0);"><i class="fa fa-angle-right" aria-hidden="true"></i>User Agreements</a></li>
+                <li><a href="javascript:void(0);"><i class="fa fa-angle-right" aria-hidden="true"></i>Terms of Service</a></li>
+                <li><a href="javascript:void(0);"><i class="fa fa-angle-right" aria-hidden="true"></i>Payment Security</a></li>
+              </ul>
+              <ul class="list-inline">
+                <li><a href="javascript:void(0);"><i class="fa fa-angle-right" aria-hidden="true"></i>Visa Information</a></li>
+                <li><a href="javascript:void(0);"><i class="fa fa-angle-right" aria-hidden="true"></i>More Offices</a></li>
+                <li><a href="javascript:void(0);"><i class="fa fa-angle-right" aria-hidden="true"></i>Make a Payment</a></li>
+                <li><a href="javascript:void(0);"><i class="fa fa-angle-right" aria-hidden="true"></i>Report a Defect</a></li>
+                <li><a href="javascript:void(0);"><i class="fa fa-angle-right" aria-hidden="true"></i>Work From Home</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="footer_inner_data">
+              <h3>Important Links</h3>
+              <ul class="list-inline">
+                <li><a href="javascript:void(0);"><i class="fa fa-angle-right" aria-hidden="true"></i>Visa Information</a></li>
+                <li><a href="javascript:void(0);"><i class="fa fa-angle-right" aria-hidden="true"></i>More Offices</a></li>
+                <li><a href="javascript:void(0);"><i class="fa fa-angle-right" aria-hidden="true"></i>Make a Payment</a></li>
+                <li><a href="javascript:void(0);"><i class="fa fa-angle-right" aria-hidden="true"></i>Report a Defect</a></li>
+                <li><a href="javascript:void(0);"><i class="fa fa-angle-right" aria-hidden="true"></i>Work From Home</a></li>
+              </ul>
+              <ul class="list-inline">
+                <li><a href="javascript:void(0);"><i class="fa fa-angle-right" aria-hidden="true"></i>Visa Information</a></li>
+                <li><a href="javascript:void(0);"><i class="fa fa-angle-right" aria-hidden="true"></i>More Offices</a></li>
+                <li><a href="javascript:void(0);"><i class="fa fa-angle-right" aria-hidden="true"></i>Make a Payment</a></li>
+                <li><a href="javascript:void(0);"><i class="fa fa-angle-right" aria-hidden="true"></i>Report a Defect</a></li>
+                <li><a href="javascript:void(0);"><i class="fa fa-angle-right" aria-hidden="true"></i>Work From Home</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-md-12">
+            <div class="bottom_footer">
+              <p class="copyright_data">Copyright © 2020 Trip Online Private Limited, India. All rights reserved</p>
+              <ul class="footer_social">
+                <li>Keep In Touch: </li>
+                <li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+                <li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+                <li><a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </footer>
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery_select.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
+    <script>
+      $(document).ready(function() {
+        $('.popular_flights').owlCarousel({
+          loop: true,
+          margin: 10,
+          autoplay: true,
+          responsiveClass: true,
+          responsive: {
+            0: {
+              items: 1,
+              nav: true
+            },
+            600: {
+              items: 2,
+              nav: false
+            },
+            1000: {
+              items: 4,
+              nav: true,
+              loop: false,
+              margin: 10
+            }
+          }
+        });
+        $('.special_flights').owlCarousel({
+          loop: true,
+          margin: 10,
+          autoplay: true,
+          responsiveClass: true,
+          responsive: {
+            0: {
+              items: 1,
+              nav: true
+            },
+            600: {
+              items: 2,
+              nav: false
+            },
+            1000: {
+              items: 3,
+              nav: true,
+              loop: false,
+              margin: 10
+            }
+          }
+        });
+
+        $('.news_sliders').owlCarousel({
+          loop: true,
+          margin: 5,
+          autoplay: true,
+          responsiveClass: true,
+          responsive: {
+            0: {
+              items: 1,
+              nav: true
+            },
+            600: {
+              items: 2,
+              nav: false
+            },
+            1000: {
+              items: 3,
+              nav: true,
+              loop: false,
+              margin: 5
+            }
+          }
+        });        
+      })
+    </script>
+    <script src="js/wow.min.js"></script>
+    <script>
+      new WOW().init();
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.3.0/js/bootstrap-datepicker.js"></script>
+    <script type="text/javascript">
+      $(function () {
+        $(".datepicker").datepicker({ 
+              autoclose: true, 
+              todayHighlight: true
+        }).datepicker('update', new Date());
+      });
+
+      $(document).ready(function(){
+        $(".btn_flight_details").click(function(){
+          $(".flight_information_data").toggle();
+        });
+      });
+    </script>
+
+
+  </body>
+</html>

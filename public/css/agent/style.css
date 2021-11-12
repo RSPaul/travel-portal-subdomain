@@ -1,0 +1,106 @@
+/*================================================================================
+	Item Name: Vuexy - Vuejs, HTML & Laravel Admin Dashboard Template
+	Version: 2.0
+	Author: PIXINVENT
+	Author URL: http://www.themeforest.net/user/pixinvent
+================================================================================
+
+NOTE:
+------
+PLACE HERE YOUR OWN SCSS CODES AND IF NEEDED, OVERRIDE THE STYLES FROM THE OTHER STYLESHEETS.
+WE WILL RELEASE FUTURE UPDATES SO IN ORDER TO NOT OVERWRITE YOUR STYLES IT'S BETTER LIKE THIS.  */
+i.fa.fa-heart.text-body.font-medium-3:before {
+    color: red;
+}
+i.fa.profile-likes.font-medium-3.mr-50.fa-heart:before {
+    color: red;
+}
+
+.d-flex.align-items-center.hide-likes {
+	display: none !important;
+}
+.share-post-icons {
+   /* position: relative;
+    top: 25px;
+    right: 50px;*/
+    display: none;
+}
+a.share-to {
+    margin-left: 20px;
+}
+
+.share-post-icons i.fa {
+	font-size: 18px
+}
+span.brand-logo-no-login img {
+    width: 100px !important;
+}
+.app-content.content.no-login {
+    padding-top: 50px !important;
+}
+.header-navbar-shadow.no-login {
+	display: none;
+}
+.blog-recent-posts.mt-3 {
+	margin-top: 0 !important;
+}
+i.fa.fa-facebook {
+    color: #3b5998;
+}
+i.fa.fa-whatsapp {
+    color: green;
+}
+i.fa.fa-twitter {
+    color: rgba(29,161,242,1.00);
+}
+.col-sm-2.d-flex.justify-content-between.justify-content-sm-start.mb-2.social-icons {
+    padding-right: 0 !important;
+    margin: 0 !important;
+}
+.ecommerce-application .grid-view .ecommerce-card .item-img {
+    padding-left: 130px;
+}
+button#select-files.cover-picture {
+    width: 150px;
+    float: right;
+    position: absolute;
+    right: 15px;
+    top: 410px;
+    background: #fff;
+    padding: 15px;
+    background: #7367f0;
+    color: #fff;
+}
+#fileinput {
+    display: none;
+}
+.card-img-top.profile-cover {
+    max-height: 470px;
+}
+img.img-fluid.rounded.lat-pho {
+    max-height: 108px !important;
+    max-width: 100px;
+    min-width: 108px;
+    min-height: 100px;
+}
+.app-content.content.noauth {
+    padding-top: 10px;
+}
+span.info-text {
+    font-size: 12px;
+    font-weight: normal;
+}
+.formValidation.invalid.was-validated .input-group-append .input-group-text.cursor-pointer {
+    border-color: #ea5455;
+}
+.input-group-append {
+    border-right: 1px solid #d8d6de;
+}
+
+.details_card_bnk{
+    margin-top:-30px;
+}
+p.detail_bnk_field {
+    font-weight: 500;
+    font-size: 15px;
+}

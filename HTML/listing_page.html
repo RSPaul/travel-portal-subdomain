@@ -1,0 +1,911 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="css/custom.css">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+    <!-- Owl Stylesheets -->
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/owl.theme.default.min.css">
+    <!--Animation Stylesheet-->
+    <link rel="stylesheet" type="text/css" href="css/animate.css">
+    <!--Custom select Stylesheet-->
+    <link rel="stylesheet" type="text/css" href="css/jquery_select.css">
+
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.3.0/css/datepicker.css" rel="stylesheet" type="text/css" />
+
+    <title>Demo</title>
+  </head>
+  <body>
+
+    <header class="main_header">
+      <nav class="navbar navbar-expand-sm">
+        <div class="container">
+          <a class="navbar-brand" href="#"><img src="images/logo.png" alt="logo"></a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExample03" aria-controls="navbarsExample03" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <div class="collapse navbar-collapse" id="navbarsExample03">
+            <ul class="navbar-nav mr-auto">
+              <li class="nav-item active">
+                <a class="nav-link" href="#"><img class="unselected_img" src="images/flight_unselected.png" alt="flight"><img class="selected_img" src="images/flight_selected.png" alt="flights"><span>Flights</span></a>
+              </li>
+              <li class="nav-item"><a class="nav-link" href="#"><img class="unselected_img" src="images/hotel_unselected.png" alt="flight"><img class="selected_img" src="images/hotel_selected.png" alt="flights"><span>Hotels</span></a></li>
+              <li class="nav-item"><a class="nav-link" href="#"><img class="unselected_img" src="images/hotel_unselected.png" alt="flight"><img class="selected_img" src="images/hotel_selected.png" alt="flights"><span>Villas &amp; Apts</span></a></li>
+              <li class="nav-item"><a class="nav-link" href="#"><img class="unselected_img" src="images/hotel_unselected.png" alt="flight"><img class="selected_img" src="images/hotel_selected.png" alt="flights"><span>Cabs</span></a></li>
+              <li class="nav-item"><a class="nav-link" href="#"><img class="unselected_img" src="images/hotel_unselected.png" alt="flight"><img class="selected_img" src="images/hotel_selected.png" alt="flights"><span>Holidays</span></a></li>
+              <li class="nav-item"><a class="nav-link" href="#"><img class="unselected_img" src="images/hotel_unselected.png" alt="flight"><img class="selected_img" src="images/hotel_selected.png" alt="flights"><span>Trains</span></a></li>
+              <li class="nav-item dropdown more_menu">
+                <a class="nav-link dropdown-toggle" href="#" id="moreDropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i>+</i> More</a>
+                <div class="dropdown-menu" aria-labelledby="moreDropdown">
+                  <a class="dropdown-item" href="#">Buses</a>
+                  <a class="dropdown-item" href="#">Visa</a>
+                  <a class="dropdown-item" href="#">Buses</a>
+                  <a class="dropdown-item" href="#">Visa</a>
+                  <a class="dropdown-item" href="#">Buses</a>
+                  <a class="dropdown-item" href="#">Visa</a>
+                </div>
+              </li>
+              
+            </ul>
+            <div class="right_menu">
+              <ul class="navbar-nav list-inline">
+                <li class="nav-item dropdown more_menu support_menus">
+                  <div class="new_added_menu">New</div>
+                  <a class="nav-link dropdown-toggle" href="#" id="moreDropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Support <i class="fa fa-angle-down" aria-hidden="true"></i></a>
+                  <div class="dropdown-menu" aria-labelledby="moreDropdown">
+                    <a class="dropdown-item" href="#"><i class="fa fa-caret-right" aria-hidden="true"></i> Talk to us</a>
+                    <a class="dropdown-item" href="#"><i class="fa fa-caret-right" aria-hidden="true"></i> Contact Us</a>
+                    <a class="dropdown-item" href="#"><i class="fa fa-caret-right" aria-hidden="true"></i> Complete Booking</a>
+                    <a class="dropdown-item" href="#"><i class="fa fa-caret-right" aria-hidden="true"></i> Make a Payment</a>
+                  </div>
+                </li>
+                <li class="nav-item dropdown my_account_menu">
+                  <button type="button" class="nav-link dropdown-toggle" id="moreDropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">My Account <i class="fa fa-angle-down" aria-hidden="true"></i></button>
+                  <div class="dropdown-menu" aria-labelledby="moreDropdown">
+                    <a class="dropdown-item" href="#"><i class="fa fa-caret-right" aria-hidden="true"></i> Talk to us</a>
+                    <a class="dropdown-item" href="#"><i class="fa fa-caret-right" aria-hidden="true"></i> Contact Us</a>
+                    <a class="dropdown-item" href="#"><i class="fa fa-caret-right" aria-hidden="true"></i> Complete Booking</a>
+                    <a class="dropdown-item" href="#"><i class="fa fa-caret-right" aria-hidden="true"></i> Make a Payment</a>
+                  </div>
+                </li>
+              </ul>              
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+   <section class="listing_banner_forms">
+     <div class="container">
+       <div class="row">
+         <div class="col-md-12">
+           <div class="listing_inner_forms">
+             <div class="rounding_form_info">
+                <div class="form-group">
+                  <label>City, Area or Property <i class="fa fa-angle-down" aria-hidden="true"></i></label>
+                  <select name="">
+                      <option value="1">Bangalore</option>
+                      <option value="2">Delhi</option>
+                      <option value="3">Dehradun</option>
+                      <option value="4">Karnatka</option>
+                      <option value="1">Bangalore</option>
+                      <option value="2">Delhi</option>
+                      <option value="3">Dehradun</option>
+                      <option value="4">Karnatka</option>
+                  </select>
+                </div>
+                <div class="form-group">
+                  <label>Check In <i class="fa fa-angle-down" aria-hidden="true"></i></label>
+                  <div class="input-group date datepicker" data-date-format="mm-dd-yyyy">
+                      <input class="form-control" type="text" readonly />
+                      <span class="input-group-addon"><i class="glyphicon glyphicon-calendar"></i></span>
+                  </div>
+                </div>
+                <div class="form-group">
+                  <label>Check Out <i class="fa fa-angle-down" aria-hidden="true"></i></label>
+                  <div class="input-group date datepicker" data-date-format="mm-dd-yyyy">
+                      <input class="form-control" type="text" readonly />
+                      <span class="input-group-addon"><i class="glyphicon glyphicon-calendar"></i></span>
+                  </div>
+                </div>
+                <div class="form-group">
+                  <label>Room &amp; Guests <i class="fa fa-angle-down" aria-hidden="true"></i></label>
+                  <select name="">
+                      <option value="2">2 Rooms, 3 Adults</option>
+                      <option value="3">2 Traveller</option>
+                      <option value="4">3 Traveller</option>
+                  </select>
+                </div> 
+                <div class="search_btns_listing"><button type="submit" class="btn btn-primary">Search</button></div>
+              </div>
+           </div>
+         </div>
+       </div>
+     </div>
+   </section>
+
+   <section class="listing_title_map">
+     <div class="container">
+       <div class="row align-items-center">
+         <div class="col-md-8">
+           <div class="listing_main_title">
+             <h1>Hotels, Villas, Apartments and more in Dubai</h1>
+             <div class="srt_by_data">
+               <ul>
+                <li>Sort by:</li>
+                 <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="popularity_data" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Popularity</a>
+                    <div class="dropdown-menu" aria-labelledby="popularity_data">
+                      <a class="dropdown-item" href="#">Action</a>
+                      <a class="dropdown-item" href="#">Another action</a>
+                      <a class="dropdown-item" href="#">Something else here</a>
+                    </div>
+                  </li>
+                 <li>Showing 201 properties in Dubai</li>
+               </ul>
+             </div>
+           </div>
+         </div>
+         <div class="col-md-4">
+           <div class="map_vews">
+             <a href="javascript:void(0)"><img class="img-fluid" src="images/mapBgSmall.png" alt="map"></a>
+             <div class="search_location_data">
+               <input type="search" name="search" placeholder="Enter location or property name">
+               <input type="submit" name="submit" class="btn btn-primary">
+             </div>
+           </div>
+         </div>
+       </div>
+     </div>
+   </section>
+
+   <section class="listing_section_data">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-3">
+          <div class="listing_sidebar">
+            <h3>Select Filters</h3>
+
+            <div class="popularity_filters_items">
+              <h4>Best For Indians</h4>
+              <div class="check_filter_cont">
+                <label class="container_airline">  
+                  <span class="airline_name">
+                    <span class="air_name_set">Near Indian Restaurants</span>
+                  </span>                    
+                  <input type="checkbox">
+                  <span class="checkmark"></span>
+                  <span class="value_numbers">(1585)</span>
+                </label>
+                <label class="container_airline">  
+                  <span class="airline_name">
+                    <span class="air_name_set">Shopping Malls</span>
+                  </span>                    
+                  <input type="checkbox">
+                  <span class="checkmark"></span>
+                  <span class="value_numbers">(1585)</span>
+                </label>
+              </div>
+            </div>
+
+            <div class="popularity_filters_items">
+              <h4>Popular Filters</h4>
+              <div class="check_filter_cont">
+                <label class="container_airline">  
+                  <span class="airline_name">
+                    <span class="air_name_set">Staycation Deals</span>
+                  </span>                    
+                  <input type="checkbox">
+                  <span class="checkmark"></span>
+                  <span class="value_numbers">(36)</span>
+                </label>
+                <label class="container_airline">  
+                  <span class="airline_name">
+                    <span class="air_name_set">Certified Hygienic Properties</span>
+                  </span>                    
+                  <input type="checkbox">
+                  <span class="checkmark"></span>
+                  <span class="value_numbers">(173)</span>
+                </label>
+                <label class="container_airline">  
+                  <span class="airline_name">
+                    <span class="air_name_set">MMT Assured</span>
+                  </span>                    
+                  <input type="checkbox">
+                  <span class="checkmark"></span>
+                  <span class="value_numbers">(46)</span>
+                </label>
+                <label class="container_airline">  
+                  <span class="airline_name">
+                    <span class="air_name_set">LongStay2020</span>
+                  </span>                    
+                  <input type="checkbox">
+                  <span class="checkmark"></span>
+                  <span class="value_numbers">(30)</span>
+                </label>
+              </div>
+            </div>
+
+            <div class="popularity_filters_items">
+              <h4>Locality</h4>
+              <div class="check_filter_cont">
+                <label class="container_airline">  
+                  <span class="airline_name">
+                    <span class="air_name_set">Bur Dubai</span>
+                  </span>                    
+                  <input type="checkbox">
+                  <span class="checkmark"></span>
+                  <span class="value_numbers">(36)</span>
+                </label>
+                <label class="container_airline">  
+                  <span class="airline_name">
+                    <span class="air_name_set">Deira</span>
+                  </span>                    
+                  <input type="checkbox">
+                  <span class="checkmark"></span>
+                  <span class="value_numbers">(173)</span>
+                </label>
+                <label class="container_airline">  
+                  <span class="airline_name">
+                    <span class="air_name_set">Dubai Marina</span>
+                  </span>                    
+                  <input type="checkbox">
+                  <span class="checkmark"></span>
+                  <span class="value_numbers">(46)</span>
+                </label>
+                <label class="container_airline">  
+                  <span class="airline_name">
+                    <span class="air_name_set">Media City</span>
+                  </span>                    
+                  <input type="checkbox">
+                  <span class="checkmark"></span>
+                  <span class="value_numbers">(30)</span>
+                </label>
+              </div>
+            </div>
+
+            <div class="popularity_filters_items">
+              <h4>Star Category</h4>
+              <div class="check_filter_cont">
+                <label class="container_airline">  
+                  <span class="airline_name">
+                    <span class="air_name_set">Unrated</span>
+                  </span>                    
+                  <input type="checkbox">
+                  <span class="checkmark"></span>
+                  <span class="value_numbers">(26)</span>
+                </label>
+                <label class="container_airline">  
+                  <span class="airline_name">
+                    <span class="air_name_set">5 Stars</span>
+                  </span>                    
+                  <input type="checkbox">
+                  <span class="checkmark"></span>
+                  <span class="value_numbers">(102)</span>
+                </label>
+                <label class="container_airline">  
+                  <span class="airline_name">
+                    <span class="air_name_set">3 Stars</span>
+                  </span>                    
+                  <input type="checkbox">
+                  <span class="checkmark"></span>
+                  <span class="value_numbers">(161)</span>
+                </label>
+              </div>
+            </div>
+
+            <div class="popularity_filters_items">
+              <h4>User Rating</h4>
+              <div class="check_filter_cont">
+                <label class="container_airline">  
+                  <span class="airline_name">
+                    <span class="air_name_set">4.5 & above (Excellent)</span>
+                  </span>                    
+                  <input type="checkbox">
+                  <span class="checkmark"></span>
+                  <span class="value_numbers">(26)</span>
+                </label>
+                <label class="container_airline">  
+                  <span class="airline_name">
+                    <span class="air_name_set">4 & above (Very Good)</span>
+                  </span>                    
+                  <input type="checkbox">
+                  <span class="checkmark"></span>
+                  <span class="value_numbers">(102)</span>
+                </label>
+                <label class="container_airline">  
+                  <span class="airline_name">
+                    <span class="air_name_set">3 & above (Good)</span>
+                  </span>                    
+                  <input type="checkbox">
+                  <span class="checkmark"></span>
+                  <span class="value_numbers">(355)</span>
+                </label>
+              </div>
+            </div>
+
+                
+
+
+          </div>
+        </div>
+        <div class="col-md-9">
+          <div class="listing_items_data">
+
+            <div class="listing_item">
+              <div class="row">
+                <div class="col-md-9">
+                  <div class="listing_description_data">
+                    
+                    <div class="listing_slider_thumbnail">
+                      <div id="custCarousel" class="carousel slide" data-ride="carousel" align="center">
+                        <!-- slides -->
+                        <div class="carousel-inner">
+                            <div class="carousel-item active"> <img src="images/hotel_large_pic.jpg" alt="slide"> </div>
+                            <div class="carousel-item"> <img src="images/hotel_large_pic.jpg" alt="slide"> </div>
+                            <div class="carousel-item"> <img src="images/hotel_large_pic.jpg" alt="slide"> </div>
+                            <div class="carousel-item"> <img src="images/hotel_large_pic.jpg" alt="slide"> </div>
+                            <a class="carousel-control-prev" href="#custCarousel" data-slide="prev"><i class="fa fa-angle-left" aria-hidden="true"></i></a><a class="carousel-control-next" href="#custCarousel" data-slide="next"><i class="fa fa-angle-right" aria-hidden="true"></i></a>
+                        </div>
+                        <!-- Thumbnails -->
+                        <ol class="carousel-indicators list-inline">
+                            <li class="list-inline-item active"> <a id="carousel-selector-0" class="selected" data-slide-to="0" data-target="#custCarousel"> <img src="images/lilsting_small_img.jpg" class="img-fluid"></a></li>
+                            <li class="list-inline-item"> <a id="carousel-selector-1" data-slide-to="1" data-target="#custCarousel"> <img src="images/lilsting_small_img.jpg" class="img-fluid"></a></li>
+                            <li class="list-inline-item"> <a id="carousel-selector-2" data-slide-to="2" data-target="#custCarousel"> <img src="images/lilsting_small_img.jpg" class="img-fluid"></a></li>
+                            <li class="list-inline-item"> <a id="carousel-selector-3" data-slide-to="3" data-target="#custCarousel"> <img src="images/lilsting_small_img.jpg" class="img-fluid"></a></li>
+                        </ol>
+                      </div> 
+                    </div>
+                    <div class="listing_main_desp">
+                      <h2>Park Regis Kris Kin Hotel <span class="country_name">Bur Dubai</span></h2>
+                      <p class="distance_data">1.9 km from Meena Bazaar</p>
+                      <div class="listing_tags_data">
+                        <a href="javascript:void(0);" class="listing_kids_option">Kid Friendly</a>
+                        <a href="javascript:void(0);" class="listing_kids_option">Gents Friendly</a>
+                      </div>
+                      <div class="assured_list">
+                        <a href="javascript:void(0);" class="country_assured">Dubai Assured</a>
+                      </div>
+                      <div class="crtified_options"><a href="javascript:void();">Certified by DTCM, Dubai</a></div>
+                      <div class="safety_features">
+                        <ul class="list-inline">
+                          <li><img src="images/doctor_on_call.png" alt="doctor">Doctor on Call</li>
+                          <li><img src="images/bar.png" alt="bar">Bar</li>
+                          <li><i class="fa fa-check" aria-hidden="true"></i>Cafe</li>
+                        </ul>
+                      </div>
+                      <div class="more_options">
+                        <p>More Options: <a href="javascript:void(0);">Breakfast included | Pay@Hotel</a></p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-3">
+                  <div class="listing_rice_info">
+                    <p class="save_price_discount">Save INR 1761 <span class="badge">25%</span></p>
+                    <p class="cutof_price">INR 7,043</p>
+                    <div class="actual_price">
+                      <h2>INR 5,282</h2>
+                      <p>Per night<span>Total ₹10,564 + Taxes</span></p>
+                    </div>
+                    <div class="no_cost_emi">
+                      <p>No Cost <span class="emi_data">EMI</span></p>
+                      <p>Starts at <span class="emi_price">₹4,201</span></p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="listing_item">
+              <div class="row">
+                <div class="col-md-9">
+                  <div class="listing_description_data">
+                    
+                    <div class="listing_slider_thumbnail">
+                      <div id="custCarousel1" class="carousel slide" data-ride="carousel" align="center">
+                        <!-- slides -->
+                        <div class="carousel-inner">
+                            <div class="carousel-item active"> <img src="images/hotel_large_pic.jpg" alt="slide"> </div>
+                            <div class="carousel-item"> <img src="images/hotel_large_pic.jpg" alt="slide"> </div>
+                            <div class="carousel-item"> <img src="images/hotel_large_pic.jpg" alt="slide"> </div>
+                            <div class="carousel-item"> <img src="images/hotel_large_pic.jpg" alt="slide"> </div>
+                            <a class="carousel-control-prev" href="#custCarousel1" data-slide="prev"><i class="fa fa-angle-left" aria-hidden="true"></i></a><a class="carousel-control-next" href="#custCarousel1" data-slide="next"><i class="fa fa-angle-right" aria-hidden="true"></i></a>
+                        </div>
+                        <!-- Thumbnails -->
+                        <ol class="carousel-indicators list-inline">
+                            <li class="list-inline-item active"> <a id="carousel-selector-0" class="selected" data-slide-to="0" data-target="#custCarousel1"> <img src="images/lilsting_small_img.jpg" class="img-fluid"></a></li>
+                            <li class="list-inline-item"> <a id="carousel-selector-1" data-slide-to="1" data-target="#custCarousel1"> <img src="images/lilsting_small_img.jpg" class="img-fluid"></a></li>
+                            <li class="list-inline-item"> <a id="carousel-selector-2" data-slide-to="2" data-target="#custCarousel1"> <img src="images/lilsting_small_img.jpg" class="img-fluid"></a></li>
+                            <li class="list-inline-item"> <a id="carousel-selector-3" data-slide-to="3" data-target="#custCarousel1"> <img src="images/lilsting_small_img.jpg" class="img-fluid"></a></li>
+                        </ol>
+                      </div> 
+                    </div>
+                    <div class="listing_main_desp">
+                      <h2>Park Regis Kris Kin Hotel <span class="country_name">Bur Dubai</span></h2>
+                      <p class="distance_data">1.9 km from Meena Bazaar</p>
+                      <div class="listing_tags_data">
+                        <a href="javascript:void(0);" class="listing_kids_option">Kid Friendly</a>
+                        <a href="javascript:void(0);" class="listing_kids_option">Gents Friendly</a>
+                      </div>
+                      <div class="assured_list">
+                        <a href="javascript:void(0);" class="country_assured">Dubai Assured</a>
+                      </div>
+                      <div class="crtified_options"><a href="javascript:void();">Certified by DTCM, Dubai</a></div>
+                      <div class="safety_features">
+                        <ul class="list-inline">
+                          <li><img src="images/doctor_on_call.png" alt="doctor">Doctor on Call</li>
+                          <li><img src="images/bar.png" alt="bar">Bar</li>
+                          <li><i class="fa fa-check" aria-hidden="true"></i>Cafe</li>
+                        </ul>
+                      </div>
+                      <div class="more_options">
+                        <p>More Options: <a href="javascript:void(0);">Breakfast included | Pay@Hotel</a></p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-3">
+                  <div class="listing_rice_info">
+                    <p class="save_price_discount">Save INR 1761 <span class="badge">25%</span></p>
+                    <p class="cutof_price">INR 7,043</p>
+                    <div class="actual_price">
+                      <h2>INR 5,282</h2>
+                      <p>Per night<span>Total ₹10,564 + Taxes</span></p>
+                    </div>
+                    <div class="no_cost_emi">
+                      <p>No Cost <span class="emi_data">EMI</span></p>
+                      <p>Starts at <span class="emi_price">₹4,201</span></p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="listing_item">
+              <div class="row">
+                <div class="col-md-9">
+                  <div class="listing_description_data">
+                    
+                    <div class="listing_slider_thumbnail">
+                      <div id="custCarousel2" class="carousel slide" data-ride="carousel" align="center">
+                        <!-- slides -->
+                        <div class="carousel-inner">
+                            <div class="carousel-item active"> <img src="images/hotel_large_pic.jpg" alt="slide"> </div>
+                            <div class="carousel-item"> <img src="images/hotel_large_pic.jpg" alt="slide"> </div>
+                            <div class="carousel-item"> <img src="images/hotel_large_pic.jpg" alt="slide"> </div>
+                            <div class="carousel-item"> <img src="images/hotel_large_pic.jpg" alt="slide"> </div>
+                            <a class="carousel-control-prev" href="#custCarousel2" data-slide="prev"><i class="fa fa-angle-left" aria-hidden="true"></i></a><a class="carousel-control-next" href="#custCarousel2" data-slide="next"><i class="fa fa-angle-right" aria-hidden="true"></i></a>
+                        </div>
+                        <!-- Thumbnails -->
+                        <ol class="carousel-indicators list-inline">
+                            <li class="list-inline-item active"> <a id="carousel-selector-0" class="selected" data-slide-to="0" data-target="#custCarousel2"> <img src="images/lilsting_small_img.jpg" class="img-fluid"></a></li>
+                            <li class="list-inline-item"> <a id="carousel-selector-1" data-slide-to="1" data-target="#custCarousel2"> <img src="images/lilsting_small_img.jpg" class="img-fluid"></a></li>
+                            <li class="list-inline-item"> <a id="carousel-selector-2" data-slide-to="2" data-target="#custCarousel2"> <img src="images/lilsting_small_img.jpg" class="img-fluid"></a></li>
+                            <li class="list-inline-item"> <a id="carousel-selector-3" data-slide-to="3" data-target="#custCarousel2"> <img src="images/lilsting_small_img.jpg" class="img-fluid"></a></li>
+                        </ol>
+                      </div> 
+                    </div>
+                    <div class="listing_main_desp">
+                      <h2>Park Regis Kris Kin Hotel <span class="country_name">Bur Dubai</span></h2>
+                      <p class="distance_data">1.9 km from Meena Bazaar</p>
+                      <div class="listing_tags_data">
+                        <a href="javascript:void(0);" class="listing_kids_option">Kid Friendly</a>
+                        <a href="javascript:void(0);" class="listing_kids_option">Gents Friendly</a>
+                      </div>
+                      <div class="assured_list">
+                        <a href="javascript:void(0);" class="country_assured">Dubai Assured</a>
+                      </div>
+                      <div class="crtified_options"><a href="javascript:void();">Certified by DTCM, Dubai</a></div>
+                      <div class="safety_features">
+                        <ul class="list-inline">
+                          <li><img src="images/doctor_on_call.png" alt="doctor">Doctor on Call</li>
+                          <li><img src="images/bar.png" alt="bar">Bar</li>
+                          <li><i class="fa fa-check" aria-hidden="true"></i>Cafe</li>
+                        </ul>
+                      </div>
+                      <div class="more_options">
+                        <p>More Options: <a href="javascript:void(0);">Breakfast included | Pay@Hotel</a></p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-3">
+                  <div class="listing_rice_info">
+                    <p class="save_price_discount">Save INR 1761 <span class="badge">25%</span></p>
+                    <p class="cutof_price">INR 7,043</p>
+                    <div class="actual_price">
+                      <h2>INR 5,282</h2>
+                      <p>Per night<span>Total ₹10,564 + Taxes</span></p>
+                    </div>
+                    <div class="no_cost_emi">
+                      <p>No Cost <span class="emi_data">EMI</span></p>
+                      <p>Starts at <span class="emi_price">₹4,201</span></p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="listing_item">
+              <div class="row">
+                <div class="col-md-9">
+                  <div class="listing_description_data">
+                    
+                    <div class="listing_slider_thumbnail">
+                      <div id="custCarousel3" class="carousel slide" data-ride="carousel" align="center">
+                        <!-- slides -->
+                        <div class="carousel-inner">
+                            <div class="carousel-item active"> <img src="images/hotel_large_pic.jpg" alt="slide"> </div>
+                            <div class="carousel-item"> <img src="images/hotel_large_pic.jpg" alt="slide"> </div>
+                            <div class="carousel-item"> <img src="images/hotel_large_pic.jpg" alt="slide"> </div>
+                            <div class="carousel-item"> <img src="images/hotel_large_pic.jpg" alt="slide"> </div>
+                            <a class="carousel-control-prev" href="#custCarousel3" data-slide="prev"><i class="fa fa-angle-left" aria-hidden="true"></i></a><a class="carousel-control-next" href="#custCarousel3" data-slide="next"><i class="fa fa-angle-right" aria-hidden="true"></i></a>
+                        </div>
+                        <!-- Thumbnails -->
+                        <ol class="carousel-indicators list-inline">
+                            <li class="list-inline-item active"> <a id="carousel-selector-0" class="selected" data-slide-to="0" data-target="#custCarousel3"> <img src="images/lilsting_small_img.jpg" class="img-fluid"></a></li>
+                            <li class="list-inline-item"> <a id="carousel-selector-1" data-slide-to="1" data-target="#custCarousel3"> <img src="images/lilsting_small_img.jpg" class="img-fluid"></a></li>
+                            <li class="list-inline-item"> <a id="carousel-selector-2" data-slide-to="2" data-target="#custCarousel3"> <img src="images/lilsting_small_img.jpg" class="img-fluid"></a></li>
+                            <li class="list-inline-item"> <a id="carousel-selector-3" data-slide-to="3" data-target="#custCarousel3"> <img src="images/lilsting_small_img.jpg" class="img-fluid"></a></li>
+                        </ol>
+                      </div> 
+                    </div>
+                    <div class="listing_main_desp">
+                      <h2>Park Regis Kris Kin Hotel <span class="country_name">Bur Dubai</span></h2>
+                      <p class="distance_data">1.9 km from Meena Bazaar</p>
+                      <div class="listing_tags_data">
+                        <a href="javascript:void(0);" class="listing_kids_option">Kid Friendly</a>
+                        <a href="javascript:void(0);" class="listing_kids_option">Gents Friendly</a>
+                      </div>
+                      <div class="assured_list">
+                        <a href="javascript:void(0);" class="country_assured">Dubai Assured</a>
+                      </div>
+                      <div class="crtified_options"><a href="javascript:void();">Certified by DTCM, Dubai</a></div>
+                      <div class="safety_features">
+                        <ul class="list-inline">
+                          <li><img src="images/doctor_on_call.png" alt="doctor">Doctor on Call</li>
+                          <li><img src="images/bar.png" alt="bar">Bar</li>
+                          <li><i class="fa fa-check" aria-hidden="true"></i>Cafe</li>
+                        </ul>
+                      </div>
+                      <div class="more_options">
+                        <p>More Options: <a href="javascript:void(0);">Breakfast included | Pay@Hotel</a></p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-3">
+                  <div class="listing_rice_info">
+                    <p class="save_price_discount">Save INR 1761 <span class="badge">25%</span></p>
+                    <p class="cutof_price">INR 7,043</p>
+                    <div class="actual_price">
+                      <h2>INR 5,282</h2>
+                      <p>Per night<span>Total ₹10,564 + Taxes</span></p>
+                    </div>
+                    <div class="no_cost_emi">
+                      <p>No Cost <span class="emi_data">EMI</span></p>
+                      <p>Starts at <span class="emi_price">₹4,201</span></p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="listing_item">
+              <div class="row">
+                <div class="col-md-9">
+                  <div class="listing_description_data">
+                    
+                    <div class="listing_slider_thumbnail">
+                      <div id="custCarousel4" class="carousel slide" data-ride="carousel" align="center">
+                        <!-- slides -->
+                        <div class="carousel-inner">
+                            <div class="carousel-item active"> <img src="images/hotel_large_pic.jpg" alt="slide"> </div>
+                            <div class="carousel-item"> <img src="images/hotel_large_pic.jpg" alt="slide"> </div>
+                            <div class="carousel-item"> <img src="images/hotel_large_pic.jpg" alt="slide"> </div>
+                            <div class="carousel-item"> <img src="images/hotel_large_pic.jpg" alt="slide"> </div>
+                            <a class="carousel-control-prev" href="#custCarousel4" data-slide="prev"><i class="fa fa-angle-left" aria-hidden="true"></i></a><a class="carousel-control-next" href="#custCarousel4" data-slide="next"><i class="fa fa-angle-right" aria-hidden="true"></i></a>
+                        </div>
+                        <!-- Thumbnails -->
+                        <ol class="carousel-indicators list-inline">
+                            <li class="list-inline-item active"> <a id="carousel-selector-0" class="selected" data-slide-to="0" data-target="#custCarousel4"> <img src="images/lilsting_small_img.jpg" class="img-fluid"></a></li>
+                            <li class="list-inline-item"> <a id="carousel-selector-1" data-slide-to="1" data-target="#custCarousel4"> <img src="images/lilsting_small_img.jpg" class="img-fluid"></a></li>
+                            <li class="list-inline-item"> <a id="carousel-selector-2" data-slide-to="2" data-target="#custCarousel4"> <img src="images/lilsting_small_img.jpg" class="img-fluid"></a></li>
+                            <li class="list-inline-item"> <a id="carousel-selector-3" data-slide-to="3" data-target="#custCarousel4"> <img src="images/lilsting_small_img.jpg" class="img-fluid"></a></li>
+                        </ol>
+                      </div> 
+                    </div>
+                    <div class="listing_main_desp">
+                      <h2>Park Regis Kris Kin Hotel <span class="country_name">Bur Dubai</span></h2>
+                      <p class="distance_data">1.9 km from Meena Bazaar</p>
+                      <div class="listing_tags_data">
+                        <a href="javascript:void(0);" class="listing_kids_option">Kid Friendly</a>
+                        <a href="javascript:void(0);" class="listing_kids_option">Gents Friendly</a>
+                      </div>
+                      <div class="assured_list">
+                        <a href="javascript:void(0);" class="country_assured">Dubai Assured</a>
+                      </div>
+                      <div class="crtified_options"><a href="javascript:void();">Certified by DTCM, Dubai</a></div>
+                      <div class="safety_features">
+                        <ul class="list-inline">
+                          <li><img src="images/doctor_on_call.png" alt="doctor">Doctor on Call</li>
+                          <li><img src="images/bar.png" alt="bar">Bar</li>
+                          <li><i class="fa fa-check" aria-hidden="true"></i>Cafe</li>
+                        </ul>
+                      </div>
+                      <div class="more_options">
+                        <p>More Options: <a href="javascript:void(0);">Breakfast included | Pay@Hotel</a></p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-3">
+                  <div class="listing_rice_info">
+                    <p class="save_price_discount">Save INR 1761 <span class="badge">25%</span></p>
+                    <p class="cutof_price">INR 7,043</p>
+                    <div class="actual_price">
+                      <h2>INR 5,282</h2>
+                      <p>Per night<span>Total ₹10,564 + Taxes</span></p>
+                    </div>
+                    <div class="no_cost_emi">
+                      <p>No Cost <span class="emi_data">EMI</span></p>
+                      <p>Starts at <span class="emi_price">₹4,201</span></p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="listing_item">
+              <div class="row">
+                <div class="col-md-9">
+                  <div class="listing_description_data">
+                    
+                    <div class="listing_slider_thumbnail">
+                      <div id="custCarousel5" class="carousel slide" data-ride="carousel" align="center">
+                        <!-- slides -->
+                        <div class="carousel-inner">
+                            <div class="carousel-item active"> <img src="images/hotel_large_pic.jpg" alt="slide"> </div>
+                            <div class="carousel-item"> <img src="images/hotel_large_pic.jpg" alt="slide"> </div>
+                            <div class="carousel-item"> <img src="images/hotel_large_pic.jpg" alt="slide"> </div>
+                            <div class="carousel-item"> <img src="images/hotel_large_pic.jpg" alt="slide"> </div>
+                            <a class="carousel-control-prev" href="#custCarousel5" data-slide="prev"><i class="fa fa-angle-left" aria-hidden="true"></i></a><a class="carousel-control-next" href="#custCarousel5" data-slide="next"><i class="fa fa-angle-right" aria-hidden="true"></i></a>
+                        </div>
+                        <!-- Thumbnails -->
+                        <ol class="carousel-indicators list-inline">
+                            <li class="list-inline-item active"> <a id="carousel-selector-0" class="selected" data-slide-to="0" data-target="#custCarousel5"> <img src="images/lilsting_small_img.jpg" class="img-fluid"></a></li>
+                            <li class="list-inline-item"> <a id="carousel-selector-1" data-slide-to="1" data-target="#custCarousel5"> <img src="images/lilsting_small_img.jpg" class="img-fluid"></a></li>
+                            <li class="list-inline-item"> <a id="carousel-selector-2" data-slide-to="2" data-target="#custCarousel5"> <img src="images/lilsting_small_img.jpg" class="img-fluid"></a></li>
+                            <li class="list-inline-item"> <a id="carousel-selector-3" data-slide-to="3" data-target="#custCarousel5"> <img src="images/lilsting_small_img.jpg" class="img-fluid"></a></li>
+                        </ol>
+                      </div> 
+                    </div>
+                    <div class="listing_main_desp">
+                      <h2>Park Regis Kris Kin Hotel <span class="country_name">Bur Dubai</span></h2>
+                      <p class="distance_data">1.9 km from Meena Bazaar</p>
+                      <div class="listing_tags_data">
+                        <a href="javascript:void(0);" class="listing_kids_option">Kid Friendly</a>
+                        <a href="javascript:void(0);" class="listing_kids_option">Gents Friendly</a>
+                      </div>
+                      <div class="assured_list">
+                        <a href="javascript:void(0);" class="country_assured">Dubai Assured</a>
+                      </div>
+                      <div class="crtified_options"><a href="javascript:void();">Certified by DTCM, Dubai</a></div>
+                      <div class="safety_features">
+                        <ul class="list-inline">
+                          <li><img src="images/doctor_on_call.png" alt="doctor">Doctor on Call</li>
+                          <li><img src="images/bar.png" alt="bar">Bar</li>
+                          <li><i class="fa fa-check" aria-hidden="true"></i>Cafe</li>
+                        </ul>
+                      </div>
+                      <div class="more_options">
+                        <p>More Options: <a href="javascript:void(0);">Breakfast included | Pay@Hotel</a></p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-3">
+                  <div class="listing_rice_info">
+                    <p class="save_price_discount">Save INR 1761 <span class="badge">25%</span></p>
+                    <p class="cutof_price">INR 7,043</p>
+                    <div class="actual_price">
+                      <h2>INR 5,282</h2>
+                      <p>Per night<span>Total ₹10,564 + Taxes</span></p>
+                    </div>
+                    <div class="no_cost_emi">
+                      <p>No Cost <span class="emi_data">EMI</span></p>
+                      <p>Starts at <span class="emi_price">₹4,201</span></p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>        
+          </div>
+        </div>
+      </div>
+    </div>     
+   </section>
+
+    <footer class="main_footer">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-4">
+            <div class="footer_inner_data">
+              <h3>Product Offering</h3>
+              <ul class="list-inline">
+                <li><a href="javascript:void(0);"><i class="fa fa-angle-right" aria-hidden="true"></i>Flight</a></li>
+                <li><a href="javascript:void(0);"><i class="fa fa-angle-right" aria-hidden="true"></i>International Flights</a></li>
+                <li><a href="javascript:void(0);"><i class="fa fa-angle-right" aria-hidden="true"></i>Book Flights From US</a></li>
+                <li><a href="javascript:void(0);"><i class="fa fa-angle-right" aria-hidden="true"></i>Book Flights From UAE</a></li>
+                <li><a href="javascript:void(0);"><i class="fa fa-angle-right" aria-hidden="true"></i>Hotels</a></li>
+              </ul>
+              <ul class="list-inline">
+                <li><a href="javascript:void(0);"><i class="fa fa-angle-right" aria-hidden="true"></i>Cheap Flights</a></li>
+                <li><a href="javascript:void(0);"><i class="fa fa-angle-right" aria-hidden="true"></i>Delhi Goa Flights</a></li>
+                <li><a href="javascript:void(0);"><i class="fa fa-angle-right" aria-hidden="true"></i>Mumbai Jaipur Flights</a></li>
+                <li><a href="javascript:void(0);"><i class="fa fa-angle-right" aria-hidden="true"></i>Chandigarh Flights</a></li>
+                <li><a href="javascript:void(0);"><i class="fa fa-angle-right" aria-hidden="true"></i>Kashmir Packages</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="footer_inner_data">
+              <h3>About the site</h3>
+              <ul class="list-inline">
+                <li><a href="javascript:void(0);"><i class="fa fa-angle-right" aria-hidden="true"></i>Contact Us</a></li>
+                <li><a href="javascript:void(0);"><i class="fa fa-angle-right" aria-hidden="true"></i>Privacy Policy</a></li>
+                <li><a href="javascript:void(0);"><i class="fa fa-angle-right" aria-hidden="true"></i>User Agreements</a></li>
+                <li><a href="javascript:void(0);"><i class="fa fa-angle-right" aria-hidden="true"></i>Terms of Service</a></li>
+                <li><a href="javascript:void(0);"><i class="fa fa-angle-right" aria-hidden="true"></i>Payment Security</a></li>
+              </ul>
+              <ul class="list-inline">
+                <li><a href="javascript:void(0);"><i class="fa fa-angle-right" aria-hidden="true"></i>Visa Information</a></li>
+                <li><a href="javascript:void(0);"><i class="fa fa-angle-right" aria-hidden="true"></i>More Offices</a></li>
+                <li><a href="javascript:void(0);"><i class="fa fa-angle-right" aria-hidden="true"></i>Make a Payment</a></li>
+                <li><a href="javascript:void(0);"><i class="fa fa-angle-right" aria-hidden="true"></i>Report a Defect</a></li>
+                <li><a href="javascript:void(0);"><i class="fa fa-angle-right" aria-hidden="true"></i>Work From Home</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="footer_inner_data">
+              <h3>Important Links</h3>
+              <ul class="list-inline">
+                <li><a href="javascript:void(0);"><i class="fa fa-angle-right" aria-hidden="true"></i>Visa Information</a></li>
+                <li><a href="javascript:void(0);"><i class="fa fa-angle-right" aria-hidden="true"></i>More Offices</a></li>
+                <li><a href="javascript:void(0);"><i class="fa fa-angle-right" aria-hidden="true"></i>Make a Payment</a></li>
+                <li><a href="javascript:void(0);"><i class="fa fa-angle-right" aria-hidden="true"></i>Report a Defect</a></li>
+                <li><a href="javascript:void(0);"><i class="fa fa-angle-right" aria-hidden="true"></i>Work From Home</a></li>
+              </ul>
+              <ul class="list-inline">
+                <li><a href="javascript:void(0);"><i class="fa fa-angle-right" aria-hidden="true"></i>Visa Information</a></li>
+                <li><a href="javascript:void(0);"><i class="fa fa-angle-right" aria-hidden="true"></i>More Offices</a></li>
+                <li><a href="javascript:void(0);"><i class="fa fa-angle-right" aria-hidden="true"></i>Make a Payment</a></li>
+                <li><a href="javascript:void(0);"><i class="fa fa-angle-right" aria-hidden="true"></i>Report a Defect</a></li>
+                <li><a href="javascript:void(0);"><i class="fa fa-angle-right" aria-hidden="true"></i>Work From Home</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-md-12">
+            <div class="bottom_footer">
+              <p class="copyright_data">Copyright © 2020 Trip Online Private Limited, India. All rights reserved</p>
+              <ul class="footer_social">
+                <li>Keep In Touch: </li>
+                <li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+                <li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+                <li><a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </footer>
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery_select.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
+    <script>
+      $(document).ready(function() {
+        $('.popular_flights').owlCarousel({
+          loop: true,
+          margin: 10,
+          autoplay: true,
+          responsiveClass: true,
+          responsive: {
+            0: {
+              items: 1,
+              nav: true
+            },
+            600: {
+              items: 2,
+              nav: false
+            },
+            1000: {
+              items: 4,
+              nav: true,
+              loop: false,
+              margin: 10
+            }
+          }
+        });
+        $('.special_flights').owlCarousel({
+          loop: true,
+          margin: 10,
+          autoplay: true,
+          responsiveClass: true,
+          responsive: {
+            0: {
+              items: 1,
+              nav: true
+            },
+            600: {
+              items: 2,
+              nav: false
+            },
+            1000: {
+              items: 3,
+              nav: true,
+              loop: false,
+              margin: 10
+            }
+          }
+        });
+
+        $('.news_sliders').owlCarousel({
+          loop: true,
+          margin: 5,
+          autoplay: true,
+          responsiveClass: true,
+          responsive: {
+            0: {
+              items: 1,
+              nav: true
+            },
+            600: {
+              items: 2,
+              nav: false
+            },
+            1000: {
+              items: 3,
+              nav: true,
+              loop: false,
+              margin: 5
+            }
+          }
+        });        
+      })
+    </script>
+    <script src="js/wow.min.js"></script>
+    <script>
+      new WOW().init();
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.3.0/js/bootstrap-datepicker.js"></script>
+    <script type="text/javascript">
+      $(function () {
+        $(".datepicker").datepicker({ 
+              autoclose: true, 
+              todayHighlight: true
+        }).datepicker('update', new Date());
+      });
+    </script>
+
+  </body>
+</html>

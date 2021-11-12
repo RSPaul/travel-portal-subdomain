@@ -1,0 +1,497 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ArrayOfBasicPortPropertyInfo xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <BasicPortPropertyInfo PortId="434" CountryCode="US   " Destination="Honolulu " PortName="Aloha Tower/Honolulu Harbor" TBOCityID="121943" />
+  <BasicPortPropertyInfo PortId="435" CountryCode="FR   " Destination="Arles " PortName="Arles Port" TBOCityID="109963" />
+  <BasicPortPropertyInfo PortId="438" CountryCode="US   " Destination="Baltimore " PortName="Baltimore Maryland Cruise Port " TBOCityID="111115" />
+  <BasicPortPropertyInfo PortId="439" CountryCode="TH   " Destination="Bangkok " PortName="Bangkok (Khlong Toey) Port on Chao Phraya River" TBOCityID="144092" />
+  <BasicPortPropertyInfo PortId="440" CountryCode="ID   " Destination="Lombok " PortName="Bangsal Ferry Terminal" TBOCityID="101178" />
+  <BasicPortPropertyInfo PortId="441" CountryCode="BB   " Destination="Bridgetown " PortName="Barbados Port" TBOCityID="144371" />
+  <BasicPortPropertyInfo PortId="443" CountryCode="US   " Destination="Boston " PortName="Boston Cruise Terminal" TBOCityID="112246" />
+  <BasicPortPropertyInfo PortId="444" CountryCode="AU   " Destination="Queensland " PortName="Brisbane Port" TBOCityID="106205" />
+  <BasicPortPropertyInfo PortId="445" CountryCode="AU   " Destination="Hamilton" PortName="Brisbane Portside Wharf Cruise Terminal" TBOCityID="120094" />
+  <BasicPortPropertyInfo PortId="446" CountryCode="US   " Destination="Brooklyn " PortName="Brooklyn Cruise Terminal (QM2)" TBOCityID="144396" />
+  <BasicPortPropertyInfo PortId="447" CountryCode="BE   " Destination="Brussels " PortName="Brussels Port" TBOCityID="113060" />
+  <BasicPortPropertyInfo PortId="448" CountryCode="HU   " Destination="Budapest " PortName="Budapest River Cruise Port" TBOCityID="113068" />
+  <BasicPortPropertyInfo PortId="449" CountryCode="PE   " Destination="Callao " PortName="Callao Port" TBOCityID="112784" />
+  <BasicPortPropertyInfo PortId="450" CountryCode="US   " Destination=" New Jersey" PortName="Cape Liberty Cruise Port" TBOCityID="122757" />
+  <BasicPortPropertyInfo PortId="451" CountryCode="AU   " Destination="Sydney" PortName="Darling Harbour" TBOCityID="140258" />
+  <BasicPortPropertyInfo PortId="452" CountryCode="AU   " Destination="Darwin" PortName="Darwin Cruise Terminal" TBOCityID="116150" />
+  <BasicPortPropertyInfo PortId="453" CountryCode="NL   " Destination="Delfzijl " PortName="Delfzijl Port" TBOCityID="116322" />
+  <BasicPortPropertyInfo PortId="454" CountryCode="NZ   " Destination="Dunedin " PortName="Dunedin Port" TBOCityID="117040" />
+  <BasicPortPropertyInfo PortId="455" CountryCode="NL   " Destination="Groningen" PortName="Eemshaven Port" TBOCityID="145457" />
+  <BasicPortPropertyInfo PortId="456" CountryCode="AT   " Destination="Engelhartszell " PortName="Engelhartszell Port" TBOCityID="117165" />
+  <BasicPortPropertyInfo PortId="457" CountryCode="AU   " Destination="Fremantle" PortName="Fremantle Port" TBOCityID="118218" />
+  <BasicPortPropertyInfo PortId="458" CountryCode="US   " Destination="Texas " PortName="Galveston Cruise Port" TBOCityID="139068" />
+  <BasicPortPropertyInfo PortId="459" CountryCode="IT   " Destination="Genoa" PortName="Genoa Port" TBOCityID="119254" />
+  <BasicPortPropertyInfo PortId="460" CountryCode="SE   " Destination="Gothenburg" PortName="Gothenburg Pier" TBOCityID="151094" />
+  <BasicPortPropertyInfo PortId="461" CountryCode="GB   " Destination="Greenock" PortName="Greenock Port" TBOCityID="120112" />
+  <BasicPortPropertyInfo PortId="462" CountryCode="JP   " Destination="Hakata" PortName="Hakata Port" TBOCityID="148871" />
+  <BasicPortPropertyInfo PortId="463" CountryCode="SG   " Destination="Singapore" PortName="Harbourfront Pier (Singapore Cruise Centre)" TBOCityID="138703" />
+  <BasicPortPropertyInfo PortId="464" CountryCode="NL   " Destination="Texas " PortName="Harlingen Port" TBOCityID="139068" />
+  <BasicPortPropertyInfo PortId="465" CountryCode="US   " Destination="Baltimore" PortName="Inner harbour" TBOCityID="111115" />
+  <BasicPortPropertyInfo PortId="466" CountryCode="AG   " Destination="Jolly Harbour" PortName="Jolly Harbour" TBOCityID="103939" />
+  <BasicPortPropertyInfo PortId="467" CountryCode="TW   " Destination="Keelung " PortName="Keelung Port" TBOCityID="124197" />
+  <BasicPortPropertyInfo PortId="468" CountryCode="DE   " Destination="Kiel" PortName="Kiel Port" TBOCityID="123002" />
+  <BasicPortPropertyInfo PortId="469" CountryCode="ME   " Destination="Kotor" PortName="Kotor Port" TBOCityID="123313" />
+  <BasicPortPropertyInfo PortId="470" CountryCode="KW   " Destination="Kuwait City" PortName="Kuwait (Shuwaikh) Port" TBOCityID="123359" />
+  <BasicPortPropertyInfo PortId="471" CountryCode="DO   " Destination="La Romana" PortName="La Romana Port" TBOCityID="123825" />
+  <BasicPortPropertyInfo PortId="472" CountryCode="MY   " Destination="Langkawi" PortName="Langkawi Jetty (Cruise Port)" TBOCityID="100105" />
+  <BasicPortPropertyInfo PortId="473" CountryCode="ES   " Destination="Las Palmas" PortName="Las Palmas de Gran Canaria Harbour" TBOCityID="146168" />
+  <BasicPortPropertyInfo PortId="474" CountryCode="GR   " Destination="Athens" PortName="Lavrion Marina" TBOCityID="110000" />
+  <BasicPortPropertyInfo PortId="475" CountryCode="GB   " Destination="Leith" PortName="Leith Port" TBOCityID="124857" />
+  <BasicPortPropertyInfo PortId="476" CountryCode="GB   " Destination="Liverpool" PortName="Liverpool Cruise Port" TBOCityID="125478" />
+  <BasicPortPropertyInfo PortId="477" CountryCode="IT   " Destination="Livorno" PortName="Livorno Cruise Port" TBOCityID="126602" />
+  <BasicPortPropertyInfo PortId="478" CountryCode="FR   " Destination="Lyon" PortName="Lyon Port" TBOCityID="126089" />
+  <BasicPortPropertyInfo PortId="479" CountryCode="FR   " Destination="Lyon" PortName="Lyon Quai Claude Bernard Port" TBOCityID="126089" />
+  <BasicPortPropertyInfo PortId="480" CountryCode="NZ   " Destination="Christchurch" PortName="Lyttelton Port" TBOCityID="144687" />
+  <BasicPortPropertyInfo PortId="481" CountryCode="MM   " Destination="Mandalay" PortName="Mandalay Port (Ancient)" TBOCityID="127416" />
+  <BasicPortPropertyInfo PortId="482" CountryCode="MM   " Destination="Mandalay" PortName="Mandalay Port (R.T.M Jetty)" TBOCityID="127416" />
+  <BasicPortPropertyInfo PortId="483" CountryCode="MM   " Destination="Mandalay" PortName="Mandalay Port (Sagaing Jetty)" TBOCityID="127416" />
+  <BasicPortPropertyInfo PortId="484" CountryCode="SG   " Destination="Singapore" PortName="Marina Bay Cruise Centre Port" TBOCityID="138703" />
+  <BasicPortPropertyInfo PortId="485" CountryCode="AU   " Destination="Melbourne" PortName="Melbourne Station Pier Cruise Terminal" TBOCityID="127718" />
+  <BasicPortPropertyInfo PortId="486" CountryCode="KE   " Destination="Mombasa" PortName="Mombasa Port" TBOCityID="127249" />
+  <BasicPortPropertyInfo PortId="487" CountryCode="MC   " Destination="Monaco" PortName="Monaco Port" TBOCityID="146675" />
+  <BasicPortPropertyInfo PortId="488" CountryCode="RU   " Destination="Moscow" PortName="Moscow River Port - North Terminal" TBOCityID="146743" />
+  <BasicPortPropertyInfo PortId="489" CountryCode="RU   " Destination="Moscow" PortName="Moscow River Port - South Terminal" TBOCityID="146743" />
+  <BasicPortPropertyInfo PortId="490" CountryCode="HK   " Destination="Kowloon - Hongkong" PortName="Ocean Terminal" TBOCityID="124970" />
+  <BasicPortPropertyInfo PortId="491" CountryCode="ES   " Destination="Palma de Mallorca" PortName="Palma Port" TBOCityID="147078" />
+  <BasicPortPropertyInfo PortId="492" CountryCode="MY   " Destination="Penang" PortName="Penang Pier (Cruise Port)" TBOCityID="132119" />
+  <BasicPortPropertyInfo PortId="493" CountryCode="IT   " Destination="Piombino " PortName="Piombino Port (Ferry to Elba Island)" TBOCityID="147204" />
+  <BasicPortPropertyInfo PortId="494" CountryCode="US   " Destination="Florida City" PortName="Port Canaveral (Carnival Cruise only)" TBOCityID="118294" />
+  <BasicPortPropertyInfo PortId="495" CountryCode="US   " Destination="Florida City" PortName="Port Everglades (Fort Lauderdale Port)" TBOCityID="118294" />
+  <BasicPortPropertyInfo PortId="496" CountryCode="MY   " Destination="Klang" PortName="Port Klang (Star Cruise Terminal)" TBOCityID="145973" />
+  <BasicPortPropertyInfo PortId="497" CountryCode="MU   " Destination="Port Louis" PortName="Port Louis Harbour" TBOCityID="132398" />
+  <BasicPortPropertyInfo PortId="498" CountryCode="TR   " Destination="Fethiye " PortName="Port of Fethiye" TBOCityID="118267" />
+  <BasicPortPropertyInfo PortId="499" CountryCode="GR   " Destination="Piraeus" PortName="Port of Piraeus " TBOCityID="133431" />
+  <BasicPortPropertyInfo PortId="500" CountryCode="BR   " Destination="Brazil" PortName="Rio Grande Port" TBOCityID="112719" />
+  <BasicPortPropertyInfo PortId="501" CountryCode="GB   " Destination="Rosyth" PortName="Rosyth Port" TBOCityID="103223" />
+  <BasicPortPropertyInfo PortId="502" CountryCode="TH   " Destination="Ko Lanta" PortName="Saladan pier (Koh Lanta-not incl ferry ticket)" TBOCityID="123052" />
+  <BasicPortPropertyInfo PortId="503" CountryCode="US   " Destination="San Diego" PortName="San Diego Port" TBOCityID="147688" />
+  <BasicPortPropertyInfo PortId="504" CountryCode="ES   " Destination="Seville" PortName="Seville Pier Muelle de las Delicias" TBOCityID="137558" />
+  <BasicPortPropertyInfo PortId="505" CountryCode="CN   " Destination="Shanghai" PortName="Shanghai Int'l Cruises Terminal (Hongkou Port) " TBOCityID="136286" />
+  <BasicPortPropertyInfo PortId="506" CountryCode="CN   " Destination="Shanghai" PortName="Shanghai Wusongkou Int'l cruise terminal (Baoshan Port)" TBOCityID="136286" />
+  <BasicPortPropertyInfo PortId="507" CountryCode="AU   " Destination="Queensland " PortName="Shute Harbour " TBOCityID="106205" />
+  <BasicPortPropertyInfo PortId="508" CountryCode="FI   " Destination="Helsinki" PortName="Silja Cruise Terminal" TBOCityID="120663" />
+  <BasicPortPropertyInfo PortId="509" CountryCode="HR   " Destination="Split" PortName="Split Cruise Port" TBOCityID="137547" />
+  <BasicPortPropertyInfo PortId="510" CountryCode="LC   " Destination="St. Lucia" PortName="St Lucia Port" TBOCityID="139477" />
+  <BasicPortPropertyInfo PortId="511" CountryCode="SX   " Destination="Philipsburg" PortName="St Maarten Cruise Port" TBOCityID="132156" />
+  <BasicPortPropertyInfo PortId="512" CountryCode="AU   " Destination="Sydney" PortName="Sydney Overseas Passenger Cruise Terminal" TBOCityID="140258" />
+  <BasicPortPropertyInfo PortId="513" CountryCode="AU   " Destination="Sydney" PortName="Sydney port/harbour" TBOCityID="140258" />
+  <BasicPortPropertyInfo PortId="514" CountryCode="AU   " Destination="Sydney" PortName="Sydney White Bay Cruise Terminal" TBOCityID="140258" />
+  <BasicPortPropertyInfo PortId="515" CountryCode="CU   " Destination="Havanna" PortName="Terminal Sierra Maestra Cruise Port" TBOCityID="119977" />
+  <BasicPortPropertyInfo PortId="516" CountryCode="MT   " Destination="Valletta" PortName="Valetta Port" TBOCityID="141435" />
+  <BasicPortPropertyInfo PortId="517" CountryCode="VN   " Destination="Nha Trang" PortName="Vinpearl Port" TBOCityID="130182" />
+  <BasicPortPropertyInfo PortId="518" CountryCode="GR   " Destination="Volos" PortName="Volos Harbour" TBOCityID="141915" />
+  <BasicPortPropertyInfo PortId="519" CountryCode="JP   " Destination="Yokohama" PortName="Yokohama Port (Osanbashi Terminal)" TBOCityID="142913" />
+  <BasicPortPropertyInfo PortId="407" CountryCode="AR   " Destination="Ushuaia" PortName="PUERTO CRUCEROS USHUAIA" TBOCityID="140136" />
+  <BasicPortPropertyInfo PortId="408" CountryCode="AR   " Destination="Ushuaia" PortName="MUELLE USHUAIA" TBOCityID="140136" />
+  <BasicPortPropertyInfo PortId="409" CountryCode="AU   " Destination="Adelaide" PortName="Port Adelaide Cruise Passenger Terminal" TBOCityID="100238" />
+  <BasicPortPropertyInfo PortId="410" CountryCode="BB   " Destination="Bridgetown" PortName="PORT OF BRIDGETOWN" TBOCityID="144371" />
+  <BasicPortPropertyInfo PortId="411" CountryCode="BR   " Destination="Salvador da Bahia" PortName="Port of Salvador" TBOCityID="134865" />
+  <BasicPortPropertyInfo PortId="412" CountryCode="BS   " Destination="Nassau" PortName="Nassau Bahamas Cruise Terminal" TBOCityID="130119" />
+  <BasicPortPropertyInfo PortId="1" CountryCode="AE   " Destination="ABU DHABI" PortName="Abu Dhabi Port" TBOCityID="100765" />
+  <BasicPortPropertyInfo PortId="2" CountryCode="MX   " Destination="ACAPULCO" PortName="ACAPULCO, PORT OF ACAPULCO" TBOCityID="100444" />
+  <BasicPortPropertyInfo PortId="3" CountryCode="EG   " Destination="ALEXANDRIA" PortName="ALEXANDRIA Port" TBOCityID="100103" />
+  <BasicPortPropertyInfo PortId="4" CountryCode="IT   " Destination="AMALFI" PortName="AMALFI Port" TBOCityID="101118" />
+  <BasicPortPropertyInfo PortId="5" CountryCode="NL   " Destination="AMSTERDAM" PortName="AMSTERDAM PORT" TBOCityID="109558" />
+  <BasicPortPropertyInfo PortId="7" CountryCode="TR   " Destination="ANTALYA" PortName="ANTALYA PORT" TBOCityID="111426" />
+  <BasicPortPropertyInfo PortId="7" CountryCode="TR   " Destination="ANTALYA" PortName="ANTALYA PORT" TBOCityID="109471" />
+  <BasicPortPropertyInfo PortId="7" CountryCode="TR   " Destination="ANTALYA" PortName="ANTALYA PORT" TBOCityID="122972" />
+  <BasicPortPropertyInfo PortId="7" CountryCode="TR   " Destination="ANTALYA" PortName="ANTALYA PORT" TBOCityID="138682" />
+  <BasicPortPropertyInfo PortId="8" CountryCode="TR   " Destination="ANTALYA-BELEK" PortName="ANTALYA-BELEK Port" TBOCityID="111426" />
+  <BasicPortPropertyInfo PortId="9" CountryCode="BE   " Destination="ANTWERP" PortName="ANTWERP Port" TBOCityID="109358" />
+  <BasicPortPropertyInfo PortId="10" CountryCode="EG   " Destination="ASWAN" PortName="ASWAN Port" TBOCityID="109642" />
+  <BasicPortPropertyInfo PortId="11" CountryCode="GR   " Destination="ATHENS" PortName="ATHENS Port" TBOCityID="110000" />
+  <BasicPortPropertyInfo PortId="12" CountryCode="NZ   " Destination="AUCKLAND" PortName="Auckland Ferry Terminal" TBOCityID="109654" />
+  <BasicPortPropertyInfo PortId="13" CountryCode="ID   " Destination="BALI" PortName="BENOA HARBOUR" TBOCityID="110670" />
+  <BasicPortPropertyInfo PortId="14" CountryCode="TH   " Destination="BANGKOK" PortName="BANGKOK MEETING POINT" TBOCityID="144092" />
+  <BasicPortPropertyInfo PortId="16" CountryCode="ES   " Destination="BARCELONA" PortName="BARCELONA (HARBOUR)" TBOCityID="110790" />
+  <BasicPortPropertyInfo PortId="17" CountryCode="IT   " Destination="BARI" PortName="Bari Cruise Port" TBOCityID="110432" />
+  <BasicPortPropertyInfo PortId="18" CountryCode="CH   " Destination="BASEL" PortName="BASEL Port" TBOCityID="111155" />
+  <BasicPortPropertyInfo PortId="19" CountryCode="CN   " Destination="BEIJING" PortName="BEIJING Port" TBOCityID="144154" />
+  <BasicPortPropertyInfo PortId="20" CountryCode="ID   " Destination="BINTAN ISLAND" PortName="BINTAN ISLAND Port" TBOCityID="112185" />
+  <BasicPortPropertyInfo PortId="21" CountryCode="TR   " Destination="BODRUM" PortName="BODRUM PORT" TBOCityID="144297" />
+  <BasicPortPropertyInfo PortId="22" CountryCode="PH   " Destination="BOHOL" PortName="BOHOL Port" TBOCityID="111815" />
+  <BasicPortPropertyInfo PortId="23" CountryCode="US   " Destination="BOSTON (MA)" PortName="BOSTON PORT" TBOCityID="112246" />
+  <BasicPortPropertyInfo PortId="24" CountryCode="AU   " Destination="BRISBANE" PortName="Port of Brisbane Fisherman Island" TBOCityID="112007" />
+  <BasicPortPropertyInfo PortId="25" CountryCode="HU   " Destination="BUDAPEST" PortName="BUDAPEST PORT" TBOCityID="113068" />
+  <BasicPortPropertyInfo PortId="26" CountryCode="AR   " Destination="BUENOS AIRES" PortName="PUERTO BUENOS AIRES" TBOCityID="112153" />
+  <BasicPortPropertyInfo PortId="27" CountryCode="BR   " Destination="BUZIOS" PortName="BUZIOS Port" TBOCityID="113104" />
+  <BasicPortPropertyInfo PortId="28" CountryCode="AU   " Destination="CAIRNS" PortName="Cairns Cruise Liner Terminal" TBOCityID="113115" />
+  <BasicPortPropertyInfo PortId="29" CountryCode="EG   " Destination="CAIRO" PortName="CAIRO Port" TBOCityID="113116" />
+  <BasicPortPropertyInfo PortId="30" CountryCode="CR   " Destination="CALDERA" PortName="CALDERA Port" TBOCityID="135889" />
+  <BasicPortPropertyInfo PortId="31" CountryCode="MX   " Destination="CANCUN" PortName="CANCUN, JUAREZ HARBOUR" TBOCityID="113162" />
+  <BasicPortPropertyInfo PortId="32" CountryCode="FR   " Destination="CANNES" PortName="CANNES Port" TBOCityID="114168" />
+  <BasicPortPropertyInfo PortId="33" CountryCode="ZA   " Destination="CAPE TOWN" PortName="Port of Cape Town" TBOCityID="144527" />
+  <BasicPortPropertyInfo PortId="34" CountryCode="CO   " Destination="CARTAGENA DE INDIAS" PortName="CARTAGENA DE INDIAS Port" TBOCityID="113776" />
+  <BasicPortPropertyInfo PortId="35" CountryCode="MA   " Destination="CASABLANCA" PortName="CASABLANCA PORT" TBOCityID="114032" />
+  <BasicPortPropertyInfo PortId="36" CountryCode="CN   " Destination="CHONGQING" PortName="CHONGQING PIER" TBOCityID="114763" />
+  <BasicPortPropertyInfo PortId="37" CountryCode="DE   " Destination="COLOGNE" PortName="COLOGNE Port" TBOCityID="144743" />
+  <BasicPortPropertyInfo PortId="38" CountryCode="LK   " Destination="COLOMBO" PortName="COLOMBO Port" TBOCityID="144745" />
+  <BasicPortPropertyInfo PortId="39" CountryCode="PA   " Destination="COLON" PortName="COLON PUERTO PASAJEROS" TBOCityID="132667" />
+  <BasicPortPropertyInfo PortId="39" CountryCode="PA   " Destination="COLON" PortName="COLON PUERTO PASAJEROS" TBOCityID="144746" />
+  <BasicPortPropertyInfo PortId="40" CountryCode="UY   " Destination="COLONIA D SACRAMENTO" PortName="COLONIA D SACRAMENTO Port" TBOCityID="114421" />
+  <BasicPortPropertyInfo PortId="41" CountryCode="DK   " Destination="COPENHAGEN" PortName="COPENHAGUEN PIER" TBOCityID="115280" />
+  <BasicPortPropertyInfo PortId="42" CountryCode="GR   " Destination="CRETE ISLAND" PortName="CRETE ISLAND Port" TBOCityID="151810" />
+  <BasicPortPropertyInfo PortId="43" CountryCode="CN   " Destination="DALIAN" PortName="DALIAN Port" TBOCityID="115099" />
+  <BasicPortPropertyInfo PortId="44" CountryCode="TZ   " Destination="DAR-ES-SALAAM" PortName="Port Dar es Salaam" TBOCityID="116626" />
+  <BasicPortPropertyInfo PortId="45" CountryCode="GB   " Destination="DOVER" PortName="PORT OF DOVER" TBOCityID="126632" />
+  <BasicPortPropertyInfo PortId="45" CountryCode="GB   " Destination="DOVER" PortName="PORT OF DOVER" TBOCityID="116691" />
+  <BasicPortPropertyInfo PortId="46" CountryCode="AE   " Destination="DUBAI" PortName="DUBAI PORT" TBOCityID="115936" />
+  <BasicPortPropertyInfo PortId="47" CountryCode="EI   " Destination="DUBLIN" PortName="DUBLIN Port" TBOCityID="144983" />
+  <BasicPortPropertyInfo PortId="48" CountryCode="HR   " Destination="DUBROVNIK" PortName="DUBROVNIK HARBOUR" TBOCityID="115939" />
+  <BasicPortPropertyInfo PortId="49" CountryCode="FJ   " Destination="FIJI" PortName="FIJI Port" TBOCityID="118448" />
+  <BasicPortPropertyInfo PortId="50" CountryCode="IT   " Destination="FLORENCE" PortName="FLORENCE Port" TBOCityID="118470" />
+  <BasicPortPropertyInfo PortId="51" CountryCode="US   " Destination="FORT LAUDERDALE" PortName="PIER HONOLULU" TBOCityID="117930" />
+  <BasicPortPropertyInfo PortId="51" CountryCode="US   " Destination="FORT LAUDERDALE" PortName="PIER HONOLULU" TBOCityID="128839" />
+  <BasicPortPropertyInfo PortId="51" CountryCode="US   " Destination="FORT LAUDERDALE" PortName="PIER HONOLULU" TBOCityID="128581" />
+  <BasicPortPropertyInfo PortId="52" CountryCode="AU   " Destination="FREMANTLE" PortName="FREMANTLE CRUISE" TBOCityID="131059" />
+  <BasicPortPropertyInfo PortId="52" CountryCode="AU   " Destination="FREMANTLE" PortName="FREMANTLE CRUISE" TBOCityID="118218" />
+  <BasicPortPropertyInfo PortId="53" CountryCode="US   " Destination="GALVESTON" PortName="Port Of Galvenston" TBOCityID="120751" />
+  <BasicPortPropertyInfo PortId="53" CountryCode="US   " Destination="GALVESTON" PortName="Port Of Galvenston" TBOCityID="119065" />
+  <BasicPortPropertyInfo PortId="54" CountryCode="TN   " Destination="GAMMARTH" PortName="GAMMARTH Port" TBOCityID="117991" />
+  <BasicPortPropertyInfo PortId="55" CountryCode="IT   " Destination="GENOA" PortName="GENOVA HARBOUR" TBOCityID="127769" />
+  <BasicPortPropertyInfo PortId="55" CountryCode="IT   " Destination="GENOA" PortName="GENOVA HARBOUR" TBOCityID="119254" />
+  <BasicPortPropertyInfo PortId="56" CountryCode="EC   " Destination="GUAYAQUIL" PortName="GUAYAQUIL Port" TBOCityID="119494" />
+  <BasicPortPropertyInfo PortId="57" CountryCode="DE   " Destination="HAMBURG" PortName="HAMBURG HARBOUR" TBOCityID="120596" />
+  <BasicPortPropertyInfo PortId="58" CountryCode="TN   " Destination="HAMMAMET" PortName="HAMMAMET Port" TBOCityID="145524" />
+  <BasicPortPropertyInfo PortId="59" CountryCode="GB   " Destination="HARWICH" PortName="HARWICH PORT" TBOCityID="126632" />
+  <BasicPortPropertyInfo PortId="59" CountryCode="GB   " Destination="HARWICH" PortName="HARWICH PORT" TBOCityID="120868" />
+  <BasicPortPropertyInfo PortId="60" CountryCode="FI   " Destination="HELSINKI" PortName="PORT OF HELSINKI" TBOCityID="120663" />
+  <BasicPortPropertyInfo PortId="61" CountryCode="HK   " Destination="HONG KONG ISLAND" PortName="HONG KONG ISLAND Port" TBOCityID="120987" />
+  <BasicPortPropertyInfo PortId="61" CountryCode="HK   " Destination="HONG KONG ISLAND" PortName="HONG KONG ISLAND Port" TBOCityID="124970" />
+  <BasicPortPropertyInfo PortId="61" CountryCode="HK   " Destination="HONG KONG ISLAND" PortName="HONG KONG ISLAND Port" TBOCityID="151492" />
+  <BasicPortPropertyInfo PortId="62" CountryCode="HK   " Destination="HONG KONG KOWLOON" PortName="HONG KONG KOWLOON Port" TBOCityID="124970" />
+  <BasicPortPropertyInfo PortId="62" CountryCode="HK   " Destination="HONG KONG KOWLOON" PortName="HONG KONG KOWLOON Port" TBOCityID="120987" />
+  <BasicPortPropertyInfo PortId="62" CountryCode="HK   " Destination="HONG KONG KOWLOON" PortName="HONG KONG KOWLOON Port" TBOCityID="125217" />
+  <BasicPortPropertyInfo PortId="62" CountryCode="HK   " Destination="HONG KONG KOWLOON" PortName="HONG KONG KOWLOON Port" TBOCityID="151492" />
+  <BasicPortPropertyInfo PortId="63" CountryCode="HK   " Destination="HONG KONG LANTAU ISL" PortName="HONG KONG LANTAU ISL Port" TBOCityID="125217" />
+  <BasicPortPropertyInfo PortId="64" CountryCode="HK   " Destination="HONG KONG TSUEN WAN" PortName="HONG KONG TSUEN WAN Port" TBOCityID="151492" />
+  <BasicPortPropertyInfo PortId="65" CountryCode="US   " Destination="HOUSTON" PortName="HOUSTON Port" TBOCityID="120751" />
+  <BasicPortPropertyInfo PortId="66" CountryCode="EG   " Destination="HURGHADA" PortName="HURGHADA PORT" TBOCityID="121580" />
+  <BasicPortPropertyInfo PortId="68" CountryCode="NL   " Destination="IJMUIDEN" PortName="Seaport Marina ljmuiden" TBOCityID="109558" />
+  <BasicPortPropertyInfo PortId="68" CountryCode="NL   " Destination="IJMUIDEN" PortName="Seaport Marina ljmuiden" TBOCityID="122099" />
+  <BasicPortPropertyInfo PortId="69" CountryCode="TR   " Destination="ISTANBUL" PortName="ISTANBUL PIER" TBOCityID="122727" />
+  <BasicPortPropertyInfo PortId="70" CountryCode="TR   " Destination="KEMER" PortName="KEMER Port" TBOCityID="122972" />
+  <BasicPortPropertyInfo PortId="71" CountryCode="DE   " Destination="KIEL" PortName="KIEL HARBOUR" TBOCityID="120596" />
+  <BasicPortPropertyInfo PortId="71" CountryCode="DE   " Destination="KIEL" PortName="KIEL HARBOUR" TBOCityID="123002" />
+  <BasicPortPropertyInfo PortId="72" CountryCode="UA   " Destination="KIEV" PortName="KIEV Port" TBOCityID="145935" />
+  <BasicPortPropertyInfo PortId="73" CountryCode="MY   " Destination="KLANG (KELANG)" PortName="KLANG (KELANG) Port" TBOCityID="123768" />
+  <BasicPortPropertyInfo PortId="73" CountryCode="MY   " Destination="KLANG (KELANG)" PortName="KLANG (KELANG) Port" TBOCityID="145973" />
+  <BasicPortPropertyInfo PortId="74" CountryCode="JP   " Destination="KOBE" PortName="KOBE SEA PORT" TBOCityID="130813" />
+  <BasicPortPropertyInfo PortId="74" CountryCode="JP   " Destination="KOBE" PortName="KOBE SEA PORT" TBOCityID="123054" />
+  <BasicPortPropertyInfo PortId="75" CountryCode="TH   " Destination="KOH PHANGAN" PortName="THONG SALA PIER AT KOH PHANGAN" TBOCityID="123731" />
+  <BasicPortPropertyInfo PortId="76" CountryCode="TH   " Destination="KOH SAMUI" PortName="Koh Samui - Mae Nam Port" TBOCityID="124943" />
+  <BasicPortPropertyInfo PortId="77" CountryCode="TH   " Destination="KRABI" PortName="Krabi River Marina Port" TBOCityID="124015" />
+  <BasicPortPropertyInfo PortId="78" CountryCode="TH   " Destination="KRABI-RAILAY" PortName="KRABI-RAILAY Port" TBOCityID="124015" />
+  <BasicPortPropertyInfo PortId="79" CountryCode="MY   " Destination="KUALA LUMPUR" PortName="KUALA LUMPUR Port" TBOCityID="123768" />
+  <BasicPortPropertyInfo PortId="80" CountryCode="TR   " Destination="KUSADASI" PortName="KUSADASI PORT" TBOCityID="125013" />
+  <BasicPortPropertyInfo PortId="81" CountryCode="JP   " Destination="KYOTO" PortName="KYOTO Port" TBOCityID="123363" />
+  <BasicPortPropertyInfo PortId="82" CountryCode="DO   " Destination="LA ROMANA" PortName="LA ROMANA (HARBOUR)" TBOCityID="123825" />
+  <BasicPortPropertyInfo PortId="83" CountryCode="TH   " Destination="LAEM CHABANG" PortName="LAEM CHABANG DEEP SEA PORT" TBOCityID="144092" />
+  <BasicPortPropertyInfo PortId="83" CountryCode="TH   " Destination="LAEM CHABANG" PortName="LAEM CHABANG DEEP SEA PORT" TBOCityID="103900" />
+  <BasicPortPropertyInfo PortId="84" CountryCode="TH   " Destination="LAEM NGOP" PortName="LAEM NGOP Port" TBOCityID="144092" />
+  <BasicPortPropertyInfo PortId="85" CountryCode="GR   " Destination="LAVRIO" PortName="LAVRIO PORT" TBOCityID="110000" />
+  <BasicPortPropertyInfo PortId="86" CountryCode="FR   " Destination="LE HAVRE" PortName="LE HAVRE Port" TBOCityID="131408" />
+  <BasicPortPropertyInfo PortId="86" CountryCode="FR   " Destination="LE HAVRE" PortName="LE HAVRE Port" TBOCityID="125122" />
+  <BasicPortPropertyInfo PortId="87" CountryCode="PE   " Destination="LIMA" PortName="LIMA Port" TBOCityID="124915" />
+  <BasicPortPropertyInfo PortId="88" CountryCode="CR   " Destination="LIMON" PortName="LIMON Port" TBOCityID="135889" />
+  <BasicPortPropertyInfo PortId="88" CountryCode="CR   " Destination="LIMON" PortName="LIMON Port" TBOCityID="125856" />
+  <BasicPortPropertyInfo PortId="89" CountryCode="AT   " Destination="LINZ" PortName="LINZ Port" TBOCityID="125863" />
+  <BasicPortPropertyInfo PortId="90" CountryCode="PT   " Destination="LISBON" PortName="LISBON Port" TBOCityID="146305" />
+  <BasicPortPropertyInfo PortId="91" CountryCode="IT   " Destination="LIVORNO" PortName="Port of Livorno" TBOCityID="118470" />
+  <BasicPortPropertyInfo PortId="91" CountryCode="IT   " Destination="LIVORNO" PortName="Port of Livorno" TBOCityID="126602" />
+  <BasicPortPropertyInfo PortId="91" CountryCode="IT   " Destination="LIVORNO" PortName="Port of Livorno" TBOCityID="133435" />
+  <BasicPortPropertyInfo PortId="92" CountryCode="GB   " Destination="LONDON" PortName="LONDONPort" TBOCityID="126632" />
+  <BasicPortPropertyInfo PortId="93" CountryCode="US   " Destination="LONG BEACH (CA)" PortName="LONG BEACH HARBOR" TBOCityID="125360" />
+  <BasicPortPropertyInfo PortId="93" CountryCode="US   " Destination="LONG BEACH (CA)" PortName="LONG BEACH HARBOR" TBOCityID="143384" />
+  <BasicPortPropertyInfo PortId="94" CountryCode="US   " Destination="LOS ANGELES" PortName="LOS ANGELES PORT" TBOCityID="143384" />
+  <BasicPortPropertyInfo PortId="94" CountryCode="US   " Destination="LOS ANGELES" PortName="LOS ANGELES PORT" TBOCityID="125360" />
+  <BasicPortPropertyInfo PortId="95" CountryCode="MY   " Destination="LUMUT" PortName="LUMUT JETTY" TBOCityID="123768" />
+  <BasicPortPropertyInfo PortId="95" CountryCode="MY   " Destination="LUMUT" PortName="LUMUT JETTY" TBOCityID="126072" />
+  <BasicPortPropertyInfo PortId="96" CountryCode="EG   " Destination="LUXOR" PortName="LUXOR PORT" TBOCityID="125658" />
+  <BasicPortPropertyInfo PortId="97" CountryCode="MO   " Destination="MACAU" PortName="Macau, Ferry Terminal Macau" TBOCityID="151142" />
+  <BasicPortPropertyInfo PortId="99" CountryCode="ES   " Destination="MALLORCA" PortName="PALMA DE MALLORCA-(HARBOUR)" TBOCityID="147078" />
+  <BasicPortPropertyInfo PortId="100" CountryCode="BR   " Destination="MANAUS" PortName="MANAUS, MANAUS HARBOUR" TBOCityID="126141" />
+  <BasicPortPropertyInfo PortId="101" CountryCode="PH   " Destination="MANILA" PortName="MANILA Port" TBOCityID="127116" />
+  <BasicPortPropertyInfo PortId="102" CountryCode="FR   " Destination="MARSEILLE" PortName="MARSEILLE PORT" TBOCityID="126878" />
+  <BasicPortPropertyInfo PortId="103" CountryCode="MU   " Destination="MAURITIUS" PortName="MAURITIUS Port" TBOCityID="150281" />
+  <BasicPortPropertyInfo PortId="105" CountryCode="US   " Destination="MIAMI BEACH" PortName="MIAMI BEACH Port" TBOCityID="128581" />
+  <BasicPortPropertyInfo PortId="106" CountryCode="IT   " Destination="MILAN" PortName="MILAN Port" TBOCityID="127769" />
+  <BasicPortPropertyInfo PortId="107" CountryCode="MC   " Destination="MONTE CARLO" PortName="MONTE CARLO Port" TBOCityID="128383" />
+  <BasicPortPropertyInfo PortId="108" CountryCode="JM   " Destination="MONTEGO BAY" PortName="MONTEGO BAY PORT" TBOCityID="128682" />
+  <BasicPortPropertyInfo PortId="109" CountryCode="UY   " Destination="MONTEVIDEO" PortName="PUERTO MARITIMO DE MONTEVIDEO" TBOCityID="128366" />
+  <BasicPortPropertyInfo PortId="110" CountryCode="CA   " Destination="MONTREAL" PortName="PORT OF MONTREAL" TBOCityID="127960" />
+  <BasicPortPropertyInfo PortId="111" CountryCode="RU   " Destination="MOSCOW" PortName="MOSCOW Port" TBOCityID="146743" />
+  <BasicPortPropertyInfo PortId="112" CountryCode="IN   " Destination="MUMBAI (BOMBAY)" PortName="MUMBAI PORT" TBOCityID="144306" />
+  <BasicPortPropertyInfo PortId="113" CountryCode="DE   " Destination="MUNICH" PortName="MUNICH Port" TBOCityID="146774" />
+  <BasicPortPropertyInfo PortId="114" CountryCode="GR   " Destination="MYKONOS ISLAND" PortName="MYKONOS ISLAND Port" TBOCityID="146793" />
+  <BasicPortPropertyInfo PortId="115" CountryCode="IT   " Destination="NAPLES" PortName="NAPLES PORT" TBOCityID="134622" />
+  <BasicPortPropertyInfo PortId="115" CountryCode="IT   " Destination="NAPLES" PortName="NAPLES PORT" TBOCityID="128721" />
+  <BasicPortPropertyInfo PortId="115" CountryCode="IT   " Destination="NAPLES" PortName="NAPLES PORT" TBOCityID="101118" />
+  <BasicPortPropertyInfo PortId="115" CountryCode="IT   " Destination="NAPLES" PortName="NAPLES PORT" TBOCityID="132980" />
+  <BasicPortPropertyInfo PortId="117" CountryCode="US   " Destination="NEW ORLEANS" PortName="NEW ORLEANS PORT" TBOCityID="129332" />
+  <BasicPortPropertyInfo PortId="118" CountryCode="US   " Destination="NEW YORK" PortName="NEW YORK Port" TBOCityID="130452" />
+  <BasicPortPropertyInfo PortId="119" CountryCode="FR   " Destination="NICE" PortName="NICE PORT" TBOCityID="151798" />
+  <BasicPortPropertyInfo PortId="120" CountryCode="NC   " Destination="NOUMEA" PortName="NOUMEA Port" TBOCityID="129512" />
+  <BasicPortPropertyInfo PortId="121" CountryCode="DE   " Destination="NUREMBERG" PortName="NUREMBERG Port" TBOCityID="150795" />
+  <BasicPortPropertyInfo PortId="124" CountryCode="HR   " Destination="OPATIJA" PortName="OPATIJA Port" TBOCityID="130991" />
+  <BasicPortPropertyInfo PortId="125" CountryCode="US   " Destination="ORLANDO" PortName="ORLANDO Port" TBOCityID="131943" />
+  <BasicPortPropertyInfo PortId="126" CountryCode="JP   " Destination="OSAKA" PortName="OSAKA SEAPORT" TBOCityID="123363" />
+  <BasicPortPropertyInfo PortId="126" CountryCode="JP   " Destination="OSAKA" PortName="OSAKA SEAPORT" TBOCityID="130813" />
+  <BasicPortPropertyInfo PortId="127" CountryCode="NO   " Destination="OSLO" PortName="OSLO CRUISE HARBOUR" TBOCityID="131314" />
+  <BasicPortPropertyInfo PortId="128" CountryCode="IT   " Destination="PALERMO" PortName="Palermo Harbour" TBOCityID="131388" />
+  <BasicPortPropertyInfo PortId="129" CountryCode="PA   " Destination="PANAMA CITY" PortName="PANAMA CITY Port" TBOCityID="132667" />
+  <BasicPortPropertyInfo PortId="130" CountryCode="PF   " Destination="PAPEETE" PortName="PAPEETE PIER" TBOCityID="131548" />
+  <BasicPortPropertyInfo PortId="131" CountryCode="FR   " Destination="PARIS" PortName="Paris River Cruise Port" TBOCityID="131408" />
+  <BasicPortPropertyInfo PortId="132" CountryCode="DE   " Destination="PASSAU" PortName="Passau Cruise Port" TBOCityID="146774" />
+  <BasicPortPropertyInfo PortId="132" CountryCode="DE   " Destination="PASSAU" PortName="Passau Cruise Port" TBOCityID="131023" />
+  <BasicPortPropertyInfo PortId="133" CountryCode="GR   " Destination="PATRAS" PortName="PATRAS Port" TBOCityID="110000" />
+  <BasicPortPropertyInfo PortId="133" CountryCode="GR   " Destination="PATRAS" PortName="PATRAS Port" TBOCityID="132066" />
+  <BasicPortPropertyInfo PortId="134" CountryCode="MY   " Destination="PENANG" PortName="PENANG SWETTENHAM PIER" TBOCityID="132119" />
+  <BasicPortPropertyInfo PortId="135" CountryCode="AU   " Destination="PERTH" PortName="PERTH Port" TBOCityID="131059" />
+  <BasicPortPropertyInfo PortId="136" CountryCode="US   " Destination="PHILADELPHIA (PA)" PortName="PHILADELPHIA (PA) Port" TBOCityID="132775" />
+  <BasicPortPropertyInfo PortId="137" CountryCode="KH   " Destination="PHNOM PENH" PortName="PHNOM PENH PIER" TBOCityID="131527" />
+  <BasicPortPropertyInfo PortId="138" CountryCode="TH   " Destination="PHUKET" PortName="PHUKET RASADA PIER" TBOCityID="131529" />
+  <BasicPortPropertyInfo PortId="139" CountryCode="IT   " Destination="PISA" PortName="PISA Port" TBOCityID="133435" />
+  <BasicPortPropertyInfo PortId="140" CountryCode="MX   " Destination="PLAYA DEL CARMEN" PortName="PLAYA DEL CARMEN, ULTRAMAR HARBOUR" TBOCityID="113162" />
+  <BasicPortPropertyInfo PortId="141" CountryCode="US   " Destination="Cape Canaveral" PortName="PORT CANAVERAL" TBOCityID="131943" />
+  <BasicPortPropertyInfo PortId="141" CountryCode="US   " Destination="Cape Canaveral" PortName="PORT CANAVERAL" TBOCityID="113353" />
+  <BasicPortPropertyInfo PortId="142" CountryCode="GB   " Destination="PORTSMOUTH" PortName="PORTSMOUTH Port" TBOCityID="126632" />
+  <BasicPortPropertyInfo PortId="142" CountryCode="GB   " Destination="PORTSMOUTH" PortName="PORTSMOUTH Port" TBOCityID="147320" />
+  <BasicPortPropertyInfo PortId="143" CountryCode="IT   " Destination="POSITANO" PortName="POSITANO Port" TBOCityID="132980" />
+  <BasicPortPropertyInfo PortId="144" CountryCode="DO   " Destination="PUNTA CANA" PortName="PUNTA CANA Port" TBOCityID="147406" />
+  <BasicPortPropertyInfo PortId="145" CountryCode="CR   " Destination="PUNTARENAS" PortName="PUNTARENAS Port" TBOCityID="135889" />
+  <BasicPortPropertyInfo PortId="145" CountryCode="CR   " Destination="PUNTARENAS" PortName="PUNTARENAS Port" TBOCityID="133638" />
+  <BasicPortPropertyInfo PortId="146" CountryCode="CA   " Destination="QUEBEC CITY" PortName="Port of Quebec" TBOCityID="147423" />
+  <BasicPortPropertyInfo PortId="147" CountryCode="GR   " Destination="RAFINA" PortName="RAFINA PORT" TBOCityID="110000" />
+  <BasicPortPropertyInfo PortId="147" CountryCode="GR   " Destination="RAFINA" PortName="RAFINA PORT" TBOCityID="147440" />
+  <BasicPortPropertyInfo PortId="148" CountryCode="TH   " Destination="RAYONG-BAN PAE" PortName="RAYONG-BAN PAE Port" TBOCityID="144092" />
+  <BasicPortPropertyInfo PortId="149" CountryCode="GR   " Destination="RHODES ISLAND" PortName="RHODES PORT" TBOCityID="147505" />
+  <BasicPortPropertyInfo PortId="150" CountryCode="BR   " Destination="RIO DE JANEIRO" PortName="Port of Rio de Janeiro" TBOCityID="113104" />
+  <BasicPortPropertyInfo PortId="150" CountryCode="BR   " Destination="RIO DE JANEIRO" PortName="Port of Rio de Janeiro" TBOCityID="134921" />
+  <BasicPortPropertyInfo PortId="151" CountryCode="IT   " Destination="ROME" PortName="ROME Port" TBOCityID="134622" />
+  <BasicPortPropertyInfo PortId="152" CountryCode="NL   " Destination="ROTTERDAM" PortName="ROTTERDAM, ROTTERDAM  HARBOUR" TBOCityID="109558" />
+  <BasicPortPropertyInfo PortId="152" CountryCode="NL   " Destination="ROTTERDAM" PortName="ROTTERDAM, ROTTERDAM  HARBOUR" TBOCityID="134992" />
+  <BasicPortPropertyInfo PortId="153" CountryCode="EG   " Destination="SAFAGA" PortName="SAFAGA Port" TBOCityID="135165" />
+  <BasicPortPropertyInfo PortId="154" CountryCode="TH   " Destination="SAMUT PRAKARN" PortName="SAMUT PRAKARN Port" TBOCityID="136462" />
+  <BasicPortPropertyInfo PortId="155" CountryCode="US   " Destination="SAN DIEGO" PortName="SAN DIEGO PORT- BROADWAY PIER" TBOCityID="147688" />
+  <BasicPortPropertyInfo PortId="155" CountryCode="US   " Destination="SAN DIEGO" PortName="SAN DIEGO PORT- BROADWAY PIER" TBOCityID="143384" />
+  <BasicPortPropertyInfo PortId="156" CountryCode="US   " Destination="SAN FRANCISCO" PortName="SAN FRANCISCO PORT" TBOCityID="136014" />
+  <BasicPortPropertyInfo PortId="157" CountryCode="CR   " Destination="SAN JOSE" PortName="SAN JOSE Port" TBOCityID="135889" />
+  <BasicPortPropertyInfo PortId="158" CountryCode="PR   " Destination="SAN JUAN" PortName="PORT SAN JUAN" TBOCityID="136188" />
+  <BasicPortPropertyInfo PortId="159" CountryCode="CL   " Destination="SANTIAGO DE CHILE" PortName="SANTIAGO DE CHILE Port" TBOCityID="136528" />
+  <BasicPortPropertyInfo PortId="160" CountryCode="DO   " Destination="SANTO DOMINGO" PortName="PUERTO DE SANTO DOMINGO" TBOCityID="147756" />
+  <BasicPortPropertyInfo PortId="161" CountryCode="GR   " Destination="SANTORINI ISLAND" PortName="SANTORINI PORT" TBOCityID="137186" />
+  <BasicPortPropertyInfo PortId="162" CountryCode="BR   " Destination="SANTOS" PortName="SANTOS Port" TBOCityID="136873" />
+  <BasicPortPropertyInfo PortId="162" CountryCode="BR   " Destination="SANTOS" PortName="SANTOS Port" TBOCityID="147760" />
+  <BasicPortPropertyInfo PortId="163" CountryCode="BR   " Destination="SAO PAULO" PortName="SAO PAULO, SANTOS HARBOUR" TBOCityID="136873" />
+  <BasicPortPropertyInfo PortId="164" CountryCode="IT   " Destination="SAVONA" PortName="SAVONA PORT" TBOCityID="119254" />
+  <BasicPortPropertyInfo PortId="164" CountryCode="IT   " Destination="SAVONA" PortName="SAVONA PORT" TBOCityID="136889" />
+  <BasicPortPropertyInfo PortId="164" CountryCode="IT   " Destination="SAVONA" PortName="SAVONA PORT" TBOCityID="127769" />
+  <BasicPortPropertyInfo PortId="165" CountryCode="US   " Destination="SEATTLE" PortName="SEATTLE, BELL STREET PIER CRUISE TERMINAL" TBOCityID="137938" />
+  <BasicPortPropertyInfo PortId="166" CountryCode="SC   " Destination="SEYCHELLES" PortName="SEYCHELLES Port" TBOCityID="150282" />
+  <BasicPortPropertyInfo PortId="167" CountryCode="CN   " Destination="SHANGHAI" PortName="SHANGHAI Port" TBOCityID="136286" />
+  <BasicPortPropertyInfo PortId="168" CountryCode="EG   " Destination="SHARM EL SHEIKH" PortName="SHARM EL SHEIKH Port" TBOCityID="136797" />
+  <BasicPortPropertyInfo PortId="169" CountryCode="CN   " Destination="SHENZHEN" PortName="SHENZHEN Port" TBOCityID="137575" />
+  <BasicPortPropertyInfo PortId="170" CountryCode="TR   " Destination="SIDE" PortName="SIDE Port" TBOCityID="138682" />
+  <BasicPortPropertyInfo PortId="171" CountryCode="KH   " Destination="SIEM REAP" PortName="SIEM REAP PIER" TBOCityID="137759" />
+  <BasicPortPropertyInfo PortId="172" CountryCode="SG   " Destination="SINGAPORE" PortName="SINGAPORE Port" TBOCityID="138703" />
+  <BasicPortPropertyInfo PortId="173" CountryCode="SG   " Destination="SINGAPORE-SENTOSA" PortName="SINGAPORE-SENTOSA Port" TBOCityID="137721" />
+  <BasicPortPropertyInfo PortId="174" CountryCode="IT   " Destination="SORRENTO" PortName="SORRENTO PORT" TBOCityID="132980" />
+  <BasicPortPropertyInfo PortId="175" CountryCode="GB   " Destination="SOUTHAMPTON" PortName="PORT OF SOUTHAMPTON" TBOCityID="126632" />
+  <BasicPortPropertyInfo PortId="175" CountryCode="GB   " Destination="SOUTHAMPTON" PortName="PORT OF SOUTHAMPTON" TBOCityID="138341" />
+  <BasicPortPropertyInfo PortId="176" CountryCode="HR   " Destination="SPLIT" PortName="SPLIT, SPLIT HARBOUR" TBOCityID="137547" />
+  <BasicPortPropertyInfo PortId="177" CountryCode="MT   " Destination="ST JULIANS" PortName="ST JULIANS Port" TBOCityID="138770" />
+  <BasicPortPropertyInfo PortId="178" CountryCode="MT   " Destination="ST PAULS BAY" PortName="ST PAULS BAY Port" TBOCityID="148021" />
+  <BasicPortPropertyInfo PortId="179" CountryCode="RU   " Destination="ST PETERSBURG" PortName="ST PETERSBURGH PORT" TBOCityID="134135" />
+  <BasicPortPropertyInfo PortId="180" CountryCode="FR   " Destination="ST TROPEZ" PortName="ST TROPEZ Port" TBOCityID="151798" />
+  <BasicPortPropertyInfo PortId="180" CountryCode="FR   " Destination="ST TROPEZ" PortName="ST TROPEZ Port" TBOCityID="147620" />
+  <BasicPortPropertyInfo PortId="181" CountryCode="SE   " Destination="STOCKHOLM" PortName="Frihamnen Pier" TBOCityID="137827" />
+  <BasicPortPropertyInfo PortId="182" CountryCode="CN   " Destination="SUZHOU" PortName="SUZHOU Port" TBOCityID="139157" />
+  <BasicPortPropertyInfo PortId="183" CountryCode="AU   " Destination="SYDNEY" PortName="SYDNEY Port" TBOCityID="140258" />
+  <BasicPortPropertyInfo PortId="184" CountryCode="EE   " Destination="TALLINN" PortName="Tallinna Sadam" TBOCityID="140287" />
+  <BasicPortPropertyInfo PortId="185" CountryCode="US   " Destination="TAMPA" PortName="PORT OF TAMPA" TBOCityID="138572" />
+  <BasicPortPropertyInfo PortId="186" CountryCode="CN   " Destination="TIANJIN" PortName="TIANJIN XINGANG PORT" TBOCityID="148225" />
+  <BasicPortPropertyInfo PortId="187" CountryCode="CN   " Destination="TIANJIN-XINGANG" PortName="TIANJIN XINGANG PORT" TBOCityID="144154" />
+  <BasicPortPropertyInfo PortId="187" CountryCode="CN   " Destination="TIANJIN-XINGANG" PortName="TIANJIN XINGANG PORT" TBOCityID="148225" />
+  <BasicPortPropertyInfo PortId="188" CountryCode="GB   " Destination="TILBURY" PortName="PORT OF TILBURY" TBOCityID="126632" />
+  <BasicPortPropertyInfo PortId="189" CountryCode="JP   " Destination="TOKYO" PortName="TOKYO Port" TBOCityID="148251" />
+  <BasicPortPropertyInfo PortId="190" CountryCode="FR   " Destination="TOULON" PortName="TOULON Port" TBOCityID="140492" />
+  <BasicPortPropertyInfo PortId="191" CountryCode="TN   " Destination="TUNIS" PortName="TUNIS Port" TBOCityID="145524" />
+  <BasicPortPropertyInfo PortId="191" CountryCode="TN   " Destination="TUNIS" PortName="TUNIS Port" TBOCityID="146070" />
+  <BasicPortPropertyInfo PortId="191" CountryCode="TN   " Destination="TUNIS" PortName="TUNIS Port" TBOCityID="117991" />
+  <BasicPortPropertyInfo PortId="192" CountryCode="MT   " Destination="VALLETTA" PortName="Valletta Waterfront" TBOCityID="148021" />
+  <BasicPortPropertyInfo PortId="192" CountryCode="MT   " Destination="VALLETTA" PortName="Valletta Waterfront" TBOCityID="138770" />
+  <BasicPortPropertyInfo PortId="192" CountryCode="MT   " Destination="VALLETTA" PortName="Valletta Waterfront" TBOCityID="141435" />
+  <BasicPortPropertyInfo PortId="193" CountryCode="CL   " Destination="VALPARAISO" PortName="VALPARAISO TERMINLA DE PASAJEROS" TBOCityID="136528" />
+  <BasicPortPropertyInfo PortId="193" CountryCode="CL   " Destination="VALPARAISO" PortName="VALPARAISO TERMINLA DE PASAJEROS" TBOCityID="141139" />
+  <BasicPortPropertyInfo PortId="193" CountryCode="CL   " Destination="VALPARAISO" PortName="VALPARAISO TERMINLA DE PASAJEROS" TBOCityID="142619" />
+  <BasicPortPropertyInfo PortId="194" CountryCode="CA   " Destination="VANCOUVER" PortName="Vancouver, Cruise Terminal" TBOCityID="141448" />
+  <BasicPortPropertyInfo PortId="195" CountryCode="IT   " Destination="VENICE MARCO POLO" PortName="VENICE MARCO POLO Port" TBOCityID="148463" />
+  <BasicPortPropertyInfo PortId="196" CountryCode="AT   " Destination="VIENNA" PortName="VIENNA Port" TBOCityID="140888" />
+  <BasicPortPropertyInfo PortId="197" CountryCode="PT   " Destination="VILA NOVA DE GAIA" PortName="VILA NOVA DE GAIA Port" TBOCityID="141328" />
+  <BasicPortPropertyInfo PortId="198" CountryCode="FR   " Destination="VILLEFRANCHE-SUR-MER" PortName="VILLEFRANCHE-SUR-MER Port" TBOCityID="151798" />
+  <BasicPortPropertyInfo PortId="198" CountryCode="FR   " Destination="VILLEFRANCHE-SUR-MER" PortName="VILLEFRANCHE-SUR-MER Port" TBOCityID="142054" />
+  <BasicPortPropertyInfo PortId="199" CountryCode="CL   " Destination="VINA DEL MAR" PortName="VINA DEL MAR Port" TBOCityID="142619" />
+  <BasicPortPropertyInfo PortId="200" CountryCode="NZ   " Destination="WELLINGTON" PortName="WELLINGTON Port" TBOCityID="142120" />
+  <BasicPortPropertyInfo PortId="201" CountryCode="CN   " Destination="XIAMEN" PortName="XIAMEN Port" TBOCityID="142891" />
+  <BasicPortPropertyInfo PortId="202" CountryCode="CN   " Destination="YICHANG" PortName="YICHANG PIER" TBOCityID="142459" />
+  <BasicPortPropertyInfo PortId="203" CountryCode="JP   " Destination="YOKOHAMA" PortName="YOKOHAMA SEAPORT" TBOCityID="148251" />
+  <BasicPortPropertyInfo PortId="203" CountryCode="JP   " Destination="YOKOHAMA" PortName="YOKOHAMA SEAPORT" TBOCityID="142913" />
+  <BasicPortPropertyInfo PortId="205" CountryCode="BE   " Destination="ZEEBRUGGE" PortName="ZEEBRUGGE Port" TBOCityID="108035" />
+  <BasicPortPropertyInfo PortId="207" CountryCode="MT   " Destination="CIRKEWWA" PortName="CIRKEWWA HARBOUR" TBOCityID="115215" />
+  <BasicPortPropertyInfo PortId="208" CountryCode="GR   " Destination="AGIOS NIKOLAOS" PortName="AGIOS NIKOLAOS Port" TBOCityID="100255" />
+  <BasicPortPropertyInfo PortId="209" CountryCode="GR   " Destination="ATHENS - AGIOS KONSTANTINOS" PortName="AGIOS KONSTANTINOS PORT" TBOCityID="100787" />
+  <BasicPortPropertyInfo PortId="210" CountryCode="GR   " Destination="KEFALONIA - ARGOSTOLI" PortName="KEFALONIA - ARGOSTOLI Port" TBOCityID="109961" />
+  <BasicPortPropertyInfo PortId="211" CountryCode="EG   " Destination="AIN SUKHNA" PortName="Ain Sukhna Port" TBOCityID="100602" />
+  <BasicPortPropertyInfo PortId="214" CountryCode="FR   " Destination="BORDEAUX RIVER" PortName="Bordeaux River Port" TBOCityID="144318" />
+  <BasicPortPropertyInfo PortId="220" CountryCode="ME   " Destination="BAR" PortName="BAR Port" TBOCityID="110997" />
+  <BasicPortPropertyInfo PortId="222" CountryCode="PH   " Destination="CEBU" PortName="Cebu, Hagnaya Ferry Terminal San Remigio" TBOCityID="114570" />
+  <BasicPortPropertyInfo PortId="223" CountryCode="GR   " Destination="CORFU" PortName="CORFU PORT" TBOCityID="115559" />
+  <BasicPortPropertyInfo PortId="225" CountryCode="ES   " Destination="PORT OF CADIZ" PortName="PUERTO DE CADIZ" TBOCityID="113109" />
+  <BasicPortPropertyInfo PortId="226" CountryCode="IN   " Destination="COCHIN (KOCHI)" PortName="Cochin (Kochi) Port" TBOCityID="114326" />
+  <BasicPortPropertyInfo PortId="227" CountryCode="ES   " Destination="CORRALEJO" PortName="PUERTO  DE CORRALEJO" TBOCityID="115033" />
+  <BasicPortPropertyInfo PortId="229" CountryCode="AU   " Destination="DARLING HARBOUR" PortName="DARLING HARBOUR Port" TBOCityID="116148" />
+  <BasicPortPropertyInfo PortId="230" CountryCode="FJ   " Destination="PORT DENARAU" PortName="Port Denarau" TBOCityID="118448" />
+  <BasicPortPropertyInfo PortId="231" CountryCode="US   " Destination="WEST" PortName="Westport" TBOCityID="141695" />
+  <BasicPortPropertyInfo PortId="235" CountryCode="IT   " Destination="PORT OF PALAU (FERRY)" PortName="Palau (Ferry) Port" TBOCityID="131385" />
+  <BasicPortPropertyInfo PortId="236" CountryCode="TH   " Destination="PHUKET" PortName="ROYAL MARINA PHUKET PIER" TBOCityID="131529" />
+  <BasicPortPropertyInfo PortId="237" CountryCode="ZA   " Destination="DURBAN HARBOUR" PortName="Durban Harbour" TBOCityID="32515" />
+  <BasicPortPropertyInfo PortId="241" CountryCode="ES   " Destination="AGAETE" PortName="AGAETE Port" TBOCityID="100134" />
+  <BasicPortPropertyInfo PortId="242" CountryCode="IS   " Destination="REYKJAVIK HARBOUR" PortName="Reykjavik Harbour" TBOCityID="135090" />
+  <BasicPortPropertyInfo PortId="243" CountryCode="CU   " Destination="HAVANA" PortName="HAVANA Port" TBOCityID="119977" />
+  <BasicPortPropertyInfo PortId="247" CountryCode="ES   " Destination="PORT OF ALGECIRAS" PortName="Algeciras Port" TBOCityID="100300" />
+  <BasicPortPropertyInfo PortId="249" CountryCode="FR   " Destination="LYON RIVER CRUISE" PortName="LYON RIVER CRUISE" TBOCityID="126089" />
+  <BasicPortPropertyInfo PortId="250" CountryCode="ES   " Destination="IBIZA - FORMENTERA" PortName="TERMINAL EMBARQUE IBIZA-FORMENTERA" TBOCityID="135932" />
+  <BasicPortPropertyInfo PortId="251" CountryCode="GR   " Destination="KEFALONIA - FISKARDO" PortName="KEFALONIA, FISKARDO HARBOUR" TBOCityID="124199" />
+  <BasicPortPropertyInfo PortId="254" CountryCode="ES   " Destination="COSTA DEL SOL - FUENGIROLA" PortName="COSTA DEL SOL - FUENGIROLA" TBOCityID="118640" />
+  <BasicPortPropertyInfo PortId="256" CountryCode="PT   " Destination="MADEIRA" PortName="Madeira Port (Funchal)" TBOCityID="118387" />
+  <BasicPortPropertyInfo PortId="259" CountryCode="GR   " Destination="SKOPELOS" PortName="SKOPELOS PORT" TBOCityID="137045" />
+  <BasicPortPropertyInfo PortId="260" CountryCode="ES   " Destination="LA GOMERA" PortName="PUERTO LA GOMERA" TBOCityID="36125" />
+  <BasicPortPropertyInfo PortId="261" CountryCode="CU   " Destination="CIENFUEGOS" PortName="CIENFUEGOS Port" TBOCityID="115332" />
+  <BasicPortPropertyInfo PortId="262" CountryCode="HK   " Destination="HONG KONG" PortName="HONG KONG Port" TBOCityID="145656" />
+  <BasicPortPropertyInfo PortId="266" CountryCode="TR   " Destination="IZMIR" PortName="IZMIR Port" TBOCityID="123409" />
+  <BasicPortPropertyInfo PortId="267" CountryCode="IT   " Destination="ISCHIA" PortName="ISCHIA Port" TBOCityID="122152" />
+  <BasicPortPropertyInfo PortId="268" CountryCode="TN   " Destination="PORT EL KANTAOUI" PortName="PORT EL KANTAOUI Port" TBOCityID="131831" />
+  <BasicPortPropertyInfo PortId="270" CountryCode="GR   " Destination="KOS" PortName="KOS PORT" TBOCityID="124403" />
+  <BasicPortPropertyInfo PortId="271" CountryCode="GR   " Destination="CRETE - CHANIA" PortName="Souda Harbour" TBOCityID="151810" />
+  <BasicPortPropertyInfo PortId="272" CountryCode="GR   " Destination="KAVALA " PortName="KAVALA  Port" TBOCityID="124190" />
+  <BasicPortPropertyInfo PortId="273" CountryCode="GR   " Destination="KERAMOTI " PortName="KERAMOTI  Port" TBOCityID="122980" />
+  <BasicPortPropertyInfo PortId="274" CountryCode="DE   " Destination="PORT OF KOBLENZ" PortName="Koblenz Port" TBOCityID="124283" />
+  <BasicPortPropertyInfo PortId="278" CountryCode="ES   " Destination="GRAN CANARIA" PortName="GRAN CANARIA Port" TBOCityID="119848" />
+  <BasicPortPropertyInfo PortId="279" CountryCode="CY   " Destination="LIMASSOL" PortName="Port of Limassol" TBOCityID="125854" />
+  <BasicPortPropertyInfo PortId="280" CountryCode="ES   " Destination="TENERIFE - LOS CRISTIANOS" PortName="Tenerife - Los Cristianos Port" TBOCityID="126193" />
+  <BasicPortPropertyInfo PortId="283" CountryCode="DE   " Destination="PORT OF FRANKFURT" PortName="PORT OF FRANKFURT Port" TBOCityID="150455" />
+  <BasicPortPropertyInfo PortId="286" CountryCode="ES   " Destination="COSTA DEL SOL - MALAGA " PortName="PUERTO DE MALAGA" TBOCityID="127094" />
+  <BasicPortPropertyInfo PortId="287" CountryCode="TR   " Destination="MARMARIS" PortName="MARMARIS PORT" TBOCityID="144297" />
+  <BasicPortPropertyInfo PortId="287" CountryCode="TR   " Destination="MARMARIS" PortName="MARMARIS PORT" TBOCityID="126434" />
+  <BasicPortPropertyInfo PortId="288" CountryCode="GR   " Destination="MYKONOS PORT (NEW)" PortName="TOURLOS PORT OF MYKONOS" TBOCityID="146793" />
+  <BasicPortPropertyInfo PortId="289" CountryCode="GR   " Destination="MYKONOS PORT (OLD)" PortName="MYKONOS PORT" TBOCityID="146793" />
+  <BasicPortPropertyInfo PortId="289" CountryCode="GR   " Destination="MYKONOS PORT (OLD)" PortName="MYKONOS PORT" TBOCityID="129114" />
+  <BasicPortPropertyInfo PortId="290" CountryCode="ES   " Destination="MAJORCA - PALMA" PortName="Majorca, Palma Harbour" TBOCityID="147078" />
+  <BasicPortPropertyInfo PortId="292" CountryCode="GR   " Destination="PAROS - NAOUSSA" PortName="Paros - Naoussa Port" TBOCityID="130111" />
+  <BasicPortPropertyInfo PortId="295" CountryCode="GR   " Destination="LEFKADA / PREVEZA - NIDRI" PortName="Lefkada / Preveza - Nidri Port" TBOCityID="132541" />
+  <BasicPortPropertyInfo PortId="296" CountryCode="EG   " Destination="SHARM EL SHEIKH - NUWEIBA" PortName="Sharm El Sheikh - Nuweiba Port" TBOCityID="136797" />
+  <BasicPortPropertyInfo PortId="296" CountryCode="EG   " Destination="SHARM EL SHEIKH - NUWEIBA" PortName="Sharm El Sheikh - Nuweiba Port" TBOCityID="146932" />
+  <BasicPortPropertyInfo PortId="299" CountryCode="FR   " Destination="PORT GRIMAUD" PortName="PORT GRIMAUD" TBOCityID="133506" />
+  <BasicPortPropertyInfo PortId="300" CountryCode="VN   " Destination="MY THO PORT" PortName="My Tho Port" TBOCityID="150296" />
+  <BasicPortPropertyInfo PortId="301" CountryCode="GH   " Destination="ACCRA" PortName="ACCRA Port" TBOCityID="100768" />
+  <BasicPortPropertyInfo PortId="303" CountryCode="EG   " Destination="PORT GHALIB" PortName="PORT GHALIB Port" TBOCityID="132911" />
+  <BasicPortPropertyInfo PortId="304" CountryCode="US   " Destination="PORT ALLEN / ELEELE" PortName="Port Allen / Eleele" TBOCityID="133243" />
+  <BasicPortPropertyInfo PortId="306" CountryCode="PT   " Destination="PORTO DA CRUZ" PortName="PORTO DA CRUZ Port" TBOCityID="134279" />
+  <BasicPortPropertyInfo PortId="307" CountryCode="ES   " Destination="PORT DES TORRENT" PortName="PORT DES TORRENT" TBOCityID="133248" />
+  <BasicPortPropertyInfo PortId="309" CountryCode="IT   " Destination="PORTOROSA" PortName="PORTOROSA Port" TBOCityID="147318" />
+  <BasicPortPropertyInfo PortId="310" CountryCode="FR   " Destination="PORT LA NOUVELLE" PortName="PORT LA NOUVELLE Port" TBOCityID="133560" />
+  <BasicPortPropertyInfo PortId="313" CountryCode="GR   " Destination="SAMOS" PortName="SAMOS PORT" TBOCityID="136166" />
+  <BasicPortPropertyInfo PortId="314" CountryCode="GR   " Destination="KEFALONIA - POROS" PortName="Kefalonia - Poros Port" TBOCityID="133500" />
+  <BasicPortPropertyInfo PortId="315" CountryCode="GR   " Destination="KEFALONIA - PESSADA" PortName="PESSADA PORT" TBOCityID="124199" />
+  <BasicPortPropertyInfo PortId="320" CountryCode="GR   " Destination="PORTO KOUFO" PortName="PORTO KOUFO Port" TBOCityID="131850" />
+  <BasicPortPropertyInfo PortId="321" CountryCode="ES   " Destination="PUERTO DE TARRAGONA" PortName="Puerto de Tarragona Port" TBOCityID="138589" />
+  <BasicPortPropertyInfo PortId="325" CountryCode="PT   " Destination="PORTO MONIZ" PortName="PORTO MONIZ Port" TBOCityID="133575" />
+  <BasicPortPropertyInfo PortId="326" CountryCode="ES   " Destination="PORTO COLOM" PortName="PORTO COLOM Port" TBOCityID="133262" />
+  <BasicPortPropertyInfo PortId="329" CountryCode="GR   " Destination="PORTO HELI" PortName="PORTO HELI Port" TBOCityID="133265" />
+  <BasicPortPropertyInfo PortId="330" CountryCode="US   " Destination="MIAMI" PortName="Miami Port" TBOCityID="128839" />
+  <BasicPortPropertyInfo PortId="330" CountryCode="US   " Destination="MIAMI" PortName="Miami Port" TBOCityID="117930" />
+  <BasicPortPropertyInfo PortId="330" CountryCode="US   " Destination="MIAMI" PortName="Miami Port" TBOCityID="128581" />
+  <BasicPortPropertyInfo PortId="333" CountryCode="IT   " Destination="PORTO ROTONDO" PortName="PORTO ROTONDO Port" TBOCityID="132935" />
+  <BasicPortPropertyInfo PortId="334" CountryCode="IT   " Destination="PORTO SAN PAOLO" PortName="PORTO SAN PAOLO Port" TBOCityID="132936" />
+  <BasicPortPropertyInfo PortId="336" CountryCode="IT   " Destination="PORTOFINO" PortName="PORTOFINO Port" TBOCityID="131854" />
+  <BasicPortPropertyInfo PortId="337" CountryCode="IT   " Destination="PORTO TAVERNA" PortName="PORTO TAVERNA Port" TBOCityID="133270" />
+  <BasicPortPropertyInfo PortId="339" CountryCode="GR   " Destination="KYLLINI" PortName="KYLLINI Port" TBOCityID="123924" />
+  <BasicPortPropertyInfo PortId="342" CountryCode="ES   " Destination="EL HIERRO - PORT DE LA ESTACA" PortName="EL HIERRO - PORT DE LA ESTACA" TBOCityID="36129" />
+  <BasicPortPropertyInfo PortId="343" CountryCode="ZA   " Destination="PORT ELIZABETH CENTRAL" PortName="PORT ELIZABETH HARBOUR" TBOCityID="132393" />
+  <BasicPortPropertyInfo PortId="347" CountryCode="ES   " Destination="IBIZA - SAN ANTONIO BAY " PortName="Ibiza - San Antonio Bay Port" TBOCityID="135932" />
+  <BasicPortPropertyInfo PortId="348" CountryCode="IT   " Destination="RAVENNA" PortName="RAVENNA Port" TBOCityID="133779" />
+  <BasicPortPropertyInfo PortId="349" CountryCode="GR   " Destination="SKIATHOS" PortName="SKIATHOS PORT" TBOCityID="138447" />
+  <BasicPortPropertyInfo PortId="350" CountryCode="ES   " Destination="SEVILLE" PortName="PUERTO DE SEVILLA" TBOCityID="137558" />
+  <BasicPortPropertyInfo PortId="354" CountryCode="PT   " Destination="PORTO SANTO PORT" PortName="PORTO  DE PORTO SANTO" TBOCityID="133269" />
+  <BasicPortPropertyInfo PortId="355" CountryCode="IT   " Destination="LA SPEZIA" PortName="La Spezia Cruise Port" TBOCityID="123828" />
+  <BasicPortPropertyInfo PortId="358" CountryCode="GR   " Destination="THESSALONIKI" PortName="THESSALONIKI Port" TBOCityID="141027" />
+  <BasicPortPropertyInfo PortId="359" CountryCode="PH   " Destination="TAGBILARAN" PortName="PORT TAGBILARAN" TBOCityID="111815" />
+  <BasicPortPropertyInfo PortId="359" CountryCode="PH   " Destination="TAGBILARAN" PortName="PORT TAGBILARAN" TBOCityID="150238" />
+  <BasicPortPropertyInfo PortId="360" CountryCode="IT   " Destination="TRIESTE" PortName="TRIESTE PORT" TBOCityID="139816" />
+  <BasicPortPropertyInfo PortId="361" CountryCode="CA   " Destination="TORONTO" PortName="TORONTO Port" TBOCityID="140333" />
+  <BasicPortPropertyInfo PortId="362" CountryCode="ES   " Destination="TENERIFE - SANTA CRUZ" PortName="Tenerife - Santa Cruz Port" TBOCityID="150199" />
+  <BasicPortPropertyInfo PortId="363" CountryCode="IT   " Destination="PORTO CERVO" PortName="PORTO CERVO Port" TBOCityID="147310" />
+  <BasicPortPropertyInfo PortId="364" CountryCode="GR   " Destination="VOLOS" PortName="VOLOS Port" TBOCityID="141915" />
+  <BasicPortPropertyInfo PortId="365" CountryCode="IN   " Destination="CHENNAI (MADRAS)" PortName="Chennai Port" TBOCityID="127343" />
+  <BasicPortPropertyInfo PortId="366" CountryCode="ES   " Destination="VALENCIA" PortName="PUERTO VALENCIA" TBOCityID="141297" />
+  <BasicPortPropertyInfo PortId="367" CountryCode="IT   " Destination="VENICE CRUISE" PortName="Venice Cruise Port" TBOCityID="148463" />
+  <BasicPortPropertyInfo PortId="367" CountryCode="IT   " Destination="VENICE CRUISE" PortName="Venice Cruise Port" TBOCityID="35686" />
+  <BasicPortPropertyInfo PortId="367" CountryCode="IT   " Destination="VENICE CRUISE" PortName="Venice Cruise Port" TBOCityID="132606" />
+  <BasicPortPropertyInfo PortId="369" CountryCode="EG   " Destination="PORT SAID" PortName="PORT SAID Port" TBOCityID="133253" />
+  <BasicPortPropertyInfo PortId="371" CountryCode="IT   " Destination="CIVITAVECCHIA" PortName="CIVITA VECCHIA PORT" TBOCityID="134622" />
+  <BasicPortPropertyInfo PortId="371" CountryCode="IT   " Destination="CIVITAVECCHIA" PortName="CIVITA VECCHIA PORT" TBOCityID="114775" />
+  <BasicPortPropertyInfo PortId="372" CountryCode="US   " Destination="PORT OF BALTIMORE" PortName="BALTIMORE PORT" TBOCityID="111115" />
+  <BasicPortPropertyInfo PortId="374" CountryCode="GR   " Destination="ZANTE " PortName="Zakynthos, Zakynthos Harbour" TBOCityID="143916" />
+  <BasicPortPropertyInfo PortId="377" CountryCode="OM   " Destination="KHASAB PORT" PortName="Khasab Port" TBOCityID="124231" />
+  <BasicPortPropertyInfo PortId="378" CountryCode="AU   " Destination="PORT DOUGLAS" PortName="DOUGLAS PORT" TBOCityID="132392" />
+  <BasicPortPropertyInfo PortId="380" CountryCode="DE   " Destination="WARNEMUNDE PORT" PortName="Warnemünde Cruise Center" TBOCityID="141964" />
+  <BasicPortPropertyInfo PortId="381" CountryCode="NL   " Destination="Amsterdam" PortName="Amsterdam, River Cruise Port" TBOCityID="109558" />
+  <BasicPortPropertyInfo PortId="382" CountryCode="NZ   " Destination="Westport" PortName="Port of Westport" TBOCityID="148665" />
+  <BasicPortPropertyInfo PortId="383" CountryCode="JP   " Destination="Nagasaki" PortName="Port of Nagasaki" TBOCityID="128705" />
+  <BasicPortPropertyInfo PortId="384" CountryCode="US   " Destination="Bridgeport" PortName="Port of Bridgeport" TBOCityID="144368" />
+  <BasicPortPropertyInfo PortId="386" CountryCode="GP   " Destination="POINTE-A-PITRE" PortName="Port of Pointe-a-Pitre" TBOCityID="133212" />
+  <BasicPortPropertyInfo PortId="387" CountryCode="MY   " Destination="Kota Kinabalu" PortName="KOTA KINABALU PORT" TBOCityID="123074" />
+  <BasicPortPropertyInfo PortId="388" CountryCode="MY   " Destination="Kota Kinabalu" PortName="KOTA KINABALU SEPANGGAR PORT (NEW)" TBOCityID="123074" />
+  <BasicPortPropertyInfo PortId="389" CountryCode="MY   " Destination="Kota Kinabalu" PortName="KOTA KINABALU, SUTERA MARINA HARBOUR" TBOCityID="123074" />
+  <BasicPortPropertyInfo PortId="390" CountryCode="US   " Destination=" Jacksonville" PortName="Port of Jacksonville" TBOCityID="121778" />
+  <BasicPortPropertyInfo PortId="391" CountryCode="IE   " Destination="Dun Laoghaire" PortName="Dun Laoghaire Harbour" TBOCityID="116455" />
+  <BasicPortPropertyInfo PortId="392" CountryCode="JM   " Destination="Ocho Rios" PortName="Port of Ocho Ríos" TBOCityID="146968" />
+  <BasicPortPropertyInfo PortId="393" CountryCode="TW   " Destination="Kaohsiung" PortName="PORT OF KAOHSIUNG" TBOCityID="122258" />
+  <BasicPortPropertyInfo PortId="394" CountryCode="IT   " Destination="Salerno" PortName="Port of Salerno" TBOCityID="134852" />
+  <BasicPortPropertyInfo PortId="395" CountryCode="IT   " Destination="Ancona" PortName="Port of Ancona" TBOCityID="101134" />
+  <BasicPortPropertyInfo PortId="396" CountryCode="US   " Destination="Seattle" PortName="PORT OF SEATTLE" TBOCityID="137938" />
+  <BasicPortPropertyInfo PortId="397" CountryCode="US   " Destination="Anchorage" PortName="Port of Anchorage" TBOCityID="109328" />
+  <BasicPortPropertyInfo PortId="398" CountryCode="ES   " Destination="Las Palmas" PortName="Port of Las Palmas" TBOCityID="146168" />
+  <BasicPortPropertyInfo PortId="399" CountryCode="IT   " Destination="Messina" PortName="Messina Cruise Port" TBOCityID="127923" />
+  <BasicPortPropertyInfo PortId="400" CountryCode="ES   " Destination="Ceuta" PortName="Port of Ceuta" TBOCityID="114696" />
+  <BasicPortPropertyInfo PortId="401" CountryCode="ES   " Destination="Almeria" PortName="PUERTO DE ALMERIA" TBOCityID="100527" />
+  <BasicPortPropertyInfo PortId="402" CountryCode="ES   " Destination="Alicante" PortName="PUERTO DE ALICANTE" TBOCityID="100846" />
+  <BasicPortPropertyInfo PortId="403" CountryCode="FJ   " Destination="Lautoka" PortName="Port of Lautoka" TBOCityID="118448" />
+  <BasicPortPropertyInfo PortId="403" CountryCode="FJ   " Destination="Lautoka" PortName="Port of Lautoka" TBOCityID="125805" />
+  <BasicPortPropertyInfo PortId="405" CountryCode="SN   " Destination="Ziguinchor" PortName="PORT ZIGUINCHOR" TBOCityID="143847" />
+  <BasicPortPropertyInfo PortId="406" CountryCode="TR   " Destination="Finike" PortName="FINIKE, FINIKE HARBOUR" TBOCityID="118826" />
+  <BasicPortPropertyInfo PortId="413" CountryCode="GR   " Destination="Crete - Heraklion" PortName="Heraklion Harbour" TBOCityID="151810" />
+  <BasicPortPropertyInfo PortId="414" CountryCode="SE   " Destination="STOCKHOLM" PortName="Nynashamn Pier" TBOCityID="137827" />
+  <BasicPortPropertyInfo PortId="415" CountryCode="SE   " Destination="STOCKHOLM" PortName="Skeppsbron Pier" TBOCityID="137827" />
+  <BasicPortPropertyInfo PortId="416" CountryCode="SE   " Destination="STOCKHOLM" PortName="Värtahamnen Pier" TBOCityID="137827" />
+  <BasicPortPropertyInfo PortId="417" CountryCode="SE   " Destination="STOCKHOLM" PortName="Kapellskar Pier" TBOCityID="137827" />
+  <BasicPortPropertyInfo PortId="418" CountryCode="SE   " Destination="STOCKHOLM" PortName="Stadsgården Pier" TBOCityID="137827" />
+  <BasicPortPropertyInfo PortId="419" CountryCode="TH   " Destination="Bangkok" PortName="Khlong Toei Harbour" TBOCityID="144092" />
+  <BasicPortPropertyInfo PortId="420" CountryCode="TH   " Destination="KOH SAMUI-Surat Thani" PortName="Don Sak Harbour" TBOCityID="124943" />
+  <BasicPortPropertyInfo PortId="421" CountryCode="TH   " Destination="KOH SAMUI" PortName="Nathon Harbour" TBOCityID="124943" />
+  <BasicPortPropertyInfo PortId="422" CountryCode="TH   " Destination="PHUKET" PortName="Ao Po Harbour" TBOCityID="131529" />
+  <BasicPortPropertyInfo PortId="423" CountryCode="TH   " Destination="PHUKET" PortName="Deep Sea Harbour" TBOCityID="131529" />
+  <BasicPortPropertyInfo PortId="424" CountryCode="FJ   " Destination="Viti Levu" PortName="Port of Ellington" TBOCityID="142199" />
+  <BasicPortPropertyInfo PortId="425" CountryCode="FJ   " Destination="Viti Levu-Suva" PortName="Pacific Harbour Jetty" TBOCityID="139872" />
+  <BasicPortPropertyInfo PortId="426" CountryCode="FR   " Destination="MONTE CARLO" PortName="MONTE CARLO Port" TBOCityID="151798" />
+  <BasicPortPropertyInfo PortId="427" CountryCode="FR   " Destination="RHODES TOWN" PortName="RHODES TOWN Port" TBOCityID="147505" />
+  <BasicPortPropertyInfo PortId="428" CountryCode="MU   " Destination="VALLETTA" PortName="VALLETTA Port" TBOCityID="150281" />
+  <BasicPortPropertyInfo PortId="429" CountryCode="PH   " Destination="PANGLAO ISLAND" PortName="PANGLAO ISLAND Port" TBOCityID="111815" />
+  <BasicPortPropertyInfo PortId="430" CountryCode="IT   " Destination="VENICE-QUARTO D'ALTI" PortName="VENICE-QUARTO D'ALTI PORT" TBOCityID="132606" />
+  <BasicPortPropertyInfo PortId="431" CountryCode="AU   " Destination="Adelaide" PortName="Adelaide Port Cruise Passenger Terminal" TBOCityID="100238" />
+  <BasicPortPropertyInfo PortId="432" CountryCode="NZ   " Destination="Akaroa" PortName="Akaroa Port" TBOCityID="100073" />
+  <BasicPortPropertyInfo PortId="433" CountryCode="ES   " Destination="Alcudia " PortName="Alcudia Port" TBOCityID="100296" />
+</ArrayOfBasicPortPropertyInfo>

@@ -1,0 +1,953 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ArrayOfBasicStationPropertyInfo xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <BasicStationPropertyInfo StationId="742" StationName="Sheffield Train Station" CityCode="SHEF" CityName="Sheffield" CountryCode="GB" TBOCityId="147883" />
+  <BasicStationPropertyInfo StationId="743" StationName="Shenyang Railway Station" CityCode="SHEY" CityName="Shenyang" CountryCode="CN" TBOCityId="137393" />
+  <BasicStationPropertyInfo StationId="744" StationName="Shenzhen Main Train Station" CityCode="SHEN" CityName="Shenzhen" CountryCode="CN" TBOCityId="137575" />
+  <BasicStationPropertyInfo StationId="745" StationName="Shin Yokohama Train Station" CityCode="YOKO" CityName="Yokohama" CountryCode="JP" TBOCityId="142913" />
+  <BasicStationPropertyInfo StationId="746" StationName="Shin-Osaka" CityCode="OSA" CityName="Osaka" CountryCode="JP" TBOCityId="130813" />
+  <BasicStationPropertyInfo StationId="747" StationName="Siam Reap Train Station" CityCode="SIEM" CityName="Siem Reap" CountryCode="KH" TBOCityId="137759" />
+  <BasicStationPropertyInfo StationId="748" StationName="Siena Train Station" CityCode="SIEN" CityName="Siena" CountryCode="IT" TBOCityId="138687" />
+  <BasicStationPropertyInfo StationId="749" StationName="Sinaia Train Station" CityCode="SINA" CityName="Sinaia" CountryCode="RO" TBOCityId="138003" />
+  <BasicStationPropertyInfo StationId="750" StationName="Singapore Railway Station" CityCode="SIN" CityName="Singapore" CountryCode="SG" TBOCityId="138703" />
+  <BasicStationPropertyInfo StationId="751" StationName="Siracusa Train Station" CityCode="QIC" CityName="Siracusa" CountryCode="IT" TBOCityId="151791" />
+  <BasicStationPropertyInfo StationId="752" StationName="Sirkeci Station" CityCode="IST" CityName="Istanbul" CountryCode="TR" TBOCityId="122727" />
+  <BasicStationPropertyInfo StationId="753" StationName="Sopron Railway Station" CityCode="SOPR" CityName="Sopron" CountryCode="HU" TBOCityId="138057" />
+  <BasicStationPropertyInfo StationId="754" StationName="Sousse Train Station" CityCode="QSO" CityName="Sousse" CountryCode="TN" TBOCityId="138067" />
+  <BasicStationPropertyInfo StationId="755" StationName="South Brisbane" CityCode="BNE" CityName="Brisbane" CountryCode="AU" TBOCityId="112007" />
+  <BasicStationPropertyInfo StationId="756" StationName="South Station (Sudbahnhof)" CityCode="VIE" CityName="Vienna" CountryCode="AT" TBOCityId="140888" />
+  <BasicStationPropertyInfo StationId="757" StationName="Southampton Central Train Station" CityCode="SOU" CityName="Southampton" CountryCode="GB" TBOCityId="138341" />
+  <BasicStationPropertyInfo StationId="758" StationName="Spandau Train Station" CityCode="BER" CityName="Berlin" CountryCode="DE" TBOCityId="111539" />
+  <BasicStationPropertyInfo StationId="759" StationName="Spencer Street Railway Station" CityCode="MEL" CityName="Melbourne" CountryCode="AU" TBOCityId="127718" />
+  <BasicStationPropertyInfo StationId="760" StationName="Split Train Station" CityCode="SPU" CityName="Split" CountryCode="HR" TBOCityId="137547" />
+  <BasicStationPropertyInfo StationId="761" StationName="St Charles Railway Station" CityCode="MRS" CityName="Marseille" CountryCode="FR" TBOCityId="126878" />
+  <BasicStationPropertyInfo StationId="762" StationName="St Helier Train Station" CityCode="JER" CityName="Jersey" CountryCode="GB" TBOCityId="122194" />
+  <BasicStationPropertyInfo StationId="766" StationName="Stafford Train Station" CityCode="STFD" CityName="Stafford" CountryCode="GB" TBOCityId="138787" />
+  <BasicStationPropertyInfo StationId="768" StationName="Stavanger Train Station" CityCode="SVG" CityName="Stavanger" CountryCode="NO" TBOCityId="138803" />
+  <BasicStationPropertyInfo StationId="769" StationName="Stazione Centrale (Train Station)" CityCode="STRE" CityName="Stresa" CountryCode="IT" TBOCityId="137850" />
+  <BasicStationPropertyInfo StationId="770" StationName="Stazione Centrale Train Station" CityCode="MIL" CityName="Milan" CountryCode="IT" TBOCityId="127769" />
+  <BasicStationPropertyInfo StationId="772" StationName="Stockholm Central Railway Station" CityCode="STO" CityName="Stockholm" CountryCode="SE" TBOCityId="137827" />
+  <BasicStationPropertyInfo StationId="773" StationName="Strasbourg Railway Station" CityCode="SXB" CityName="Strasbourg" CountryCode="FR" TBOCityId="148080" />
+  <BasicStationPropertyInfo StationId="774" StationName="Stratford Upon Avon Railway Station" CityCode="STRA" CityName="Stratford-upon-Avon" CountryCode="GB" TBOCityId="137844" />
+  <BasicStationPropertyInfo StationId="775" StationName="Stuttgart Ausserer Nordbanhof" CityCode="STR" CityName="Stuttgart" CountryCode="DE" TBOCityId="138951" />
+  <BasicStationPropertyInfo StationId="776" StationName="Stuttgart Main Train Station" CityCode="STR" CityName="Stuttgart" CountryCode="DE" TBOCityId="138951" />
+  <BasicStationPropertyInfo StationId="777" StationName="Suburban Train Station" CityCode="BLQ" CityName="Bologna" CountryCode="IT" TBOCityId="112298" />
+  <BasicStationPropertyInfo StationId="778" StationName="Suzhou Railway Station" CityCode="SUZH" CityName="Suzhou" CountryCode="CN" TBOCityId="139157" />
+  <BasicStationPropertyInfo StationId="779" StationName="Svinov Railway Station" CityCode="OSTR" CityName="Ostrava" CountryCode="CZ" TBOCityId="130826" />
+  <BasicStationPropertyInfo StationId="780" StationName="Swansea Train Station" CityCode="SWAS" CityName="Swansea" CountryCode="AU" TBOCityId="139162" />
+  <BasicStationPropertyInfo StationId="781" StationName="Swindon Train Station" CityCode="SWIN" CityName="Swindon" CountryCode="GB" TBOCityId="138543" />
+  <BasicStationPropertyInfo StationId="782" StationName="Syntagma Square Station" CityCode="ATH" CityName="Athens" CountryCode="GR" TBOCityId="110000" />
+  <BasicStationPropertyInfo StationId="783" StationName="SZCZECIN Train Station" CityCode="SZCZ" CityName="Szczecin" CountryCode="PL" TBOCityId="139883" />
+  <BasicStationPropertyInfo StationId="784" StationName="Szeged Train Station" CityCode="SZEG" CityName="Szeged" CountryCode="HU" TBOCityId="138992" />
+  <BasicStationPropertyInfo StationId="786" StationName="Tai'an Railway Station" CityCode="TAIA" CityName="Tai'an" CountryCode="CN" TBOCityId="139662" />
+  <BasicStationPropertyInfo StationId="787" StationName="Taipei Main Railway Station" CityCode="TPE" CityName="Taipei" CountryCode="TW" TBOCityId="139664" />
+  <BasicStationPropertyInfo StationId="788" StationName="Taiyuan Railway Station" CityCode="TYN" CityName="Taiyuan" CountryCode="CN" TBOCityId="138566" />
+  <BasicStationPropertyInfo StationId="789" StationName="Tampa (TPA) Train Station" CityCode="TPA" CityName="Tampa" CountryCode="US" TBOCityId="138572" />
+  <BasicStationPropertyInfo StationId="790" StationName="Tampere main railway station" CityCode="TMP" CityName="Tampere" CountryCode="FI" TBOCityId="140293" />
+  <BasicStationPropertyInfo StationId="793" StationName="Tara Street Train Station" CityCode="DUB" CityName="Dublin" CountryCode="IE" TBOCityId="144983" />
+  <BasicStationPropertyInfo StationId="794" StationName="Tennoji" CityCode="OSA" CityName="Osaka" CountryCode="JP" TBOCityId="130813" />
+  <BasicStationPropertyInfo StationId="795" StationName="Terminal Bogota Bus Station" CityCode="BOG" CityName="Bogota" CountryCode="CO" TBOCityId="112438" />
+  <BasicStationPropertyInfo StationId="796" StationName="Terminal de Transporte de Cartagena S.A." CityCode="CARX" CityName="Cartagena" CountryCode="CO" TBOCityId="113776" />
+  <BasicStationPropertyInfo StationId="797" StationName="Termini Train Station" CityCode="ROM" CityName="Rome" CountryCode="IT" TBOCityId="134622" />
+  <BasicStationPropertyInfo StationId="799" StationName="Thessaloniki Railway Station" CityCode="SKG" CityName="Thessaloniki" CountryCode="GR" TBOCityId="141027" />
+  <BasicStationPropertyInfo StationId="800" StationName="Tianjin Railway Station" CityCode="TSN" CityName="Tianjin" CountryCode="CN" TBOCityId="148225" />
+  <BasicStationPropertyInfo StationId="801" StationName="Tiberius Train Station" CityCode="TIBE" CityName="Tiberias" CountryCode="IL" TBOCityId="141039" />
+  <BasicStationPropertyInfo StationId="802" StationName="Tiburtina Train Station" CityCode="ROM" CityName="Rome" CountryCode="IT" TBOCityId="134622" />
+  <BasicStationPropertyInfo StationId="803" StationName="Tokyo Narita Train Station" CityCode="NRT" CityName="Tokyo-Narita" CountryCode="JP" TBOCityId="148251" />
+  <BasicStationPropertyInfo StationId="804" StationName="Tokyo Station" CityCode="TYO" CityName="Tokyo" CountryCode="JP" TBOCityId="148251" />
+  <BasicStationPropertyInfo StationId="805" StationName="Torino Porta Nuova Train Station" CityCode="TRN" CityName="Turin" CountryCode="IT" TBOCityId="140399" />
+  <BasicStationPropertyInfo StationId="806" StationName="Toronto Train Station" CityCode="YTO" CityName="Toronto" CountryCode="CA" TBOCityId="140333" />
+  <BasicStationPropertyInfo StationId="807" StationName="Toronto Union Train Station" CityCode="YTO" CityName="Toronto" CountryCode="CA" TBOCityId="140333" />
+  <BasicStationPropertyInfo StationId="808" StationName="Toulouse Matabiau Train Station" CityCode="TLS" CityName="Toulouse" CountryCode="FR" TBOCityId="140797" />
+  <BasicStationPropertyInfo StationId="809" StationName="Tours Railway Station" CityCode="TUF" CityName="Tours" CountryCode="FR" TBOCityId="141762" />
+  <BasicStationPropertyInfo StationId="810" StationName="Townsville Station" CityCode="TOWN" CityName="Townsville" CountryCode="AU" TBOCityId="140347" />
+  <BasicStationPropertyInfo StationId="811" StationName="Train Station" CityCode="FAO" CityName="Faro" CountryCode="PT" TBOCityId="118247" />
+  <BasicStationPropertyInfo StationId="814" StationName="Train Station" CityCode="TAVR" CityName="Tavira" CountryCode="PT" TBOCityId="140978" />
+  <BasicStationPropertyInfo StationId="815" StationName="Train Station" CityCode="LDE" CityName="Lourdes" CountryCode="FR" TBOCityId="126048" />
+  <BasicStationPropertyInfo StationId="816" StationName="Train Station" CityCode="FUSS" CityName="Fussen" CountryCode="DE" TBOCityId="119047" />
+  <BasicStationPropertyInfo StationId="817" StationName="Train Station El Pacifico" CityCode="SJO" CityName="San Jose" CountryCode="CR" TBOCityId="135889" />
+  <BasicStationPropertyInfo StationId="818" StationName="Tran Quy Cap Street Station" CityCode="HAN" CityName="Hanoi" CountryCode="VN" TBOCityId="145535" />
+  <BasicStationPropertyInfo StationId="819" StationName="Trencin Train Station" CityCode="TREQ" CityName="Trencin" CountryCode="SK" TBOCityId="140363" />
+  <BasicStationPropertyInfo StationId="820" StationName="Trento Male Train Station" CityCode="TREN" CityName="Trento" CountryCode="IT" TBOCityId="148310" />
+  <BasicStationPropertyInfo StationId="821" StationName="Trento Train Station" CityCode="TREN" CityName="Trento" CountryCode="IT" TBOCityId="148310" />
+  <BasicStationPropertyInfo StationId="822" StationName="Treviso Train Station" CityCode="QTV" CityName="Treviso" CountryCode="IT" TBOCityId="140646" />
+  <BasicStationPropertyInfo StationId="823" StationName="Trieste Train Station" CityCode="TRS" CityName="Trieste" CountryCode="IT" TBOCityId="139816" />
+  <BasicStationPropertyInfo StationId="824" StationName="Trinidad Train Station" CityCode="TND" CityName="Trinidad" CountryCode="CU" TBOCityId="140832" />
+  <BasicStationPropertyInfo StationId="825" StationName="Trondheim Sentral Railway Station" CityCode="TRD" CityName="Trondheim" CountryCode="NO" TBOCityId="140381" />
+  <BasicStationPropertyInfo StationId="826" StationName="Tsentralnata Gara" CityCode="SOF" CityName="Sofia" CountryCode="BG" TBOCityId="138465" />
+  <BasicStationPropertyInfo StationId="827" StationName="Tucson (TUS) Train Station" CityCode="TUCS" CityName="Tucson" CountryCode="US" TBOCityId="139411" />
+  <BasicStationPropertyInfo StationId="828" StationName="Tunis Train Station" CityCode="TUN" CityName="Tunis" CountryCode="TN" TBOCityId="141525" />
+  <BasicStationPropertyInfo StationId="829" StationName="Turbot Street Station" CityCode="BNE" CityName="Brisbane" CountryCode="AU" TBOCityId="112007" />
+  <BasicStationPropertyInfo StationId="830" StationName="Turku Railway station" CityCode="TKU" CityName="Turku" CountryCode="FI" TBOCityId="140401" />
+  <BasicStationPropertyInfo StationId="831" StationName="Udaipur City Train Station" CityCode="UDR" CityName="Udaipur" CountryCode="IN" TBOCityId="140522" />
+  <BasicStationPropertyInfo StationId="832" StationName="Umeda" CityCode="OSA" CityName="Osaka" CountryCode="JP" TBOCityId="130813" />
+  <BasicStationPropertyInfo StationId="833" StationName="Urumqi Railway Station" CityCode="URC" CityName="Urumqi" CountryCode="CN" TBOCityId="141105" />
+  <BasicStationPropertyInfo StationId="834" StationName="Utrecht Central Railway Station" CityCode="UTRE" CityName="Utrecht" CountryCode="NL" TBOCityId="148400" />
+  <BasicStationPropertyInfo StationId="835" StationName="Vaasa Railway Station" CityCode="VAA" CityName="Vaasa" CountryCode="FI" TBOCityId="140147" />
+  <BasicStationPropertyInfo StationId="836" StationName="Valencia Nord Train Station" CityCode="VLC" CityName="Valencia" CountryCode="ES" TBOCityId="141297" />
+  <BasicStationPropertyInfo StationId="838" StationName="Varadero Train Station" CityCode="VRA" CityName="Varadero" CountryCode="CU" TBOCityId="140603" />
+  <BasicStationPropertyInfo StationId="839" StationName="Varanasi City Train Station- Junction" CityCode="VNS" CityName="Varanasi" CountryCode="IN" TBOCityId="141618" />
+  <BasicStationPropertyInfo StationId="840" StationName="Varna Central Train Station" CityCode="VARN" CityName="Varna" CountryCode="BG" TBOCityId="148434" />
+  <BasicStationPropertyInfo StationId="841" StationName="Versailles Chantiers Railway Station" CityCode="VERS" CityName="Versailles" CountryCode="FR" TBOCityId="142568" />
+  <BasicStationPropertyInfo StationId="842" StationName="Victoria Falls Railway Station" CityCode="VICR" CityName="Victoria Falls" CountryCode="ZW" TBOCityId="141497" />
+  <BasicStationPropertyInfo StationId="843" StationName="Victoria Train Station" CityCode="LON" CityName="London" CountryCode="GB" TBOCityId="126632" />
+  <BasicStationPropertyInfo StationId="844" StationName="Victoria Train Station" CityCode="YYJ" CityName="Victoria" CountryCode="CA" TBOCityId="141495" />
+  <BasicStationPropertyInfo StationId="845" StationName="Vigo Train Station" CityCode="VGO" CityName="Vigo" CountryCode="ES" TBOCityId="140890" />
+  <BasicStationPropertyInfo StationId="846" StationName="Vilnius Train Station" CityCode="VNO" CityName="Vilnius" CountryCode="LT" TBOCityId="141893" />
+  <BasicStationPropertyInfo StationId="848" StationName="Vittoria Train Station" CityCode="MIL" CityName="Milan" CountryCode="IT" TBOCityId="127769" />
+  <BasicStationPropertyInfo StationId="849" StationName="Wannsee Train Station" CityCode="BER" CityName="Berlin" CountryCode="DE" TBOCityId="111539" />
+  <BasicStationPropertyInfo StationId="850" StationName="Warsaw Central Station" CityCode="WAW" CityName="Warsaw" CountryCode="PL" TBOCityId="148614" />
+  <BasicStationPropertyInfo StationId="851" StationName="Warsaw West Train Station" CityCode="WAW" CityName="Warsaw" CountryCode="PL" TBOCityId="148614" />
+  <BasicStationPropertyInfo StationId="852" StationName="Warwick Parkway Railway Station" CityCode="WARW" CityName="Warwick" CountryCode="GB" TBOCityId="142625" />
+  <BasicStationPropertyInfo StationId="853" StationName="Warwick Railway Station" CityCode="WARW" CityName="Warwick" CountryCode="GB" TBOCityId="142625" />
+  <BasicStationPropertyInfo StationId="855" StationName="Waterford Plunkett Train Station" CityCode="WAT" CityName="Waterford" CountryCode="IE" TBOCityId="142093" />
+  <BasicStationPropertyInfo StationId="856" StationName="Waterloo Train Station" CityCode="LON" CityName="London" CountryCode="GB" TBOCityId="126632" />
+  <BasicStationPropertyInfo StationId="857" StationName="Weifang Railway Station" CityCode="WEF" CityName="Weifang" CountryCode="CN" TBOCityId="148634" />
+  <BasicStationPropertyInfo StationId="858" StationName="Weihai Railway Station" CityCode="WEH" CityName="Weihai" CountryCode="CN" TBOCityId="143119" />
+  <BasicStationPropertyInfo StationId="859" StationName="Wellington Train Station" CityCode="WLG" CityName="Wellington" CountryCode="NZ" TBOCityId="142120" />
+  <BasicStationPropertyInfo StationId="860" StationName="Wenzhou Railway Station" CityCode="WNZ" CityName="Wenzhou" CountryCode="CN" TBOCityId="143696" />
+  <BasicStationPropertyInfo StationId="861" StationName="West   Railway Station (Westbahnhof)" CityCode="VIE" CityName="Vienna" CountryCode="AT" TBOCityId="140888" />
+  <BasicStationPropertyInfo StationId="862" StationName="West Palm Beach (WPB) Train Station" CityCode="WPBE" CityName="West Palm Beach" CountryCode="US" TBOCityId="143387" />
+  <BasicStationPropertyInfo StationId="863" StationName="Wien Mitte Train Station" CityCode="VIE" CityName="Vienna" CountryCode="AT" TBOCityId="140888" />
+  <BasicStationPropertyInfo StationId="864" StationName="Wien Nord Station" CityCode="VIE" CityName="Vienna" CountryCode="AT" TBOCityId="140888" />
+  <BasicStationPropertyInfo StationId="865" StationName="Wiesbaden Biebrich Train Station" CityCode="UWE" CityName="Wiesbaden" CountryCode="DE" TBOCityId="143008" />
+  <BasicStationPropertyInfo StationId="866" StationName="Wiesbaden Main Train Station" CityCode="UWE" CityName="Wiesbaden" CountryCode="DE" TBOCityId="143008" />
+  <BasicStationPropertyInfo StationId="867" StationName="Wiesbaden Ost Train Station" CityCode="UWE" CityName="Wiesbaden" CountryCode="DE" TBOCityId="143008" />
+  <BasicStationPropertyInfo StationId="868" StationName="Wiesbaden Schierstein Train Station" CityCode="UWE" CityName="Wiesbaden" CountryCode="DE" TBOCityId="143008" />
+  <BasicStationPropertyInfo StationId="869" StationName="Winchester Railway Station" CityCode="WINC" CityName="Winchester" CountryCode="GB" TBOCityId="143589" />
+  <BasicStationPropertyInfo StationId="870" StationName="Windermere Train Station" CityCode="WIND" CityName="Windermere" CountryCode="GB" TBOCityId="141736" />
+  <BasicStationPropertyInfo StationId="871" StationName="Windosr and Eton Riverside Railway Station" CityCode="WINS" CityName="Windsor" CountryCode="GB" TBOCityId="148708" />
+  <BasicStationPropertyInfo StationId="872" StationName="Windsor and Eton Central Railway Station" CityCode="WINS" CityName="Windsor" CountryCode="GB" TBOCityId="148708" />
+  <BasicStationPropertyInfo StationId="873" StationName="Winnipeg Train Station" CityCode="YWG" CityName="Winnipeg" CountryCode="CA" TBOCityId="143031" />
+  <BasicStationPropertyInfo StationId="874" StationName="Wroclaw Main Train Station" CityCode="WRO" CityName="Wroclaw" CountryCode="PL" TBOCityId="143776" />
+  <BasicStationPropertyInfo StationId="875" StationName="Wuchang Railway Station" CityCode="WUH" CityName="Wuhan" CountryCode="CN" TBOCityId="143778" />
+  <BasicStationPropertyInfo StationId="876" StationName="Wurzburg Hedingsfeld West Train Station" CityCode="QWU" CityName="Wurzburg" CountryCode="DE" TBOCityId="142429" />
+  <BasicStationPropertyInfo StationId="877" StationName="Wurzburg Main Train Station" CityCode="QWU" CityName="Wurzburg" CountryCode="DE" TBOCityId="142429" />
+  <BasicStationPropertyInfo StationId="878" StationName="Wurzburg Sud Train Station" CityCode="QWU" CityName="Wurzburg" CountryCode="DE" TBOCityId="142429" />
+  <BasicStationPropertyInfo StationId="879" StationName="Wurzburg Zell Train Station" CityCode="QWU" CityName="Wurzburg" CountryCode="DE" TBOCityId="142429" />
+  <BasicStationPropertyInfo StationId="880" StationName="Wuxi Railway Station" CityCode="WUXI" CityName="Wuxi" CountryCode="CN" TBOCityId="142430" />
+  <BasicStationPropertyInfo StationId="881" StationName="Wuyishan Railway Station" CityCode="WUS" CityName="Wuyishan" CountryCode="CN" TBOCityId="148745" />
+  <BasicStationPropertyInfo StationId="882" StationName="Xiamen Railway Station" CityCode="XMN" CityName="Xiamen" CountryCode="CN" TBOCityId="142891" />
+  <BasicStationPropertyInfo StationId="883" StationName="Xian Railway Station" CityCode="SIA" CityName="Xian" CountryCode="CN" TBOCityId="142892" />
+  <BasicStationPropertyInfo StationId="884" StationName="Yangon Railway Station" CityCode="RGN" CityName="Yangon" CountryCode="MM" TBOCityId="134222" />
+  <BasicStationPropertyInfo StationId="885" StationName="Yantai Railway Station" CityCode="YNT" CityName="Yantai" CountryCode="CN" TBOCityId="142905" />
+  <BasicStationPropertyInfo StationId="886" StationName="Yaroslavskiy Train Station" CityCode="MOW" CityName="Moscow" CountryCode="RU" TBOCityId="146743" />
+  <BasicStationPropertyInfo StationId="887" StationName="Yiwu Railway Station" CityCode="YIW" CityName="Yiwu" CountryCode="CN" TBOCityId="143332" />
+  <BasicStationPropertyInfo StationId="888" StationName="Yogyakarta Train Station" CityCode="YOGY" CityName="Yogyakarta" CountryCode="ID" TBOCityId="142463" />
+  <BasicStationPropertyInfo StationId="889" StationName="Yongzhou Railway Station" CityCode="QUFU" CityName="Qufu" CountryCode="CN" TBOCityId="147430" />
+  <BasicStationPropertyInfo StationId="890" StationName="York Train Station" CityCode="YORK" CityName="York" CountryCode="GB" TBOCityId="148776" />
+  <BasicStationPropertyInfo StationId="891" StationName="Yueyang Railway Station" CityCode="YUEY" CityName="Yueyang" CountryCode="CN" TBOCityId="143654" />
+  <BasicStationPropertyInfo StationId="892" StationName="Yuyao Railway Station" CityCode="YUYA" CityName="Yuyao" CountryCode="CN" TBOCityId="142923" />
+  <BasicStationPropertyInfo StationId="893" StationName="Zandvoort Railway Station" CityCode="ZAND" CityName="Zandvoort" CountryCode="NL" TBOCityId="143661" />
+  <BasicStationPropertyInfo StationId="894" StationName="Zell am See Station" CityCode="ZELA" CityName="Zell am See" CountryCode="AT" TBOCityId="143670" />
+  <BasicStationPropertyInfo StationId="895" StationName="Zermatt Train Station" CityCode="ZERM" CityName="Zermatt" CountryCode="CH" TBOCityId="143924" />
+  <BasicStationPropertyInfo StationId="896" StationName="Zhangjiajie Railway Station" CityCode="DYG" CityName="Zhangjiajie" CountryCode="CN" TBOCityId="143844" />
+  <BasicStationPropertyInfo StationId="897" StationName="Zhaoqing Railway Station" CityCode="ZHAO" CityName="Zhaoqing" CountryCode="CN" TBOCityId="143859" />
+  <BasicStationPropertyInfo StationId="898" StationName="Zhengzhou Train Station" CityCode="CGO" CityName="Zhengzhou" CountryCode="CN" TBOCityId="143861" />
+  <BasicStationPropertyInfo StationId="899" StationName="Zibo Railway Station" CityCode="ZIBO" CityName="Zibo" CountryCode="CN" TBOCityId="148806" />
+  <BasicStationPropertyInfo StationId="900" StationName="Zoologischer Garten Train Station" CityCode="BER" CityName="Berlin" CountryCode="DE" TBOCityId="111539" />
+  <BasicStationPropertyInfo StationId="901" StationName="Zurich Hauptbahnhof (Main Train Station)" CityCode="ZRH" CityName="Zurich" CountryCode="CH" TBOCityId="142511" />
+  <BasicStationPropertyInfo StationId="902" StationName="Andermatt Railway Station" CityCode="" CityName="" CountryCode="CH" TBOCityId="0" />
+  <BasicStationPropertyInfo StationId="903" StationName="Austerlitz Train Station" CityCode="" CityName="" CountryCode="FR" TBOCityId="0" />
+  <BasicStationPropertyInfo StationId="904" StationName="Bari Train Station" CityCode="" CityName="" CountryCode="IT" TBOCityId="0" />
+  <BasicStationPropertyInfo StationId="905" StationName="Belfast Central Train Station" CityCode="" CityName="" CountryCode="UK" TBOCityId="0" />
+  <BasicStationPropertyInfo StationId="906" StationName="Budapest Keleti Railway Station" CityCode="" CityName="" CountryCode="HU" TBOCityId="0" />
+  <BasicStationPropertyInfo StationId="907" StationName="Cheboksary Railway Station" CityCode="" CityName="" CountryCode="RU" TBOCityId="0" />
+  <BasicStationPropertyInfo StationId="908" StationName="Chelyabinsk Railway Station" CityCode="" CityName="" CountryCode="RU" TBOCityId="0" />
+  <BasicStationPropertyInfo StationId="909" StationName="Cherepovets Railway Station" CityCode="" CityName="" CountryCode="RU" TBOCityId="0" />
+  <BasicStationPropertyInfo StationId="910" StationName="Como S. Giovanni Railway Station" CityCode="" CityName="" CountryCode="IT" TBOCityId="0" />
+  <BasicStationPropertyInfo StationId="911" StationName="Costa Del Sol - Malaga Railway Station" CityCode="" CityName="" CountryCode="ES" TBOCityId="0" />
+  <BasicStationPropertyInfo StationId="912" StationName="Figueres-Vilafant Railway Station" CityCode="" CityName="" CountryCode="ES" TBOCityId="0" />
+  <BasicStationPropertyInfo StationId="913" StationName="Florence Santa Maria Novella Railway Station" CityCode="" CityName="" CountryCode="IT" TBOCityId="0" />
+  <BasicStationPropertyInfo StationId="914" StationName="Haymarket Train Station" CityCode="" CityName="" CountryCode="UK" TBOCityId="0" />
+  <BasicStationPropertyInfo StationId="915" StationName="Irun Train Station" CityCode="" CityName="" CountryCode="ES" TBOCityId="0" />
+  <BasicStationPropertyInfo StationId="916" StationName="Ivanovo Railway Station" CityCode="" CityName="" CountryCode="RU" TBOCityId="0" />
+  <BasicStationPropertyInfo StationId="917" StationName="Kaliningrad Railway Station" CityCode="" CityName="" CountryCode="RU" TBOCityId="0" />
+  <BasicStationPropertyInfo StationId="918" StationName="Khabarovsk Railway Station" CityCode="" CityName="" CountryCode="RU" TBOCityId="0" />
+  <BasicStationPropertyInfo StationId="919" StationName="Kirov Railway Station" CityCode="" CityName="" CountryCode="RU" TBOCityId="0" />
+  <BasicStationPropertyInfo StationId="920" StationName="Krasnodar Railway Station" CityCode="" CityName="Sochi" CountryCode="RU" TBOCityId="137654" />
+  <BasicStationPropertyInfo StationId="921" StationName="Krasnoyarsk Railway Station" CityCode="" CityName="" CountryCode="RU" TBOCityId="0" />
+  <BasicStationPropertyInfo StationId="922" StationName="Livorno Railway Station" CityCode="" CityName="" CountryCode="IT" TBOCityId="0" />
+  <BasicStationPropertyInfo StationId="923" StationName="Lucca Railway Station" CityCode="" CityName="" CountryCode="IT" TBOCityId="0" />
+  <BasicStationPropertyInfo StationId="924" StationName="Milan Central Station" CityCode="" CityName="" CountryCode="IT" TBOCityId="0" />
+  <BasicStationPropertyInfo StationId="925" StationName="Pera" CityCode="" CityName="" CountryCode="PT" TBOCityId="0" />
+  <BasicStationPropertyInfo StationId="926" StationName="Portimao Train Station" CityCode="" CityName="" CountryCode="PT" TBOCityId="0" />
+  <BasicStationPropertyInfo StationId="927" StationName="Prague Railway Station (Praha Hlavni Nadrazi)" CityCode="" CityName="" CountryCode="CZ" TBOCityId="0" />
+  <BasicStationPropertyInfo StationId="928" StationName="Rome Termini Station" CityCode="" CityName="" CountryCode="IT" TBOCityId="0" />
+  <BasicStationPropertyInfo StationId="929" StationName="Saint Petersburg Glavny Railway Station" CityCode="" CityName="" CountryCode="RU" TBOCityId="0" />
+  <BasicStationPropertyInfo StationId="930" StationName="Samara Railway Station" CityCode="" CityName="" CountryCode="RU" TBOCityId="0" />
+  <BasicStationPropertyInfo StationId="931" StationName="Seville Santa Justa Railway Station" CityCode="" CityName="" CountryCode="IT" TBOCityId="0" />
+  <BasicStationPropertyInfo StationId="932" StationName="Turin Porta Susa Railway Station" CityCode="" CityName="" CountryCode="IT" TBOCityId="0" />
+  <BasicStationPropertyInfo StationId="933" StationName="Turin Torino Porta Nuova Railway Station" CityCode="" CityName="" CountryCode="IT" TBOCityId="0" />
+  <BasicStationPropertyInfo StationId="934" StationName="Tver Railway Station" CityCode="" CityName="" CountryCode="RU" TBOCityId="0" />
+  <BasicStationPropertyInfo StationId="935" StationName="Valencia Estacio del Nord Railway Station" CityCode="" CityName="" CountryCode="ES" TBOCityId="0" />
+  <BasicStationPropertyInfo StationId="936" StationName="Venice Santa Lucia Railway Station" CityCode="" CityName="" CountryCode="IT" TBOCityId="0" />
+  <BasicStationPropertyInfo StationId="937" StationName="Verona Porta Nuova Railway Station" CityCode="" CityName="" CountryCode="IT" TBOCityId="0" />
+  <BasicStationPropertyInfo StationId="938" StationName="Vienna Central Train Station" CityCode="" CityName="" CountryCode="AT" TBOCityId="0" />
+  <BasicStationPropertyInfo StationId="939" StationName="Waverly Train Station" CityCode="" CityName="" CountryCode="UK" TBOCityId="0" />
+  <BasicStationPropertyInfo StationId="940" StationName="Woodland Train Station" CityCode="" CityName="" CountryCode="SG" TBOCityId="0" />
+  <BasicStationPropertyInfo StationId="941" StationName="Yaroslavl Railway Station" CityCode="" CityName="" CountryCode="RU" TBOCityId="0" />
+  <BasicStationPropertyInfo StationId="942" StationName="Yoshkar-Ola Railway Station" CityCode="" CityName="" CountryCode="RU" TBOCityId="0" />
+  <BasicStationPropertyInfo StationId="943" StationName="Zamora Railway Station" CityCode="" CityName="" CountryCode="ES" TBOCityId="0" />
+  <BasicStationPropertyInfo StationId="1" StationName="Aachen Main Train Station" CityCode="AAH" CityName="Aachen" CountryCode="DE" TBOCityId="100539" />
+  <BasicStationPropertyInfo StationId="2" StationName="Aachen Rothe Erde Train Station" CityCode="AAH" CityName="Aachen" CountryCode="DE" TBOCityId="100539" />
+  <BasicStationPropertyInfo StationId="3" StationName="Aachen West Train Station" CityCode="AAH" CityName="Aachen" CountryCode="DE" TBOCityId="100539" />
+  <BasicStationPropertyInfo StationId="4" StationName="Aberdeen Dyce Train Station" CityCode="ABZ" CityName="Aberdeen" CountryCode="GB" TBOCityId="100552" />
+  <BasicStationPropertyInfo StationId="5" StationName="Aberdeen Train Station" CityCode="ABZ" CityName="Aberdeen" CountryCode="GB" TBOCityId="100552" />
+  <BasicStationPropertyInfo StationId="6" StationName="Agra City Train Station" CityCode="AGR" CityName="Agra" CountryCode="IN" TBOCityId="100589" />
+  <BasicStationPropertyInfo StationId="7" StationName="Ahmedabad JN Train Station" CityCode="AMD" CityName="Ahmedabad" CountryCode="IN" TBOCityId="100263" />
+  <BasicStationPropertyInfo StationId="9" StationName="Aix-en-Provence Train Station" CityCode="AIXE" CityName="Aix-en-Provence" CountryCode="FR" TBOCityId="100071" />
+  <BasicStationPropertyInfo StationId="10" StationName="Albufeira Train Station" CityCode="ALBU" CityName="Albufeira" CountryCode="PT" TBOCityId="100502" />
+  <BasicStationPropertyInfo StationId="11" StationName="Albuquerque (ABQ) Train Station" CityCode="ABQ" CityName="Albuquerque" CountryCode="US" TBOCityId="100625" />
+  <BasicStationPropertyInfo StationId="12" StationName="Alcântara Station" CityCode="LIS" CityName="Lisbon" CountryCode="PT" TBOCityId="146305" />
+  <BasicStationPropertyInfo StationId="13" StationName="Alexanderplatz Train Station" CityCode="BER" CityName="Berlin" CountryCode="DE" TBOCityId="111539" />
+  <BasicStationPropertyInfo StationId="14" StationName="Alexandria Train Station" CityCode="ALY" CityName="Alexandria" CountryCode="EG" TBOCityId="100103" />
+  <BasicStationPropertyInfo StationId="16" StationName="Alicante Termino Train Station" CityCode="ALC" CityName="Alicante" CountryCode="ES" TBOCityId="100846" />
+  <BasicStationPropertyInfo StationId="17" StationName="Alleppo Train Station" CityCode="ALP" CityName="Aleppo" CountryCode="SY" TBOCityId="100181" />
+  <BasicStationPropertyInfo StationId="19" StationName="Amsterdam Central Railway Station" CityCode="AMS" CityName="Amsterdam" CountryCode="NL" TBOCityId="113060" />
+  <BasicStationPropertyInfo StationId="20" StationName="Amtrak Train Station" CityCode="DFW" CityName="Dallas" CountryCode="US" TBOCityId="144854" />
+  <BasicStationPropertyInfo StationId="21" StationName="Anaheim (ANA) Train Station" CityCode="ANA" CityName="Anaheim" CountryCode="US" TBOCityId="101131" />
+  <BasicStationPropertyInfo StationId="22" StationName="Ancona Train Station" CityCode="QAN" CityName="Ancona" CountryCode="IT" TBOCityId="101134" />
+  <BasicStationPropertyInfo StationId="23" StationName="Angers Railway Station" CityCode="ANE" CityName="Angers" CountryCode="FR" TBOCityId="109571" />
+  <BasicStationPropertyInfo StationId="25" StationName="Ankara Gari Train Station" CityCode="ANK" CityName="Ankara" CountryCode="TR" TBOCityId="109340" />
+  <BasicStationPropertyInfo StationId="26" StationName="Annecy Railway Station" CityCode="NCY" CityName="Annecy" CountryCode="FR" TBOCityId="109133" />
+  <BasicStationPropertyInfo StationId="27" StationName="Anvers-Berchem Station" CityCode="ANR" CityName="Antwerp" CountryCode="BE" TBOCityId="109358" />
+  <BasicStationPropertyInfo StationId="28" StationName="Arequipa Train Station" CityCode="AQP" CityName="Arequipa" CountryCode="PE" TBOCityId="101052" />
+  <BasicStationPropertyInfo StationId="30" StationName="Arles SNCF Train Station" CityCode="ARLE" CityName="Arles" CountryCode="FR" TBOCityId="109963" />
+  <BasicStationPropertyInfo StationId="32" StationName="Assisi Train Station" CityCode="ASSI" CityName="Assisi" CountryCode="IT" TBOCityId="110074" />
+  <BasicStationPropertyInfo StationId="33" StationName="Aswan Main Train Station" CityCode="ASW" CityName="Aswan" CountryCode="EG" TBOCityId="109642" />
+  <BasicStationPropertyInfo StationId="34" StationName="Atlanta (ATL) Train Station" CityCode="ATL" CityName="Atlanta" CountryCode="US" TBOCityId="143983" />
+  <BasicStationPropertyInfo StationId="35" StationName="Atocha  Train  Station" CityCode="MAD" CityName="Madrid" CountryCode="ES" TBOCityId="126260" />
+  <BasicStationPropertyInfo StationId="36" StationName="Atxuri Train Station" CityCode="BIO" CityName="Bilbao" CountryCode="ES" TBOCityId="111302" />
+  <BasicStationPropertyInfo StationId="37" StationName="Aurangabad Train Station" CityCode="IXU" CityName="Aurangabad" CountryCode="IN" TBOCityId="110349" />
+  <BasicStationPropertyInfo StationId="38" StationName="Austin (AUS) Train Station" CityCode="AUS" CityName="Austin" CountryCode="US" TBOCityId="144007" />
+  <BasicStationPropertyInfo StationId="39" StationName="Avenue de Fontcouverte Railway Station" CityCode="AVN" CityName="Avignon" CountryCode="FR" TBOCityId="144014" />
+  <BasicStationPropertyInfo StationId="40" StationName="Aviation Train Station" CityCode="LAX" CityName="Los Angeles" CountryCode="US" TBOCityId="125908" />
+  <BasicStationPropertyInfo StationId="41" StationName="Avignon Central Railway Station" CityCode="AVN" CityName="Avignon" CountryCode="FR" TBOCityId="144014" />
+  <BasicStationPropertyInfo StationId="42" StationName="Avignon TGV Railway Station" CityCode="AVN" CityName="Avignon" CountryCode="FR" TBOCityId="144014" />
+  <BasicStationPropertyInfo StationId="43" StationName="Bacau Train Station" CityCode="BACA" CityName="Bacau" CountryCode="RO" TBOCityId="110117" />
+  <BasicStationPropertyInfo StationId="44" StationName="Baden Baden Train Station" CityCode="BADD" CityName="Baden-Baden" CountryCode="DE" TBOCityId="109812" />
+  <BasicStationPropertyInfo StationId="45" StationName="Bagan Railway Station" CityCode="PAGA" CityName="Bagan" CountryCode="MM" TBOCityId="110147" />
+  <BasicStationPropertyInfo StationId="47" StationName="Baltimore (BAL) Train Station" CityCode="BWI" CityName="Baltimore" CountryCode="US" TBOCityId="111115" />
+  <BasicStationPropertyInfo StationId="48" StationName="Bang Sue Railway Station" CityCode="BKK" CityName="Bangkok" CountryCode="TH" TBOCityId="144092" />
+  <BasicStationPropertyInfo StationId="49" StationName="Bangalore City Train Station" CityCode="BLR" CityName="Bangalore" CountryCode="IN" TBOCityId="111124" />
+  <BasicStationPropertyInfo StationId="51" StationName="Barao de Maua Train Station" CityCode="RIO" CityName="Rio de Janeiro" CountryCode="BR" TBOCityId="134921" />
+  <BasicStationPropertyInfo StationId="52" StationName="Bari Ferrovie Appulo Lucane" CityCode="BRI" CityName="Bari" CountryCode="IT" TBOCityId="110432" />
+  <BasicStationPropertyInfo StationId="53" StationName="Bari Ferrovie Sud Est" CityCode="BRI" CityName="Bari" CountryCode="IT" TBOCityId="110432" />
+  <BasicStationPropertyInfo StationId="54" StationName="Barra Funda Train Station" CityCode="SAO" CityName="Sao Paulo" CountryCode="BR" TBOCityId="136873" />
+  <BasicStationPropertyInfo StationId="55" StationName="Barreiro Station" CityCode="LIS" CityName="Lisbon" CountryCode="PT" TBOCityId="146305" />
+  <BasicStationPropertyInfo StationId="56" StationName="Basel SBB Train Station" CityCode="BSL" CityName="Basel" CountryCode="CH" TBOCityId="111155" />
+  <BasicStationPropertyInfo StationId="57" StationName="Bat Galim Train Station" CityCode="HFA" CityName="Haifa" CountryCode="IL" TBOCityId="145508" />
+  <BasicStationPropertyInfo StationId="58" StationName="Bath Spa Train Station" CityCode="BATH" CityName="Bath" CountryCode="GB" TBOCityId="110532" />
+  <BasicStationPropertyInfo StationId="59" StationName="Beijing North Railway Station" CityCode="PEK" CityName="Beijing" CountryCode="CN" TBOCityId="144154" />
+  <BasicStationPropertyInfo StationId="60" StationName="Beijing South Railway Station" CityCode="PEK" CityName="Beijing" CountryCode="CN" TBOCityId="144154" />
+  <BasicStationPropertyInfo StationId="61" StationName="Beijing West Railway Station" CityCode="PEK" CityName="Beijing" CountryCode="CN" TBOCityId="144154" />
+  <BasicStationPropertyInfo StationId="62" StationName="Beijing Zhan Railway Station" CityCode="PEK" CityName="Beijing" CountryCode="CN" TBOCityId="144154" />
+  <BasicStationPropertyInfo StationId="64" StationName="Belorusskiy Train Station" CityCode="MOW" CityName="Moscow" CountryCode="RU" TBOCityId="146743" />
+  <BasicStationPropertyInfo StationId="65" StationName="Bergamo Train Station" CityCode="BGY" CityName="Bergamo" CountryCode="IT" TBOCityId="110604" />
+  <BasicStationPropertyInfo StationId="66" StationName="Bergen Central Train Station" CityCode="BGO" CityName="Bergen" CountryCode="NO" TBOCityId="111457" />
+  <BasicStationPropertyInfo StationId="67" StationName="Berlin Charlottenburg Train Station" CityCode="BER" CityName="Berlin" CountryCode="DE" TBOCityId="111539" />
+  <BasicStationPropertyInfo StationId="68" StationName="Berlin Friedrichstrasse Train Station" CityCode="BER" CityName="Berlin" CountryCode="DE" TBOCityId="111539" />
+  <BasicStationPropertyInfo StationId="69" StationName="Central Station -Berlin Hauptbahnhof" CityCode="BER" CityName="Berlin" CountryCode="DE" TBOCityId="111539" />
+  <BasicStationPropertyInfo StationId="70" StationName="Berlin Westkreuz Train Station" CityCode="BER" CityName="Berlin" CountryCode="DE" TBOCityId="111539" />
+  <BasicStationPropertyInfo StationId="72" StationName="Biarritz Train Station" CityCode="BIQ" CityName="Biarritz" CountryCode="FR" TBOCityId="111934" />
+  <BasicStationPropertyInfo StationId="74" StationName="Birmingham International Train Station" CityCode="BHX" CityName="Birmingham" CountryCode="GB" TBOCityId="112624" />
+  <BasicStationPropertyInfo StationId="75" StationName="Birmingham Moor Street Train Station" CityCode="BHX" CityName="Birmingham" CountryCode="GB" TBOCityId="112624" />
+  <BasicStationPropertyInfo StationId="76" StationName="Birmingham New Street Train Station" CityCode="BHX" CityName="Birmingham" CountryCode="GB" TBOCityId="112624" />
+  <BasicStationPropertyInfo StationId="77" StationName="Birmingham New Street Train Station" CityCode="BHX" CityName="Birmingham" CountryCode="GB" TBOCityId="112624" />
+  <BasicStationPropertyInfo StationId="78" StationName="Birmingham Snowhill Train Station" CityCode="BHX" CityName="Birmingham" CountryCode="GB" TBOCityId="112624" />
+  <BasicStationPropertyInfo StationId="79" StationName="Blackpool North Train Station" CityCode="BLK" CityName="Blackpool" CountryCode="GB" TBOCityId="144266" />
+  <BasicStationPropertyInfo StationId="80" StationName="Blackpool South Train Station" CityCode="BLK" CityName="Blackpool" CountryCode="GB" TBOCityId="144266" />
+  <BasicStationPropertyInfo StationId="81" StationName="Bled Train Station" CityCode="BLED" CityName="Bled" CountryCode="SI" TBOCityId="144279" />
+  <BasicStationPropertyInfo StationId="82" StationName="Bloemfontein Train Station" CityCode="BFN" CityName="Bloemfontein" CountryCode="ZA" TBOCityId="111333" />
+  <BasicStationPropertyInfo StationId="83" StationName="Bologna Central Train Station" CityCode="BLQ" CityName="Bologna" CountryCode="IT" TBOCityId="112298" />
+  <BasicStationPropertyInfo StationId="84" StationName="Bonn Beuel Train Station" CityCode="BNJ" CityName="Bonn" CountryCode="DE" TBOCityId="111373" />
+  <BasicStationPropertyInfo StationId="85" StationName="Bonn Duisdorf Train Station" CityCode="BNJ" CityName="Bonn" CountryCode="DE" TBOCityId="111373" />
+  <BasicStationPropertyInfo StationId="86" StationName="Bonn Main Train Station" CityCode="BNJ" CityName="Bonn" CountryCode="DE" TBOCityId="111373" />
+  <BasicStationPropertyInfo StationId="87" StationName="Bonn Oberkassel Train Station" CityCode="BNJ" CityName="Bonn" CountryCode="DE" TBOCityId="111373" />
+  <BasicStationPropertyInfo StationId="88" StationName="Bordeaux Saint-Jean Train Station" CityCode="BOD" CityName="Bordeaux" CountryCode="FR" TBOCityId="144318" />
+  <BasicStationPropertyInfo StationId="89" StationName="Boston Back Bay (BBY) Train Station" CityCode="BOS" CityName="Boston" CountryCode="US" TBOCityId="112246" />
+  <BasicStationPropertyInfo StationId="90" StationName="Boston Route 128 (RTE) Train Station" CityCode="BOS" CityName="Boston" CountryCode="US" TBOCityId="112246" />
+  <BasicStationPropertyInfo StationId="91" StationName="Boston South (BOS) Train Station" CityCode="BOS" CityName="Boston" CountryCode="US" TBOCityId="112246" />
+  <BasicStationPropertyInfo StationId="92" StationName="Bournemouth Train Station" CityCode="BOH" CityName="Bournemouth" CountryCode="GB" TBOCityId="112482" />
+  <BasicStationPropertyInfo StationId="93" StationName="Bovisa Train Station" CityCode="MIL" CityName="Milan" CountryCode="IT" TBOCityId="127769" />
+  <BasicStationPropertyInfo StationId="94" StationName="Bowen Hills" CityCode="BNE" CityName="Brisbane" CountryCode="AU" TBOCityId="112007" />
+  <BasicStationPropertyInfo StationId="95" StationName="Braga Railway Station" CityCode="BRAG" CityName="Braga" CountryCode="PT" TBOCityId="112703" />
+  <BasicStationPropertyInfo StationId="96" StationName="Bremen Main Train Station" CityCode="BRE" CityName="Bremen" CountryCode="DE" TBOCityId="112555" />
+  <BasicStationPropertyInfo StationId="97" StationName="Brighton Central Railway Station" CityCode="BSH" CityName="Brighton" CountryCode="GB" TBOCityId="144378" />
+  <BasicStationPropertyInfo StationId="98" StationName="Bristol Parkway Train Station" CityCode="BRS" CityName="Bristol" CountryCode="GB" TBOCityId="112958" />
+  <BasicStationPropertyInfo StationId="99" StationName="Bristol Temple Meads Train Station" CityCode="BRS" CityName="Bristol" CountryCode="GB" TBOCityId="112958" />
+  <BasicStationPropertyInfo StationId="100" StationName="Brno Hlavni Nadrazi Railway Station" CityCode="BRQ" CityName="Brno" CountryCode="CZ" TBOCityId="151349" />
+  <BasicStationPropertyInfo StationId="102" StationName="Brunswick Street" CityCode="BNE" CityName="Brisbane" CountryCode="AU" TBOCityId="112007" />
+  <BasicStationPropertyInfo StationId="103" StationName="Brussels Airport Train Station" CityCode="ABRU" CityName="Brussels Airport" CountryCode="BE" TBOCityId="113060" />
+  <BasicStationPropertyInfo StationId="104" StationName="Brussels Central Railway Station" CityCode="BRU" CityName="Brussels" CountryCode="BE" TBOCityId="113060" />
+  <BasicStationPropertyInfo StationId="105" StationName="Brussels North Railway Station" CityCode="BRU" CityName="Brussels" CountryCode="BE" TBOCityId="113060" />
+  <BasicStationPropertyInfo StationId="108" StationName="Burgas Train Station" CityCode="BOJ" CityName="Burgas" CountryCode="BG" TBOCityId="112067" />
+  <BasicStationPropertyInfo StationId="109" StationName="Cabanyal Train Station" CityCode="VLC" CityName="Valencia" CountryCode="ES" TBOCityId="141297" />
+  <BasicStationPropertyInfo StationId="110" StationName="Cadorna Train Station" CityCode="MIL" CityName="Milan" CountryCode="IT" TBOCityId="127769" />
+  <BasicStationPropertyInfo StationId="111" StationName="Caen Railway Station" CityCode="CFR" CityName="Caen" CountryCode="FR" TBOCityId="113491" />
+  <BasicStationPropertyInfo StationId="112" StationName="Cagliari Central Train Station" CityCode="CAG" CityName="Cagliari" CountryCode="IT" TBOCityId="144462" />
+  <BasicStationPropertyInfo StationId="113" StationName="Cais do Sodré Station" CityCode="LIS" CityName="Lisbon" CountryCode="PT" TBOCityId="146305" />
+  <BasicStationPropertyInfo StationId="114" StationName="Caltrain Train Station" CityCode="SFO" CityName="San Francisco" CountryCode="US" TBOCityId="136014" />
+  <BasicStationPropertyInfo StationId="115" StationName="Cambridge Railway Station" CityCode="CBG" CityName="Cambridge" CountryCode="GB" TBOCityId="113325" />
+  <BasicStationPropertyInfo StationId="116" StationName="Cambridge Train Station" CityCode="CAMD" CityName="Cambridge" CountryCode="CA" TBOCityId="112879" />
+  <BasicStationPropertyInfo StationId="117" StationName="Campanha Train Station" CityCode="OPO" CityName="Porto" CountryCode="PT" TBOCityId="131849" />
+  <BasicStationPropertyInfo StationId="118" StationName="Campo di Marte Train Station" CityCode="FLR" CityName="Florence" CountryCode="IT" TBOCityId="151778" />
+  <BasicStationPropertyInfo StationId="119" StationName="Canberra Rail Station" CityCode="CBR" CityName="Canberra" CountryCode="AU" TBOCityId="114163" />
+  <BasicStationPropertyInfo StationId="120" StationName="Canterbury East Train Station" CityCode="CANT" CityName="Canterbury" CountryCode="GB" TBOCityId="113819" />
+  <BasicStationPropertyInfo StationId="121" StationName="Canterbury West Train Station" CityCode="CANT" CityName="Canterbury" CountryCode="GB" TBOCityId="113819" />
+  <BasicStationPropertyInfo StationId="122" StationName="Cape Town Central Train Station" CityCode="CPT" CityName="Cape Town" CountryCode="ZA" TBOCityId="144527" />
+  <BasicStationPropertyInfo StationId="123" StationName="Carcassone SCNF Railway Station" CityCode="CCF" CityName="Carcassonne" CountryCode="FR" TBOCityId="144535" />
+  <BasicStationPropertyInfo StationId="124" StationName="Cardiff Bay Train Station" CityCode="CWL" CityName="Cardiff" CountryCode="GB" TBOCityId="113509" />
+  <BasicStationPropertyInfo StationId="125" StationName="Cardiff Central Train Station" CityCode="CWL" CityName="Cardiff" CountryCode="GB" TBOCityId="113509" />
+  <BasicStationPropertyInfo StationId="126" StationName="Cardiff Queen Street Train Station" CityCode="CWL" CityName="Cardiff" CountryCode="GB" TBOCityId="113509" />
+  <BasicStationPropertyInfo StationId="127" StationName="Cardiff Whitchurch Train Station" CityCode="CWL" CityName="Cardiff" CountryCode="GB" TBOCityId="113509" />
+  <BasicStationPropertyInfo StationId="128" StationName="Carlise Train Station" CityCode="CAX" CityName="Carlisle" CountryCode="GB" TBOCityId="144541" />
+  <BasicStationPropertyInfo StationId="129" StationName="Casablanca Train Station" CityCode="CAS" CityName="Casablanca" CountryCode="MA" TBOCityId="114032" />
+  <BasicStationPropertyInfo StationId="130" StationName="Cascais Train Station" CityCode="CASC" CityName="Cascais" CountryCode="PT" TBOCityId="114039" />
+  <BasicStationPropertyInfo StationId="131" StationName="Caserta Train Station" CityCode="QTC" CityName="Caserta" CountryCode="IT" TBOCityId="144553" />
+  <BasicStationPropertyInfo StationId="132" StationName="Catania Train Station" CityCode="CTA" CityName="Catania" CountryCode="IT" TBOCityId="113908" />
+  <BasicStationPropertyInfo StationId="133" StationName="Central Rail Station" CityCode="CNS" CityName="Cairns" CountryCode="AU" TBOCityId="113115" />
+  <BasicStationPropertyInfo StationId="134" StationName="Central Rail Station" CityCode="BNE" CityName="Brisbane" CountryCode="AU" TBOCityId="112007" />
+  <BasicStationPropertyInfo StationId="135" StationName="Central Railway Station" CityCode="GOT" CityName="Gothenburg" CountryCode="SE" TBOCityId="151094" />
+  <BasicStationPropertyInfo StationId="136" StationName="Central Railway Station" CityCode="GRQ" CityName="Groningen" CountryCode="NL" TBOCityId="145457" />
+  <BasicStationPropertyInfo StationId="137" StationName="Central Railway Station" CityCode="GWY" CityName="Galway" CountryCode="IE" TBOCityId="119609" />
+  <BasicStationPropertyInfo StationId="138" StationName="Central Railway Station" CityCode="HAG" CityName="The Hague" CountryCode="NL" TBOCityId="139741" />
+  <BasicStationPropertyInfo StationId="139" StationName="Central Railway Station" CityCode="KSD" CityName="Karlstad" CountryCode="SE" TBOCityId="123094" />
+  <BasicStationPropertyInfo StationId="140" StationName="Central Railway Station" CityCode="MMA" CityName="Malmo" CountryCode="SE" TBOCityId="126382" />
+  <BasicStationPropertyInfo StationId="141" StationName="Central Railway Station" CityCode="RTM" CityName="Rotterdam" CountryCode="NL" TBOCityId="134992" />
+  <BasicStationPropertyInfo StationId="142" StationName="Central Railway Station" CityCode="PER" CityName="Perth" CountryCode="AU" TBOCityId="131059" />
+  <BasicStationPropertyInfo StationId="143" StationName="Central SNCF Train Station" CityCode="CEQ" CityName="Cannes" CountryCode="FR" TBOCityId="114168" />
+  <BasicStationPropertyInfo StationId="144" StationName="Central Station" CityCode="MEX" CityName="Mexico City" CountryCode="MX" TBOCityId="127752" />
+  <BasicStationPropertyInfo StationId="145" StationName="Central Station" CityCode="CPH" CityName="Copenhagen" CountryCode="DK" TBOCityId="115280" />
+  <BasicStationPropertyInfo StationId="146" StationName="Central Train Station" CityCode="TLV" CityName="Tel Aviv" CountryCode="IL" TBOCityId="139939" />
+  <BasicStationPropertyInfo StationId="147" StationName="Central Train Station" CityCode="ANR" CityName="Antwerp" CountryCode="BE" TBOCityId="109358" />
+  <BasicStationPropertyInfo StationId="148" StationName="Central Train Station" CityCode="BEL" CityName="Belfast" CountryCode="GB" TBOCityId="110479" />
+  <BasicStationPropertyInfo StationId="150" StationName="Central Train Station" CityCode="NAP" CityName="Naples" CountryCode="IT" TBOCityId="128721" />
+  <BasicStationPropertyInfo StationId="151" StationName="Central Train Station" CityCode="OSL" CityName="Oslo" CountryCode="NO" TBOCityId="131314" />
+  <BasicStationPropertyInfo StationId="152" StationName="Central Train Station" CityCode="SYD" CityName="Sydney" CountryCode="AU" TBOCityId="140258" />
+  <BasicStationPropertyInfo StationId="153" StationName="Central Train Station" CityCode="QBS" CityName="Brescia" CountryCode="IT" TBOCityId="112558" />
+  <BasicStationPropertyInfo StationId="154" StationName="Certosa Train Station" CityCode="MIL" CityName="Milan" CountryCode="IT" TBOCityId="127769" />
+  <BasicStationPropertyInfo StationId="155" StationName="Chamartín Train Station" CityCode="MAD" CityName="Madrid" CountryCode="ES" TBOCityId="126260" />
+  <BasicStationPropertyInfo StationId="157" StationName="Changsha Railway Station" CityCode="JCHA" CityName="Changsha" CountryCode="CN" TBOCityId="114109" />
+  <BasicStationPropertyInfo StationId="158" StationName="Changzhou Railway Station" CityCode="CZX" CityName="Changzhou" CountryCode="CN" TBOCityId="114110" />
+  <BasicStationPropertyInfo StationId="160" StationName="Charbagh Train Station" CityCode="LUCK" CityName="Lucknow" CountryCode="IN" TBOCityId="126666" />
+  <BasicStationPropertyInfo StationId="161" StationName="Charing Cross Train Station" CityCode="LON" CityName="London" CountryCode="GB" TBOCityId="126632" />
+  <BasicStationPropertyInfo StationId="162" StationName="Charleroi South Railway Station" CityCode="CRL" CityName="Charleroi" CountryCode="BE" TBOCityId="114495" />
+  <BasicStationPropertyInfo StationId="163" StationName="Charleroi West Railway Station" CityCode="CRL" CityName="Charleroi" CountryCode="BE" TBOCityId="114495" />
+  <BasicStationPropertyInfo StationId="164" StationName="Charlotte (CLT) Train Station" CityCode="CLT" CityName="Charlotte" CountryCode="US" TBOCityId="113690" />
+  <BasicStationPropertyInfo StationId="165" StationName="Chartres Railway Station" CityCode="CHAR" CityName="Chartres" CountryCode="FR" TBOCityId="114245" />
+  <BasicStationPropertyInfo StationId="166" StationName="Chelmsford Train Station" CityCode="CHEO" CityName="Chelmsford" CountryCode="GB" TBOCityId="113706" />
+  <BasicStationPropertyInfo StationId="167" StationName="Chengdu North Railway Station" CityCode="CHEG" CityName="Chengdu" CountryCode="CN" TBOCityId="114784" />
+  <BasicStationPropertyInfo StationId="168" StationName="Chester General Train Station" CityCode="CEG" CityName="Chester" CountryCode="GB" TBOCityId="114525" />
+  <BasicStationPropertyInfo StationId="169" StationName="Chiang Mai Railway Station" CityCode="CNX" CityName="Chiang Mai" CountryCode="TH" TBOCityId="114978" />
+  <BasicStationPropertyInfo StationId="170" StationName="Chicago (CHI) Union Train Station" CityCode="CHI" CityName="Chicago" CountryCode="US" TBOCityId="114653" />
+  <BasicStationPropertyInfo StationId="171" StationName="Chimbacalle Train Station" CityCode="UIO" CityName="Quito" CountryCode="EC" TBOCityId="135029" />
+  <BasicStationPropertyInfo StationId="172" StationName="Chinnai Central Train Station" CityCode="MAA" CityName="Chennai (Madras)" CountryCode="IN" TBOCityId="127343" />
+  <BasicStationPropertyInfo StationId="173" StationName="Chongquing Railway Station" CityCode="CKG" CityName="Chongqing" CountryCode="CN" TBOCityId="151797" />
+  <BasicStationPropertyInfo StationId="174" StationName="Chur Train Station" CityCode="CHUR" CityName="Chur" CountryCode="CH" TBOCityId="114553" />
+  <BasicStationPropertyInfo StationId="175" StationName="Cincinnati (CIN) Train Station" CityCode="CVG" CityName="Cincinnati" CountryCode="US" TBOCityId="114285" />
+  <BasicStationPropertyInfo StationId="176" StationName="Circonvallazione Nomentana Train Station" CityCode="ROM" CityName="Rome" CountryCode="IT" TBOCityId="134622" />
+  <BasicStationPropertyInfo StationId="178" StationName="City Hall Train Station" CityCode="SIN" CityName="Singapore" CountryCode="SG" TBOCityId="138703" />
+  <BasicStationPropertyInfo StationId="181" StationName="Cologne Hansaring Train Station" CityCode="CGN" CityName="Cologne" CountryCode="DE" TBOCityId="144743" />
+  <BasicStationPropertyInfo StationId="182" StationName="Cologne Main Train Station" CityCode="CGN" CityName="Cologne" CountryCode="DE" TBOCityId="144743" />
+  <BasicStationPropertyInfo StationId="183" StationName="Cologne Sud Train Station" CityCode="CGN" CityName="Cologne" CountryCode="DE" TBOCityId="144743" />
+  <BasicStationPropertyInfo StationId="184" StationName="Cologne-Deutz Train Station" CityCode="CGN" CityName="Cologne" CountryCode="DE" TBOCityId="144743" />
+  <BasicStationPropertyInfo StationId="185" StationName="Connolly Train Station" CityCode="DUB" CityName="Dublin" CountryCode="IE" TBOCityId="144983" />
+  <BasicStationPropertyInfo StationId="186" StationName="Constanta Train Station" CityCode="CND" CityName="Constanta" CountryCode="RO" TBOCityId="144762" />
+  <BasicStationPropertyInfo StationId="187" StationName="Constitution Train Station" CityCode="BUE" CityName="Buenos Aires" CountryCode="AR" TBOCityId="112153" />
+  <BasicStationPropertyInfo StationId="188" StationName="Copacabana Station" CityCode="RIO" CityName="Rio de Janeiro" CountryCode="BR" TBOCityId="134921" />
+  <BasicStationPropertyInfo StationId="190" StationName="Cork Train Station" CityCode="ORK" CityName="Cork" CountryCode="IE" TBOCityId="115293" />
+  <BasicStationPropertyInfo StationId="191" StationName="Coventry Railway Station" CityCode="CVT" CityName="Coventry" CountryCode="GB" TBOCityId="116566" />
+  <BasicStationPropertyInfo StationId="192" StationName="Craiova Train Station" CityCode="CRA" CityName="Craiova" CountryCode="RO" TBOCityId="116572" />
+  <BasicStationPropertyInfo StationId="193" StationName="Cristoforo Train Station" CityCode="MIL" CityName="Milan" CountryCode="IT" TBOCityId="127769" />
+  <BasicStationPropertyInfo StationId="194" StationName="Cuenca Train Station" CityCode="CUE" CityName="Cuenca" CountryCode="EC" TBOCityId="144831" />
+  <BasicStationPropertyInfo StationId="196" StationName="Da Luz Train Station" CityCode="BSB" CityName="Brasilia" CountryCode="BR" TBOCityId="112280" />
+  <BasicStationPropertyInfo StationId="197" StationName="Da Nang Main Train Station" CityCode="DANN" CityName="Danang" CountryCode="VN" TBOCityId="116038" />
+  <BasicStationPropertyInfo StationId="198" StationName="Dali Railway Station" CityCode="DLU" CityName="Dali" CountryCode="CN" TBOCityId="116033" />
+  <BasicStationPropertyInfo StationId="199" StationName="Dalian Railway Station" CityCode="DALY" CityName="Dalian" CountryCode="CN" TBOCityId="115099" />
+  <BasicStationPropertyInfo StationId="200" StationName="Damascus Train Station" CityCode="DAM" CityName="Damascus" CountryCode="SY" TBOCityId="115183" />
+  <BasicStationPropertyInfo StationId="201" StationName="Dammam Railway Station" CityCode="QDM" CityName="Dammam" CountryCode="SA" TBOCityId="116137" />
+  <BasicStationPropertyInfo StationId="202" StationName="Debrecen Railway Station" CityCode="DEB" CityName="Debrecen" CountryCode="HU" TBOCityId="144885" />
+  <BasicStationPropertyInfo StationId="203" StationName="Delft Railway Station" CityCode="DELF" CityName="Delft" CountryCode="NL" TBOCityId="116282" />
+  <BasicStationPropertyInfo StationId="204" StationName="Delft Zuid Railway Station" CityCode="DELF" CityName="Delft" CountryCode="NL" TBOCityId="116282" />
+  <BasicStationPropertyInfo StationId="205" StationName="Delhi Cantonment Station" CityCode="DEL" CityName="New Delhi" CountryCode="IN" TBOCityId="130443" />
+  <BasicStationPropertyInfo StationId="206" StationName="Delhi Main Station" CityCode="DEL" CityName="New Delhi" CountryCode="IN" TBOCityId="130443" />
+  <BasicStationPropertyInfo StationId="207" StationName="Déli Train Station" CityCode="BUD" CityName="Budapest" CountryCode="HU" TBOCityId="113068" />
+  <BasicStationPropertyInfo StationId="208" StationName="Denver (DEN) Train Station" CityCode="DEN" CityName="Denver" CountryCode="US" TBOCityId="117340" />
+  <BasicStationPropertyInfo StationId="209" StationName="Derby Midland Train Station" CityCode="DERB" CityName="Derby" CountryCode="GB" TBOCityId="144905" />
+  <BasicStationPropertyInfo StationId="210" StationName="Desamparados Train Station" CityCode="LIM" CityName="Lima" CountryCode="PE" TBOCityId="124915" />
+  <BasicStationPropertyInfo StationId="211" StationName="Detroit (DET) Train Station" CityCode="DTT" CityName="Detroit" CountryCode="US" TBOCityId="116296" />
+  <BasicStationPropertyInfo StationId="212" StationName="Dijon-Ville Train Station" CityCode="DIJ" CityName="Dijon" CountryCode="FR" TBOCityId="144922" />
+  <BasicStationPropertyInfo StationId="213" StationName="Dom Pedro II Train Station" CityCode="RIO" CityName="Rio de Janeiro" CountryCode="BR" TBOCityId="134921" />
+  <BasicStationPropertyInfo StationId="214" StationName="Doncaster Train Station" CityCode="DONC" CityName="Doncaster" CountryCode="GB" TBOCityId="116891" />
+  <BasicStationPropertyInfo StationId="216" StationName="Dortmund Aplerbeck Sud Train Station" CityCode="DTM" CityName="Dortmund" CountryCode="DE" TBOCityId="116376" />
+  <BasicStationPropertyInfo StationId="217" StationName="Dortmund Barop Train Station" CityCode="DTM" CityName="Dortmund" CountryCode="DE" TBOCityId="116376" />
+  <BasicStationPropertyInfo StationId="218" StationName="Dortmund Brackel Train Station" CityCode="DTM" CityName="Dortmund" CountryCode="DE" TBOCityId="116376" />
+  <BasicStationPropertyInfo StationId="219" StationName="Dortmund Derne Train Station" CityCode="DTM" CityName="Dortmund" CountryCode="DE" TBOCityId="116376" />
+  <BasicStationPropertyInfo StationId="220" StationName="Dortmund Dorstfeld Train Station" CityCode="DTM" CityName="Dortmund" CountryCode="DE" TBOCityId="116376" />
+  <BasicStationPropertyInfo StationId="221" StationName="Dortmund Horde Train Station" CityCode="DTM" CityName="Dortmund" CountryCode="DE" TBOCityId="116376" />
+  <BasicStationPropertyInfo StationId="222" StationName="Dortmund Huckarde Train Station" CityCode="DTM" CityName="Dortmund" CountryCode="DE" TBOCityId="116376" />
+  <BasicStationPropertyInfo StationId="223" StationName="Dortmund Knappschaftskrankenhaus Train Station" CityCode="DTM" CityName="Dortmund" CountryCode="DE" TBOCityId="116376" />
+  <BasicStationPropertyInfo StationId="224" StationName="Dortmund Main Train Station" CityCode="DTM" CityName="Dortmund" CountryCode="DE" TBOCityId="116376" />
+  <BasicStationPropertyInfo StationId="225" StationName="Dortmund Marten Sud Train Station" CityCode="DTM" CityName="Dortmund" CountryCode="DE" TBOCityId="116376" />
+  <BasicStationPropertyInfo StationId="226" StationName="Dortmund Marten Train Station" CityCode="DTM" CityName="Dortmund" CountryCode="DE" TBOCityId="116376" />
+  <BasicStationPropertyInfo StationId="227" StationName="Dortmund Mengede Train Station" CityCode="DTM" CityName="Dortmund" CountryCode="DE" TBOCityId="116376" />
+  <BasicStationPropertyInfo StationId="228" StationName="Dortmund Scharnhorst Train Station" CityCode="DTM" CityName="Dortmund" CountryCode="DE" TBOCityId="116376" />
+  <BasicStationPropertyInfo StationId="229" StationName="Dortmund West Train Station" CityCode="DTM" CityName="Dortmund" CountryCode="DE" TBOCityId="116376" />
+  <BasicStationPropertyInfo StationId="230" StationName="Dover Priory Train Station" CityCode="DOVE" CityName="Dover" CountryCode="GB" TBOCityId="116691" />
+  <BasicStationPropertyInfo StationId="231" StationName="Dresden Main Train Station" CityCode="DRS" CityName="Dresden" CountryCode="DE" TBOCityId="115932" />
+  <BasicStationPropertyInfo StationId="232" StationName="Dresden Neustadt Train Station" CityCode="DRS" CityName="Dresden" CountryCode="DE" TBOCityId="115932" />
+  <BasicStationPropertyInfo StationId="233" StationName="Durban Train Station" CityCode="DUR" CityName="Durban" CountryCode="ZA" TBOCityId="115957" />
+  <BasicStationPropertyInfo StationId="234" StationName="Dusseldorf Bilk Train Station" CityCode="DUS" CityName="Dusseldorf" CountryCode="DE" TBOCityId="116721" />
+  <BasicStationPropertyInfo StationId="235" StationName="Dusseldorf Deven Train Station" CityCode="DUS" CityName="Dusseldorf" CountryCode="DE" TBOCityId="116721" />
+  <BasicStationPropertyInfo StationId="236" StationName="Dusseldorf Kalkum Train Station" CityCode="DUS" CityName="Dusseldorf" CountryCode="DE" TBOCityId="116721" />
+  <BasicStationPropertyInfo StationId="237" StationName="Dusseldorf Main Train Station" CityCode="DUS" CityName="Dusseldorf" CountryCode="DE" TBOCityId="116721" />
+  <BasicStationPropertyInfo StationId="238" StationName="Dusseldorf Volklin Train Station" CityCode="DUS" CityName="Dusseldorf" CountryCode="DE" TBOCityId="116721" />
+  <BasicStationPropertyInfo StationId="239" StationName="Dusseldorf Wehrhahn Train Station" CityCode="DUS" CityName="Dusseldorf" CountryCode="DE" TBOCityId="116721" />
+  <BasicStationPropertyInfo StationId="240" StationName="East London Train Station" CityCode="ELS" CityName="East London" CountryCode="ZA" TBOCityId="117441" />
+  <BasicStationPropertyInfo StationId="241" StationName="East Perth Rail Station" CityCode="PER" CityName="Perth" CountryCode="AU" TBOCityId="131059" />
+  <BasicStationPropertyInfo StationId="242" StationName="Edinburgh Haymarket Train Station" CityCode="EDI" CityName="Edinburgh" CountryCode="GB" TBOCityId="116967" />
+  <BasicStationPropertyInfo StationId="243" StationName="Edinburgh Kingsknowe Train Station" CityCode="EDI" CityName="Edinburgh" CountryCode="GB" TBOCityId="116967" />
+  <BasicStationPropertyInfo StationId="244" StationName="Edinburgh Musselburgh Train Station" CityCode="EDI" CityName="Edinburgh" CountryCode="GB" TBOCityId="116967" />
+  <BasicStationPropertyInfo StationId="245" StationName="Edinburgh South Gyle Train Station" CityCode="EDI" CityName="Edinburgh" CountryCode="GB" TBOCityId="116967" />
+  <BasicStationPropertyInfo StationId="246" StationName="Edinburgh Wallyford Train Station" CityCode="EDI" CityName="Edinburgh" CountryCode="GB" TBOCityId="116967" />
+  <BasicStationPropertyInfo StationId="247" StationName="Edinburgh Waverley Train Station" CityCode="EDI" CityName="Edinburgh" CountryCode="GB" TBOCityId="116967" />
+  <BasicStationPropertyInfo StationId="248" StationName="Edinburgh Wester Hailes Train Station" CityCode="EDI" CityName="Edinburgh" CountryCode="GB" TBOCityId="116967" />
+  <BasicStationPropertyInfo StationId="249" StationName="Edmonton Train Station" CityCode="YEA" CityName="Edmonton" CountryCode="CA" TBOCityId="145037" />
+  <BasicStationPropertyInfo StationId="250" StationName="Egervar Train Station" CityCode="EGEZ" CityName="Eger" CountryCode="HU" TBOCityId="116969" />
+  <BasicStationPropertyInfo StationId="251" StationName="Eindhoven - Beukenlaan Train St" CityCode="EIN" CityName="Eindhoven" CountryCode="NL" TBOCityId="116977" />
+  <BasicStationPropertyInfo StationId="252" StationName="Eindhoven Central Train Station" CityCode="EIN" CityName="Eindhoven" CountryCode="NL" TBOCityId="116977" />
+  <BasicStationPropertyInfo StationId="253" StationName="El Paso (ELP) Train Station" CityCode="ELP" CityName="El Paso" CountryCode="US" TBOCityId="117097" />
+  <BasicStationPropertyInfo StationId="254" StationName="Encarnacion Train Station" CityCode="ENCA" CityName="Encarnacion" CountryCode="PY" TBOCityId="145087" />
+  <BasicStationPropertyInfo StationId="255" StationName="Ennis Train Station" CityCode="ENNI" CityName="Ennis" CountryCode="IE" TBOCityId="116850" />
+  <BasicStationPropertyInfo StationId="256" StationName="Ernakulam Train Station" CityCode="COK" CityName="Cochin" CountryCode="IN" TBOCityId="114326" />
+  <BasicStationPropertyInfo StationId="257" StationName="Esch Sur Alzette Train Station" CityCode="ESCS" CityName="Esch-Sur-Alzette" CountryCode="LU" TBOCityId="118105" />
+  <BasicStationPropertyInfo StationId="258" StationName="Essen Altenessen Train Station" CityCode="ESS" CityName="Essen" CountryCode="DE" TBOCityId="117258" />
+  <BasicStationPropertyInfo StationId="259" StationName="Essen Bergeborbeck Train Station" CityCode="ESS" CityName="Essen" CountryCode="DE" TBOCityId="117258" />
+  <BasicStationPropertyInfo StationId="260" StationName="Essen Borbeck Train Station" CityCode="ESS" CityName="Essen" CountryCode="DE" TBOCityId="117258" />
+  <BasicStationPropertyInfo StationId="261" StationName="Essen Eiberg Train Station" CityCode="ESS" CityName="Essen" CountryCode="DE" TBOCityId="117258" />
+  <BasicStationPropertyInfo StationId="262" StationName="Essen Horst Train Station" CityCode="ESS" CityName="Essen" CountryCode="DE" TBOCityId="117258" />
+  <BasicStationPropertyInfo StationId="263" StationName="Essen Kalernberg Sud Train Station" CityCode="ESS" CityName="Essen" CountryCode="DE" TBOCityId="117258" />
+  <BasicStationPropertyInfo StationId="264" StationName="Essen Kray Nord Train Station" CityCode="ESS" CityName="Essen" CountryCode="DE" TBOCityId="117258" />
+  <BasicStationPropertyInfo StationId="265" StationName="Essen Kray Sud Train Station" CityCode="ESS" CityName="Essen" CountryCode="DE" TBOCityId="117258" />
+  <BasicStationPropertyInfo StationId="266" StationName="Essen Main Train Station" CityCode="ESS" CityName="Essen" CountryCode="DE" TBOCityId="117258" />
+  <BasicStationPropertyInfo StationId="267" StationName="Essen Stadtwald Train Station" CityCode="ESS" CityName="Essen" CountryCode="DE" TBOCityId="117258" />
+  <BasicStationPropertyInfo StationId="268" StationName="Essen Steele Ost Train Station" CityCode="ESS" CityName="Essen" CountryCode="DE" TBOCityId="117258" />
+  <BasicStationPropertyInfo StationId="269" StationName="Essen Steele Train Station" CityCode="ESS" CityName="Essen" CountryCode="DE" TBOCityId="117258" />
+  <BasicStationPropertyInfo StationId="270" StationName="Essen Sud Train Station" CityCode="ESS" CityName="Essen" CountryCode="DE" TBOCityId="117258" />
+  <BasicStationPropertyInfo StationId="271" StationName="Essen West Train Station" CityCode="ESS" CityName="Essen" CountryCode="DE" TBOCityId="117258" />
+  <BasicStationPropertyInfo StationId="273" StationName="Estacion de Abando (Norte)" CityCode="BIO" CityName="Bilbao" CountryCode="ES" TBOCityId="111302" />
+  <BasicStationPropertyInfo StationId="274" StationName="Estacion de RENFE (Train Station)" CityCode="TOLE" CityName="Toledo" CountryCode="ES" TBOCityId="140323" />
+  <BasicStationPropertyInfo StationId="276" StationName="Estoril Station" CityCode="ESTO" CityName="Estoril" CountryCode="PT" TBOCityId="118116" />
+  <BasicStationPropertyInfo StationId="277" StationName="Ethniki Amyna Station" CityCode="ATH" CityName="Athens" CountryCode="GR" TBOCityId="110000" />
+  <BasicStationPropertyInfo StationId="278" StationName="Europaplads Train Station" CityCode="AAR" CityName="Aarhus" CountryCode="DK" TBOCityId="100432" />
+  <BasicStationPropertyInfo StationId="279" StationName="Euston Railway Station" CityCode="LON" CityName="London" CountryCode="GB" TBOCityId="126632" />
+  <BasicStationPropertyInfo StationId="280" StationName="Exeter Central Train Station" CityCode="EXT" CityName="Exeter" CountryCode="GB" TBOCityId="145134" />
+  <BasicStationPropertyInfo StationId="281" StationName="Exeter St David's Railway Station" CityCode="EXT" CityName="Exeter" CountryCode="GB" TBOCityId="145134" />
+  <BasicStationPropertyInfo StationId="283" StationName="Ferrara Train Station" CityCode="FERR" CityName="Ferrara" CountryCode="IT" TBOCityId="118817" />
+  <BasicStationPropertyInfo StationId="286" StationName="Flinders Street Railway Station" CityCode="MEL" CityName="Melbourne" CountryCode="AU" TBOCityId="127718" />
+  <BasicStationPropertyInfo StationId="287" StationName="Foggia Train Station" CityCode="FOG" CityName="Foggia" CountryCode="IT" TBOCityId="117659" />
+  <BasicStationPropertyInfo StationId="288" StationName="Forli Train Station" CityCode="FORL" CityName="Forli" CountryCode="IT" TBOCityId="118870" />
+  <BasicStationPropertyInfo StationId="289" StationName="Fort Lauderdale (FTL) Train Station" CityCode="FLL" CityName="Fort Lauderdale" CountryCode="US" TBOCityId="117930" />
+  <BasicStationPropertyInfo StationId="291" StationName="Foshan Railway Station" CityCode="FOSH" CityName="Foshan" CountryCode="CN" TBOCityId="118346" />
+  <BasicStationPropertyInfo StationId="292" StationName="Francia RENFE Train Station" CityCode="BCN" CityName="Barcelona" CountryCode="ES" TBOCityId="110790" />
+  <BasicStationPropertyInfo StationId="293" StationName="Frankfurt Main Train Station" CityCode="FRA" CityName="Frankfurt" CountryCode="DE" TBOCityId="150455" />
+  <BasicStationPropertyInfo StationId="294" StationName="Frankfurt Sud Railway Station" CityCode="FRA" CityName="Frankfurt" CountryCode="DE" TBOCityId="150455" />
+  <BasicStationPropertyInfo StationId="295" StationName="Franz-Josefs Railway Station" CityCode="VIE" CityName="Vienna" CountryCode="AT" TBOCityId="140888" />
+  <BasicStationPropertyInfo StationId="296" StationName="Freiburg Herden Train Station" CityCode="QFB" CityName="Freiburg" CountryCode="DE" TBOCityId="119571" />
+  <BasicStationPropertyInfo StationId="297" StationName="Freiburg Littenweiler Train Station" CityCode="QFB" CityName="Freiburg" CountryCode="DE" TBOCityId="119571" />
+  <BasicStationPropertyInfo StationId="298" StationName="Freiburg Main Train Station" CityCode="QFB" CityName="Freiburg" CountryCode="DE" TBOCityId="119571" />
+  <BasicStationPropertyInfo StationId="299" StationName="Freiburg Sankt George Im Glaser Train Station" CityCode="QFB" CityName="Freiburg" CountryCode="DE" TBOCityId="119571" />
+  <BasicStationPropertyInfo StationId="300" StationName="Freiburg West Train Station" CityCode="QFB" CityName="Freiburg" CountryCode="DE" TBOCityId="119571" />
+  <BasicStationPropertyInfo StationId="301" StationName="Freiburg Wiehre Train Station" CityCode="QFB" CityName="Freiburg" CountryCode="DE" TBOCityId="119571" />
+  <BasicStationPropertyInfo StationId="302" StationName="Freiburg Zahringen Train Station" CityCode="QFB" CityName="Freiburg" CountryCode="DE" TBOCityId="119571" />
+  <BasicStationPropertyInfo StationId="303" StationName="Fuzhou Railway Station" CityCode="FOC" CityName="Fuzhou" CountryCode="CN" TBOCityId="119048" />
+  <BasicStationPropertyInfo StationId="305" StationName="Gambir Railway Station" CityCode="JKT" CityName="Jakarta" CountryCode="ID" TBOCityId="122069" />
+  <BasicStationPropertyInfo StationId="306" StationName="Gara Baneasa" CityCode="BUH" CityName="Bucharest" CountryCode="RO" TBOCityId="113200" />
+  <BasicStationPropertyInfo StationId="307" StationName="Gara du Nord" CityCode="BUH" CityName="Bucharest" CountryCode="RO" TBOCityId="113200" />
+  <BasicStationPropertyInfo StationId="308" StationName="Gara Obor" CityCode="BUH" CityName="Bucharest" CountryCode="RO" TBOCityId="113200" />
+  <BasicStationPropertyInfo StationId="309" StationName="Gare d'Austerlitz" CityCode="PAR" CityName="Paris" CountryCode="FR" TBOCityId="131408" />
+  <BasicStationPropertyInfo StationId="310" StationName="Gare de Bercy" CityCode="PAR" CityName="Paris" CountryCode="FR" TBOCityId="131408" />
+  <BasicStationPropertyInfo StationId="311" StationName="Paris East Station- Gare de L'Est" CityCode="PAR" CityName="Paris" CountryCode="FR" TBOCityId="131408" />
+  <BasicStationPropertyInfo StationId="312" StationName="Gare de Lyon" CityCode="PAR" CityName="Paris" CountryCode="FR" TBOCityId="131408" />
+  <BasicStationPropertyInfo StationId="313" StationName="Gare du Midi Railway Station" CityCode="BRU" CityName="Brussels" CountryCode="BE" TBOCityId="113060" />
+  <BasicStationPropertyInfo StationId="314" StationName="Paris North Station- Gare du Nord" CityCode="PAR" CityName="Paris" CountryCode="FR" TBOCityId="131408" />
+  <BasicStationPropertyInfo StationId="315" StationName="Gare Montparnasse" CityCode="PAR" CityName="Paris" CountryCode="FR" TBOCityId="131408" />
+  <BasicStationPropertyInfo StationId="316" StationName="Gare St-Lazare" CityCode="PAR" CityName="Paris" CountryCode="FR" TBOCityId="131408" />
+  <BasicStationPropertyInfo StationId="317" StationName="Garibaldi Train Station" CityCode="MIL" CityName="Milan" CountryCode="IT" TBOCityId="127769" />
+  <BasicStationPropertyInfo StationId="319" StationName="Garo do Oriente Train Station" CityCode="LIS" CityName="Lisbon" CountryCode="PT" TBOCityId="146305" />
+  <BasicStationPropertyInfo StationId="320" StationName="Gdansk Main Train Station" CityCode="GDN" CityName="Gdansk" CountryCode="PL" TBOCityId="118940" />
+  <BasicStationPropertyInfo StationId="321" StationName="Geneva Train Station" CityCode="GVA" CityName="Geneva" CountryCode="CH" TBOCityId="118434" />
+  <BasicStationPropertyInfo StationId="322" StationName="Genk Railway Station" CityCode="GENK" CityName="Genk" CountryCode="BE" TBOCityId="145337" />
+  <BasicStationPropertyInfo StationId="323" StationName="Genova Brignole Train Station" CityCode="GOA" CityName="Genoa" CountryCode="IT" TBOCityId="119254" />
+  <BasicStationPropertyInfo StationId="324" StationName="Genova Piazza Principe Train Station" CityCode="GOA" CityName="Genoa" CountryCode="IT" TBOCityId="119254" />
+  <BasicStationPropertyInfo StationId="325" StationName="Genova Train Station" CityCode="MIL" CityName="Milan" CountryCode="IT" TBOCityId="127769" />
+  <BasicStationPropertyInfo StationId="326" StationName="Ghan Train Station" CityCode="ASP" CityName="Alice Springs" CountryCode="AU" TBOCityId="100727" />
+  <BasicStationPropertyInfo StationId="327" StationName="Giza Train Station" CityCode="CAI" CityName="Cairo" CountryCode="EG" TBOCityId="113116" />
+  <BasicStationPropertyInfo StationId="328" StationName="Glasgow Central Train Station" CityCode="GLA" CityName="Glasgow" CountryCode="GB" TBOCityId="119788" />
+  <BasicStationPropertyInfo StationId="329" StationName="Glasgow Charing Cross Train Station" CityCode="GLA" CityName="Glasgow" CountryCode="GB" TBOCityId="119788" />
+  <BasicStationPropertyInfo StationId="330" StationName="Glasgow High Street Train Station" CityCode="GLA" CityName="Glasgow" CountryCode="GB" TBOCityId="119788" />
+  <BasicStationPropertyInfo StationId="331" StationName="Glasgow Queen Street Train Station" CityCode="GLA" CityName="Glasgow" CountryCode="GB" TBOCityId="119788" />
+  <BasicStationPropertyInfo StationId="332" StationName="Glasgow Queens Park Train Station" CityCode="GLA" CityName="Glasgow" CountryCode="GB" TBOCityId="119788" />
+  <BasicStationPropertyInfo StationId="333" StationName="Glavni Kolodvor Main Train Station" CityCode="ZAG" CityName="Zagreb" CountryCode="HR" TBOCityId="143525" />
+  <BasicStationPropertyInfo StationId="335" StationName="Gloucester Train Station" CityCode="GLO" CityName="Gloucester" CountryCode="GB" TBOCityId="119144" />
+  <BasicStationPropertyInfo StationId="336" StationName="Grand Central Train Station" CityCode="NYC" CityName="New York" CountryCode="US" TBOCityId="130452" />
+  <BasicStationPropertyInfo StationId="337" StationName="Great Victoria Street Train Station" CityCode="BEL" CityName="Belfast" CountryCode="GB" TBOCityId="110479" />
+  <BasicStationPropertyInfo StationId="339" StationName="Grindelwald Train Station" CityCode="GRIN" CityName="Grindelwald" CountryCode="CH" TBOCityId="121097" />
+  <BasicStationPropertyInfo StationId="340" StationName="Guangzhou Eastern Railway Staition" CityCode="CAN" CityName="Guangzhou" CountryCode="CN" TBOCityId="112825" />
+  <BasicStationPropertyInfo StationId="341" StationName="Guangzhou Railway Station" CityCode="CAN" CityName="Guangzhou" CountryCode="CN" TBOCityId="112825" />
+  <BasicStationPropertyInfo StationId="342" StationName="Guayaquil Train Station" CityCode="GUAY" CityName="Guayaquil" CountryCode="EC" TBOCityId="119494" />
+  <BasicStationPropertyInfo StationId="343" StationName="Gubeng Train Station" CityCode="SUB" CityName="Surabaya" CountryCode="ID" TBOCityId="151512" />
+  <BasicStationPropertyInfo StationId="345" StationName="Guimaraes Railway Station" CityCode="GUIM" CityName="Guimaraes" CountryCode="PT" TBOCityId="120427" />
+  <BasicStationPropertyInfo StationId="346" StationName="Gyor Railway Station" CityCode="GYOR" CityName="Gyor" CountryCode="HU" TBOCityId="119523" />
+  <BasicStationPropertyInfo StationId="347" StationName="Haarlem Railway Station" CityCode="HAAR" CityName="Haarlem" CountryCode="NL" TBOCityId="119527" />
+  <BasicStationPropertyInfo StationId="348" StationName="Hakata Train Station" CityCode="FUK" CityName="Fukuoka" CountryCode="JP" TBOCityId="118383" />
+  <BasicStationPropertyInfo StationId="349" StationName="Halifax Train Station" CityCode="YHZ" CityName="Halifax" CountryCode="CA" TBOCityId="119946" />
+  <BasicStationPropertyInfo StationId="350" StationName="Hamburg Altona Train Station" CityCode="HAM" CityName="Hamburg" CountryCode="DE" TBOCityId="120596" />
+  <BasicStationPropertyInfo StationId="351" StationName="Hamburg Bergedorf Train Station" CityCode="HAM" CityName="Hamburg" CountryCode="DE" TBOCityId="120596" />
+  <BasicStationPropertyInfo StationId="352" StationName="Hamburg Dammtor Train Station" CityCode="HAM" CityName="Hamburg" CountryCode="DE" TBOCityId="120596" />
+  <BasicStationPropertyInfo StationId="353" StationName="Hamburg Harburg Train Station" CityCode="HAM" CityName="Hamburg" CountryCode="DE" TBOCityId="120596" />
+  <BasicStationPropertyInfo StationId="354" StationName="Hamburg Main Train Station" CityCode="HAM" CityName="Hamburg" CountryCode="DE" TBOCityId="120596" />
+  <BasicStationPropertyInfo StationId="355" StationName="Hammamet Train Station" CityCode="HAMM" CityName="Hammamet" CountryCode="TN" TBOCityId="145524" />
+  <BasicStationPropertyInfo StationId="356" StationName="Hangzhou Main Port" CityCode="HGH" CityName="Hangzhou" CountryCode="CN" TBOCityId="145532" />
+  <BasicStationPropertyInfo StationId="357" StationName="Hangzhou Railway Station" CityCode="HGH" CityName="Hangzhou" CountryCode="CN" TBOCityId="145532" />
+  <BasicStationPropertyInfo StationId="358" StationName="Hankou Railway Station" CityCode="WUH" CityName="Wuhan" CountryCode="CN" TBOCityId="143778" />
+  <BasicStationPropertyInfo StationId="359" StationName="Hannover Hainholz Train Station" CityCode="HAJ" CityName="Hannover" CountryCode="DE" TBOCityId="120761" />
+  <BasicStationPropertyInfo StationId="360" StationName="Hannover Kleefeld Train Station" CityCode="HAJ" CityName="Hannover" CountryCode="DE" TBOCityId="120761" />
+  <BasicStationPropertyInfo StationId="361" StationName="Hannover Linden Train Station" CityCode="HAJ" CityName="Hannover" CountryCode="DE" TBOCityId="120761" />
+  <BasicStationPropertyInfo StationId="362" StationName="Hannover Main Train Station" CityCode="HAJ" CityName="Hannover" CountryCode="DE" TBOCityId="120761" />
+  <BasicStationPropertyInfo StationId="363" StationName="Hannover Messe/Laatzen Train Station" CityCode="HAJ" CityName="Hannover" CountryCode="DE" TBOCityId="120761" />
+  <BasicStationPropertyInfo StationId="364" StationName="Hanoi Main Train Station" CityCode="HAN" CityName="Hanoi" CountryCode="VN" TBOCityId="145535" />
+  <BasicStationPropertyInfo StationId="365" StationName="Harbin Railway Station" CityCode="HAR3" CityName="Harbin" CountryCode="CN" TBOCityId="120769" />
+  <BasicStationPropertyInfo StationId="366" StationName="Harlow Mill Train Station" CityCode="HAR" CityName="Harlow" CountryCode="GB" TBOCityId="120482" />
+  <BasicStationPropertyInfo StationId="367" StationName="Harlow Town Train Station" CityCode="HAR" CityName="Harlow" CountryCode="GB" TBOCityId="120482" />
+  <BasicStationPropertyInfo StationId="368" StationName="Harrogate Train Station" CityCode="HARR" CityName="Harrogate" CountryCode="GB" TBOCityId="121189" />
+  <BasicStationPropertyInfo StationId="370" StationName="Haydarpasa Station" CityCode="IST" CityName="Istanbul" CountryCode="TR" TBOCityId="122727" />
+  <BasicStationPropertyInfo StationId="371" StationName="Hazrat Nizamuddin Railway Station" CityCode="DEL" CityName="New Delhi" CountryCode="IN" TBOCityId="130443" />
+  <BasicStationPropertyInfo StationId="372" StationName="Hefei Railway Station" CityCode="HEFE" CityName="Hefei" CountryCode="CN" TBOCityId="121874" />
+  <BasicStationPropertyInfo StationId="373" StationName="Hefei Railway Station (West)" CityCode="HEFE" CityName="Hefei" CountryCode="CN" TBOCityId="121874" />
+  <BasicStationPropertyInfo StationId="374" StationName="Heidelberg Karlstor Train Station" CityCode="QHD" CityName="Heidelberg" CountryCode="DE" TBOCityId="120812" />
+  <BasicStationPropertyInfo StationId="375" StationName="Heidelberg Kircheim Train Station" CityCode="QHD" CityName="Heidelberg" CountryCode="DE" TBOCityId="120812" />
+  <BasicStationPropertyInfo StationId="376" StationName="Heidelberg Main Train Stataion" CityCode="QHD" CityName="Heidelberg" CountryCode="DE" TBOCityId="120812" />
+  <BasicStationPropertyInfo StationId="377" StationName="Heidelberg Wieblinger Train Station" CityCode="QHD" CityName="Heidelberg" CountryCode="DE" TBOCityId="120812" />
+  <BasicStationPropertyInfo StationId="378" StationName="Helensvale Train Station" CityCode="OOL" CityName="Gold Coast" CountryCode="AU" TBOCityId="145381" />
+  <BasicStationPropertyInfo StationId="379" StationName="Heuston Train Station" CityCode="DUB" CityName="Dublin" CountryCode="IE" TBOCityId="144983" />
+  <BasicStationPropertyInfo StationId="380" StationName="Hiroshima Train Station" CityCode="HIJ" CityName="Hiroshima" CountryCode="JP" TBOCityId="120299" />
+  <BasicStationPropertyInfo StationId="381" StationName="Hlavní Station" CityCode="PRG" CityName="Prague" CountryCode="CZ" TBOCityId="131864" />
+  <BasicStationPropertyInfo StationId="382" StationName="Hof Ha Carmel Train Station" CityCode="HFA" CityName="Haifa" CountryCode="IL" TBOCityId="145508" />
+  <BasicStationPropertyInfo StationId="383" StationName="Holesovice Station" CityCode="PRG" CityName="Prague" CountryCode="CZ" TBOCityId="131864" />
+  <BasicStationPropertyInfo StationId="384" StationName="Hollands Spoor Station" CityCode="HAG" CityName="The Hague" CountryCode="NL" TBOCityId="139741" />
+  <BasicStationPropertyInfo StationId="385" StationName="Hong Kong Station" CityCode="HKG" CityName="Hong Kong Island" CountryCode="HK" TBOCityId="120987" />
+  <BasicStationPropertyInfo StationId="386" StationName="Horní Station" CityCode="KLV" CityName="Karlovy Vary" CountryCode="CZ" TBOCityId="150603" />
+  <BasicStationPropertyInfo StationId="387" StationName="Houston (HOS) Train Station" CityCode="HOU" CityName="Houston" CountryCode="US" TBOCityId="120751" />
+  <BasicStationPropertyInfo StationId="389" StationName="Hua Lumpong Railway Station" CityCode="BKK" CityName="Bangkok" CountryCode="TH" TBOCityId="144092" />
+  <BasicStationPropertyInfo StationId="390" StationName="Huanggutan Station" CityCode="SHEY" CityName="Shenyang" CountryCode="CN" TBOCityId="137393" />
+  <BasicStationPropertyInfo StationId="392" StationName="Hue Main Train Station" CityCode="HUEZ" CityName="Hue" CountryCode="VN" TBOCityId="122636" />
+  <BasicStationPropertyInfo StationId="393" StationName="Huizhou Railway Station" CityCode="HUIH" CityName="Huizhou" CountryCode="CN" TBOCityId="122073" />
+  <BasicStationPropertyInfo StationId="394" StationName="Hull Train Station" CityCode="HULL" CityName="Hull" CountryCode="GB" TBOCityId="122075" />
+  <BasicStationPropertyInfo StationId="396" StationName="Hyderabad Decan Train Station" CityCode="HYD" CityName="Hyderabad" CountryCode="IN" TBOCityId="145710" />
+  <BasicStationPropertyInfo StationId="397" StationName="Indianapolis (IND) Train Station" CityCode="IND" CityName="Indianapolis" CountryCode="US" TBOCityId="121066" />
+  <BasicStationPropertyInfo StationId="398" StationName="Interlaken Ost Train Station" CityCode="INTE" CityName="Interlaken" CountryCode="CH" TBOCityId="121083" />
+  <BasicStationPropertyInfo StationId="399" StationName="Interlaken West Train Station" CityCode="INTE" CityName="Interlaken" CountryCode="CH" TBOCityId="121083" />
+  <BasicStationPropertyInfo StationId="400" StationName="Interstate Railway Station" CityCode="ADL" CityName="Adelaide" CountryCode="AU" TBOCityId="100238" />
+  <BasicStationPropertyInfo StationId="401" StationName="Inverness Train Station" CityCode="INV" CityName="Inverness" CountryCode="GB" TBOCityId="122140" />
+  <BasicStationPropertyInfo StationId="402" StationName="Jack London Square Station" CityCode="SFO" CityName="San Francisco" CountryCode="US" TBOCityId="136014" />
+  <BasicStationPropertyInfo StationId="404" StationName="Jaipur Train Station" CityCode="JAI" CityName="Jaipur" CountryCode="IN" TBOCityId="122175" />
+  <BasicStationPropertyInfo StationId="405" StationName="Jasper Train Station" CityCode="YJA" CityName="Jasper" CountryCode="CA" TBOCityId="122856" />
+  <BasicStationPropertyInfo StationId="406" StationName="Jerusalem Train Station" CityCode="JRS" CityName="Jerusalem" CountryCode="IL" TBOCityId="122867" />
+  <BasicStationPropertyInfo StationId="407" StationName="Jiaxing Railway Station" CityCode="JIAX" CityName="Jiaxing" CountryCode="CN" TBOCityId="122471" />
+  <BasicStationPropertyInfo StationId="408" StationName="Jinan Railway Station" CityCode="TNA" CityName="Jinan" CountryCode="CN" TBOCityId="122472" />
+  <BasicStationPropertyInfo StationId="409" StationName="Jinan Railway Station (East)" CityCode="TNA" CityName="Jinan" CountryCode="CN" TBOCityId="122472" />
+  <BasicStationPropertyInfo StationId="410" StationName="Jingdezhen Railway Station" CityCode="JDZ" CityName="Jingdezhen" CountryCode="CN" TBOCityId="122875" />
+  <BasicStationPropertyInfo StationId="411" StationName="Jinhua Railway Station (South)" CityCode="JINH" CityName="Jinhua" CountryCode="CN" TBOCityId="122771" />
+  <BasicStationPropertyInfo StationId="412" StationName="Jinhua Railway Station (West)" CityCode="JINH" CityName="Jinhua" CountryCode="CN" TBOCityId="122771" />
+  <BasicStationPropertyInfo StationId="413" StationName="Jiujiang Railway Station" CityCode="JIU" CityName="Jiujiang" CountryCode="CN" TBOCityId="123446" />
+  <BasicStationPropertyInfo StationId="414" StationName="Joao Felipe Station" CityCode="FOR" CityName="Fortaleza" CountryCode="BR" TBOCityId="118345" />
+  <BasicStationPropertyInfo StationId="415" StationName="Johannesburg Park Train Station" CityCode="JNB" CityName="Johannesburg" CountryCode="ZA" TBOCityId="145838" />
+  <BasicStationPropertyInfo StationId="416" StationName="Johannesburg Train Station" CityCode="JNB" CityName="Johannesburg" CountryCode="ZA" TBOCityId="145838" />
+  <BasicStationPropertyInfo StationId="417" StationName="Johor Bahur Railway Train Staion" CityCode="JHB" CityName="Johor Bahru" CountryCode="MY" TBOCityId="121809" />
+  <BasicStationPropertyInfo StationId="418" StationName="Julio Prestes Train Station" CityCode="SAO" CityName="Sao Paulo" CountryCode="BR" TBOCityId="136873" />
+  <BasicStationPropertyInfo StationId="419" StationName="Kaifeng Railway Station" CityCode="KAIF" CityName="Kaifeng" CountryCode="CN" TBOCityId="122901" />
+  <BasicStationPropertyInfo StationId="422" StationName="kassel Harlesharsen Train Station" CityCode="KSF" CityName="Kassel" CountryCode="DE" TBOCityId="123220" />
+  <BasicStationPropertyInfo StationId="423" StationName="Kassel Main Train Station" CityCode="KSF" CityName="Kassel" CountryCode="DE" TBOCityId="123220" />
+  <BasicStationPropertyInfo StationId="424" StationName="Kassel Wilhelmshohe Train Station" CityCode="KSF" CityName="Kassel" CountryCode="DE" TBOCityId="123220" />
+  <BasicStationPropertyInfo StationId="425" StationName="Katowice Main Train Station" CityCode="KTW" CityName="Katowice" CountryCode="PL" TBOCityId="150237" />
+  <BasicStationPropertyInfo StationId="426" StationName="Kaunas Train Station" CityCode="KAUS" CityName="Kaunas" CountryCode="LT" TBOCityId="123639" />
+  <BasicStationPropertyInfo StationId="427" StationName="Kazanlak Train Station" CityCode="KAZA" CityName="Kazanlak" CountryCode="BG" TBOCityId="123525" />
+  <BasicStationPropertyInfo StationId="428" StationName="Kazanskiy Train Staion" CityCode="MOW" CityName="Moscow" CountryCode="RU" TBOCityId="146743" />
+  <BasicStationPropertyInfo StationId="429" StationName="Kelenfoldi Station" CityCode="BUD" CityName="Budapest" CountryCode="HU" TBOCityId="113068" />
+  <BasicStationPropertyInfo StationId="430" StationName="Keleti Station" CityCode="BUD" CityName="Budapest" CountryCode="HU" TBOCityId="113068" />
+  <BasicStationPropertyInfo StationId="431" StationName="Kendal Train Station" CityCode="KEND" CityName="Kendal" CountryCode="GB" TBOCityId="123127" />
+  <BasicStationPropertyInfo StationId="432" StationName="Kilkenny MacDonagh Train Station" CityCode="KKY" CityName="Kilkenny" CountryCode="IE" TBOCityId="123159" />
+  <BasicStationPropertyInfo StationId="433" StationName="Killarney Train Station" CityCode="KIR" CityName="Killarney" CountryCode="IE" TBOCityId="123556" />
+  <BasicStationPropertyInfo StationId="434" StationName="Kings Cross Train Station" CityCode="LON" CityName="London" CountryCode="GB" TBOCityId="126632" />
+  <BasicStationPropertyInfo StationId="435" StationName="Kingston Train Station" CityCode="KINX" CityName="Kingston" CountryCode="CA" TBOCityId="123693" />
+  <BasicStationPropertyInfo StationId="436" StationName="Kiyevskiy Train Station" CityCode="MOW" CityName="Moscow" CountryCode="RU" TBOCityId="146743" />
+  <BasicStationPropertyInfo StationId="437" StationName="KL Sentral Station" CityCode="KUL" CityName="Kuala Lumpur" CountryCode="MY" TBOCityId="123768" />
+  <BasicStationPropertyInfo StationId="438" StationName="Klaipeda Train Station" CityCode="KLAI" CityName="Klaipeda" CountryCode="LT" TBOCityId="123708" />
+  <BasicStationPropertyInfo StationId="439" StationName="Koblenz Ehrenbreitstein Train Station" CityCode="KOBL" CityName="Koblenz" CountryCode="DE" TBOCityId="124283" />
+  <BasicStationPropertyInfo StationId="440" StationName="Koblenz Main Train Station" CityCode="KOBL" CityName="Koblenz" CountryCode="DE" TBOCityId="124283" />
+  <BasicStationPropertyInfo StationId="441" StationName="Kota Railway Station" CityCode="KTU" CityName="Kota" CountryCode="IN" TBOCityId="124966" />
+  <BasicStationPropertyInfo StationId="442" StationName="Krakow Train Station" CityCode="KRK" CityName="Krakow" CountryCode="PL" TBOCityId="124293" />
+  <BasicStationPropertyInfo StationId="443" StationName="Kristiansand Railway Station" CityCode="KRS" CityName="Kristiansand" CountryCode="NO" TBOCityId="124428" />
+  <BasicStationPropertyInfo StationId="444" StationName="Kuala Lumpur Railway Station" CityCode="KUL" CityName="Kuala Lumpur" CountryCode="MY" TBOCityId="123768" />
+  <BasicStationPropertyInfo StationId="445" StationName="Kunming Nanyao Railway Station" CityCode="KUNM" CityName="Kunming" CountryCode="CN" TBOCityId="123347" />
+  <BasicStationPropertyInfo StationId="446" StationName="Kunshan Railway Station" CityCode="KNSH" CityName="Kunshan" CountryCode="CN" TBOCityId="125006" />
+  <BasicStationPropertyInfo StationId="447" StationName="Kurskiy Train Station" CityCode="MOW" CityName="Moscow" CountryCode="RU" TBOCityId="146743" />
+  <BasicStationPropertyInfo StationId="449" StationName="Kyobashi" CityCode="OSA" CityName="Osaka" CountryCode="JP" TBOCityId="130813" />
+  <BasicStationPropertyInfo StationId="450" StationName="Kyoto Train Station" CityCode="KYOT" CityName="Kyoto" CountryCode="JP" TBOCityId="123363" />
+  <BasicStationPropertyInfo StationId="451" StationName="La Marina Train Station" CityCode="ALC" CityName="Alicante" CountryCode="ES" TBOCityId="100846" />
+  <BasicStationPropertyInfo StationId="452" StationName="La Paz Train Station" CityCode="LPB" CityName="La Paz" CountryCode="BO" TBOCityId="124737" />
+  <BasicStationPropertyInfo StationId="454" StationName="Lahti Main Railway Station" CityCode="QLF" CityName="Lahti" CountryCode="FI" TBOCityId="124082" />
+  <BasicStationPropertyInfo StationId="455" StationName="Landregan Street Train Station" CityCode="SFO" CityName="San Francisco" CountryCode="US" TBOCityId="136014" />
+  <BasicStationPropertyInfo StationId="456" StationName="Lanzhou Railway Station" CityCode="LHW" CityName="Lanzhou" CountryCode="CN" TBOCityId="124537" />
+  <BasicStationPropertyInfo StationId="457" StationName="Las Vegas (LSV) Train Station" CityCode="LAS" CityName="Las Vegas" CountryCode="US" TBOCityId="125099" />
+  <BasicStationPropertyInfo StationId="458" StationName="Lausanne Train Station" CityCode="QLS" CityName="Lausanne" CountryCode="CH" TBOCityId="125490" />
+  <BasicStationPropertyInfo StationId="459" StationName="Lecce Train Station" CityCode="LCC" CityName="Lecce" CountryCode="IT" TBOCityId="125138" />
+  <BasicStationPropertyInfo StationId="460" StationName="Leeds City Train Station" CityCode="LBA" CityName="Leeds" CountryCode="GB" TBOCityId="126494" />
+  <BasicStationPropertyInfo StationId="461" StationName="Leicester Train Station" CityCode="LEIC" CityName="Leicester" CountryCode="GB" TBOCityId="146219" />
+  <BasicStationPropertyInfo StationId="462" StationName="Leiden Railway Station" CityCode="LEID" CityName="Leiden" CountryCode="NL" TBOCityId="125385" />
+  <BasicStationPropertyInfo StationId="463" StationName="Leipzig Main Train Station" CityCode="LEJ" CityName="Leipzig" CountryCode="DE" TBOCityId="126503" />
+  <BasicStationPropertyInfo StationId="464" StationName="Leningradskiy Train Station" CityCode="MOW" CityName="Moscow" CountryCode="RU" TBOCityId="146743" />
+  <BasicStationPropertyInfo StationId="465" StationName="Lichtenberg train station" CityCode="BER" CityName="Berlin" CountryCode="DE" TBOCityId="111539" />
+  <BasicStationPropertyInfo StationId="466" StationName="Liege-Guillemins Railway Station" CityCode="LGG" CityName="Liege" CountryCode="BE" TBOCityId="126551" />
+  <BasicStationPropertyInfo StationId="467" StationName="Lille Europe Railway Station" CityCode="LIL" CityName="Lille" CountryCode="FR" TBOCityId="125304" />
+  <BasicStationPropertyInfo StationId="468" StationName="Lille Flandres Station" CityCode="LIL" CityName="Lille" CountryCode="FR" TBOCityId="125304" />
+  <BasicStationPropertyInfo StationId="469" StationName="Limerick City Train Station" CityCode="LMK" CityName="Limerick" CountryCode="IE" TBOCityId="125585" />
+  <BasicStationPropertyInfo StationId="470" StationName="Lincoln Central Railway Station" CityCode="LINC" CityName="Lincoln" CountryCode="GB" TBOCityId="126562" />
+  <BasicStationPropertyInfo StationId="471" StationName="Liverpool Central Train Station" CityCode="LPL" CityName="Liverpool" CountryCode="GB" TBOCityId="125478" />
+  <BasicStationPropertyInfo StationId="472" StationName="Liverpool James Street Train Station" CityCode="LPL" CityName="Liverpool" CountryCode="GB" TBOCityId="125478" />
+  <BasicStationPropertyInfo StationId="473" StationName="Liverpool Lime Street Train Station" CityCode="LPL" CityName="Liverpool" CountryCode="GB" TBOCityId="125478" />
+  <BasicStationPropertyInfo StationId="474" StationName="Liverpool Moorfields Train Station" CityCode="LPL" CityName="Liverpool" CountryCode="GB" TBOCityId="125478" />
+  <BasicStationPropertyInfo StationId="475" StationName="Liverpool Street Train Station" CityCode="LON" CityName="London" CountryCode="GB" TBOCityId="126632" />
+  <BasicStationPropertyInfo StationId="476" StationName="Locarno Train Station" CityCode="LOCA" CityName="Locarno" CountryCode="CH" TBOCityId="126597" />
+  <BasicStationPropertyInfo StationId="477" StationName="Lodz Fabryczna" CityCode="LODZ" CityName="Lodz" CountryCode="PL" TBOCityId="126619" />
+  <BasicStationPropertyInfo StationId="478" StationName="Lodz Kaliska Train Station" CityCode="LODZ" CityName="Lodz" CountryCode="PL" TBOCityId="126619" />
+  <BasicStationPropertyInfo StationId="480" StationName="London Train Station" CityCode="YXU" CityName="London" CountryCode="CA" TBOCityId="126179" />
+  <BasicStationPropertyInfo StationId="481" StationName="Long Island Train Station" CityCode="NYC" CityName="New York" CountryCode="US" TBOCityId="130452" />
+  <BasicStationPropertyInfo StationId="482" StationName="Los Angeles (LAX) Union Train Station" CityCode="LAX" CityName="Los Angeles" CountryCode="US" TBOCityId="125908" />
+  <BasicStationPropertyInfo StationId="484" StationName="Lubeck Main Train Station" CityCode="LBC" CityName="Lubeck" CountryCode="DE" TBOCityId="127309" />
+  <BasicStationPropertyInfo StationId="485" StationName="Lucerne Train Station" CityCode="LUCE" CityName="Lucerne" CountryCode="CH" TBOCityId="126664" />
+  <BasicStationPropertyInfo StationId="486" StationName="Lucknow City Train Station" CityCode="LUCK" CityName="Lucknow" CountryCode="IN" TBOCityId="126666" />
+  <BasicStationPropertyInfo StationId="487" StationName="Lugano Train Station" CityCode="LUG" CityName="Lugano" CountryCode="CH" TBOCityId="126066" />
+  <BasicStationPropertyInfo StationId="488" StationName="Luoyang Railway Station" CityCode="LYA" CityName="Luoyang" CountryCode="CN" TBOCityId="126075" />
+  <BasicStationPropertyInfo StationId="489" StationName="Luoyang Railway Station (East)" CityCode="LYA" CityName="Luoyang" CountryCode="CN" TBOCityId="126075" />
+  <BasicStationPropertyInfo StationId="492" StationName="Luxembourg City Train Station" CityCode="LUX" CityName="Luxembourg" CountryCode="LU" TBOCityId="146395" />
+  <BasicStationPropertyInfo StationId="493" StationName="Luxor Train Station" CityCode="LXR" CityName="Luxor" CountryCode="EG" TBOCityId="125658" />
+  <BasicStationPropertyInfo StationId="494" StationName="Luz Train Station" CityCode="SAO" CityName="Sao Paulo" CountryCode="BR" TBOCityId="136873" />
+  <BasicStationPropertyInfo StationId="495" StationName="Lyon Part Dieu Railway Station" CityCode="LYN" CityName="Lyon" CountryCode="FR" TBOCityId="126089" />
+  <BasicStationPropertyInfo StationId="496" StationName="Lyon Perrache Railway Station" CityCode="LYN" CityName="Lyon" CountryCode="FR" TBOCityId="126089" />
+  <BasicStationPropertyInfo StationId="499" StationName="Machu Pichu Train Station" CityCode="MATC" CityName="Machu Picchu" CountryCode="PE" TBOCityId="126255" />
+  <BasicStationPropertyInfo StationId="500" StationName="Mackay Railway Station" CityCode="MKY" CityName="Mackay" CountryCode="AU" TBOCityId="146407" />
+  <BasicStationPropertyInfo StationId="501" StationName="Mahdia Train Station" CityCode="MAHD" CityName="Mahdia" CountryCode="TN" TBOCityId="126766" />
+  <BasicStationPropertyInfo StationId="502" StationName="Main Railway Staion Villach" CityCode="VILA" CityName="Villach" CountryCode="AT" TBOCityId="142597" />
+  <BasicStationPropertyInfo StationId="503" StationName="Main Railway Station" CityCode="AKL" CityName="Auckland" CountryCode="NZ" TBOCityId="109654" />
+  <BasicStationPropertyInfo StationId="504" StationName="Main Railway Station" CityCode="HEL" CityName="Helsinki" CountryCode="FI" TBOCityId="120663" />
+  <BasicStationPropertyInfo StationId="505" StationName="Main Railway Station" CityCode="INN" CityName="Innsbruck" CountryCode="AT" TBOCityId="122691" />
+  <BasicStationPropertyInfo StationId="506" StationName="Main Railway Station" CityCode="SCL" CityName="Santiago de Chile" CountryCode="CL" TBOCityId="136528" />
+  <BasicStationPropertyInfo StationId="507" StationName="Main Railway Station Graz" CityCode="GRZ" CityName="Graz" CountryCode="AT" TBOCityId="119858" />
+  <BasicStationPropertyInfo StationId="508" StationName="Main Railway Station Klagenfurt" CityCode="KLU" CityName="Klagenfurt" CountryCode="AT" TBOCityId="123707" />
+  <BasicStationPropertyInfo StationId="509" StationName="Main Railway Station Linz" CityCode="LNZ" CityName="Linz" CountryCode="AT" TBOCityId="125863" />
+  <BasicStationPropertyInfo StationId="510" StationName="Main Station (Hlavna stanica)" CityCode="BTS" CityName="Bratislava" CountryCode="SK" TBOCityId="112540" />
+  <BasicStationPropertyInfo StationId="511" StationName="Main Train Station" CityCode="LJU" CityName="Ljubljana" CountryCode="SI" TBOCityId="124937" />
+  <BasicStationPropertyInfo StationId="512" StationName="Main Train Station" CityCode="TLL" CityName="Tallinn" CountryCode="EE" TBOCityId="140287" />
+  <BasicStationPropertyInfo StationId="513" StationName="Main Train Station" CityCode="COIM" CityName="Coimbra" CountryCode="PT" TBOCityId="115816" />
+  <BasicStationPropertyInfo StationId="514" StationName="Mainz Gonsenheim Train Station" CityCode="QMZ" CityName="Mainz" CountryCode="DE" TBOCityId="126128" />
+  <BasicStationPropertyInfo StationId="515" StationName="Mainz Gustavsburg Train Station" CityCode="QMZ" CityName="Mainz" CountryCode="DE" TBOCityId="126128" />
+  <BasicStationPropertyInfo StationId="516" StationName="Mainz Kastel Train Station" CityCode="QMZ" CityName="Mainz" CountryCode="DE" TBOCityId="126128" />
+  <BasicStationPropertyInfo StationId="517" StationName="Mainz Main Train Station" CityCode="QMZ" CityName="Mainz" CountryCode="DE" TBOCityId="126128" />
+  <BasicStationPropertyInfo StationId="518" StationName="Malacca Railway Station" CityCode="MKZ" CityName="Malacca" CountryCode="MY" TBOCityId="127091" />
+  <BasicStationPropertyInfo StationId="519" StationName="Malaga Train Station" CityCode="AGP" CityName="Malaga" CountryCode="ES" TBOCityId="127094" />
+  <BasicStationPropertyInfo StationId="520" StationName="Malang Train Station" CityCode="MALZ" CityName="Malang" CountryCode="ID" TBOCityId="126781" />
+  <BasicStationPropertyInfo StationId="521" StationName="Manchester Deansgate Train Station" CityCode="MAN" CityName="Manchester" CountryCode="GB" TBOCityId="126798" />
+  <BasicStationPropertyInfo StationId="522" StationName="Manchester Oxford Road Train Station" CityCode="MAN" CityName="Manchester" CountryCode="GB" TBOCityId="126798" />
+  <BasicStationPropertyInfo StationId="523" StationName="Manchester Piccadily Train Station" CityCode="MAN" CityName="Manchester" CountryCode="GB" TBOCityId="126798" />
+  <BasicStationPropertyInfo StationId="524" StationName="Manchester Victoria Train Station" CityCode="MAN" CityName="Manchester" CountryCode="GB" TBOCityId="126798" />
+  <BasicStationPropertyInfo StationId="525" StationName="Mandalay Railway Station" CityCode="MANP" CityName="Mandalay" CountryCode="MM" TBOCityId="127416" />
+  <BasicStationPropertyInfo StationId="526" StationName="Mannheim Freidrichsf Sud Train Station" CityCode="MHG" CityName="Mannheim" CountryCode="DE" TBOCityId="127118" />
+  <BasicStationPropertyInfo StationId="527" StationName="Mannheim Kafertal Train Station" CityCode="MHG" CityName="Mannheim" CountryCode="DE" TBOCityId="127118" />
+  <BasicStationPropertyInfo StationId="528" StationName="Mannheim Main Train Station" CityCode="MHG" CityName="Mannheim" CountryCode="DE" TBOCityId="127118" />
+  <BasicStationPropertyInfo StationId="529" StationName="Mannheim Rheinau Train Station" CityCode="MHG" CityName="Mannheim" CountryCode="DE" TBOCityId="127118" />
+  <BasicStationPropertyInfo StationId="530" StationName="Mannheim Seckenheim Train Station" CityCode="MHG" CityName="Mannheim" CountryCode="DE" TBOCityId="127118" />
+  <BasicStationPropertyInfo StationId="531" StationName="Mannheim Waldhof Train Station" CityCode="MHG" CityName="Mannheim" CountryCode="DE" TBOCityId="127118" />
+  <BasicStationPropertyInfo StationId="533" StationName="Maritime Train Station" CityCode="PMO" CityName="Palermo" CountryCode="IT" TBOCityId="131388" />
+  <BasicStationPropertyInfo StationId="534" StationName="Marittima Train Station" CityCode="NAP" CityName="Naples" CountryCode="IT" TBOCityId="128721" />
+  <BasicStationPropertyInfo StationId="538" StationName="Marylebone Train Station" CityCode="LON" CityName="London" CountryCode="GB" TBOCityId="126632" />
+  <BasicStationPropertyInfo StationId="539" StationName="Memphis (MEM) Train Station" CityCode="MEM" CityName="Memphis" CountryCode="US" TBOCityId="127572" />
+  <BasicStationPropertyInfo StationId="540" StationName="Mergellina Train Station" CityCode="NAP" CityName="Naples" CountryCode="IT" TBOCityId="128721" />
+  <BasicStationPropertyInfo StationId="541" StationName="Messina Central Train Station" CityCode="QME" CityName="Messina" CountryCode="IT" TBOCityId="127923" />
+  <BasicStationPropertyInfo StationId="542" StationName="Mestre Train Station" CityCode="VCE" CityName="Venice" CountryCode="IT" TBOCityId="148463" />
+  <BasicStationPropertyInfo StationId="543" StationName="Mestre Train Station" CityCode="VCEM" CityName="Venice Mestre" CountryCode="IT" TBOCityId="0" />
+  <BasicStationPropertyInfo StationId="544" StationName="Miami (MIA) Train Station" CityCode="MIA" CityName="Miami" CountryCode="US" TBOCityId="128839" />
+  <BasicStationPropertyInfo StationId="545" StationName="Midan Ramsis Train Station" CityCode="CAI" CityName="Cairo" CountryCode="EG" TBOCityId="113116" />
+  <BasicStationPropertyInfo StationId="546" StationName="Milwaukee (MKE) Train Station" CityCode="MKE" CityName="Milwaukee" CountryCode="US" TBOCityId="128285" />
+  <BasicStationPropertyInfo StationId="547" StationName="Minneapolis St Paul (MSP) Train Station" CityCode="MSP" CityName="Minneapolis" CountryCode="US" TBOCityId="127213" />
+  <BasicStationPropertyInfo StationId="548" StationName="Minsk Railway Station" CityCode="MSQ" CityName="Minsk" CountryCode="BY" TBOCityId="128604" />
+  <BasicStationPropertyInfo StationId="549" StationName="Mobile (MOE) Train Station" CityCode="MOB" CityName="Mobile" CountryCode="US" TBOCityId="127800" />
+  <BasicStationPropertyInfo StationId="550" StationName="Modena Train Station" CityCode="MODE" CityName="Modena" CountryCode="IT" TBOCityId="127233" />
+  <BasicStationPropertyInfo StationId="551" StationName="Mombasa Train Station" CityCode="MBA" CityName="Mombasa" CountryCode="KE" TBOCityId="127249" />
+  <BasicStationPropertyInfo StationId="552" StationName="Monaco Railway Station" CityCode="QMCM" CityName="Monte Carlo" CountryCode="MC" TBOCityId="128383" />
+  <BasicStationPropertyInfo StationId="554" StationName="Monastir Train Station" CityCode="MIR" CityName="Monastir" CountryCode="TN" TBOCityId="128905" />
+  <BasicStationPropertyInfo StationId="556" StationName="Montecatini Central Station" CityCode="MONC" CityName="Montecatini Terme" CountryCode="IT" TBOCityId="128680" />
+  <BasicStationPropertyInfo StationId="557" StationName="Montecatini-Monsummano Station" CityCode="MONC" CityName="Montecatini Terme" CountryCode="IT" TBOCityId="128680" />
+  <BasicStationPropertyInfo StationId="558" StationName="Montevideo Train Station" CityCode="MVD" CityName="Montevideo" CountryCode="UY" TBOCityId="128366" />
+  <BasicStationPropertyInfo StationId="559" StationName="Saint Roch Train Station" CityCode="MPL" CityName="Montpellier" CountryCode="FR" TBOCityId="129607" />
+  <BasicStationPropertyInfo StationId="560" StationName="Montpellier Train Station" CityCode="MPL" CityName="Montpellier" CountryCode="FR" TBOCityId="129607" />
+  <BasicStationPropertyInfo StationId="561" StationName="Montreal Central Train Station" CityCode="YMQ" CityName="Montreal" CountryCode="CA" TBOCityId="127960" />
+  <BasicStationPropertyInfo StationId="562" StationName="Montreaux Train Station" CityCode="MONE" CityName="Montreux" CountryCode="CH" TBOCityId="129362" />
+  <BasicStationPropertyInfo StationId="563" StationName="Moskovskiy Train Station" CityCode="LED" CityName="St Petersburg" CountryCode="RU" TBOCityId="0" />
+  <BasicStationPropertyInfo StationId="564" StationName="Mostar Train Station" CityCode="OMO" CityName="Mostar" CountryCode="BA" TBOCityId="129388" />
+  <BasicStationPropertyInfo StationId="565" StationName="Mudgaon Train Station" CityCode="GOI" CityName="Goa" CountryCode="IN" TBOCityId="119805" />
+  <BasicStationPropertyInfo StationId="567" StationName="Munich Train Station" CityCode="MUC" CityName="Munich" CountryCode="DE" TBOCityId="146774" />
+  <BasicStationPropertyInfo StationId="568" StationName="Nagasaki Train Station" CityCode="NGS" CityName="Nagasaki" CountryCode="JP" TBOCityId="128705" />
+  <BasicStationPropertyInfo StationId="569" StationName="Nagoya Railway Station" CityCode="NGO" CityName="Nagoya" CountryCode="JP" TBOCityId="129148" />
+  <BasicStationPropertyInfo StationId="570" StationName="Nairobi Train Station" CityCode="NBO" CityName="Nairobi" CountryCode="KE" TBOCityId="130102" />
+  <BasicStationPropertyInfo StationId="571" StationName="Nampally Train Station" CityCode="HYD" CityName="Hyderabad" CountryCode="IN" TBOCityId="145710" />
+  <BasicStationPropertyInfo StationId="572" StationName="Namur Railway Station" CityCode="QNM" CityName="Namur" CountryCode="BE" TBOCityId="129260" />
+  <BasicStationPropertyInfo StationId="573" StationName="Nanchang Railway Station" CityCode="KHN" CityName="Nanchang" CountryCode="CN" TBOCityId="130108" />
+  <BasicStationPropertyInfo StationId="574" StationName="Nancy Railway Station" CityCode="ENC" CityName="Nancy" CountryCode="FR" TBOCityId="146802" />
+  <BasicStationPropertyInfo StationId="575" StationName="Nanjing Railway Station" CityCode="NKG" CityName="Nanjing" CountryCode="CN" TBOCityId="130362" />
+  <BasicStationPropertyInfo StationId="576" StationName="Nationaltheatret Train Station" CityCode="OSL" CityName="Oslo" CountryCode="NO" TBOCityId="131314" />
+  <BasicStationPropertyInfo StationId="577" StationName="Nerang Train Station" CityCode="OOL" CityName="Gold Coast" CountryCode="AU" TBOCityId="145381" />
+  <BasicStationPropertyInfo StationId="578" StationName="Netanya Train station" CityCode="NETA" CityName="Netanya" CountryCode="IL" TBOCityId="129764" />
+  <BasicStationPropertyInfo StationId="579" StationName="New Delhi Railway Station" CityCode="DEL" CityName="New Delhi" CountryCode="IN" TBOCityId="130443" />
+  <BasicStationPropertyInfo StationId="580" StationName="New Orleans (NOL) Train Station" CityCode="MSY" CityName="New Orleans" CountryCode="US" TBOCityId="129332" />
+  <BasicStationPropertyInfo StationId="581" StationName="New York Pennsylvania Train Station" CityCode="NYC" CityName="New York" CountryCode="US" TBOCityId="130452" />
+  <BasicStationPropertyInfo StationId="585" StationName="Nha Trang Main Train Station" CityCode="NHAT" CityName="Nha Trang" CountryCode="VN" TBOCityId="130182" />
+  <BasicStationPropertyInfo StationId="587" StationName="Niagara Falls Train Station" CityCode="NIAA" CityName="Niagara Falls" CountryCode="CA" TBOCityId="131116" />
+  <BasicStationPropertyInfo StationId="588" StationName="Nice Ville Station" CityCode="NCE" CityName="Nice" CountryCode="FR" TBOCityId="0" />
+  <BasicStationPropertyInfo StationId="589" StationName="Nimes Railway Station" CityCode="FNI" CityName="Nimes" CountryCode="FR" TBOCityId="129478" />
+  <BasicStationPropertyInfo StationId="590" StationName="Ningbo Railway Station" CityCode="NING" CityName="Ningbo" CountryCode="CN" TBOCityId="129479" />
+  <BasicStationPropertyInfo StationId="591" StationName="Nitra Train Station" CityCode="NITR" CityName="Nitra" CountryCode="SK" TBOCityId="129907" />
+  <BasicStationPropertyInfo StationId="592" StationName="Nørreport Station" CityCode="CPH" CityName="Copenhagen" CountryCode="DK" TBOCityId="115280" />
+  <BasicStationPropertyInfo StationId="593" StationName="Norrkoping Central Railway Station" CityCode="NRK" CityName="Norrkoping" CountryCode="SE" TBOCityId="146908" />
+  <BasicStationPropertyInfo StationId="594" StationName="Northampton Train Station" CityCode="ORM" CityName="Northampton" CountryCode="GB" TBOCityId="130526" />
+  <BasicStationPropertyInfo StationId="595" StationName="Norwich Train Station" CityCode="NWI" CityName="Norwich" CountryCode="GB" TBOCityId="130531" />
+  <BasicStationPropertyInfo StationId="596" StationName="Nottingham Attenborough Train Station" CityCode="NOTT" CityName="Nottingham" CountryCode="GB" TBOCityId="130033" />
+  <BasicStationPropertyInfo StationId="597" StationName="Nottingham Bulwell Train Station" CityCode="NOTT" CityName="Nottingham" CountryCode="GB" TBOCityId="130033" />
+  <BasicStationPropertyInfo StationId="598" StationName="Nottingham Carlton Train Station" CityCode="NOTT" CityName="Nottingham" CountryCode="GB" TBOCityId="130033" />
+  <BasicStationPropertyInfo StationId="599" StationName="Novara Train Station" CityCode="NOVA" CityName="Novara" CountryCode="IT" TBOCityId="146920" />
+  <BasicStationPropertyInfo StationId="609" StationName="Nyugati Train Station" CityCode="BUD" CityName="Budapest" CountryCode="HU" TBOCityId="113068" />
+  <BasicStationPropertyInfo StationId="611" StationName="Odense Togstation" CityCode="ODE" CityName="Odense" CountryCode="DK" TBOCityId="130950" />
+  <BasicStationPropertyInfo StationId="612" StationName="Ogilvie Transportation Center" CityCode="CHI" CityName="Chicago" CountryCode="US" TBOCityId="114653" />
+  <BasicStationPropertyInfo StationId="613" StationName="Oklahoma City (OKC) Train Station" CityCode="OKC" CityName="Oklahoma City" CountryCode="US" TBOCityId="131258" />
+  <BasicStationPropertyInfo StationId="614" StationName="Olomouc Railway Station" CityCode="OLOM" CityName="Olomouc" CountryCode="CZ" TBOCityId="130624" />
+  <BasicStationPropertyInfo StationId="615" StationName="Orlando (ORL) Train Station" CityCode="ORL" CityName="Orlando" CountryCode="US" TBOCityId="131943" />
+  <BasicStationPropertyInfo StationId="616" StationName="Orleans Railway Station" CityCode="ORLE" CityName="Orleans" CountryCode="FR" TBOCityId="130255" />
+  <BasicStationPropertyInfo StationId="617" StationName="Osaka Station" CityCode="OSA" CityName="Osaka" CountryCode="JP" TBOCityId="130813" />
+  <BasicStationPropertyInfo StationId="618" StationName="Ostbahnhof Train Station" CityCode="BER" CityName="Berlin" CountryCode="DE" TBOCityId="111539" />
+  <BasicStationPropertyInfo StationId="620" StationName="Østerport Station" CityCode="CPH" CityName="Copenhagen" CountryCode="DK" TBOCityId="115280" />
+  <BasicStationPropertyInfo StationId="621" StationName="Ostiense Train Station" CityCode="ROM" CityName="Rome" CountryCode="IT" TBOCityId="134622" />
+  <BasicStationPropertyInfo StationId="622" StationName="Ottawa Train Station" CityCode="YOW" CityName="Ottawa" CountryCode="CA" TBOCityId="130721" />
+  <BasicStationPropertyInfo StationId="623" StationName="Oxford Train Station" CityCode="OXFO" CityName="Oxford" CountryCode="GB" TBOCityId="147050" />
+  <BasicStationPropertyInfo StationId="624" StationName="Paddington Train Station" CityCode="LON" CityName="London" CountryCode="GB" TBOCityId="126632" />
+  <BasicStationPropertyInfo StationId="625" StationName="Padova Train Station" CityCode="QPA" CityName="Padova" CountryCode="IT" TBOCityId="150662" />
+  <BasicStationPropertyInfo StationId="626" StationName="Palembang Train Station" CityCode="PLM" CityName="Palembang" CountryCode="ID" TBOCityId="132650" />
+  <BasicStationPropertyInfo StationId="627" StationName="Palermo Central Train Station" CityCode="PMO" CityName="Palermo" CountryCode="IT" TBOCityId="131388" />
+  <BasicStationPropertyInfo StationId="628" StationName="Palm Springs (PSN) Train Station" CityCode="PSP" CityName="Palm Springs" CountryCode="US" TBOCityId="147077" />
+  <BasicStationPropertyInfo StationId="630" StationName="Parma Train Station" CityCode="QPM" CityName="Parma" CountryCode="IT" TBOCityId="131764" />
+  <BasicStationPropertyInfo StationId="631" StationName="Paseo de Gracia Train Station" CityCode="BCN" CityName="Barcelona" CountryCode="ES" TBOCityId="110790" />
+  <BasicStationPropertyInfo StationId="632" StationName="Pasila Bole Railway Station" CityCode="HEL" CityName="Helsinki" CountryCode="FI" TBOCityId="120663" />
+  <BasicStationPropertyInfo StationId="634" StationName="Paveletskiy Train Staion" CityCode="MOW" CityName="Moscow" CountryCode="RU" TBOCityId="146743" />
+  <BasicStationPropertyInfo StationId="635" StationName="Pearse Street Train Station" CityCode="DUB" CityName="Dublin" CountryCode="IE" TBOCityId="144983" />
+  <BasicStationPropertyInfo StationId="636" StationName="Peloponnisou Train Station" CityCode="ATH" CityName="Athens" CountryCode="GR" TBOCityId="110000" />
+  <BasicStationPropertyInfo StationId="638" StationName="Penzance Train Station" CityCode="PZE" CityName="Penzance" CountryCode="GB" TBOCityId="131045" />
+  <BasicStationPropertyInfo StationId="639" StationName="Pergugia Main Train Station" CityCode="PEG" CityName="Perugia" CountryCode="IT" TBOCityId="131060" />
+  <BasicStationPropertyInfo StationId="640" StationName="Pescara Train Station" CityCode="QPX" CityName="Pescara" CountryCode="IT" TBOCityId="132137" />
+  <BasicStationPropertyInfo StationId="641" StationName="Peterborough Train Station" CityCode="PETE" CityName="Peterborough" CountryCode="GB" TBOCityId="132745" />
+  <BasicStationPropertyInfo StationId="642" StationName="Philadelphia (PHL) Train Station" CityCode="PHL" CityName="Philadelphia" CountryCode="US" TBOCityId="132775" />
+  <BasicStationPropertyInfo StationId="643" StationName="Phnom Penh Train Station" CityCode="PNH" CityName="Phnom Penh" CountryCode="KH" TBOCityId="131527" />
+  <BasicStationPropertyInfo StationId="644" StationName="Piacenza Train Station" CityCode="QPZ" CityName="Piacenza" CountryCode="IT" TBOCityId="132159" />
+  <BasicStationPropertyInfo StationId="645" StationName="Piazza Garibaldi Station" CityCode="NAP" CityName="Naples" CountryCode="IT" TBOCityId="128721" />
+  <BasicStationPropertyInfo StationId="646" StationName="Picton Train Station" CityCode="PCN" CityName="Picton" CountryCode="NZ" TBOCityId="133406" />
+  <BasicStationPropertyInfo StationId="647" StationName="Piraeus Train Station" CityCode="ATH" CityName="Athens" CountryCode="GR" TBOCityId="110000" />
+  <BasicStationPropertyInfo StationId="648" StationName="Pisa Train Station" CityCode="PSA" CityName="Pisa" CountryCode="IT" TBOCityId="133435" />
+  <BasicStationPropertyInfo StationId="649" StationName="Pittsburgh (PGH) Train Station" CityCode="PIT" CityName="Pittsburgh" CountryCode="US" TBOCityId="132819" />
+  <BasicStationPropertyInfo StationId="650" StationName="Plovdiv Central Train Station" CityCode="PLOV" CityName="Plovdiv" CountryCode="BG" TBOCityId="132867" />
+  <BasicStationPropertyInfo StationId="651" StationName="Plymouth Train Station" CityCode="PLH" CityName="Plymouth" CountryCode="GB" TBOCityId="132266" />
+  <BasicStationPropertyInfo StationId="652" StationName="Plzen Central Railway Station" CityCode="PLZE" CityName="Plzen" CountryCode="CZ" TBOCityId="133512" />
+  <BasicStationPropertyInfo StationId="653" StationName="Poitiers Railway Station" CityCode="PIS" CityName="Poitiers" CountryCode="FR" TBOCityId="132277" />
+  <BasicStationPropertyInfo StationId="655" StationName="Port Elizabeth Train Station" CityCode="PLZ" CityName="Port Elizabeth" CountryCode="ZA" TBOCityId="132393" />
+  <BasicStationPropertyInfo StationId="656" StationName="Port Glasgow Train Station" CityCode="GLA" CityName="Glasgow" CountryCode="GB" TBOCityId="119788" />
+  <BasicStationPropertyInfo StationId="657" StationName="Porta Nuova Train Station" CityCode="VRN" CityName="Verona" CountryCode="IT" TBOCityId="140874" />
+  <BasicStationPropertyInfo StationId="659" StationName="Postojna Train Station" CityCode="POST" CityName="Postojna" CountryCode="SI" TBOCityId="132982" />
+  <BasicStationPropertyInfo StationId="660" StationName="Potsdamer Platz Train Station" CityCode="BER" CityName="Berlin" CountryCode="DE" TBOCityId="111539" />
+  <BasicStationPropertyInfo StationId="661" StationName="Poznan Railway Station" CityCode="POZ" CityName="Poznan" CountryCode="PL" TBOCityId="132946" />
+  <BasicStationPropertyInfo StationId="662" StationName="Pretoria Train Station" CityCode="PRY" CityName="Pretoria" CountryCode="ZA" TBOCityId="133013" />
+  <BasicStationPropertyInfo StationId="663" StationName="Prince Rupert Train Station" CityCode="YPR" CityName="Prince Rupert" CountryCode="CA" TBOCityId="133102" />
+  <BasicStationPropertyInfo StationId="665" StationName="Pune Junction Train Station" CityCode="PUNE" CityName="Pune" CountryCode="IN" TBOCityId="133133" />
+  <BasicStationPropertyInfo StationId="666" StationName="Puno Train Station" CityCode="PUNO" CityName="Puno" CountryCode="PE" TBOCityId="133134" />
+  <BasicStationPropertyInfo StationId="667" StationName="Punta Del Este Train Station" CityCode="PDP" CityName="Punta del Este" CountryCode="UY" TBOCityId="133065" />
+  <BasicStationPropertyInfo StationId="668" StationName="Qingdao Railway Station" CityCode="TAO" CityName="Qingdao (Tsingtao)" CountryCode="CN" TBOCityId="151249" />
+  <BasicStationPropertyInfo StationId="669" StationName="Quanzhou Railway Station" CityCode="QUAZ" CityName="Quanzhou" CountryCode="CN" TBOCityId="134014" />
+  <BasicStationPropertyInfo StationId="670" StationName="Quebec Train Station" CityCode="YQB" CityName="Quebec City" CountryCode="CA" TBOCityId="147423" />
+  <BasicStationPropertyInfo StationId="671" StationName="Rabat Ville Train Station" CityCode="RBA" CityName="Rabat" CountryCode="MA" TBOCityId="133745" />
+  <BasicStationPropertyInfo StationId="672" StationName="Rail Station" CityCode="COFF" CityName="Coffs Harbour" CountryCode="AU" TBOCityId="114327" />
+  <BasicStationPropertyInfo StationId="674" StationName="Railway Station Ghent Sint Pieters" CityCode="GNE" CityName="Ghent" CountryCode="BE" TBOCityId="118690" />
+  <BasicStationPropertyInfo StationId="675" StationName="Raja Mandi Train Station" CityCode="AGR" CityName="Agra" CountryCode="IN" TBOCityId="100589" />
+  <BasicStationPropertyInfo StationId="677" StationName="Ravenna Train Station" CityCode="RAN" CityName="Ravenna" CountryCode="IT" TBOCityId="133779" />
+  <BasicStationPropertyInfo StationId="678" StationName="Reading Train Station" CityCode="READ" CityName="Reading" CountryCode="GB" TBOCityId="133299" />
+  <BasicStationPropertyInfo StationId="679" StationName="Reims Railway Station" CityCode="RHE" CityName="Reims" CountryCode="FR" TBOCityId="147490" />
+  <BasicStationPropertyInfo StationId="680" StationName="RENFE Train Staion" CityCode="GRX" CityName="Granada" CountryCode="ES" TBOCityId="119187" />
+  <BasicStationPropertyInfo StationId="681" StationName="RENFE Train Station" CityCode="EAS" CityName="San Sebastian" CountryCode="ES" TBOCityId="147716" />
+  <BasicStationPropertyInfo StationId="682" StationName="RENFE Train Station" CityCode="UTL" CityName="Torremolinos" CountryCode="ES" TBOCityId="141754" />
+  <BasicStationPropertyInfo StationId="683" StationName="RENFE Train Station" CityCode="FUEG" CityName="Fuengirola" CountryCode="ES" TBOCityId="118640" />
+  <BasicStationPropertyInfo StationId="684" StationName="RENFE Train Station" CityCode="ODB" CityName="Cordoba" CountryCode="ES" TBOCityId="115407" />
+  <BasicStationPropertyInfo StationId="686" StationName="Rennes Railway Station" CityCode="RNS" CityName="Rennes" CountryCode="FR" TBOCityId="135085" />
+  <BasicStationPropertyInfo StationId="687" StationName="Reno (RNO) Train Station" CityCode="RNO" CityName="Reno" CountryCode="US" TBOCityId="133724" />
+  <BasicStationPropertyInfo StationId="688" StationName="Retiro Train Station" CityCode="BUE" CityName="Buenos Aires" CountryCode="AR" TBOCityId="112153" />
+  <BasicStationPropertyInfo StationId="690" StationName="Riga Railway Station" CityCode="RIX" CityName="Riga" CountryCode="LV" TBOCityId="134771" />
+  <BasicStationPropertyInfo StationId="691" StationName="Rijeka Train Station" CityCode="RJK" CityName="Rijeka" CountryCode="HR" TBOCityId="134773" />
+  <BasicStationPropertyInfo StationId="692" StationName="Rimini Train Station" CityCode="RMI" CityName="Rimini" CountryCode="IT" TBOCityId="134774" />
+  <BasicStationPropertyInfo StationId="694" StationName="Riyadh Train Station" CityCode="RUH" CityName="Riyadh" CountryCode="SA" TBOCityId="147536" />
+  <BasicStationPropertyInfo StationId="695" StationName="Rizhskiy Train Station" CityCode="MOW" CityName="Moscow" CountryCode="RU" TBOCityId="146743" />
+  <BasicStationPropertyInfo StationId="696" StationName="Rocky Mountaineer Rail Station" CityCode="YVR" CityName="Vancouver" CountryCode="CA" TBOCityId="141448" />
+  <BasicStationPropertyInfo StationId="697" StationName="Romana Train Station" CityCode="MIL" CityName="Milan" CountryCode="IT" TBOCityId="127769" />
+  <BasicStationPropertyInfo StationId="698" StationName="Roosevelt Train Station" CityCode="SAO" CityName="Sao Paulo" CountryCode="BR" TBOCityId="136873" />
+  <BasicStationPropertyInfo StationId="699" StationName="Rossio Station" CityCode="LIS" CityName="Lisbon" CountryCode="PT" TBOCityId="146305" />
+  <BasicStationPropertyInfo StationId="700" StationName="Rosslare Strand Railway Station" CityCode="ROSS" CityName="Rosslare" CountryCode="IE" TBOCityId="134557" />
+  <BasicStationPropertyInfo StationId="701" StationName="Rotterdam Noord Railway Station" CityCode="RTM" CityName="Rotterdam" CountryCode="NL" TBOCityId="134992" />
+  <BasicStationPropertyInfo StationId="702" StationName="Rotterdam Zuid Railway Station" CityCode="RTM" CityName="Rotterdam" CountryCode="NL" TBOCityId="134992" />
+  <BasicStationPropertyInfo StationId="703" StationName="Rouen Railway Station" CityCode="URO" CityName="Rouen" CountryCode="FR" TBOCityId="135451" />
+  <BasicStationPropertyInfo StationId="704" StationName="Rovaniemi main railway station" CityCode="RVN" CityName="Rovaniemi" CountryCode="FI" TBOCityId="134087" />
+  <BasicStationPropertyInfo StationId="705" StationName="Sacramento (SAC) Train Station" CityCode="SAC" CityName="Sacramento" CountryCode="US" TBOCityId="134115" />
+  <BasicStationPropertyInfo StationId="706" StationName="Safi Train Station" CityCode="SAFI" CityName="Safi" CountryCode="MA" TBOCityId="147605" />
+  <BasicStationPropertyInfo StationId="707" StationName="Saigon Main Station" CityCode="SGN" CityName="Ho Chi Minh City" CountryCode="VN" TBOCityId="121921" />
+  <BasicStationPropertyInfo StationId="708" StationName="Saipan Train Station" CityCode="SPN" CityName="Saipan" CountryCode="MP" TBOCityId="135845" />
+  <BasicStationPropertyInfo StationId="709" StationName="Salisbury Railway Station" CityCode="SALI" CityName="Salisbury" CountryCode="GB" TBOCityId="135859" />
+  <BasicStationPropertyInfo StationId="710" StationName="Del Camp Train Station" CityCode="SAOU" CityName="Salou" CountryCode="ES" TBOCityId="135697" />
+  <BasicStationPropertyInfo StationId="711" StationName="Salt Lake City (SLC) Train Station" CityCode="SLC" CityName="Salt Lake City" CountryCode="US" TBOCityId="135924" />
+  <BasicStationPropertyInfo StationId="712" StationName="Salzburg Main Train Station" CityCode="SZG" CityName="Salzburg" CountryCode="AT" TBOCityId="136456" />
+  <BasicStationPropertyInfo StationId="713" StationName="San Antonio (SAS) Train Station" CityCode="SKF" CityName="San Antonio" CountryCode="US" TBOCityId="136466" />
+  <BasicStationPropertyInfo StationId="714" StationName="San Bernardo Train Station" CityCode="SVQ" CityName="Seville" CountryCode="ES" TBOCityId="137558" />
+  <BasicStationPropertyInfo StationId="716" StationName="San Diego (SAN) Train Station" CityCode="SAN" CityName="San Diego" CountryCode="US" TBOCityId="147688" />
+  <BasicStationPropertyInfo StationId="717" StationName="San Giovanni Station" CityCode="QCM" CityName="Como" CountryCode="IT" TBOCityId="114998" />
+  <BasicStationPropertyInfo StationId="718" StationName="San Jose (SJC) Train Station" CityCode="SJC" CityName="San Jose" CountryCode="US" TBOCityId="147695" />
+  <BasicStationPropertyInfo StationId="719" StationName="Sannomiya Train Station" CityCode="KOBE" CityName="Kobe" CountryCode="JP" TBOCityId="123054" />
+  <BasicStationPropertyInfo StationId="720" StationName="Santa Apolonia Train Station" CityCode="LIS" CityName="Lisbon" CountryCode="PT" TBOCityId="146305" />
+  <BasicStationPropertyInfo StationId="721" StationName="Santa Barbara (SBA) Train Station" CityCode="SBA" CityName="Santa Barbara" CountryCode="US" TBOCityId="136057" />
+  <BasicStationPropertyInfo StationId="723" StationName="Santa Justa Train Station" CityCode="SVQ" CityName="Seville" CountryCode="ES" TBOCityId="137558" />
+  <BasicStationPropertyInfo StationId="724" StationName="Santa Lucia Train Station" CityCode="VCE" CityName="Venice" CountryCode="IT" TBOCityId="148463" />
+  <BasicStationPropertyInfo StationId="726" StationName="Santa Maria Novella Train Station" CityCode="FLR" CityName="Florence" CountryCode="IT" TBOCityId="151778" />
+  <BasicStationPropertyInfo StationId="727" StationName="Santiago Central Train Station" CityCode="SCL" CityName="Santiago de Chile" CountryCode="CL" TBOCityId="136528" />
+  <BasicStationPropertyInfo StationId="728" StationName="Santiago De Cuba Train Station" CityCode="SCU" CityName="Santiago de Cuba" CountryCode="CU" TBOCityId="136075" />
+  <BasicStationPropertyInfo StationId="729" StationName="Sants Train Station" CityCode="BCN" CityName="Barcelona" CountryCode="ES" TBOCityId="110790" />
+  <BasicStationPropertyInfo StationId="730" StationName="Sao Bento Train Station" CityCode="OPO" CityName="Porto" CountryCode="PT" TBOCityId="131849" />
+  <BasicStationPropertyInfo StationId="731" StationName="Sapporo Train Station" CityCode="SPK" CityName="Sapporo" CountryCode="JP" TBOCityId="147771" />
+  <BasicStationPropertyInfo StationId="732" StationName="Sarajevo Train Station" CityCode="SJJ" CityName="Sarajevo" CountryCode="BA" TBOCityId="137196" />
+  <BasicStationPropertyInfo StationId="733" StationName="Saskatoon Train Station" CityCode="YXE" CityName="Saskatoon" CountryCode="CA" TBOCityId="136098" />
+  <BasicStationPropertyInfo StationId="734" StationName="Savyolovskiy Train Station" CityCode="MOW" CityName="Moscow" CountryCode="RU" TBOCityId="146743" />
+  <BasicStationPropertyInfo StationId="735" StationName="Seattle (SEA) Train Station" CityCode="SEA" CityName="Seattle" CountryCode="US" TBOCityId="137938" />
+  <BasicStationPropertyInfo StationId="736" StationName="Seoul Station" CityCode="SEL" CityName="Seoul" CountryCode="KR" TBOCityId="137364" />
+  <BasicStationPropertyInfo StationId="737" StationName="Setubal Railway Station" CityCode="SETU" CityName="Setubal" CountryCode="PT" TBOCityId="137985" />
+  <BasicStationPropertyInfo StationId="738" StationName="Sfax Train Station" CityCode="SFAX" CityName="Sfax" CountryCode="TN" TBOCityId="136787" />
+  <BasicStationPropertyInfo StationId="739" StationName="Shakekou Station" CityCode="DALY" CityName="Dalian" CountryCode="CN" TBOCityId="115099" />
+  <BasicStationPropertyInfo StationId="740" StationName="Shanghai Railway Station" CityCode="SHA" CityName="Shanghai" CountryCode="CN" TBOCityId="136286" />
+  <BasicStationPropertyInfo StationId="741" StationName="Shaoxing Railway Station" CityCode="SHAY" CityName="Shaoxing" CountryCode="CN" TBOCityId="137385" />
+  <BasicStationPropertyInfo StationId="944" StationName="Guangzhou, South Train Station" CityCode="" CityName="Guangzhou" CountryCode="CN" TBOCityId="112825" />
+  <BasicStationPropertyInfo StationId="945" StationName="Santiago De Compostela" CityCode="" CityName="A Coruña" CountryCode="ES" TBOCityId="100323" />
+  <BasicStationPropertyInfo StationId="946" StationName="La Coruña" CityCode="" CityName="A Coruña" CountryCode="ES" TBOCityId="100323" />
+  <BasicStationPropertyInfo StationId="947" StationName="Agra Cantonment" CityCode="" CityName="Agra" CountryCode="IN" TBOCityId="100589" />
+  <BasicStationPropertyInfo StationId="949" StationName="Amritsar Railway Station" CityCode="" CityName="Amritsar" CountryCode="IN" TBOCityId="101129" />
+  <BasicStationPropertyInfo StationId="950" StationName="Badajoz Train Station" CityCode="" CityName="Badajoz" CountryCode="ES" TBOCityId="110394" />
+  <BasicStationPropertyInfo StationId="951" StationName="Baku Central Train Station" CityCode="" CityName="Baku" CountryCode="AZ" TBOCityId="110755" />
+  <BasicStationPropertyInfo StationId="952" StationName="Batumi Railway Station" CityCode="" CityName="Batumi" CountryCode="GE" TBOCityId="111040" />
+  <BasicStationPropertyInfo StationId="953" StationName="Südkreuz Station Berlin" CityCode="" CityName="Berlin" CountryCode="DE" TBOCityId="111539" />
+  <BasicStationPropertyInfo StationId="954" StationName="Gesundbrunnen Station Berlin" CityCode="" CityName="Berlin" CountryCode="DE" TBOCityId="111539" />
+  <BasicStationPropertyInfo StationId="956" StationName="Santander Train Station" CityCode="" CityName="Cantabria" CountryCode="ES" TBOCityId="113941" />
+  <BasicStationPropertyInfo StationId="957" StationName="Chandigarh Railway Station" CityCode="" CityName="Chandigarh" CountryCode="IN" TBOCityId="114107" />
+  <BasicStationPropertyInfo StationId="958" StationName="Cordoba Train Station" CityCode="" CityName="Cordoba" CountryCode="ES" TBOCityId="115407" />
+  <BasicStationPropertyInfo StationId="963" StationName="Fukuoka Train Station" CityCode="" CityName="Fukuoka" CountryCode="JP" TBOCityId="118383" />
+  <BasicStationPropertyInfo StationId="964" StationName="Granada Train Station" CityCode="" CityName="Granada" CountryCode="ES" TBOCityId="119187" />
+  <BasicStationPropertyInfo StationId="965" StationName="Grenoble Train Station" CityCode="" CityName="Grenoble" CountryCode="FR" TBOCityId="119877" />
+  <BasicStationPropertyInfo StationId="966" StationName="Haridwar Railway Station" CityCode="" CityName="Haridwar" CountryCode="IN" TBOCityId="121186" />
+  <BasicStationPropertyInfo StationId="967" StationName="Hua Hin Train Station" CityCode="" CityName="Hua Hin" CountryCode="TH" TBOCityId="121402" />
+  <BasicStationPropertyInfo StationId="968" StationName="Indore Railway Station" CityCode="" CityName="Indore" CountryCode="IN" TBOCityId="121726" />
+  <BasicStationPropertyInfo StationId="969" StationName="Jodhpur Railway Station" CityCode="" CityName="Jodhpur" CountryCode="IN" TBOCityId="145836" />
+  <BasicStationPropertyInfo StationId="970" StationName="Khajuraho Railway Station" CityCode="" CityName="Khajuraho" CountryCode="IN" TBOCityId="122580" />
+  <BasicStationPropertyInfo StationId="972" StationName="KIEV TRAIN STATION" CityCode="" CityName="Kiev" CountryCode="UA" TBOCityId="145935" />
+  <BasicStationPropertyInfo StationId="973" StationName="Surat Thani Train Station" CityCode="" CityName="Koh Samui" CountryCode="TH" TBOCityId="124943" />
+  <BasicStationPropertyInfo StationId="974" StationName="Fukuchiyama Train Station" CityCode="" CityName="Kyoto" CountryCode="JP" TBOCityId="123363" />
+  <BasicStationPropertyInfo StationId="975" StationName="Leon Train Station" CityCode="" CityName="Leon" CountryCode="ES" TBOCityId="125966" />
+  <BasicStationPropertyInfo StationId="977" StationName="Lyon St-Paul Station" CityCode="" CityName="Lyon" CountryCode="FR" TBOCityId="126089" />
+  <BasicStationPropertyInfo StationId="979" StationName="Nantes Train Station" CityCode="" CityName="Nantes" CountryCode="FR" TBOCityId="146805" />
+  <BasicStationPropertyInfo StationId="981" StationName="Odessa Train Station" CityCode="" CityName="Odessa" CountryCode="UA" TBOCityId="131244" />
+  <BasicStationPropertyInfo StationId="982" StationName="Bentencho Train Station" CityCode="" CityName="Osaka" CountryCode="JP" TBOCityId="130813" />
+  <BasicStationPropertyInfo StationId="983" StationName="Namba Train Station" CityCode="" CityName="Osaka" CountryCode="JP" TBOCityId="130813" />
+  <BasicStationPropertyInfo StationId="984" StationName="Shenzhen West Railway Station" CityCode="" CityName="Shenzhen" CountryCode="CN" TBOCityId="137575" />
+  <BasicStationPropertyInfo StationId="985" StationName="Shenzhen East Railway Station" CityCode="" CityName="Shenzhen" CountryCode="CN" TBOCityId="137575" />
+  <BasicStationPropertyInfo StationId="986" StationName="Shenzhen North Railway Station" CityCode="" CityName="Shenzhen" CountryCode="CN" TBOCityId="137575" />
+  <BasicStationPropertyInfo StationId="987" StationName="Woodlands Train Station- Singapore" CityCode="" CityName="Singapore" CountryCode="SG" TBOCityId="138703" />
+  <BasicStationPropertyInfo StationId="989" StationName="Ueno Train Station" CityCode="" CityName="Tokyo" CountryCode="JP" TBOCityId="148251" />
+  <BasicStationPropertyInfo StationId="990" StationName="Akihabara Train Station" CityCode="" CityName="Tokyo" CountryCode="JP" TBOCityId="148251" />
+  <BasicStationPropertyInfo StationId="991" StationName="Shinagawa Train Station" CityCode="" CityName="Tokyo" CountryCode="JP" TBOCityId="148251" />
+  <BasicStationPropertyInfo StationId="992" StationName="Ryogoku Train Station" CityCode="" CityName="Tokyo" CountryCode="JP" TBOCityId="148251" />
+  <BasicStationPropertyInfo StationId="993" StationName="Akabira Train Station" CityCode="" CityName="Tokyo" CountryCode="JP" TBOCityId="148251" />
+  <BasicStationPropertyInfo StationId="994" StationName="Ikebukuro Train Station" CityCode="" CityName="Tokyo" CountryCode="JP" TBOCityId="148251" />
+  <BasicStationPropertyInfo StationId="995" StationName="Shinjuku Train Station" CityCode="" CityName="Tokyo" CountryCode="JP" TBOCityId="148251" />
+  <BasicStationPropertyInfo StationId="996" StationName="Shibuya Train Station" CityCode="" CityName="Tokyo" CountryCode="JP" TBOCityId="148251" />
+  <BasicStationPropertyInfo StationId="997" StationName="Ebisu Train Station" CityCode="" CityName="Tokyo" CountryCode="JP" TBOCityId="148251" />
+  <BasicStationPropertyInfo StationId="998" StationName="Hamamatsucho Train Station" CityCode="" CityName="Tokyo" CountryCode="JP" TBOCityId="148251" />
+  <BasicStationPropertyInfo StationId="999" StationName="Roppongi Train Station" CityCode="" CityName="Tokyo" CountryCode="JP" TBOCityId="148251" />
+  <BasicStationPropertyInfo StationId="1000" StationName="Asakusabashi Train Station" CityCode="" CityName="Tokyo" CountryCode="JP" TBOCityId="148251" />
+  <BasicStationPropertyInfo StationId="1001" StationName="Trang Railway Station" CityCode="" CityName="Trang and South" CountryCode="TH" TBOCityId="140351" />
+  <BasicStationPropertyInfo StationId="1003" StationName="Vadodara Junction Railway Station" CityCode="" CityName="Vadodara" CountryCode="IN" TBOCityId="141587" />
+  <BasicStationPropertyInfo StationId="1004" StationName="Joaquin Sorolla Train Station- Valencia" CityCode="" CityName="Valencia" CountryCode="ES" TBOCityId="141297" />
+  <BasicStationPropertyInfo StationId="1005" StationName="Valladolid Train Station" CityCode="" CityName="Valladolid" CountryCode="ES" TBOCityId="141130" />
+  <BasicStationPropertyInfo StationId="1006" StationName="Vienna Meidling Train Station" CityCode="" CityName="Vienna" CountryCode="AT" TBOCityId="140888" />
+  <BasicStationPropertyInfo StationId="1007" StationName="Vienna Central Train Station" CityCode="" CityName="Vienna" CountryCode="AT" TBOCityId="140888" />
+  <BasicStationPropertyInfo StationId="1008" StationName="Visakhapatnam Railway Station " CityCode="" CityName="Visakhapatnam" CountryCode="IN" TBOCityId="142198" />
+  <BasicStationPropertyInfo StationId="1009" StationName="Bilbao Train Station" CityCode="" CityName="Bilbao" CountryCode="ES" TBOCityId="111302" />
+  <BasicStationPropertyInfo StationId="1010" StationName="Zaragoza Train Station" CityCode="" CityName="Zaragoza" CountryCode="ES" TBOCityId="150365" />
+  <BasicStationPropertyInfo StationId="1011" StationName="ANGUILLA TRAIN STATION" CityCode="" CityName="Anguilla" CountryCode="AI" TBOCityId="109128" />
+  <BasicStationPropertyInfo StationId="1012" StationName="Chongqing Station" CityCode="" CityName="Chongqing" CountryCode="CN" TBOCityId="151797" />
+  <BasicStationPropertyInfo StationId="1013" StationName="COLLEGE STATION" CityCode="" CityName="Texas/College Station" CountryCode="US" TBOCityId="115824" />
+  <BasicStationPropertyInfo StationId="1014" StationName="Chengdu East Station" CityCode="" CityName="Chengdu" CountryCode="CN" TBOCityId="114784" />
+  <BasicStationPropertyInfo StationId="1015" StationName="Chengdu South Station" CityCode="" CityName="Chengdu" CountryCode="CN" TBOCityId="114784" />
+  <BasicStationPropertyInfo StationId="1016" StationName="Dalian North Station" CityCode="" CityName="Dalian" CountryCode="CN" TBOCityId="115099" />
+  <BasicStationPropertyInfo StationId="1017" StationName="DA NANG RAILWAY STATION" CityCode="" CityName="Danang" CountryCode="VN" TBOCityId="116038" />
+  <BasicStationPropertyInfo StationId="1018" StationName="ESTACION DE TRENES DE ALBACETE" CityCode="" CityName="Albacete" CountryCode="ES" TBOCityId="100818" />
+  <BasicStationPropertyInfo StationId="1019" StationName="ESTACION DE TREN DE BOURG ST. MAURICE" CityCode="" CityName="Bourg St. Maurice" CountryCode="FR" TBOCityId="112480" />
+  <BasicStationPropertyInfo StationId="1020" StationName="ESTACIÓN DE TREN CLUSES" CityCode="" CityName="Cluses" CountryCode="FR" TBOCityId="114322" />
+  <BasicStationPropertyInfo StationId="1021" StationName="ESTACION DE FERROCARRIL MEXICANO CHIHUAHUA" CityCode="" CityName="Chihuahua" CountryCode="MX" TBOCityId="114355" />
+  <BasicStationPropertyInfo StationId="1022" StationName="ESTACION DE TREN MOUTIERS" CityCode="" CityName="Moutiers" CountryCode="FR" TBOCityId="128561" />
+  <BasicStationPropertyInfo StationId="1023" StationName="ESTACIÓN TREN SAN SEBASTIÁN" CityCode="" CityName="San Sebastian" CountryCode="ES" TBOCityId="147716" />
+  <BasicStationPropertyInfo StationId="1024" StationName="ESTACION DE TREN SAN MARTIN DE LA VEGA" CityCode="" CityName="San Martin de la Vega" CountryCode="ES" TBOCityId="136025" />
+  <BasicStationPropertyInfo StationId="1025" StationName="PILOT STATION" CityCode="" CityName="Pilot Station" CountryCode="US" TBOCityId="151307" />
+  <BasicStationPropertyInfo StationId="1026" StationName="SONDERBORG RAIL STATION" CityCode="" CityName="Sonderborg" CountryCode="DK" TBOCityId="137516" />
+  <BasicStationPropertyInfo StationId="1027" StationName="GAVLE RAIL STATION" CityCode="" CityName="Gävle" CountryCode="SE" TBOCityId="118420" />
+  <BasicStationPropertyInfo StationId="1028" StationName="UPPSALA RAIL STATION" CityCode="" CityName="Uppsala" CountryCode="SE" TBOCityId="141845" />
+  <BasicStationPropertyInfo StationId="1029" StationName="SHANGHAI SOUTH RAILWAY STATION" CityCode="" CityName="Shanghai" CountryCode="CN" TBOCityId="136286" />
+  <BasicStationPropertyInfo StationId="1030" StationName="Shijiazhuang Station" CityCode="" CityName="Shijiazhuang" CountryCode="CN" TBOCityId="137394" />
+  <BasicStationPropertyInfo StationId="1031" StationName="Sanya Station" CityCode="" CityName="Sanya" CountryCode="CN" TBOCityId="136392" />
+  <BasicStationPropertyInfo StationId="1032" StationName="Estacion Camp de Tarragona" CityCode="" CityName="Tarragona" CountryCode="ES" TBOCityId="138589" />
+  <BasicStationPropertyInfo StationId="1033" StationName="ESTACION DE TREN DE BURGOS" CityCode="" CityName="Burgos" CountryCode="ES" TBOCityId="112170" />
+  <BasicStationPropertyInfo StationId="1034" StationName="Dnipropetrovsk Railway Station" CityCode="" CityName="Dnepropetrovsk" CountryCode="UA" TBOCityId="144934" />
+  <BasicStationPropertyInfo StationId="1035" StationName="ESTACION TREN ALMERIA" CityCode="" CityName="Almeria" CountryCode="ES" TBOCityId="100527" />
+  <BasicStationPropertyInfo StationId="1036" StationName="ESTACION AVE LLEIDA (TREN)" CityCode="" CityName="Lleida" CountryCode="ES" TBOCityId="148836" />
+  <BasicStationPropertyInfo StationId="1037" StationName="ESTACION TREN MURCIA" CityCode="" CityName="Murcia" CountryCode="ES" TBOCityId="129430" />
+  <BasicStationPropertyInfo StationId="1038" StationName="ESTACION DE TREN DE REUS" CityCode="" CityName="Reus" CountryCode="ES" TBOCityId="134749" />
+  <BasicStationPropertyInfo StationId="1040" StationName="Tianjin North Station" CityCode="" CityName="Tianjin" CountryCode="CN" TBOCityId="148225" />
+  <BasicStationPropertyInfo StationId="1039" StationName="Tianjin South Station" CityCode="" CityName="Tianjin" CountryCode="CN" TBOCityId="148225" />
+  <BasicStationPropertyInfo StationId="1041" StationName="Tianjin West Station" CityCode="" CityName="Tianjin" CountryCode="CN" TBOCityId="148225" />
+  <BasicStationPropertyInfo StationId="1042" StationName="TANGER TRAIN STATION" CityCode="" CityName="Tanger" CountryCode="MA" TBOCityId="139912" />
+  <BasicStationPropertyInfo StationId="1043" StationName="WHITEFISH TRAIN DEPOT" CityCode="" CityName="Whitefish" CountryCode="US" TBOCityId="143728" />
+  <BasicStationPropertyInfo StationId="1044" StationName="Wuhan Station" CityCode="" CityName="Wuhan" CountryCode="CN" TBOCityId="143778" />
+  <BasicStationPropertyInfo StationId="1045" StationName="SODERTALJE SOUTH RAIL ST" CityCode="" CityName="Södertälje" CountryCode="SE" TBOCityId="138747" />
+  <BasicStationPropertyInfo StationId="1046" StationName="STRANGNAS RAIL ST" CityCode="" CityName="Strängnäs" CountryCode="SE" TBOCityId="140209" />
+  <BasicStationPropertyInfo StationId="1047" StationName="ESKILSTUNA RAIL ST" CityCode="" CityName="Eskilstuna" CountryCode="SE" TBOCityId="116875" />
+  <BasicStationPropertyInfo StationId="1048" StationName="MALMO SOUTH RAIL STATION" CityCode="" CityName="Malmö" CountryCode="SE" TBOCityId="126382" />
+  <BasicStationPropertyInfo StationId="1049" StationName="TIERP RAIL STATION" CityCode="" CityName="Tierp" CountryCode="SE" TBOCityId="151599" />
+  <BasicStationPropertyInfo StationId="1050" StationName="VOJENS RAIL STATION" CityCode="" CityName="Vojens" CountryCode="DK" TBOCityId="142365" />
+  <BasicStationPropertyInfo StationId="1051" StationName="Yalta Train Station" CityCode="" CityName="Yalta" CountryCode="UA" TBOCityId="101261" />
+  <BasicStationPropertyInfo StationId="1052" StationName="Yerevan Train Station" CityCode="" CityName="Yerevan" CountryCode="AM" TBOCityId="143896" />
+  <BasicStationPropertyInfo StationId="1053" StationName="FREDERICA RAIL ST" CityCode="" CityName="Fredericia" CountryCode="DK" TBOCityId="118214" />
+  <BasicStationPropertyInfo StationId="1054" StationName="KOLDING RAIL STATION" CityCode="" CityName="Kolding" CountryCode="DK" TBOCityId="123874" />
+  <BasicStationPropertyInfo StationId="1055" StationName="BASEL MULHOUSE RAIL STATION" CityCode="" CityName="Basel" CountryCode="CH" TBOCityId="111155" />
+  <BasicStationPropertyInfo StationId="1056" StationName="AARHUS RAIL STATION" CityCode="" CityName="Aarhus" CountryCode="DK" TBOCityId="100432" />
+  <BasicStationPropertyInfo StationId="1057" StationName="LE MANS RAIL STATION" CityCode="" CityName="Le Mans" CountryCode="FR" TBOCityId="125260" />
+  <BasicStationPropertyInfo StationId="1058" StationName="AALBORG RAIL STATION" CityCode="" CityName="Aalborg" CountryCode="DK" TBOCityId="100007" />
+  <BasicStationPropertyInfo StationId="1059" StationName="London Paddington Station" CityCode="" CityName="London" CountryCode="GB" TBOCityId="126632" />
+  <BasicStationPropertyInfo StationId="1060" StationName="Safdarjung Train Station" CityCode="" CityName="New Delhi" CountryCode="IN" TBOCityId="130443" />
+  <BasicStationPropertyInfo StationId="1061" StationName="St Pancras Train Station" CityCode="LON" CityName="London" CountryCode="UK" TBOCityId="126632" />
+</ArrayOfBasicStationPropertyInfo>
