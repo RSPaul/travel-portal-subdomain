@@ -51,7 +51,6 @@ use DateTime;
 use App\Models\Token;
 //use App\Models\HotelView;
 
-
 class HotelController extends Controller {
 
     public $hotels_list;
