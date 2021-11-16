@@ -258,12 +258,12 @@ class HomeController extends Controller {
        // $this->getAirport();
 
         $referral = $request->referral;
-        if(Auth::user()) {
-            $agent = AffiliateUsers::where('user_id', Auth::user()->id)->first();
-            if(isset($agent) && !empty($agent)) {
-                $referral = $agent['referal_code'];
-            }
-        }
+        // if(Auth::user()) {
+        //     $agent = AffiliateUsers::where('user_id', Auth::user()->id)->first();
+        //     if(isset($agent) && !empty($agent)) {
+        //         $referral = $agent['referal_code'];
+        //     }
+        // }
 
         if (isset($request->show)) {
             $active_tab = $request->show;

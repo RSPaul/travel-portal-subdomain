@@ -1717,7 +1717,7 @@ $(function () {
         $('.arrivePrice').html($(this).data('price'));
         $('.arriveSeats').html($(this).data('seats-left'));
         $('.airimg_arrive').attr("src", 'https://daisycon.io/images/airline/?width=100&height=50&color=ffffff&iata=' + $(this).data('fcode'));
-        var referral = $(this).data('referral');
+        var referral = 0;
         var lcc = $(this).data('lcc');
         setTimeout(function () {
             var totalPrice = parseFloat($('.returnPrice').html().replace(',', '')) + parseFloat($('.arrivePrice').html().replace(',', ''));
@@ -1757,7 +1757,7 @@ $(function () {
         $('.returnPrice').html($(this).data('price-return'));
         $('.returnSeats').html($(this).data('seats-left-return'));
         $('.airimg_return').attr("src", 'https://daisycon.io/images/airline/?width=100&height=50&color=ffffff&iata=' + $(this).data('fcode'));
-        var referralR = $(this).data('referral-return');
+        var referralR = 0;
         var lccR = $(this).data('lcc-return');
         setTimeout(function () {
             var totalPrice = parseFloat($('.returnPrice').html().replace(',', '')) + parseFloat($('.arrivePrice').html().replace(',', ''));

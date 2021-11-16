@@ -132,7 +132,7 @@ gtag('config', 'UA-190132872-1');
                     <div class="mobileMenuDiv">
                         <ul class="navbar-nav mr-auto">
 
-                            @if( Auth::check() && Auth::user()->role == 'agent')
+                            @if( Auth::check())
                             <li class="nav-item menu-link @if(Session::get('active_tab') == 'flights') active @endif" data-tab="flights">
                                 <a class="nav-link" href="javascript:void(0);" ><img class="unselected_img" src="{{asset('images/plane-icon.png')}}" alt="flight"><img class="selected_img" src="{{asset('images/plane-icon.png')}}" alt="flights"><span>{{ __('labels.flights') }}</span></a>
                             </li>
@@ -140,7 +140,7 @@ gtag('config', 'UA-190132872-1');
 
                             <li class="nav-item menu-link @if(Session::get('active_tab') == 'hotels') active @endif" data-tab="hotels"><a class="nav-link" href="javascript:void(0);" ><img class="unselected_img" src="{{asset('images/hotel-icon.png')}}" alt="hotels"><img class="selected_img" src="{{asset('images/hotel-icon.png')}}" alt="hotels"><span>{{ __('labels.hotels') }}</span></a></li>
 
-                            <li  class="nav-item menu-link @if(Session::get('active_tab') == 'flights-hotels') active @endif" data-tab="flights-hotels"><a class="nav-link" href="javascript:void(0);" ><img class="unselected_img" src="{{asset('images/flight-hotel-icon.png')}}" alt="flight+hotels"><img class="selected_img" src="{{asset('images/flight-hotel-icon.png')}}" alt="flight+hotels"><span>{{ __('labels.flights-hotels') }}</span></a></li>
+                            <!-- <li  class="nav-item menu-link @if(Session::get('active_tab') == 'flights-hotels') active @endif" data-tab="flights-hotels"><a class="nav-link" href="javascript:void(0);" ><img class="unselected_img" src="{{asset('images/flight-hotel-icon.png')}}" alt="flight+hotels"><img class="selected_img" src="{{asset('images/flight-hotel-icon.png')}}" alt="flight+hotels"><span>{{ __('labels.flights-hotels') }}</span></a></li> -->
 
                             <li class="nav-item menu-link @if(Session::get('active_tab') == 'activities') active @endif" data-tab="activities"><a class="nav-link" href="javascript:void(0);" ><img class="unselected_img" src="{{asset('images/activities-icon.png')}}" alt="flight"><img class="selected_img" src="{{asset('images/activities-icon.png')}}" alt="flights"><span>{{ __('labels.activities') }}</span></a></li>
                             <li class="nav-item menu-link @if(Session::get('active_tab') == 'cabs') active @endif" data-tab="cabs">
@@ -167,7 +167,7 @@ gtag('config', 'UA-190132872-1');
 
                         <ul class="navbar-nav mr-auto">
 
-                            @if(Auth::check() && Auth::user()->role == 'agent')
+                            @if(Auth::check())
                             <li class="nav-item menu-link @if(Session::get('active_tab') == 'flights') active @endif" data-tab="flights">
                                 <a class="nav-link" href="javascript:void(0);" ><img class="unselected_img" src="{{asset('images/plane-icon.png')}}" alt="flight"><img class="selected_img" src="{{asset('images/plane-icon.png')}}" alt="flights"><span>{{ __('labels.flights') }}</span></a>
                             </li>
@@ -175,7 +175,7 @@ gtag('config', 'UA-190132872-1');
 
                             <li class="nav-item menu-link @if(Session::get('active_tab') == 'hotels') active @endif" data-tab="hotels"><a class="nav-link" href="javascript:void(0);" ><img class="unselected_img" src="{{asset('images/hotel-icon.png')}}" alt="hotels"><img class="selected_img" src="{{asset('images/hotel-icon.png')}}" alt="hotels"><span>{{ __('labels.hotels') }}</span></a></li>
                             
-                            <li  class="nav-item menu-link @if(Session::get('active_tab') == 'flights-hotels') active @endif" data-tab="flights-hotels"><a class="nav-link" href="javascript:void(0);" ><img class="unselected_img" src="{{asset('images/flight-hotel-icon.png')}}" alt="flight+hotels"><img class="selected_img" src="{{asset('images/flight-hotel-icon.png')}}" alt="flight+hotels"><span>{{ __('labels.flights-hotels') }}</span></a></li>
+                            <!-- <li  class="nav-item menu-link @if(Session::get('active_tab') == 'flights-hotels') active @endif" data-tab="flights-hotels"><a class="nav-link" href="javascript:void(0);" ><img class="unselected_img" src="{{asset('images/flight-hotel-icon.png')}}" alt="flight+hotels"><img class="selected_img" src="{{asset('images/flight-hotel-icon.png')}}" alt="flight+hotels"><span>{{ __('labels.flights-hotels') }}</span></a></li> -->
 
                             <li class="nav-item menu-link @if(Session::get('active_tab') == 'activities') active @endif" data-tab="activities"><a class="nav-link" href="javascript:void(0);" ><img class="unselected_img" src="{{asset('images/activities-icon.png')}}" alt="flight"><img class="selected_img" src="{{asset('images/activities-icon.png')}}" alt="flights"><span>{{ __('labels.activities') }}</span></a></li>
                             <li class="nav-item menu-link @if(Session::get('active_tab') == 'cabs') active @endif" data-tab="cabs">

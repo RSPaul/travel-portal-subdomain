@@ -78,14 +78,14 @@ class FlightController extends Controller {
         $this->temp = 'set value ';
 
         $isAgent = false;
-        if(Auth::user()) {
+        // if(Auth::user()) {
 
-            $agent = AffiliateUsers::select('user_id')->where('user_id', Auth::user()->id)->first();
+        //     $agent = AffiliateUsers::select('user_id')->where('user_id', Auth::user()->id)->first();
 
-            if(isset($agent) && !empty($agent)) {
-                $isAgent = true;
-            }
-        }
+        //     if(isset($agent) && !empty($agent)) {
+        //         $isAgent = true;
+        //     }
+        // }
         return view('search.flights.flights')->with(['flights' => $flights, 'input' => $request->all(), 'referral' => $_GET['referral'], 'isAgent' => $isAgent]);
     }
 
@@ -208,7 +208,7 @@ class FlightController extends Controller {
 
             $this->setCookie('flight_session', time() + (60 * 13), 20);
 
-            if ($input['referral'] != '') {
+            if ($input['referral'] != '' && $input['referral'] != '0') {
 
                 $checkrefferal = AffiliateUsers::select('user_id')->where(['referal_code' => $input['referral']])->first();
 
@@ -532,7 +532,7 @@ class FlightController extends Controller {
         /* Ends here */
 
 
-        if ($request->referral != '') {
+        if ($request->referral != '' && $request->referral != '0') {
 
             $checkrefferal = AffiliateUsers::select('user_id')->where(['referal_code' => $request->referral])->first();
 
@@ -569,7 +569,7 @@ class FlightController extends Controller {
 
         //$flightSearch = Session::get('flightSearhData');
         $flightSearch['travellersClass'] = str_replace("+", " ", $flightSearch['travellersClass']);
-        if ($input['referral'] != '') {
+        if ($input['referral'] != '' && $input['referral'] != '0') {
 
 
             $checkrefferal = AffiliateUsers::select('user_id')->where(['referal_code' => $input['referral']])->first();
@@ -1691,7 +1691,7 @@ class FlightController extends Controller {
 
         //$flightSearch = Session::get('flightSearhData');
         $flightSearch['travellersClass'] = str_replace("+", " ", $flightSearch['travellersClass']);
-        if ($input['referral'] != '') {
+        if ($input['referral'] != '' && $input['referral'] != '0') {
 
 
             $checkrefferal = AffiliateUsers::select('user_id')->where(['referal_code' => $input['referral']])->first();

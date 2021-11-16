@@ -839,7 +839,7 @@
                                                         <span>@{{flight.Segments[0][0].NoOfSeatAvailable}} seat(s) left </span>
                                                     </h3>
                                                 </div>
-                                                <a style="margin-top:5px;" href="/flight/@{{ flights.TraceId}}/@{{ flight.ResultIndex}}/0/@{{flight.IsLCC}}/{{$referral}}/@{{ search_id }}" target="_blank"  class="btn btn_book" ng-if="!flights.Results[1].length" >Book</a> 
+                                                <a style="margin-top:5px;" href="/flight/@{{ flights.TraceId}}/@{{ flight.ResultIndex}}/0/@{{flight.IsLCC}}/0/@{{ search_id }}" target="_blank"  class="btn btn_book" ng-if="!flights.Results[1].length" >Book</a> 
                                                 <input ng-if="flights.Results[1].length > 0" type="radio" name="book" data-fcode="@{{ flight.Segments[0][0].Airline.AirlineCode}}" data-flightcode="@{{ flight.Segments[0][0].Airline.AirlineName}} @{{ flight.Segments[0][0].Airline.AirlineCode}} - @{{ flight.Segments[0][0].Airline.FlightNumber}}" data-from-time="(@{{flight.Segments[0][0].Origin.DepTime|  date:'HH:mm' }})" data-to-time="(@{{flight.Segments[0][0].Destination.ArrTime|  date:'HH:mm' }})"  data-duration="@{{flight.Segments[0][0].Duration| time:'mm':'hhh mmm':false }}" data-price="@{{ flight.Fare.FinalPrice | number:2}}" data-currency="@{{flight.Fare.Currency}}"  data-seats-left="@{{flight.Segments[0][0].NoOfSeatAvailable}}" data-air-img="@{{ flight.Segments[0][0].Airline.AirlineName}}" data-trace-Id="@{{ flights.TraceId}}" data-result-index="@{{ flight.ResultIndex}}" data-referral="{{$referral}}"  data-lcc="@{{flight.IsLCC}}" class="form-control" id="book_id_@{{$index}}" value="">
                                             </div>
 
@@ -1227,7 +1227,7 @@
                                             </div>
                                             <div class="book_data_btn">
 
-                                                <a href="/flight/@{{ flights.TraceId}}/@{{ flight.ResultIndex}}/0/@{{flight.IsLCC}}/{{$referral}}/@{{ search_id }}" target="_blank"  class="btn btn_book" ng-if="!flights.Results[1].length" >Book</a> 
+                                                <a href="/flight/@{{ flights.TraceId}}/@{{ flight.ResultIndex}}/0/@{{flight.IsLCC}}/0/@{{ search_id }}" target="_blank"  class="btn btn_book" ng-if="!flights.Results[1].length" >Book</a> 
 
                                                 <input ng-if="flights.Results[1].length > 0" type="radio" name="book_return" data-fcode="@{{ flight.Segments[0][0].Airline.AirlineCode}}" data-flightcode-return="@{{ flight.Segments[0][0].Airline.AirlineName}} @{{ flight.Segments[0][0].Airline.AirlineCode}} - @{{ flight.Segments[0][0].Airline.FlightNumber}}" data-from-time-return="(@{{flight.Segments[0][0].Origin.DepTime|  date:'HH:mm' }})" data-to-time-return="(@{{flight.Segments[0][0].Destination.ArrTime|  date:'HH:mm' }})"  data-duration-return="@{{flight.Segments[0][0].Duration| time:'mm':'hhh mmm':false }}" data-price-return="@{{ flight.Fare.FinalPrice | number:2}}" data-currency-return="@{{flight.Fare.Currency}}"  data-seats-left-return="@{{flight.Segments[0][0].NoOfSeatAvailable}}" data-air-img-return="@{{ flight.Segments[0][0].Airline.AirlineName}}" data-trace-Id="@{{ flights.TraceId}}" data-result-index="@{{ flight.ResultIndex}}" data-lcc-return="@{{flight.IsLCC}}" class="form-control" id="book_return_id_@{{$index}}" data-referral-return="{{$referral}}" value="">
 
