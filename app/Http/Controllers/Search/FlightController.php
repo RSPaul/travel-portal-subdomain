@@ -1084,25 +1084,6 @@ class FlightController extends Controller {
 
                     $segments = $bookingDetails['Response']['FlightItinerary']['Segments'];
                     $farerules = $bookingDetails['Response']['FlightItinerary']['FareRules'];
-                  
-
-                    if(isset($agent_id) && $agent_id != ''){
-                   
-                        // echo "<pre>"; print_r($segments[0]); die();
-                        $post_content = 'Booking for flight from <b>' . $flightSearch['from'] . '</b> to <b>'.  $flightSearch['to'] .'</b> depart date <b>' . date('l, F jS, Y', strtotime(str_replace('/' , '-', $travelArr['departure_date_arr']) )) . '</b> depart time <b>' . date('H:i', strtotime(str_replace('/' , '-', $travelArr['departure_date_arr']) )) . '</b> for <b>' . $flightSearch['travellersClass'] . '</b><br> Total paid amount <b>' . Session::get('CurrencyCode') . ' ' . round($input['amount'],2) . '</b>';
-                        //create story for profile page
-                        Posts::create(['post_type' => 'article_image',
-                                  'post_content' => $post_content,
-                                  'post_media' => "https://daisycon.io/images/airline/?width=600&height=500&color=ffffff&iata=" . $segments[0]['Airline']['AirlineCode'],
-                                  'user_id' => Auth::user()->id]);
-
-                        $notifications = NotificationAgents::create(['agent_id' => $agent_id,
-                              'type' => 'flight',
-                              'description' => $post_content,
-                              'price' => 'USD ' . round($commission_agent,2),
-                              'status' => 0
-                        ]);
-                    }
 
 
                     $pdf = PDF::loadView('emails.invoice.flights-booking', compact('booking', 'payments', 'segments', 'farerules'));
@@ -1111,12 +1092,6 @@ class FlightController extends Controller {
                     $file_name = 'e-Ticket-' . $booking->booking_id . '.pdf';
                     
                     Mail::to($input['adult_email_1'])->send(new FlightBookingEmail($booking, $payments, $segments, $farerules, $path, $file_name));
-
-                    if(isset($agent_id) && $agent_id != '' && Auth::user()->email != $agentemail){
-
-                        Mail::to($agentemail)->send(new FlightBookingEmail($booking, $payments, $segments, $farerules, $path, $file_name));
-
-                    }
 
 
                     if (isset($input['ibindex']) && $input['ibindex'] != '') {
@@ -1223,38 +1198,12 @@ class FlightController extends Controller {
                     $segments = $bookingDetailsNOLCC['Response']['FlightItinerary']['Segments'];
                     $farerules = $bookingDetailsNOLCC['Response']['FlightItinerary']['FareRules'];
 
-
-                    if(isset($agent_id) && $agent_id != ''){   
-
-                        $post_content = 'Booking for flight from <b>' . $flightSearch['from'] . '</b> to <b>'.  $flightSearch['to'] .'</b> depart date <b>' . date('l, F jS, Y', strtotime(str_replace('/' , '-', $travelArr['departure_date_arr']) )) . '</b> depart time <b>' . date('H:i', strtotime(str_replace('/' , '-', $travelArr['departure_date_arr']) )) . '</b> for <b>' . $flightSearch['travellersClass'] . '</b><br> Total paid amount <b>' . Session::get('CurrencyCode') . ' ' . round($input['amount'],2) . '</b>';
-                       
-                        //create story for profile page
-                       
-                        Posts::create(['post_type' => 'article_image',
-                                  'post_content' => $post_content,
-                                  'post_media' => "https://daisycon.io/images/airline/?width=600&height=500&color=ffffff&iata=" . $segments[0]['Airline']['AirlineCode'],
-                                  'user_id' => Auth::user()->id]);
-
-                        $notifications = NotificationAgents::create(['agent_id' => $agent_id,
-                              'type' => 'flight',
-                              'description' => $post_content,
-                              'price' => 'USD ' . round($commission_agent,2),
-                              'status' => 0
-                        ]);
-                    }
-
                     $pdf = PDF::loadView('emails.invoice.flights-booking', compact('booking', 'payments', 'segments', 'farerules'));
                     $pdf->save(public_path('e-tickets/flight/e-Ticket-' . $booking->booking_id . '.pdf'));
                     $path = public_path('e-tickets/flight/e-Ticket-' . $booking->booking_id . '.pdf');
                     $file_name = 'e-Ticket-' . $booking->booking_id . '.pdf';
 
                     Mail::to($input['adult_email_1'])->send(new FlightBookingEmail($booking, $payments, $segments, $farerules, $path, $file_name));
-
-                    if(isset($agent_id) && $agent_id != '' && Auth::user()->email != $agentemail){
-
-                        Mail::to($agentemail)->send(new FlightBookingEmail($booking, $payments, $segments, $farerules, $path, $file_name));
-                          
-                    }
 
 
                     if (isset($input['ibindex']) && $input['ibindex'] != '') {
@@ -1510,24 +1459,6 @@ class FlightController extends Controller {
 
                     $booking->request_data = array('travelData' => $travelArr, 'bookingData' => $bookFlightArr);
 
-                    if(isset($agent_id) && $agent_id != ''){ 
-
-                        $post_content = 'Booking for flight from <b>' . $travelArr['main_start'] . '</b> to <b>'.  $travelArr['to_start'] .'</b> depart date <b>' . date('l, F jS, Y', strtotime(str_replace('/' , '-', $travelArr['departure_date_arr']) )) . '</b> depart time <b>' . date('H:i', strtotime(str_replace('/' , '-', $travelArr['departure_date_arr']) )) . '</b> for <b>' . $flightSearch['travellersClass'] . '</b><br> Total paid amount <b>' . Session::get('CurrencyCode') . ' ' . round($input['amount'],2) . '</b>';
-                        //create story for profile page
-                        Posts::create(['post_type' => 'article_image',
-                                  'post_content' => $post_content,
-                                  'post_media' => "https://daisycon.io/images/airline/?width=600&height=500&color=ffffff&iata=" . $segments[0]['Airline']['AirlineCode'],
-                                  'user_id' => Auth::user()->id]);
-  
-
-                        $notifications = NotificationAgents::create(['agent_id' => $agent_id,
-                              'type' => 'flight',
-                              'description' => 'Booking for Flight from <b>' . $travelArr['main_start'] . '</b> to <b>'.  $travelArr['to_start'] . '<br> Total paid amount <b>'. Session::get('CurrencyCode') . ' ' . round($input['amount'],2) . '</b>',
-                              'price' => 'USD ' . round($commission_agent,2),
-                              'status' => 0
-                        ]);
-                    }
-
                     $segments = $bookingDetails['Response']['FlightItinerary']['Segments'];
                     $farerules = $bookingDetails['Response']['FlightItinerary']['FareRules'];
 
@@ -1537,12 +1468,6 @@ class FlightController extends Controller {
                     $file_name = 'e-Ticket-' . $booking->booking_id . '.pdf';
 
                     Mail::to($input['adult_email_1'])->send(new FlightBookingEmail($booking, $payments, $segments, $farerules, $path, $file_name));
-
-                    if(isset($agent_id) && $agent_id != '' && Auth::user()->email != $agentemail){
-
-                        Mail::to($agentemail)->send(new FlightBookingEmail($booking, $payments, $segments, $farerules, $path, $file_name));
-                          
-                    }
 
                     //Mail::to($input['adult_email_1'])->send(new FlightBookingEmail($booking, $payments, $bookingDetails['Response']['FlightItinerary']['Segments'], $bookingDetails['Response']['FlightItinerary']['FareRules']));
 
@@ -1626,24 +1551,7 @@ class FlightController extends Controller {
                     $travelArr['departure_date_arr'] = $input['departure_date_dep'];
 
                     $booking->request_data = array('travelData' => $travelArr, 'bookingData' => $bookFlightArr);
-                    
-                    if(isset($agent_id) && $agent_id != ''){   
-
-                        $post_content = 'Booking for flight from <b>' . $travelArr['main_start'] . '</b> to <b>'.  $travelArr['to_start'] .'</b> depart date <b>' . date('l, F jS, Y', strtotime(str_replace('/' , '-', $travelArr['departure_date_arr']) )) . '</b> depart time <b>' . date('H:i', strtotime(str_replace('/' , '-', $travelArr['departure_date_arr']) )) . '</b> for <b>' . $flightSearch['travellersClass'] . '</b><br> Total paid amount <b>' . Session::get('CurrencyCode') . ' ' . round($input['amount'],2) . '</b>';
-                        //create story for profile page
-                        Posts::create(['post_type' => 'article_image',
-                                  'post_content' => $post_content,
-                                  'post_media' => "https://daisycon.io/images/airline/?width=600&height=500&color=ffffff&iata=" . $segments[0]['Airline']['AirlineCode'],
-                                  'user_id' => Auth::user()->id]);
-
-
-                        $notifications = NotificationAgents::create(['agent_id' => $agent_id,
-                              'type' => 'flight',
-                              'description' => 'Booking for Flight from <b>' . $travelArr['main_start'] . '</b> to <b>'.  $travelArr['to_start'] . '<br> Total paid amount <b>'. Session::get('CurrencyCode') . ' ' . round($input['amount'],2) . '</b>',
-                              'price' => 'USD ' . round($commission_agent,2),
-                              'status' => 0
-                        ]);
-                    }    
+                      
 
                     $segments = $bookingDetailsIBNOLCC['Response']['FlightItinerary']['Segments'];
                     $farerules = $bookingDetailsIBNOLCC['Response']['FlightItinerary']['FareRules'];
@@ -1655,11 +1563,6 @@ class FlightController extends Controller {
 
                     Mail::to($input['adult_email_1'])->send(new FlightBookingEmail($booking, $payments, $segments, $farerules, $path, $file_name));
 
-                    if(isset($agent_id) && $agent_id != '' && Auth::user()->email != $agentemail){
-
-                        Mail::to($agentemail)->send(new FlightBookingEmail($booking, $payments, $segments, $farerules, $path, $file_name));
-                          
-                    }
 
                     //Mail::to($input['adult_email_1'])->send(new FlightBookingEmail($booking, $payments, $ticketDetailsIBNOLCC['Response']['FlightItinerary']['Segments'], $ticketDetailsIBNOLCC['Response']['FlightItinerary']['FareRules']));
                     //Mail::to($input['adult_email_1'])->send(new FlightBookingEmail($booking, $payments, $ticketDetailsIBNOLCC['Response']['FlightItinerary']['Segments'], $ticketDetailsIBNOLCC['Response']['FlightItinerary']['FareRules']));
@@ -2203,25 +2106,7 @@ class FlightController extends Controller {
 
                     $segments = $bookingDetails['Response']['FlightItinerary']['Segments'];
                     $farerules = $bookingDetails['Response']['FlightItinerary']['FareRules'];
-                  
-
-                    if(isset($agent_id) && $agent_id != ''){
-                   
-                        // echo "<pre>"; print_r($segments[0]); die();
-                        $post_content = 'Booking for flight from <b>' . $flightSearch['from'] . '</b> to <b>'.  $flightSearch['to'] .'</b> depart date <b>' . date('l, F jS, Y', strtotime(str_replace('/' , '-', $travelArr['departure_date_arr']) )) . '</b> depart time <b>' . date('H:i', strtotime(str_replace('/' , '-', $travelArr['departure_date_arr']) )) . '</b> for <b>' . $flightSearch['travellersClass'] . '</b><br> Total paid amount <b>' . Session::get('CurrencyCode') . ' ' . round($input['amount'],2) . '</b>';
-                        //create story for profile page
-                        Posts::create(['post_type' => 'article_image',
-                                  'post_content' => $post_content,
-                                  'post_media' => "https://daisycon.io/images/airline/?width=600&height=500&color=ffffff&iata=" . $segments[0]['Airline']['AirlineCode'],
-                                  'user_id' => Auth::user()->id]);
-
-                        $notifications = NotificationAgents::create(['agent_id' => $agent_id,
-                              'type' => 'flight',
-                              'description' => $post_content,
-                              'price' => 'USD ' . round($commission_agent,2),
-                              'status' => 0
-                        ]);
-                    }
+                
 
 
                     $pdf = PDF::loadView('emails.invoice.flights-booking', compact('booking', 'payments', 'segments', 'farerules'));
@@ -2230,12 +2115,6 @@ class FlightController extends Controller {
                     $file_name = 'e-Ticket-' . $booking->booking_id . '.pdf';
                     
                     Mail::to($input['adult_email_1'])->send(new FlightBookingEmail($booking, $payments, $segments, $farerules, $path, $file_name));
-
-                    if(isset($agent_id) && $agent_id != '' && Auth::user()->email != $agentemail){
-
-                        Mail::to($agentemail)->send(new FlightBookingEmail($booking, $payments, $segments, $farerules, $path, $file_name));
-
-                    }
 
 
                     if (isset($input['ibindex']) && $input['ibindex'] != '') {
@@ -2337,38 +2216,12 @@ class FlightController extends Controller {
                     $segments = $bookingDetailsNOLCC['Response']['FlightItinerary']['Segments'];
                     $farerules = $bookingDetailsNOLCC['Response']['FlightItinerary']['FareRules'];
 
-
-                    if(isset($agent_id) && $agent_id != ''){   
-
-                        $post_content = 'Booking for flight from <b>' . $flightSearch['from'] . '</b> to <b>'.  $flightSearch['to'] .'</b> depart date <b>' . date('l, F jS, Y', strtotime(str_replace('/' , '-', $travelArr['departure_date_arr']) )) . '</b> depart time <b>' . date('H:i', strtotime(str_replace('/' , '-', $travelArr['departure_date_arr']) )) . '</b> for <b>' . $flightSearch['travellersClass'] . '</b><br> Total paid amount <b>' . Session::get('CurrencyCode') . ' ' . round($input['amount'],2) . '</b>';
-                       
-                        //create story for profile page
-                       
-                        Posts::create(['post_type' => 'article_image',
-                                  'post_content' => $post_content,
-                                  'post_media' => "https://daisycon.io/images/airline/?width=600&height=500&color=ffffff&iata=" . $segments[0]['Airline']['AirlineCode'],
-                                  'user_id' => Auth::user()->id]);
-
-                        $notifications = NotificationAgents::create(['agent_id' => $agent_id,
-                              'type' => 'flight',
-                              'description' => $post_content,
-                              'price' => 'USD ' . round($commission_agent,2),
-                              'status' => 0
-                        ]);
-                    }
-
                     $pdf = PDF::loadView('emails.invoice.flights-booking', compact('booking', 'payments', 'segments', 'farerules'));
                     $pdf->save(public_path('e-tickets/flight/e-Ticket-' . $booking->booking_id . '.pdf'));
                     $path = public_path('e-tickets/flight/e-Ticket-' . $booking->booking_id . '.pdf');
                     $file_name = 'e-Ticket-' . $booking->booking_id . '.pdf';
 
                     Mail::to($input['adult_email_1'])->send(new FlightBookingEmail($booking, $payments, $segments, $farerules, $path, $file_name));
-
-                    if(isset($agent_id) && $agent_id != '' && Auth::user()->email != $agentemail){
-
-                        Mail::to($agentemail)->send(new FlightBookingEmail($booking, $payments, $segments, $farerules, $path, $file_name));
-                          
-                    }
 
 
                     if (isset($input['ibindex']) && $input['ibindex'] != '') {
@@ -2622,24 +2475,6 @@ class FlightController extends Controller {
 
                     $booking->request_data = array('travelData' => $travelArr, 'bookingData' => $bookFlightArr);
 
-                    if(isset($agent_id) && $agent_id != ''){ 
-
-                        $post_content = 'Booking for flight from <b>' . $travelArr['main_start'] . '</b> to <b>'.  $travelArr['to_start'] .'</b> depart date <b>' . date('l, F jS, Y', strtotime(str_replace('/' , '-', $travelArr['departure_date_arr']) )) . '</b> depart time <b>' . date('H:i', strtotime(str_replace('/' , '-', $travelArr['departure_date_arr']) )) . '</b> for <b>' . $flightSearch['travellersClass'] . '</b><br> Total paid amount <b>' . Session::get('CurrencyCode') . ' ' . round($input['amount'],2) . '</b>';
-                        //create story for profile page
-                        Posts::create(['post_type' => 'article_image',
-                                  'post_content' => $post_content,
-                                  'post_media' => "https://daisycon.io/images/airline/?width=600&height=500&color=ffffff&iata=" . $segments[0]['Airline']['AirlineCode'],
-                                  'user_id' => Auth::user()->id]);
-  
-
-                        $notifications = NotificationAgents::create(['agent_id' => $agent_id,
-                              'type' => 'flight',
-                              'description' => 'Booking for Flight from <b>' . $travelArr['main_start'] . '</b> to <b>'.  $travelArr['to_start'] . '<br> Total paid amount <b>'. Session::get('CurrencyCode') . ' ' . round($input['amount'],2) . '</b>',
-                              'price' => 'USD ' . round($commission_agent,2),
-                              'status' => 0
-                        ]);
-                    }
-
                     $segments = $bookingDetails['Response']['FlightItinerary']['Segments'];
                     $farerules = $bookingDetails['Response']['FlightItinerary']['FareRules'];
 
@@ -2650,11 +2485,6 @@ class FlightController extends Controller {
 
                     Mail::to($input['adult_email_1'])->send(new FlightBookingEmail($booking, $payments, $segments, $farerules, $path, $file_name));
 
-                    if(isset($agent_id) && $agent_id != '' && Auth::user()->email != $agentemail){
-
-                        Mail::to($agentemail)->send(new FlightBookingEmail($booking, $payments, $segments, $farerules, $path, $file_name));
-                          
-                    }
 
                     //Mail::to($input['adult_email_1'])->send(new FlightBookingEmail($booking, $payments, $bookingDetails['Response']['FlightItinerary']['Segments'], $bookingDetails['Response']['FlightItinerary']['FareRules']));
 
@@ -2736,24 +2566,7 @@ class FlightController extends Controller {
                     $travelArr['departure_date_arr'] = $input['departure_date_dep'];
 
                     $booking->request_data = array('travelData' => $travelArr, 'bookingData' => $bookFlightArr);
-                    
-                    if(isset($agent_id) && $agent_id != ''){   
-
-                        $post_content = 'Booking for flight from <b>' . $travelArr['main_start'] . '</b> to <b>'.  $travelArr['to_start'] .'</b> depart date <b>' . date('l, F jS, Y', strtotime(str_replace('/' , '-', $travelArr['departure_date_arr']) )) . '</b> depart time <b>' . date('H:i', strtotime(str_replace('/' , '-', $travelArr['departure_date_arr']) )) . '</b> for <b>' . $flightSearch['travellersClass'] . '</b><br> Total paid amount <b>' . Session::get('CurrencyCode') . ' ' . round($input['amount'],2) . '</b>';
-                        //create story for profile page
-                        Posts::create(['post_type' => 'article_image',
-                                  'post_content' => $post_content,
-                                  'post_media' => "https://daisycon.io/images/airline/?width=600&height=500&color=ffffff&iata=" . $segments[0]['Airline']['AirlineCode'],
-                                  'user_id' => Auth::user()->id]);
-
-
-                        $notifications = NotificationAgents::create(['agent_id' => $agent_id,
-                              'type' => 'flight',
-                              'description' => 'Booking for Flight from <b>' . $travelArr['main_start'] . '</b> to <b>'.  $travelArr['to_start'] . '<br> Total paid amount <b>'. Session::get('CurrencyCode') . ' ' . round($input['amount'],2) . '</b>',
-                              'price' => 'USD ' . round($commission_agent,2),
-                              'status' => 0
-                        ]);
-                    }    
+                  
 
                     $segments = $bookingDetailsIBNOLCC['Response']['FlightItinerary']['Segments'];
                     $farerules = $bookingDetailsIBNOLCC['Response']['FlightItinerary']['FareRules'];
@@ -2765,11 +2578,6 @@ class FlightController extends Controller {
 
                     Mail::to($input['adult_email_1'])->send(new FlightBookingEmail($booking, $payments, $segments, $farerules, $path, $file_name));
 
-                    if(isset($agent_id) && $agent_id != '' && Auth::user()->email != $agentemail){
-
-                        Mail::to($agentemail)->send(new FlightBookingEmail($booking, $payments, $segments, $farerules, $path, $file_name));
-                          
-                    }
 
                     //Mail::to($input['adult_email_1'])->send(new FlightBookingEmail($booking, $payments, $ticketDetailsIBNOLCC['Response']['FlightItinerary']['Segments'], $ticketDetailsIBNOLCC['Response']['FlightItinerary']['FareRules']));
                     //Mail::to($input['adult_email_1'])->send(new FlightBookingEmail($booking, $payments, $ticketDetailsIBNOLCC['Response']['FlightItinerary']['Segments'], $ticketDetailsIBNOLCC['Response']['FlightItinerary']['FareRules']));

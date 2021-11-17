@@ -311,9 +311,13 @@ class ActivityController extends Controller {
                 }
             }
 
+            $isPan = false;
+
             foreach($search_contents['response'] as $act) {
                 if($act['ResultIndex'] == $request->result_index) {
-                    $isPan = $act['IsPANMandatory'];
+                    if(isset($act['IsPANMandatory'])){
+                         $isPan = $act['IsPANMandatory'];
+                    }
                 }
             }
 
@@ -465,39 +469,40 @@ class ActivityController extends Controller {
 
                         $cabId = $this->bookActivityILS($ilsPayDetails);
 
-                        if($ilsPayDetails['paymentMode'] == 'single'){
-
-                            if($ilsPayDetails['installments'] != '1'){
-
-                                $installmentsValue =  0.5 * $ilsPayDetails['installments'];
-
-                                $deductamount = $ilsPayDetails['ORIGINAL_BOOKING_PRICE_PME'] + ( ( $installmentsValue / 100 )  * $ilsPayDetails['ORIGINAL_BOOKING_PRICE']);
-
-                            }else{
-                                 $deductamount = $ilsPayDetails['ORIGINAL_BOOKING_PRICE_PME'];
-                            }
-                           
-                            $myCurrency = Session::get('CurrencyCode');
-                            $usercurrency = Currency::convert($myCurrency, 'USD', ($deductamount));
-                            $debitAmnt = round($usercurrency['convertedAmount']);
-
-                            $walletAmount = \Auth::user()->balance;
-
-                            if($debitAmnt > $walletAmount){
-
-                                $debitAmnt = $walletAmount;
-                            }
-
-                            $walletuser = \Auth::user();
-                            $walletuser->withdraw($debitAmnt, ['description' => 'Payment withdraw from account for single activity booking.']);
-                            
-                            $walletAmount = \Auth::user()->balance;
-                            Session::forget('walletAmount');
-                        }
 
 
 
                         if(isset($cabId['success']) && $cabId['success']){
+                            
+                            if($ilsPayDetails['paymentMode'] == 'single'){
+
+                                if($ilsPayDetails['installments'] != '1'){
+
+                                    $installmentsValue =  0.5 * $ilsPayDetails['installments'];
+
+                                    $deductamount = $ilsPayDetails['ORIGINAL_BOOKING_PRICE_PME'] + ( ( $installmentsValue / 100 )  * $ilsPayDetails['ORIGINAL_BOOKING_PRICE']);
+
+                                }else{
+                                     $deductamount = $ilsPayDetails['ORIGINAL_BOOKING_PRICE_PME'];
+                                }
+                               
+                                $myCurrency = Session::get('CurrencyCode');
+                                $usercurrency = Currency::convert($myCurrency, 'USD', ($deductamount));
+                                $debitAmnt = round($usercurrency['convertedAmount']);
+
+                                $walletAmount = \Auth::user()->balance;
+
+                                if($debitAmnt > $walletAmount){
+
+                                    $debitAmnt = $walletAmount;
+                                }
+
+                                $walletuser = \Auth::user();
+                                $walletuser->withdraw($debitAmnt, ['description' => 'Payment withdraw from account for single activity booking.']);
+                                
+                                $walletAmount = \Auth::user()->balance;
+                                Session::forget('walletAmount');
+                            }
 
                           return redirect('/thankyou/activity/' . $cabId['booking_id'] . '/true');
 
