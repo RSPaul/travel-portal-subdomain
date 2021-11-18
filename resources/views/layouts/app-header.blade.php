@@ -147,7 +147,7 @@
                                 @guest
                                 @else
                                 <li>
-                                    <a class="dropdown-item" href="/{{Auth::user()->role}}/wallet"><i class="fa fa-credit-card" aria-hidden="true"></i> {{ __('labels.wallet') }} ( INR {{ number_format(0.0,2) }} )</a>
+                                    <a class="dropdown-item" href="/{{Auth::user()->role}}/wallet"><i class="fa fa-credit-card" aria-hidden="true"></i> {{ __('labels.wallet') }} ( {{ wallet_blance()['currency'] }} {{ number_format(wallet_blance()['amount'],2) }} )</a>
                                 </li>
                                 @endguest
                                 @guest

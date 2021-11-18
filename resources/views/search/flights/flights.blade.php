@@ -2,7 +2,7 @@
 @section('content')   
 <input type="hidden" id="domain" value="{{ env('APP_URL') }}">
 <div ng-app="flightApp" ng-controller="searchFlightCtrl" >
-    <section class="listing_banner_forms">
+    <section class="listing_banner_forms" id="flightExpireDiv">
         <div class="container">
             <div class="row">
                 <div class="col-md-12">
@@ -149,7 +149,7 @@
                                         </div>
                                     </div>
                                     <div class="col-lg-2 ">
-                                        <input type="hidden" name="referral" class="referral" value="{{ $referral}}">
+                                        <input type="hidden" name="referral" class="referral" value="0">
                                         <input type="hidden" name="adultsF" class="adultsF"  ng-model="searchData.adultsF" value="{{ $input['adultsF']}}">
                                         <input type="hidden" name="childsF" class="childsF"  ng-model="searchData.childsF" value="{{ $input['childsF']}}">
                                         <input type="hidden" name="infants" class="infantsF"  ng-model="searchData.infantsF" value="{{ $input['infants']}}">
@@ -182,6 +182,8 @@
             </div>
             @endif
             <div class="row">
+
+                
                 <!-- <div class="col-md-4"></div> -->
 
                 <!-- Not Loaded Section -->
@@ -464,25 +466,25 @@
                             <div class="share-post-icons-flight flight-social-obib" id="post_share_icon_@{{ flight.ResultIndex }}">
                                 <div class="row"><i class="fa fa-share-alt" ng-click="showSocialMediaIB('ibflighticon')" aria-hidden="true"></i></div>
                                 <div class="row mediaicons show-social-icons-ibflighticon" style="display: none;">
-                                    <a style="font-size:20px;" href="https://www.facebook.com/sharer/sharer.php?u={{ env('APP_URL') }}/share-flight/@{{searchData.JourneyType}}/@{{searchData.origin}}/@{{searchData.from}}/@{{searchData.destination}}/@{{searchData.to}}/@{{searchData.departDate}}/@{{searchData.returnDateShr}}/@{{searchData.travellersClass}}/@{{searchData.referral}}/@{{searchData.adultsF}}/@{{searchData.childsF}}&quote=Flight From {{ $input['from']}} to {{ $input['to']}}" class="share-to fb-clr" data-type="fb" target="_blank">
+                                    <a style="font-size:20px;" href="https://www.facebook.com/sharer/sharer.php?u={{ env('APP_URL') }}/share-flight/@{{searchData.JourneyType}}/@{{searchData.origin}}/@{{searchData.from}}/@{{searchData.destination}}/@{{searchData.to}}/@{{searchData.departDate}}/@{{searchData.returnDateShr}}/@{{searchData.travellersClass}}/0/@{{searchData.adultsF}}/@{{searchData.childsF}}&quote=Flight From {{ $input['from']}} to {{ $input['to']}}" class="share-to fb-clr" data-type="fb" target="_blank">
                                         <i class="fa fa-facebook" aria-hidden="true"></i>
                                     </a>
-                                    <a style="font-size:20px;" href="whatsapp://send?text={{ env('APP_URL') }}/share-flight/@{{searchData.JourneyType}}/@{{searchData.origin}}/@{{searchData.from}}/@{{searchData.destination}}/@{{searchData.to}}/@{{searchData.departDate}}/@{{searchData.returnDateShr}}/@{{searchData.travellersClass}}/@{{searchData.referral}}/@{{searchData.adultsF}}/@{{searchData.childsF}}&quote=Flight From {{ $input['from']}} to {{ $input['to']}}" class="share-to whatsp-clr" data-type="wp" target="_blank">
+                                    <a style="font-size:20px;" href="whatsapp://send?text={{ env('APP_URL') }}/share-flight/@{{searchData.JourneyType}}/@{{searchData.origin}}/@{{searchData.from}}/@{{searchData.destination}}/@{{searchData.to}}/@{{searchData.departDate}}/@{{searchData.returnDateShr}}/@{{searchData.travellersClass}}/0/@{{searchData.adultsF}}/@{{searchData.childsF}}&quote=Flight From {{ $input['from']}} to {{ $input['to']}}" class="share-to whatsp-clr" data-type="wp" target="_blank">
                                         <i class="fa fa-whatsapp" aria-hidden="true"></i>
                                     </a>
-                                    <a style="font-size:20px;" href="http://twitter.com/share?text={{ env('APP_URL') }}/share-flight/@{{searchData.JourneyType}}/@{{searchData.origin}}/@{{searchData.from}}/@{{searchData.destination}}/@{{searchData.to}}/@{{searchData.departDate}}/@{{searchData.returnDateShr}}/@{{searchData.travellersClass}}/@{{searchData.referral}}/@{{searchData.adultsF}}/@{{searchData.childsF}}&quote=Flight From {{ $input['from']}} to {{ $input['to']}}" class="share-to tw-clr" data-type="tw" target="_blank">
+                                    <a style="font-size:20px;" href="http://twitter.com/share?text={{ env('APP_URL') }}/share-flight/@{{searchData.JourneyType}}/@{{searchData.origin}}/@{{searchData.from}}/@{{searchData.destination}}/@{{searchData.to}}/@{{searchData.departDate}}/@{{searchData.returnDateShr}}/@{{searchData.travellersClass}}/0/@{{searchData.adultsF}}/@{{searchData.childsF}}&quote=Flight From {{ $input['from']}} to {{ $input['to']}}" class="share-to tw-clr" data-type="tw" target="_blank">
                                         <i class="fa fa-twitter" aria-hidden="true"></i>
                                     </a>
-                                    <a style="font-size:20px;" class="share-to pint-clr" data-type="pt" href="https://pinterest.com/pin/create/bookmarklet/?media=https://daisycon.io/images/airline/?width=100&height=50&color=ffffff&iata=@{{ flight.Segments[0][0].Airline.AirlineCode}}&url={{ env('APP_URL') }}/share-flight/@{{searchData.JourneyType}}/@{{searchData.origin}}/@{{searchData.from}}/@{{searchData.destination}}/@{{searchData.to}}/@{{searchData.departDate}}/@{{searchData.returnDateShr}}/@{{searchData.travellersClass}}/@{{searchData.referral}}/@{{searchData.adultsF}}/@{{searchData.childsF}}&quote=Flight From {{ $input['from']}} to {{ $input['to']}}" target="_blank">
+                                    <a style="font-size:20px;" class="share-to pint-clr" data-type="pt" href="https://pinterest.com/pin/create/bookmarklet/?media=https://daisycon.io/images/airline/?width=100&height=50&color=ffffff&iata=@{{ flight.Segments[0][0].Airline.AirlineCode}}&url={{ env('APP_URL') }}/share-flight/@{{searchData.JourneyType}}/@{{searchData.origin}}/@{{searchData.from}}/@{{searchData.destination}}/@{{searchData.to}}/@{{searchData.departDate}}/@{{searchData.returnDateShr}}/@{{searchData.travellersClass}}/0/@{{searchData.adultsF}}/@{{searchData.childsF}}&quote=Flight From {{ $input['from']}} to {{ $input['to']}}" target="_blank">
                                         <i class="fa fa-pinterest" aria-hidden="true"></i>
                                     </a>
-                                    <a style="font-size:20px;" class="share-to stb-clr" data-type="stb" href="https://www.stumbleupon.com/submit?url={{ env('APP_URL') }}/share-flight/@{{searchData.JourneyType}}/@{{searchData.origin}}/@{{searchData.from}}/@{{searchData.destination}}/@{{searchData.to}}/@{{searchData.departDate}}/@{{searchData.returnDateShr}}/@{{searchData.travellersClass}}/@{{searchData.referral}}/@{{searchData.adultsF}}/@{{searchData.childsF}}&quote=Flight From {{ $input['from']}} to {{ $input['to']}}&title=@{{ flight.Segments[0][0].Airline.AirlineName}} @{{ flight.Segments[0][0].Airline.AirlineCode}} - @{{ flight.Segments[0][0].Airline.FlightNumber}}" target="_blank">
+                                    <a style="font-size:20px;" class="share-to stb-clr" data-type="stb" href="https://www.stumbleupon.com/submit?url={{ env('APP_URL') }}/share-flight/@{{searchData.JourneyType}}/@{{searchData.origin}}/@{{searchData.from}}/@{{searchData.destination}}/@{{searchData.to}}/@{{searchData.departDate}}/@{{searchData.returnDateShr}}/@{{searchData.travellersClass}}/0/@{{searchData.adultsF}}/@{{searchData.childsF}}&quote=Flight From {{ $input['from']}} to {{ $input['to']}}&title=@{{ flight.Segments[0][0].Airline.AirlineName}} @{{ flight.Segments[0][0].Airline.AirlineCode}} - @{{ flight.Segments[0][0].Airline.FlightNumber}}" target="_blank">
                                         <i class="fa fa-stumbleupon" aria-hidden="true"></i>
                                     </a>
-                                    <a style="font-size:20px;" class="share-to lkn-clr" data-type="lkn" href="https://www.linkedin.com/shareArticle?url={{ env('APP_URL') }}/share-flight/@{{searchData.JourneyType}}/@{{searchData.origin}}/@{{searchData.from}}/@{{searchData.destination}}/@{{searchData.to}}/@{{searchData.departDate}}/@{{searchData.returnDateShr}}/@{{searchData.travellersClass}}/@{{searchData.referral}}/@{{searchData.adultsF}}/@{{searchData.childsF}}&quote=Flight From {{ $input['from']}} to {{ $input['to']}}&title=@{{ flight.Segments[0][0].Airline.AirlineName}} @{{ flight.Segments[0][0].Airline.AirlineCode}} - @{{ flight.Segments[0][0].Airline.FlightNumber}}" target="_blank">
+                                    <a style="font-size:20px;" class="share-to lkn-clr" data-type="lkn" href="https://www.linkedin.com/shareArticle?url={{ env('APP_URL') }}/share-flight/@{{searchData.JourneyType}}/@{{searchData.origin}}/@{{searchData.from}}/@{{searchData.destination}}/@{{searchData.to}}/@{{searchData.departDate}}/@{{searchData.returnDateShr}}/@{{searchData.travellersClass}}/0/@{{searchData.adultsF}}/@{{searchData.childsF}}&quote=Flight From {{ $input['from']}} to {{ $input['to']}}&title=@{{ flight.Segments[0][0].Airline.AirlineName}} @{{ flight.Segments[0][0].Airline.AirlineCode}} - @{{ flight.Segments[0][0].Airline.FlightNumber}}" target="_blank">
                                         <i class="fa fa-linkedin" aria-hidden="true"></i>
                                     </a>
-                                    <a style="font-size:20px;" class="share-to inst-clr" data-type="inst" href="https://www.instagram.com/?url={{ env('APP_URL') }}/share-flight/@{{searchData.JourneyType}}/@{{searchData.origin}}/@{{searchData.from}}/@{{searchData.destination}}/@{{searchData.to}}/@{{searchData.departDate}}/@{{searchData.returnDateShr}}/@{{searchData.travellersClass}}/@{{searchData.referral}}/@{{searchData.adultsF}}/@{{searchData.childsF}}&quote=Flight From {{ $input['from']}} to {{ $input['to']}}" target="_blank">
+                                    <a style="font-size:20px;" class="share-to inst-clr" data-type="inst" href="https://www.instagram.com/?url={{ env('APP_URL') }}/share-flight/@{{searchData.JourneyType}}/@{{searchData.origin}}/@{{searchData.from}}/@{{searchData.destination}}/@{{searchData.to}}/@{{searchData.departDate}}/@{{searchData.returnDateShr}}/@{{searchData.travellersClass}}/0/@{{searchData.adultsF}}/@{{searchData.childsF}}&quote=Flight From {{ $input['from']}} to {{ $input['to']}}" target="_blank">
                                         <i class="fa fa-instagram" aria-hidden="true"></i>
                                     </a>
                                 </div>
@@ -499,6 +501,40 @@
             <div class="row" ng-if="loaded">
                 <div class="col-md-3 d-none d-sm-block">
                     <div class="filter_data flts_sidebar_data">
+
+                        <div class="tw-w-full lg:tw-w-1/3 tw-px-3" data-v-f5a8416e="" id="sessionExpiryTimerDiv" style="padding-left:0px;margin-bottom:15px;">
+                           <div data-v-f5a8416e="" class="display-block tw-hidden lg:tw-block">
+                              <div data-v-f5a8416e="">
+                                 <div class="tw-flex tw-items-center">
+                                    <div class="tw-px-3 tw-text-gray-700">
+                                       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="tw-fill-current tw-h-12 tw-w-12">
+                                          <path d="m425.349 138.864 14.499-14.499 7.073 7.073c2.929 2.929 6.768 4.394 10.606 4.394s7.678-1.465 10.606-4.394c5.858-5.857 5.858-15.355 0-21.213l-35.359-35.36c-5.856-5.857-15.354-5.858-21.213 0-5.858 5.857-5.858 15.355 0 21.213l7.073 7.073-14.499 14.499c-29.631-25.994-65.012-43.47-103.135-51.168v-36.482h5c8.284 0 15-6.716 15-15s-6.716-15-15-15h-100c-8.284 0-15 6.716-15 15s6.716 15 15 15h5v36.482c-38.123 7.698-73.504 25.174-103.136 51.169l-14.499-14.499 7.073-7.073c5.858-5.858 5.858-15.355 0-21.213-5.857-5.858-15.355-5.858-21.213 0l-35.36 35.36c-5.858 5.858-5.858 15.355 0 21.213 2.929 2.929 6.768 4.394 10.606 4.394s7.678-1.464 10.606-4.394l7.073-7.073 14.499 14.499c-35.985 41.021-55.649 93.063-55.649 148.135 0 60.1 23.404 116.602 65.901 159.099s98.999 65.901 159.099 65.901 116.602-23.404 159.099-65.901 65.901-98.999 65.901-159.099c0-55.071-19.664-107.114-55.651-148.136zm-184.349-108.864h30v32.504c-4.972-.326-9.972-.504-15-.504s-10.028.178-15 .504zm15 452c-107.523 0-195-87.477-195-195s87.477-195 195-195 195 87.477 195 195-87.477 195-195 195z"></path>
+                                          <circle cx="256" cy="137" r="15"></circle>
+                                          <circle cx="256" cy="437" r="15"></circle>
+                                          <ellipse cx="181" cy="157.096" rx="15" ry="15" transform="matrix(.259 -.966 .966 .259 -17.589 291.269)"></ellipse>
+                                          <path d="m323.5 403.913c-7.174 4.142-9.633 13.316-5.49 20.49 4.142 7.174 13.316 9.633 20.49 5.49 7.174-4.142 9.633-13.316 5.49-20.49-4.142-7.174-13.316-9.632-20.49-5.49z"></path>
+                                          <ellipse cx="126.096" cy="212" rx="15" ry="15" transform="matrix(.966 -.259 .259 .966 -50.573 39.86)"></ellipse>
+                                          <path d="m393.404 349.01c-7.174-4.142-16.348-1.684-20.49 5.49s-1.684 16.348 5.49 20.49 16.348 1.684 20.49-5.49 1.684-16.348-5.49-20.49z"></path>
+                                          <circle cx="106" cy="287" r="15"></circle>
+                                          <circle cx="406" cy="287" r="15"></circle>
+                                          <ellipse cx="126.096" cy="362" rx="15" ry="15" transform="matrix(.259 -.966 .966 .259 -256.205 390.107)"></ellipse>
+                                          <path d="m393.404 224.99c7.174-4.142 9.633-13.316 5.49-20.49-4.142-7.174-13.316-9.633-20.49-5.49-7.174 4.142-9.633 13.316-5.49 20.49 4.142 7.174 13.315 9.633 20.49 5.49z"></path>
+                                          <ellipse cx="181" cy="416.904" rx="15" ry="15" transform="matrix(.966 -.259 .259 .966 -101.735 61.052)"></ellipse>
+                                          <path d="m338.5 144.106c-7.174-4.142-16.348-1.684-20.49 5.49s-1.684 16.348 5.49 20.49 16.348 1.684 20.49-5.49c4.143-7.174 1.684-16.348-5.49-20.49z"></path>
+                                          <path d="m256 242c-11.143 0-21.345 4.08-29.213 10.813l-41.229-23.803c-7.176-4.144-16.35-1.685-20.49 5.49-4.142 7.174-1.684 16.348 5.49 20.49l41.208 23.791c-.495 2.667-.766 5.411-.766 8.219 0 24.813 20.187 45 45 45s45-20.187 45-45-20.187-45-45-45zm0 60c-8.271 0-15-6.729-15-15 0-2.291.532-4.455 1.454-6.4.232-.335.456-.679.663-1.038.206-.357.384-.723.558-1.089 2.71-3.906 7.221-6.473 12.325-6.473 8.271 0 15 6.729 15 15s-6.729 15-15 15z"></path>
+                                       </svg>
+                                    </div>
+                                    <div class="tw-text-gray-800">
+                                       <div>
+                                          <div style="font-size:15px;">This offer will expire in</div>
+                                          <strong id="sessionExpiryTimer" style="font-size:15px;"></strong>
+                                       </div>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+
                         <div class="filter_heading">
                             <h3>{{ __('labels.filter')}}</h3>
                             <a href="javascript:void(0)" ng-click="resetFilters();" >Reset All</a>
@@ -840,7 +876,7 @@
                                                     </h3>
                                                 </div>
                                                 <a style="margin-top:5px;" href="/flight/@{{ flights.TraceId}}/@{{ flight.ResultIndex}}/0/@{{flight.IsLCC}}/0/@{{ search_id }}" target="_blank"  class="btn btn_book" ng-if="!flights.Results[1].length" >Book</a> 
-                                                <input ng-if="flights.Results[1].length > 0" type="radio" name="book" data-fcode="@{{ flight.Segments[0][0].Airline.AirlineCode}}" data-flightcode="@{{ flight.Segments[0][0].Airline.AirlineName}} @{{ flight.Segments[0][0].Airline.AirlineCode}} - @{{ flight.Segments[0][0].Airline.FlightNumber}}" data-from-time="(@{{flight.Segments[0][0].Origin.DepTime|  date:'HH:mm' }})" data-to-time="(@{{flight.Segments[0][0].Destination.ArrTime|  date:'HH:mm' }})"  data-duration="@{{flight.Segments[0][0].Duration| time:'mm':'hhh mmm':false }}" data-price="@{{ flight.Fare.FinalPrice | number:2}}" data-currency="@{{flight.Fare.Currency}}"  data-seats-left="@{{flight.Segments[0][0].NoOfSeatAvailable}}" data-air-img="@{{ flight.Segments[0][0].Airline.AirlineName}}" data-trace-Id="@{{ flights.TraceId}}" data-result-index="@{{ flight.ResultIndex}}" data-referral="{{$referral}}"  data-lcc="@{{flight.IsLCC}}" class="form-control" id="book_id_@{{$index}}" value="">
+                                                <input ng-if="flights.Results[1].length > 0" type="radio" name="book" data-fcode="@{{ flight.Segments[0][0].Airline.AirlineCode}}" data-flightcode="@{{ flight.Segments[0][0].Airline.AirlineName}} @{{ flight.Segments[0][0].Airline.AirlineCode}} - @{{ flight.Segments[0][0].Airline.FlightNumber}}" data-from-time="(@{{flight.Segments[0][0].Origin.DepTime|  date:'HH:mm' }})" data-to-time="(@{{flight.Segments[0][0].Destination.ArrTime|  date:'HH:mm' }})"  data-duration="@{{flight.Segments[0][0].Duration| time:'mm':'hhh mmm':false }}" data-price="@{{ flight.Fare.FinalPrice | number:2}}" data-currency="@{{flight.Fare.Currency}}"  data-seats-left="@{{flight.Segments[0][0].NoOfSeatAvailable}}" data-air-img="@{{ flight.Segments[0][0].Airline.AirlineName}}" data-trace-Id="@{{ flights.TraceId}}" data-result-index="@{{ flight.ResultIndex}}" data-referral="0"  data-lcc="@{{flight.IsLCC}}" class="form-control" id="book_id_@{{$index}}" value="">
                                             </div>
 
                                             
@@ -858,25 +894,25 @@
                                             <div ng-if="!flights.Results[1]" class="share-post-icons-flight" id="post_share_icon_@{{ flight.ResultIndex }}">
                                                 <div class="row"><i class="fa fa-share-alt" ng-click="showSocialMedia(flight.ResultIndex)" aria-hidden="true"></i></div>
                                                 <div class="row mediaicons show-social-icons-@{{ flight.ResultIndex }}" style="display: none;">
-                                                    <a href="https://www.facebook.com/sharer/sharer.php?u={{ env('APP_URL') }}/share-flight/@{{searchData.JourneyType}}/@{{searchData.origin}}/@{{searchData.from}}/@{{searchData.destination}}/@{{searchData.to}}/@{{searchData.departDate}}/@{{searchData.returnDateShr}}/@{{searchData.travellersClass}}/@{{searchData.referral}}/@{{searchData.adultsF}}/@{{searchData.childsF}}&quote=Flight From {{ $input['from']}} to {{ $input['to']}}" class="share-to fb-clr" data-type="fb" target="_blank">
+                                                    <a href="https://www.facebook.com/sharer/sharer.php?u={{ env('APP_URL') }}/share-flight/@{{searchData.JourneyType}}/@{{searchData.origin}}/@{{searchData.from}}/@{{searchData.destination}}/@{{searchData.to}}/@{{searchData.departDate}}/@{{searchData.returnDateShr}}/@{{searchData.travellersClass}}/0/@{{searchData.adultsF}}/@{{searchData.childsF}}&quote=Flight From {{ $input['from']}} to {{ $input['to']}}" class="share-to fb-clr" data-type="fb" target="_blank">
                                                         <i class="fa fa-facebook" aria-hidden="true"></i>
                                                     </a>
-                                                    <a href="whatsapp://send?text={{ env('APP_URL') }}/share-flight/@{{searchData.JourneyType}}/@{{searchData.origin}}/@{{searchData.from}}/@{{searchData.destination}}/@{{searchData.to}}/@{{searchData.departDate}}/@{{searchData.returnDateShr}}/@{{searchData.travellersClass}}/@{{searchData.referral}}/@{{searchData.adultsF}}/@{{searchData.childsF}}&quote=Flight From {{ $input['from']}} to {{ $input['to']}}" class="share-to whatsp-clr" data-type="wp" target="_blank">
+                                                    <a href="whatsapp://send?text={{ env('APP_URL') }}/share-flight/@{{searchData.JourneyType}}/@{{searchData.origin}}/@{{searchData.from}}/@{{searchData.destination}}/@{{searchData.to}}/@{{searchData.departDate}}/@{{searchData.returnDateShr}}/@{{searchData.travellersClass}}/0/@{{searchData.adultsF}}/@{{searchData.childsF}}&quote=Flight From {{ $input['from']}} to {{ $input['to']}}" class="share-to whatsp-clr" data-type="wp" target="_blank">
                                                         <i class="fa fa-whatsapp" aria-hidden="true"></i>
                                                     </a>
-                                                    <a href="http://twitter.com/share?text={{ env('APP_URL') }}/share-flight/@{{searchData.JourneyType}}/@{{searchData.origin}}/@{{searchData.from}}/@{{searchData.destination}}/@{{searchData.to}}/@{{searchData.departDate}}/@{{searchData.returnDateShr}}/@{{searchData.travellersClass}}/@{{searchData.referral}}/@{{searchData.adultsF}}/@{{searchData.childsF}}&quote=Flight From {{ $input['from']}} to {{ $input['to']}}" class="share-to tw-clr" data-type="tw" target="_blank">
+                                                    <a href="http://twitter.com/share?text={{ env('APP_URL') }}/share-flight/@{{searchData.JourneyType}}/@{{searchData.origin}}/@{{searchData.from}}/@{{searchData.destination}}/@{{searchData.to}}/@{{searchData.departDate}}/@{{searchData.returnDateShr}}/@{{searchData.travellersClass}}/0/@{{searchData.adultsF}}/@{{searchData.childsF}}&quote=Flight From {{ $input['from']}} to {{ $input['to']}}" class="share-to tw-clr" data-type="tw" target="_blank">
                                                         <i class="fa fa-twitter" aria-hidden="true"></i>
                                                     </a>
-                                                    <a class="share-to pint-clr" data-type="pt" href="https://pinterest.com/pin/create/bookmarklet/?media=https://daisycon.io/images/airline/?width=100&height=50&color=ffffff&iata=@{{ flight.Segments[0][0].Airline.AirlineCode}}&url={{ env('APP_URL') }}/share-flight/@{{searchData.JourneyType}}/@{{searchData.origin}}/@{{searchData.from}}/@{{searchData.destination}}/@{{searchData.to}}/@{{searchData.departDate}}/@{{searchData.returnDateShr}}/@{{searchData.travellersClass}}/@{{searchData.referral}}/@{{searchData.adultsF}}/@{{searchData.childsF}}&quote=Flight From {{ $input['from']}} to {{ $input['to']}}" target="_blank">
+                                                    <a class="share-to pint-clr" data-type="pt" href="https://pinterest.com/pin/create/bookmarklet/?media=https://daisycon.io/images/airline/?width=100&height=50&color=ffffff&iata=@{{ flight.Segments[0][0].Airline.AirlineCode}}&url={{ env('APP_URL') }}/share-flight/@{{searchData.JourneyType}}/@{{searchData.origin}}/@{{searchData.from}}/@{{searchData.destination}}/@{{searchData.to}}/@{{searchData.departDate}}/@{{searchData.returnDateShr}}/@{{searchData.travellersClass}}/0/@{{searchData.adultsF}}/@{{searchData.childsF}}&quote=Flight From {{ $input['from']}} to {{ $input['to']}}" target="_blank">
                                                         <i class="fa fa-pinterest" aria-hidden="true"></i>
                                                     </a>
-                                                    <a class="share-to stb-clr" data-type="stb" href="https://www.stumbleupon.com/submit?url={{ env('APP_URL') }}/share-flight/@{{searchData.JourneyType}}/@{{searchData.origin}}/@{{searchData.from}}/@{{searchData.destination}}/@{{searchData.to}}/@{{searchData.departDate}}/@{{searchData.returnDateShr}}/@{{searchData.travellersClass}}/@{{searchData.referral}}/@{{searchData.adultsF}}/@{{searchData.childsF}}&quote=Flight From {{ $input['from']}} to {{ $input['to']}}&title=@{{ flight.Segments[0][0].Airline.AirlineName}} @{{ flight.Segments[0][0].Airline.AirlineCode}} - @{{ flight.Segments[0][0].Airline.FlightNumber}}" target="_blank">
+                                                    <a class="share-to stb-clr" data-type="stb" href="https://www.stumbleupon.com/submit?url={{ env('APP_URL') }}/share-flight/@{{searchData.JourneyType}}/@{{searchData.origin}}/@{{searchData.from}}/@{{searchData.destination}}/@{{searchData.to}}/@{{searchData.departDate}}/@{{searchData.returnDateShr}}/@{{searchData.travellersClass}}/0/@{{searchData.adultsF}}/@{{searchData.childsF}}&quote=Flight From {{ $input['from']}} to {{ $input['to']}}&title=@{{ flight.Segments[0][0].Airline.AirlineName}} @{{ flight.Segments[0][0].Airline.AirlineCode}} - @{{ flight.Segments[0][0].Airline.FlightNumber}}" target="_blank">
                                                         <i class="fa fa-stumbleupon" aria-hidden="true"></i>
                                                     </a>
-                                                    <a class="share-to lkn-clr" data-type="lkn" href="https://www.linkedin.com/shareArticle?url={{ env('APP_URL') }}/share-flight/@{{searchData.JourneyType}}/@{{searchData.origin}}/@{{searchData.from}}/@{{searchData.destination}}/@{{searchData.to}}/@{{searchData.departDate}}/@{{searchData.returnDateShr}}/@{{searchData.travellersClass}}/@{{searchData.referral}}/@{{searchData.adultsF}}/@{{searchData.childsF}}&quote=Flight From {{ $input['from']}} to {{ $input['to']}}&title=@{{ flight.Segments[0][0].Airline.AirlineName}} @{{ flight.Segments[0][0].Airline.AirlineCode}} - @{{ flight.Segments[0][0].Airline.FlightNumber}}" target="_blank">
+                                                    <a class="share-to lkn-clr" data-type="lkn" href="https://www.linkedin.com/shareArticle?url={{ env('APP_URL') }}/share-flight/@{{searchData.JourneyType}}/@{{searchData.origin}}/@{{searchData.from}}/@{{searchData.destination}}/@{{searchData.to}}/@{{searchData.departDate}}/@{{searchData.returnDateShr}}/@{{searchData.travellersClass}}/0/@{{searchData.adultsF}}/@{{searchData.childsF}}&quote=Flight From {{ $input['from']}} to {{ $input['to']}}&title=@{{ flight.Segments[0][0].Airline.AirlineName}} @{{ flight.Segments[0][0].Airline.AirlineCode}} - @{{ flight.Segments[0][0].Airline.FlightNumber}}" target="_blank">
                                                         <i class="fa fa-linkedin" aria-hidden="true"></i>
                                                     </a>
-                                                    <a class="share-to inst-clr" data-type="inst" href="https://www.instagram.com/?url={{ env('APP_URL') }}/share-flight/@{{searchData.JourneyType}}/@{{searchData.origin}}/@{{searchData.from}}/@{{searchData.destination}}/@{{searchData.to}}/@{{searchData.departDate}}/@{{searchData.returnDateShr}}/@{{searchData.travellersClass}}/@{{searchData.referral}}/@{{searchData.adultsF}}/@{{searchData.childsF}}&quote=Flight From {{ $input['from']}} to {{ $input['to']}}" target="_blank">
+                                                    <a class="share-to inst-clr" data-type="inst" href="https://www.instagram.com/?url={{ env('APP_URL') }}/share-flight/@{{searchData.JourneyType}}/@{{searchData.origin}}/@{{searchData.from}}/@{{searchData.destination}}/@{{searchData.to}}/@{{searchData.departDate}}/@{{searchData.returnDateShr}}/@{{searchData.travellersClass}}/0/@{{searchData.adultsF}}/@{{searchData.childsF}}&quote=Flight From {{ $input['from']}} to {{ $input['to']}}" target="_blank">
                                                         <i class="fa fa-instagram" aria-hidden="true"></i>
                                                     </a>
                                                 </div>
@@ -1229,7 +1265,7 @@
 
                                                 <a href="/flight/@{{ flights.TraceId}}/@{{ flight.ResultIndex}}/0/@{{flight.IsLCC}}/0/@{{ search_id }}" target="_blank"  class="btn btn_book" ng-if="!flights.Results[1].length" >Book</a> 
 
-                                                <input ng-if="flights.Results[1].length > 0" type="radio" name="book_return" data-fcode="@{{ flight.Segments[0][0].Airline.AirlineCode}}" data-flightcode-return="@{{ flight.Segments[0][0].Airline.AirlineName}} @{{ flight.Segments[0][0].Airline.AirlineCode}} - @{{ flight.Segments[0][0].Airline.FlightNumber}}" data-from-time-return="(@{{flight.Segments[0][0].Origin.DepTime|  date:'HH:mm' }})" data-to-time-return="(@{{flight.Segments[0][0].Destination.ArrTime|  date:'HH:mm' }})"  data-duration-return="@{{flight.Segments[0][0].Duration| time:'mm':'hhh mmm':false }}" data-price-return="@{{ flight.Fare.FinalPrice | number:2}}" data-currency-return="@{{flight.Fare.Currency}}"  data-seats-left-return="@{{flight.Segments[0][0].NoOfSeatAvailable}}" data-air-img-return="@{{ flight.Segments[0][0].Airline.AirlineName}}" data-trace-Id="@{{ flights.TraceId}}" data-result-index="@{{ flight.ResultIndex}}" data-lcc-return="@{{flight.IsLCC}}" class="form-control" id="book_return_id_@{{$index}}" data-referral-return="{{$referral}}" value="">
+                                                <input ng-if="flights.Results[1].length > 0" type="radio" name="book_return" data-fcode="@{{ flight.Segments[0][0].Airline.AirlineCode}}" data-flightcode-return="@{{ flight.Segments[0][0].Airline.AirlineName}} @{{ flight.Segments[0][0].Airline.AirlineCode}} - @{{ flight.Segments[0][0].Airline.FlightNumber}}" data-from-time-return="(@{{flight.Segments[0][0].Origin.DepTime|  date:'HH:mm' }})" data-to-time-return="(@{{flight.Segments[0][0].Destination.ArrTime|  date:'HH:mm' }})"  data-duration-return="@{{flight.Segments[0][0].Duration| time:'mm':'hhh mmm':false }}" data-price-return="@{{ flight.Fare.FinalPrice | number:2}}" data-currency-return="@{{flight.Fare.Currency}}"  data-seats-left-return="@{{flight.Segments[0][0].NoOfSeatAvailable}}" data-air-img-return="@{{ flight.Segments[0][0].Airline.AirlineName}}" data-trace-Id="@{{ flights.TraceId}}" data-result-index="@{{ flight.ResultIndex}}" data-lcc-return="@{{flight.IsLCC}}" class="form-control" id="book_return_id_@{{$index}}" data-referral-return="0" value="">
 
                                             </div>
                                             <div class="email-hotel-check form-check">
@@ -1597,7 +1633,7 @@
                                         @endif
                                     </div>
                                 </div>
-                                <input type="hidden" name="referral" class="referral" value="{{ $referral}}">
+                                <input type="hidden" name="referral" class="referral" value="0">
                                 <input type="hidden" name="adultsF" class="adultsF"  ng-model="searchData.adultsF" value="{{ $input['adultsF']}}">
                                 <input type="hidden" name="childsF" class="childsF"  ng-model="searchData.childsF" value="{{ $input['childsF']}}">
                                 <input type="hidden" name="infants" class="infantsF"  ng-model="searchData.infantsF" value="{{ $input['infants']}}">
@@ -1748,4 +1784,22 @@
             <span class="fa fa-pencil fa-lg"></span>
         </button>-->
 </div>
+
+
+<div id="sessionWarningModal" class="modal fade" role="dialog" data-backdrop="static" data-keyboard="false">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header refresh-header">
+                <h3 class="refresh-header text-center">Session Expired</h3>
+            </div>
+            <div class="modal-body">
+                <p>Flight prices change frequently due to availability and demand. We want to make sure you always see the most up-to-date price. Please refresh your search to see the latest price.</p>        
+            </div>
+            <div class="modal-footer">
+                <a href="javascript:void(0);" class="btn btn-primary refresh-btn show-flight-search">Refresh Search</a>
+            </div>
+        </div>
+    </div>
+</div>
+
 @endsection
