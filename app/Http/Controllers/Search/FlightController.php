@@ -348,7 +348,7 @@ class FlightController extends Controller {
                     ->checkPaymePayment(env('PAYME_KEY'), $saleID);
             $payMEDetails = $paymentDetails['items'];
 
-            if(!empty($payMEDetails) && $payMEDetails[0]['transaction_id'] != '' || $payMEDetails[0]['sale_status'] == 'completed'){
+            if(!empty($payMEDetails) && $payMEDetails[0]['sale_status'] == 'completed'){
               $paymentVal = true;
               $destinationPath=$search_id . '_payme_form_flight.json';
               $ilsPay = json_decode($this->readSearchDataILS($destinationPath), true);///Session::get('BookRoomDetails');
@@ -373,7 +373,7 @@ class FlightController extends Controller {
                 $usercurrency = Currency::convert($myCurrency, 'USD', ($deductamount));
                 $debitAmnt = round($usercurrency['convertedAmount']);
 
-                 $walletuser->deposit($debitAmnt, ["description" => 'Flight Single Payment -' . $usercurrency['convertedAmount']]);
+                $walletuser->deposit($debitAmnt, ["description" => 'Flight Single Payment -' . $usercurrency['convertedAmount']]);
 
                   return view('500')->with(['error' => $flightId['message']]);  
               }
