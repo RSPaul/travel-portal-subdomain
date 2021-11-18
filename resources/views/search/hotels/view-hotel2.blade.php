@@ -97,7 +97,7 @@
 
                                     </div>
                                 </div> -->
-                                <div class="col-lg-5" style="border-radius:4px;padding: 2px;background:#fff;border:5px solid #b3cedd;">
+                                <div class="col-lg-6" style="border-radius:4px;padding: 2px;background:#fff;border:5px solid #b3cedd;">
                                         <input type="hidden" name="Latitude" id="Latitude" value="{{  isset($input_data['Latitude']) ? $input_data['Latitude'] : ''}}">
                                         <input type="hidden" name="Longitude" id="Longitude" value="{{  isset($input_data['Longitude']) ? $input_data['Longitude'] : ''}}">
                                         <input type="hidden" name="Radius" id="Radius" value="15">
@@ -154,7 +154,7 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="col-lg-2" style="border-radius:4px;padding:2px;background:#fff;border:5px solid #b3cedd;">
+                                <div class="col-lg-3" style="border-radius:4px;padding:2px;background:#fff;border:5px solid #b3cedd;">
                                     <div class="form-group" style="margin:0px !important;">
                                         <div class="small_station_info  text-center" id="guestRooms" >
                                             @if(Session::get('locale') == 'heb')
@@ -167,7 +167,7 @@
                                         @include('_partials.hotel-guests-edit')
                                     </div>
                                 </div>
-                                <div class="col-lg-2" style="padding:0px;border:3px solid #b3cedd;">
+                                <div class="col-lg-3" style="padding:0px;border:3px solid #b3cedd;">
                                     <div class="search_btns_listing" style="padding:0px;border:3px solid #b3cedd;">
                                         <button type="submit" style="width:100%;border-radius: 4px !important;" class="btn btn-primary">{{ __('labels.search')}}</button>
                                     </div>

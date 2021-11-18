@@ -48,77 +48,20 @@
             <meta property="og:description" content="{{ env('APP_NAME') }} - {{ $title }}">
             <meta property="fb:app_id" content="703033047049864">
         @endif
+       
         <!-- Global site tag (gtag.js) - Google Analytics -->
-        <script async src="https://www.googletagmanager.com/gtag/js?id=G-QTHP3HJ0KX"></script>
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-BH8JQJHE3E"></script>
         <script>
-window.dataLayer = window.dataLayer || [];
-function gtag() {
-    dataLayer.push(arguments);
-}
-gtag('js', new Date());
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
 
-gtag('config', 'G-QTHP3HJ0KX');
+          gtag('config', 'G-BH8JQJHE3E');
+          gtag('config', 'UA-190132872-3');
         </script>
-
-        <!-- Global site tag (gtag.js) - Google Analytics -->
-        <script async src="https://www.googletagmanager.com/gtag/js?id=UA-190132872-1"></script>
-        <script>
-window.dataLayer = window.dataLayer || [];
-function gtag() {
-    dataLayer.push(arguments);
-}
-gtag('js', new Date());
-
-gtag('config', 'UA-190132872-1');
-        </script>
-        <!-- Google Tag Manager -->
-        <script>(function (w, d, s, l, i) {
-                w[l] = w[l] || [];
-                w[l].push({'gtm.start':
-                            new Date().getTime(), event: 'gtm.js'});
-                var f = d.getElementsByTagName(s)[0],
-                        j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : '';
-                j.async = true;
-                j.src =
-                        'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
-                f.parentNode.insertBefore(j, f);
-            })(window, document, 'script', 'dataLayer', 'GTM-T6W22VN');</script>
-        <!-- End Google Tag Manager -->
-
-
-        <!-- Global site tag (gtag.js) - Google Analytics -->
-        <script async src="https://www.googletagmanager.com/gtag/js?id=UA-57641746-1"></script>
-        <script>
-            window.dataLayer = window.dataLayer || [];
-            function gtag() {
-                dataLayer.push(arguments);
-            }
-            gtag('js', new Date());
-
-            gtag('config', 'UA-57641746-1');
-        </script>
-
-        <!--- heat map -->
-        <script type='text/javascript'>
-            window.__lo_site_id = 282893;
-
-            (function () {
-                var wa = document.createElement('script');
-                wa.type = 'text/javascript';
-                wa.async = true;
-                wa.src = 'https://d10lpsik1i8c69.cloudfront.net/w.js';
-                var s = document.getElementsByTagName('script')[0];
-                s.parentNode.insertBefore(wa, s);
-            })();
-        </script>
-
 
     </head>
     <body>
-        <!-- Google Tag Manager (noscript) -->
-        <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-T6W22VN"
-                          height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
-        <!-- End Google Tag Manager (noscript) -->
         <header class="main_header">
             <nav class="navbar navbar-expand-lg">
                 <div class="container">

@@ -106,12 +106,12 @@ class CabController extends Controller
       }
 
       $isAgent = false;
-        if(Auth::user()) {
-          $agent = AffiliateUsers::where('user_id', Auth::user()->id)->first();
-          if(isset($agent) && !empty($agent)) {
-              $isAgent = true;
-        }
-      }
+        // if(Auth::user()) {
+        //   $agent = AffiliateUsers::where('user_id', Auth::user()->id)->first();
+        //   if(isset($agent) && !empty($agent)) {
+        //       $isAgent = true;
+        // }
+      // }
 
       
       
@@ -188,33 +188,35 @@ class CabController extends Controller
        $input['ages_child'] = $childAges;
       // Session::put('CabsSearchData',$input);
 
-      if ($input['referral'] != '')
-        {
+      // if ($input['referral'] != '')
+      //   {
 
 
-          $checkrefferal = AffiliateUsers::select('user_id')->where(['referal_code' => $input['referral']])->first();
+      //     $checkrefferal = AffiliateUsers::select('user_id')->where(['referal_code' => $input['referral']])->first();
 
-          //$commisioninis = $checkrefferal['commission'];
-          if (isset($checkrefferal))
-          {
+      //     //$commisioninis = $checkrefferal['commission'];
+      //     if (isset($checkrefferal))
+      //     {
 
-            $agent_id = $checkrefferal['user_id'];
-            $commission = env('INIS_VAL_CAB');
-          }
-          else
-          {
-              $agent_id = '';
-              $commission = env('INIS_VAL_CAB');
-          }
+      //       $agent_id = $checkrefferal['user_id'];
+      //       $commission = env('INIS_VAL_CAB');
+      //     }
+      //     else
+      //     {
+      //         $agent_id = '';
+      //         $commission = env('INIS_VAL_CAB');
+      //     }
 
-      }
-      else
-      {
+      // }
+      // else
+      // {
 
-          $agent_id = '';
-          $commission = env('INIS_VAL_CAB');
+      //     $agent_id = '';
+      //     $commission = env('INIS_VAL_CAB');
 
-      }
+      // }
+      $agent_id = '';
+      $commission = env('INIS_VAL_CAB');
 
       $conversion = env('CONVERSION_VAL_CAB');
       if($this->cabs['TransferSearchResult']['ResponseStatus'] == 1) {
@@ -302,31 +304,33 @@ class CabController extends Controller
 
         $cancellationData = $this->api->cabCancellationPlcy($postData);
 
-        if ($request->referral != '' && $request->referral != '0')
-          {
+        // if ($request->referral != '' && $request->referral != '0')
+        //   {
 
-            $checkrefferal = AffiliateUsers::where(['referal_code' => $request->referral])->first();
-            //$commisioninis = $checkrefferal['commission'];
-            if (isset($checkrefferal))
-            {
+        //     $checkrefferal = AffiliateUsers::where(['referal_code' => $request->referral])->first();
+        //     //$commisioninis = $checkrefferal['commission'];
+        //     if (isset($checkrefferal))
+        //     {
 
-              $agent_id = $checkrefferal['user_id'];
-              $commission = env('INIS_VAL_CAB');
-            }
-            else
-            {
-                $agent_id = '';
-                $commission = env('INIS_VAL_CAB');
-            }
+        //       $agent_id = $checkrefferal['user_id'];
+        //       $commission = env('INIS_VAL_CAB');
+        //     }
+        //     else
+        //     {
+        //         $agent_id = '';
+        //         $commission = env('INIS_VAL_CAB');
+        //     }
 
-        }
-        else
-        {
+        // }
+        // else
+        // {
 
-            $agent_id = '';
-            $commission = env('INIS_VAL_CAB');
+        //     $agent_id = '';
+        //     $commission = env('INIS_VAL_CAB');
 
-        }
+        // }
+        $agent_id = '';
+        $commission = env('INIS_VAL_CAB');
 
         $cabsearchData =  $search_contents['request'];//Session::get('CabsSearchData');
 
@@ -716,36 +720,38 @@ class CabController extends Controller
               Mail::to($input['passenger_email'])->send(new NewUserRegister($user, $password));
             }
 
+            $agent_id = '';
+            $agentemail = '';
+            $commission = env('INIS_VAL_CAB');
+            // if ($request->referral != '' && $request->referral != '0')
+            //   {
 
-            if ($request->referral != '' && $request->referral != '0')
-              {
+            //     $checkrefferal = AffiliateUsers::select('user_id')->where(['referal_code' => $request->referral])->first();
+            //     //$commisioninis = $checkrefferal['commission'];
+            //     if (isset($checkrefferal))
+            //     {
 
-                $checkrefferal = AffiliateUsers::select('user_id')->where(['referal_code' => $request->referral])->first();
-                //$commisioninis = $checkrefferal['commission'];
-                if (isset($checkrefferal))
-                {
+            //       $agent_id = $checkrefferal['user_id'];
+            //       $commission = env('INIS_AGENT_VAL_CAB');
+            //       $agentemail = User::select('email')->where(['id' => $agent_id])->first();
+            //       $agentemail = $agentemail['email']; 
+            //     }
+            //     else
+            //     {
+            //         $agent_id = '';
+            //         $agentemail = '';
+            //         $commission = env('INIS_AGENT_VAL_CAB');
+            //     }
 
-                  $agent_id = $checkrefferal['user_id'];
-                  $commission = env('INIS_AGENT_VAL_CAB');
-                  $agentemail = User::select('email')->where(['id' => $agent_id])->first();
-                  $agentemail = $agentemail['email']; 
-                }
-                else
-                {
-                    $agent_id = '';
-                    $agentemail = '';
-                    $commission = env('INIS_AGENT_VAL_CAB');
-                }
+            // }
+            // else
+            // {
 
-            }
-            else
-            {
+            //     $agent_id = '';
+            //     $agentemail = '';
+            //     $commission = env('INIS_VAL_CAB');
 
-                $agent_id = '';
-                $agentemail = '';
-                $commission = env('INIS_VAL_CAB');
-
-            }
+            // }
 
             $total_commision = env('INIS_VAL_CAB');
 
@@ -892,30 +898,30 @@ class CabController extends Controller
                   $post_image = env('APP_URL') . '/images/Car.png';
                 }   
 
-                if(isset($agent_id) && $agent_id != ''){ 
+                // if(isset($agent_id) && $agent_id != ''){ 
                   
-                  $post_content = "New cab booking for <b>" . $input['selected_cab']['Vehicle'] . "</b> pickup on <b>". date('l, F jS, Y', strtotime(str_replace('/' , '-', $input['pickup_date']) )) . " " . date('h:i:s', strtotime(str_replace('/' , '-', $input['pickup_time']) )) ."</b>.<br>Pickup from <b>". $input['pickup_detailname'] ."</b> and drop off to <b>". $input['dropoff_detailname'] ."</b><br> Total paid <b>" . $input['selected_cab']['TransferPrice']['CurrencyCode'] . ' ' . number_format($payments->price,2) . '</b>';
-                      //create story for profile page
-                  Posts::create(['post_type' => 'article_image',
-                            'post_content' => $post_content,
-                            'post_media' => $post_image,
-                            'user_id' => Auth::user()->id]);
+                //   $post_content = "New cab booking for <b>" . $input['selected_cab']['Vehicle'] . "</b> pickup on <b>". date('l, F jS, Y', strtotime(str_replace('/' , '-', $input['pickup_date']) )) . " " . date('h:i:s', strtotime(str_replace('/' , '-', $input['pickup_time']) )) ."</b>.<br>Pickup from <b>". $input['pickup_detailname'] ."</b> and drop off to <b>". $input['dropoff_detailname'] ."</b><br> Total paid <b>" . $input['selected_cab']['TransferPrice']['CurrencyCode'] . ' ' . number_format($payments->price,2) . '</b>';
+                //       //create story for profile page
+                //   Posts::create(['post_type' => 'article_image',
+                //             'post_content' => $post_content,
+                //             'post_media' => $post_image,
+                //             'user_id' => Auth::user()->id]);
 
-                  $notifications = NotificationAgents::create(['agent_id' => $agent_id,
-                                'type' => 'cab',
-                                'description' => $post_content,
-                                'price' => ' USD ' . number_format($commission_price,2),
-                                'status' => 0
-                            ]);
-                }
+                //   $notifications = NotificationAgents::create(['agent_id' => $agent_id,
+                //                 'type' => 'cab',
+                //                 'description' => $post_content,
+                //                 'price' => ' USD ' . number_format($commission_price,2),
+                //                 'status' => 0
+                //             ]);
+                // }
 
                 Mail::to($input['passenger_email'])->send(new CabBookingEmail($booking, '', $payments, '', ''));
 
-                if(isset($agent_id) && $agent_id != '' && Auth::user()->email != $agentemail){
+                // if(isset($agent_id) && $agent_id != '' && Auth::user()->email != $agentemail){
 
-                    Mail::to($agentemail)->send(new CabBookingEmail($booking, '', $payments, '', ''));
+                //     Mail::to($agentemail)->send(new CabBookingEmail($booking, '', $payments, '', ''));
                       
-                }
+                // }
 
 
                 $this->emptySession($input['search_id']);
@@ -924,6 +930,14 @@ class CabController extends Controller
 
             } else {
               // return view('search.cabs.view-cab')->with(['message' => $message]);
+              $walletuser = \Auth::user();
+              $ccrcy = Session::get('CurrencyCode');
+
+              $walletAmount = \Auth::user()->balance;
+
+              $pAmount = Currency::convert($ccrcy, 'USD', round($amount));
+
+              $walletuser->deposit($pAmount['convertedAmount'], ["description" => 'Booking failed, amount added to wallet -' . $pAmount['convertedAmount']]);
               return view('500')->with(['error' => $bookRCabData['BookResult']['Error']['ErrorMessage']]);
             }
 
@@ -1112,36 +1126,38 @@ class CabController extends Controller
               Mail::to($input['passenger_email'])->send(new NewUserRegister($user, $password));
             }
 
+            $agent_id = '';
+            $agentemail = '';
+            $commission = env('INIS_VAL_CAB');
+            // if ($input['referral'] != '' && $input['referral'] != '0')
+            //   {
 
-            if ($input['referral'] != '' && $input['referral'] != '0')
-              {
+            //     $checkrefferal = AffiliateUsers::select('user_id')->where(['referal_code' => $input['referral']])->first();
+            //     //$commisioninis = $checkrefferal['commission'];
+            //     if (isset($checkrefferal))
+            //     {
 
-                $checkrefferal = AffiliateUsers::select('user_id')->where(['referal_code' => $input['referral']])->first();
-                //$commisioninis = $checkrefferal['commission'];
-                if (isset($checkrefferal))
-                {
+            //       $agent_id = $checkrefferal['user_id'];
+            //       $commission = env('INIS_AGENT_VAL_CAB');
+            //       $agentemail = User::select('email')->where(['id' => $agent_id])->first();
+            //       $agentemail = $agentemail['email']; 
+            //     }
+            //     else
+            //     {
+            //         $agent_id = '';
+            //         $agentemail = '';
+            //         $commission = env('INIS_AGENT_VAL_CAB');
+            //     }
 
-                  $agent_id = $checkrefferal['user_id'];
-                  $commission = env('INIS_AGENT_VAL_CAB');
-                  $agentemail = User::select('email')->where(['id' => $agent_id])->first();
-                  $agentemail = $agentemail['email']; 
-                }
-                else
-                {
-                    $agent_id = '';
-                    $agentemail = '';
-                    $commission = env('INIS_AGENT_VAL_CAB');
-                }
+            // }
+            // else
+            // {
 
-            }
-            else
-            {
+            //     $agent_id = '';
+            //     $agentemail = '';
+            //     $commission = env('INIS_VAL_CAB');
 
-                $agent_id = '';
-                $agentemail = '';
-                $commission = env('INIS_VAL_CAB');
-
-            }
+            // }
 
             $total_commision = env('INIS_VAL_CAB');
 
@@ -1317,30 +1333,30 @@ class CabController extends Controller
                   $post_image = env('APP_URL') . '/images/Car.png';
                 }   
 
-                if(isset($agent_id) && $agent_id != ''){ 
+                // if(isset($agent_id) && $agent_id != ''){ 
                   
-                  $post_content = "New cab booking for <b>" . $input['selected_cab']['Vehicle'] . "</b> pickup on <b>". date('l, F jS, Y', strtotime(str_replace('/' , '-', $input['pickup_date']) )) . " " . date('h:i:s', strtotime(str_replace('/' , '-', $input['pickup_time']) )) ."</b>.<br>Pickup from <b>". $input['pickup_detailname'] ."</b> and drop off to <b>". $input['dropoff_detailname'] ."</b><br> Total paid <b>" . $input['selected_cab']['TransferPrice']['CurrencyCode'] . ' ' . number_format($payments->price,2) . '</b>';
-                      //create story for profile page
-                  Posts::create(['post_type' => 'article_image',
-                            'post_content' => $post_content,
-                            'post_media' => $post_image,
-                            'user_id' => Auth::user()->id]);
+                //   $post_content = "New cab booking for <b>" . $input['selected_cab']['Vehicle'] . "</b> pickup on <b>". date('l, F jS, Y', strtotime(str_replace('/' , '-', $input['pickup_date']) )) . " " . date('h:i:s', strtotime(str_replace('/' , '-', $input['pickup_time']) )) ."</b>.<br>Pickup from <b>". $input['pickup_detailname'] ."</b> and drop off to <b>". $input['dropoff_detailname'] ."</b><br> Total paid <b>" . $input['selected_cab']['TransferPrice']['CurrencyCode'] . ' ' . number_format($payments->price,2) . '</b>';
+                //       //create story for profile page
+                //   Posts::create(['post_type' => 'article_image',
+                //             'post_content' => $post_content,
+                //             'post_media' => $post_image,
+                //             'user_id' => Auth::user()->id]);
 
-                  $notifications = NotificationAgents::create(['agent_id' => $agent_id,
-                                'type' => 'cab',
-                                'description' => $post_content,
-                                'price' => ' USD ' . number_format($commission_price,2),
-                                'status' => 0
-                            ]);
-                }
+                //   $notifications = NotificationAgents::create(['agent_id' => $agent_id,
+                //                 'type' => 'cab',
+                //                 'description' => $post_content,
+                //                 'price' => ' USD ' . number_format($commission_price,2),
+                //                 'status' => 0
+                //             ]);
+                // }
 
                 Mail::to($input['passenger_email'])->send(new CabBookingEmail($booking, '', $payments, '', ''));
 
-                if(isset($agent_id) && $agent_id != '' && Auth::user()->email != $agentemail){
+                // if(isset($agent_id) && $agent_id != '' && Auth::user()->email != $agentemail){
 
-                    Mail::to($agentemail)->send(new CabBookingEmail($booking, '', $payments, '', ''));
+                //     Mail::to($agentemail)->send(new CabBookingEmail($booking, '', $payments, '', ''));
                       
-                }
+                // }
 
 
                 $this->emptySession($input['search_id']);
@@ -1350,6 +1366,16 @@ class CabController extends Controller
             } else {
               // return view('search.cabs.view-cab')->with(['message' => $message]);
               // return view('500')->with(['error' => $bookRCabData['BookResult']['Error']['ErrorMessage']]);
+              $walletuser = \Auth::user();
+              $ccrcy = Session::get('CurrencyCode');
+
+              $walletAmount = \Auth::user()->balance;
+
+              $amt = $amt;
+
+              $pAmount = Currency::convert($ccrcy, 'USD', round($amt));
+
+              $walletuser->deposit($pAmount['convertedAmount'], ["description" => 'Booking failed, amount added to wallet -' . $pAmount['convertedAmount']]);
               return array('success' => false, 'message' => $bookRCabData['BookResult']['Error']['ErrorMessage']);
             }
 

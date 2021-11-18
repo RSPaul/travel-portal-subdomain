@@ -90,12 +90,12 @@ class ActivityController extends Controller {
         }
 
         $isAgent = false;
-        if(Auth::user()) {
-            $agent = AffiliateUsers::select('id')->where('user_id', Auth::user()->id)->first();
-            if(isset($agent) && !empty($agent)) {
-                $isAgent = true;
-            }
-        }
+        // if(Auth::user()) {
+        //     $agent = AffiliateUsers::select('id')->where('user_id', Auth::user()->id)->first();
+        //     if(isset($agent) && !empty($agent)) {
+        //         $isAgent = true;
+        //     }
+        // }
 
         return view('search.activities.activities')->with(['activities' => $activities, 'input' => $input, 'referral' => $_GET['referral'], 'isAgent' => $isAgent]);
     }
@@ -711,28 +711,31 @@ class ActivityController extends Controller {
                 $priceArray = json_decode($input['price_block'], true);
             }
 
+            $agentemail = '';
+            $agentemail = '';
+            $agent_id = '';
 
-            if ($input['referral'] != '0') {
+            // if ($input['referral'] != '0') {
 
-                $checkrefferal = AffiliateUsers::select('user_id')->where(['referal_code' => $input['referral']])->first();
-                if (isset($checkrefferal)) {
+            //     $checkrefferal = AffiliateUsers::select('user_id')->where(['referal_code' => $input['referral']])->first();
+            //     if (isset($checkrefferal)) {
 
-                    //$commisioninis = $checkrefferal['commission'];
-                    $agent_id = $checkrefferal['user_id'];
-                    $agentemail = User::select('email')->where(['id' => $agent_id])->first();
-                    $agentemail = $agentemail['email'];
-                } else {
-                    $agentemail = '';
-                    $agentemail = '';
-                    $agent_id = '';
-                    // $commisioninis = env('INIS_VAL');
-                }
-            } else {
+            //         //$commisioninis = $checkrefferal['commission'];
+            //         $agent_id = $checkrefferal['user_id'];
+            //         $agentemail = User::select('email')->where(['id' => $agent_id])->first();
+            //         $agentemail = $agentemail['email'];
+            //     } else {
+            //         $agentemail = '';
+            //         $agentemail = '';
+            //         $agent_id = '';
+            //         // $commisioninis = env('INIS_VAL');
+            //     }
+            // } else {
 
-                $agentemail = '';
-                $agentemail = '';
-                $agent_id = '';
-            }
+            //     $agentemail = '';
+            //     $agentemail = '';
+            //     $agent_id = '';
+            // }
 
 
             $search_id = $input['search_id'];
@@ -950,32 +953,32 @@ class ActivityController extends Controller {
                                 'customer_id' => '',
                                 'sub_domain' => '']);
 
-                    if(isset($agent_id) && $agent_id != ''){ 
+                    // if(isset($agent_id) && $agent_id != ''){ 
 
-                        $post_content = "New activity booking for <b>" . $request_array['SightseeingName'] . "</b> from <b>". date('l, F jS, Y', strtotime(str_replace('/' , '-', $request_array['from_date']) )) . "</b>.<br> Total paid <b>" . $request_array['currency'] . ' ' . number_format($payments->price,2) . '</b>';
+                    //     $post_content = "New activity booking for <b>" . $request_array['SightseeingName'] . "</b> from <b>". date('l, F jS, Y', strtotime(str_replace('/' , '-', $request_array['from_date']) )) . "</b>.<br> Total paid <b>" . $request_array['currency'] . ' ' . number_format($payments->price,2) . '</b>';
 
-                        $notifications = NotificationAgents::create(['agent_id' => $agent_id,
-                                  'type' => 'activity',
-                                  'description' => $post_content,
-                                  'price' => ' USD ' . number_format($commission_agent,2),
-                                  'status' => 0
-                              ]);
-                        //create story for profile page
-                        Posts::create(['post_type' => 'article_image',
-                                  'post_content' => $post_content,
-                                  'post_media' => $input['TourImage'],
-                                  'user_id' => Auth::user()->id]);
-                    }
+                    //     $notifications = NotificationAgents::create(['agent_id' => $agent_id,
+                    //               'type' => 'activity',
+                    //               'description' => $post_content,
+                    //               'price' => ' USD ' . number_format($commission_agent,2),
+                    //               'status' => 0
+                    //           ]);
+                    //     //create story for profile page
+                    //     Posts::create(['post_type' => 'article_image',
+                    //               'post_content' => $post_content,
+                    //               'post_media' => $input['TourImage'],
+                    //               'user_id' => Auth::user()->id]);
+                    // }
 
                     $booking->request_data = json_decode($booking->request_data, true);
 
 
                     Mail::to($input['adult_passenger_email_1'])->send(new ActivityBookingEmail($booking, '', $payments, '', ''));
 
-                    if(isset($agent_id) && $agent_id != '' && Auth::user()->email != $agentemail){
+                    // if(isset($agent_id) && $agent_id != '' && Auth::user()->email != $agentemail){
 
-                        Mail::to($agentemail)->send(new ActivityBookingEmail($booking, '', $payments, '', ''));
-                    }
+                    //     Mail::to($agentemail)->send(new ActivityBookingEmail($booking, '', $payments, '', ''));
+                    // }
 
                     // return redirect('/thankyou/activity/' . $booking->id . '/true'); //redirect('/user/bookings');
                     return array('success' => true, 'booking_id' => $booking->id);
@@ -1045,27 +1048,9 @@ class ActivityController extends Controller {
             }
 
 
-            if ($input['referral'] != '0') {
-
-                $checkrefferal = AffiliateUsers::select('user_id')->where(['referal_code' => $input['referral']])->first();
-                if (isset($checkrefferal)) {
-
-                    //$commisioninis = $checkrefferal['commission'];
-                    $agent_id = $checkrefferal['user_id'];
-                    $agentemail = User::select('email')->where(['id' => $agent_id])->first();
-                    $agentemail = $agentemail['email'];
-                } else {
-                    $agentemail = '';
-                    $agentemail = '';
-                    $agent_id = '';
-                    // $commisioninis = env('INIS_VAL');
-                }
-            } else {
-
-                $agentemail = '';
-                $agentemail = '';
-                $agent_id = '';
-            }
+            $agentemail = '';
+            $agentemail = '';
+            $agent_id = '';
 
 
             $search_id = $input['search_id'];
@@ -1271,39 +1256,39 @@ class ActivityController extends Controller {
                                 'customer_id' => '',
                                 'sub_domain' => '']);
 
-                    if(isset($agent_id) && $agent_id != ''){ 
+                    // if(isset($agent_id) && $agent_id != ''){ 
 
-                        $post_content = "New activity booking for <b>" . $request_array['SightseeingName'] . "</b> from <b>". date('l, F jS, Y', strtotime(str_replace('/' , '-', $request_array['from_date']) )) . "</b>.<br> Total paid <b>" . $request_array['currency'] . ' ' . number_format($payments->price,2) . '</b>';
+                    //     $post_content = "New activity booking for <b>" . $request_array['SightseeingName'] . "</b> from <b>". date('l, F jS, Y', strtotime(str_replace('/' , '-', $request_array['from_date']) )) . "</b>.<br> Total paid <b>" . $request_array['currency'] . ' ' . number_format($payments->price,2) . '</b>';
 
-                        $notifications = NotificationAgents::create(['agent_id' => $agent_id,
-                                  'type' => 'activity',
-                                  'description' => $post_content,
-                                  'price' => ' USD ' . number_format($commission_agent,2),
-                                  'status' => 0
-                              ]);
-                        //create story for profile page
-                        Posts::create(['post_type' => 'article_image',
-                                  'post_content' => $post_content,
-                                  'post_media' => $input['TourImage'],
-                                  'user_id' => Auth::user()->id]);
-                    }
+                    //     $notifications = NotificationAgents::create(['agent_id' => $agent_id,
+                    //               'type' => 'activity',
+                    //               'description' => $post_content,
+                    //               'price' => ' USD ' . number_format($commission_agent,2),
+                    //               'status' => 0
+                    //           ]);
+                    //     //create story for profile page
+                    //     Posts::create(['post_type' => 'article_image',
+                    //               'post_content' => $post_content,
+                    //               'post_media' => $input['TourImage'],
+                    //               'user_id' => Auth::user()->id]);
+                    // }
 
                     $booking->request_data = json_decode($booking->request_data, true);
 
 
                     Mail::to($input['adult_passenger_email_1'])->send(new ActivityBookingEmail($booking, '', $payments, '', ''));
 
-                    if(isset($agent_id) && $agent_id != '' && Auth::user()->email != $agentemail){
+                    // if(isset($agent_id) && $agent_id != '' && Auth::user()->email != $agentemail){
 
-                        Mail::to($agentemail)->send(new ActivityBookingEmail($booking, '', $payments, '', ''));
-                    }
+                    //     Mail::to($agentemail)->send(new ActivityBookingEmail($booking, '', $payments, '', ''));
+                    // }
 
                     return redirect('/thankyou/activity/' . $booking->id . '/true'); //redirect('/user/bookings');
                 } else {
                     //add oney to wallet
                     $walletuser = \Auth::user();
                     $pAmount = Currency::convert(Session::get('CurrencyCode'), 'USD', ($amount / 100));
-                    $walletuser->deposit(round($pAmount['convertedAmount']), ["description" => 'Multicard partial payment(ILS) -' . $input['amount']]);
+                    $walletuser->deposit(round($pAmount['convertedAmount']), ["description" => 'Booking failed, amount added to wallet -' . $input['amount']]);
                     // return view('search.cabs.view-cab')->with(['message' => $message]);
                     return view('500')->with(['error' => $bookRActivityData['Response']['Error']['ErrorMessage']]);
                 }
@@ -1487,8 +1472,8 @@ class ActivityController extends Controller {
         $searchData['commisioninis'] = env('INIS_VAL_ACTIVITY');
         $searchData['conversion'] = env('CONVERSION_VAL_ACTIVITY');
        
-        $agent = AffiliateUsers::select('referal_code')->where('user_id', Auth::user()->id)->first();
-        Mail::to($request->email)->send(new ActivitiesEmail($searchData, $activities, $agent));
+        // $agent = AffiliateUsers::select('referal_code')->where('user_id', Auth::user()->id)->first();
+        // Mail::to($request->email)->send(new ActivitiesEmail($searchData, $activities, $agent));
 
          return response()->json(array(
                         'message' => "Email sent",

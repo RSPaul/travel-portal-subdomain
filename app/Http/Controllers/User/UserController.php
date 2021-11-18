@@ -354,7 +354,7 @@ class UserController extends Controller
             $showEmailMessage = false;
         }
         //if agent
-        $agent = AffiliateUsers::where('user_id', Auth::user()->id)->first();
+        $agent = false;//AffiliateUsers::where('user_id', Auth::user()->id)->first();
         if ($request->isMethod('post')) {
             //check if email already exists
             $email = User::where('email', $request->email)
@@ -396,7 +396,7 @@ class UserController extends Controller
         }
 
         $bookings = array();
-        if (isset($agent)) {
+        if ($agent) {
             $hotel_bookings = Payments::where('agent_id', Auth::user()->id)
                     ->join('bookings', 'payments.booking_id', '=', 'bookings.id')
                     ->select(DB::raw('bookings.hotel_booking_status as booking_status, bookings.request_data as r_data, bookings.confirmation_number as c_number, payments.*'))

@@ -131,7 +131,7 @@ class HotelController extends Controller {
             $ccrcy = Session::get('CurrencyCode');
             $walletuser = \Auth::user();
             $pAmount = Currency::convert($ccrcy, 'USD', $request->paidAmt);
-            //$walletuser->deposit($pAmount['convertedAmount'], ["description" => 'Multicard partial payment(' . $ccrcy . ') -' . $request->paidAmt]);
+            $walletuser->deposit($pAmount['convertedAmount'], ["description" => 'Multicard partial payment(' . $ccrcy . ') -' . $request->paidAmt]);
 
 
             $paid = Session::get('paid');
@@ -139,13 +139,13 @@ class HotelController extends Controller {
             $due = round($leftAmnt, 2);
 
 
-            //$slip = Receipts::create(['total_paid' => $paid, 'currencyCode' => $request->currency, 'booking_amount' => $total, 'txn_id' => $request->payres['razorpay_payment_id'], 'paid_amount' => $request->paidAmt, 'user_id' => Auth::user()->id]);
+            $slip = Receipts::create(['total_paid' => $paid, 'currencyCode' => $request->currency, 'booking_amount' => $total, 'txn_id' => $request->payres['razorpay_payment_id'], 'paid_amount' => $request->paidAmt, 'user_id' => Auth::user()->id]);
 
-           // Mail::to($request->email)->send(new MultiCardPayment($user, $slip));
+            Mail::to($request->email)->send(new MultiCardPayment($user, $slip));
 
             return response()->json(array(
                         'message' => "Payment Success",
-                       // 'payment' => $slip,
+                        'payment' => $slip,
                         'user' => $user,
                         'total' => $total,
                         'paid' => Session::get('paid'),
@@ -449,11 +449,11 @@ class HotelController extends Controller {
         $isAgent = false;
         if (Auth::user()) {
 
-            $agent = AffiliateUsers::select('user_id')->where('user_id', Auth::user()->id)->first();
+            // $agent = AffiliateUsers::select('user_id')->where('user_id', Auth::user()->id)->first();
 
-            if (isset($agent) && !empty($agent)) {
-                $isAgent = true;
-            }
+            // if (isset($agent) && !empty($agent)) {
+            //     $isAgent = true;
+            // }
         }
         if (isset($input['preffered_hotel']) && $input['preffered_hotel'] != '') {
 
@@ -1008,24 +1008,26 @@ class HotelController extends Controller {
 
                             if (isset($input['referral']) && $input['referral'] != '') {
 
-                                $checkrefferal = AffiliateUsers::where(['referal_code' => $request
-                                            ->referral])
-                                        ->first();
-                                if (isset($checkrefferal)) {
+                                // $checkrefferal = AffiliateUsers::where(['referal_code' => $request
+                                //             ->referral])
+                                //         ->first();
+                                // if (isset($checkrefferal)) {
 
-                                    $commisioninis = env('INIS_VAL');
-                                    $paymeComm = env('INIS_VAL_PAYME');
-                                } else {
-                                    $commisioninis = env('INIS_VAL');
-                                    $paymeComm = env('INIS_VAL_PAYME');
-                                }
+                                //     $commisioninis = env('INIS_VAL');
+                                //     $paymeComm = env('INIS_VAL_PAYME');
+                                // } else {
+                                //     $commisioninis = env('INIS_VAL');
+                                //     $paymeComm = env('INIS_VAL_PAYME');
+                                // }
+                                $commisioninis = env('INIS_VAL');
+                                $paymeComm = env('INIS_VAL_PAYME');
 
-                                $check_hotel_subdomain = DB::connection('mysql2')->select("SELECT * FROM `users` WHERE  `hotel_code` = '" . $hotel['HotelCode'] . "'");
+                                // $check_hotel_subdomain = DB::connection('mysql2')->select("SELECT * FROM `users` WHERE  `hotel_code` = '" . $hotel['HotelCode'] . "'");
 
-                                if (isset($check_hotel_subdomain) && !empty($check_hotel_subdomain)) {
-                                    $commisioninis = 10;
-                                    $paymeComm = env('INIS_VAL_PAYME_AGENT');
-                                }
+                                // if (isset($check_hotel_subdomain) && !empty($check_hotel_subdomain)) {
+                                //     $commisioninis = 10;
+                                //     $paymeComm = env('INIS_VAL_PAYME_AGENT');
+                                // }
                             } else {
 
                                 $commisioninis = env('INIS_VAL');
@@ -1377,15 +1379,16 @@ class HotelController extends Controller {
             if ($input['referral'] != '') {
 
 
-                $checkrefferal = AffiliateUsers::select('user_id')->where(['referal_code' => $input['referral']])->first();
+                // $checkrefferal = AffiliateUsers::select('user_id')->where(['referal_code' => $input['referral']])->first();
 
-                if (isset($checkrefferal)) {
+                // if (isset($checkrefferal)) {
 
-                    $commisioninis = env('INIS_VAL');
-                } else {
+                //     $commisioninis = env('INIS_VAL');
+                // } else {
 
-                    $commisioninis = env('INIS_VAL');
-                }
+                //     $commisioninis = env('INIS_VAL');
+                // }
+                $commisioninis = env('INIS_VAL');
             } else {
 
                 $commisioninis = env('INIS_VAL');
@@ -2357,31 +2360,33 @@ class HotelController extends Controller {
         if ($request->referral != '' && $request->referral != '0') {
 
 
-            $checkrefferal = AffiliateUsers::select('user_id')->where(['referal_code' => $request
-                        ->referral])
-                    ->first();
-            if (isset($checkrefferal)) {
+            // $checkrefferal = AffiliateUsers::select('user_id')->where(['referal_code' => $request
+            //             ->referral])
+            //         ->first();
+            // if (isset($checkrefferal)) {
 
-                $commisioninis = env('INIS_VAL');
-                $paymeComm = env('INIS_VAL_PAYME');
-            } else {
-                $commisioninis = env('INIS_VAL');
-                $paymeComm = env('INIS_VAL_PAYME');
-            }
+            //     $commisioninis = env('INIS_VAL');
+            //     $paymeComm = env('INIS_VAL_PAYME');
+            // } else {
+            //     $commisioninis = env('INIS_VAL');
+            //     $paymeComm = env('INIS_VAL_PAYME');
+            // }
+            $commisioninis = env('INIS_VAL');
+            $paymeComm = env('INIS_VAL_PAYME');
         } else {
 
             $commisioninis = env('INIS_VAL');
             $paymeComm = env('INIS_VAL_PAYME');
         }
 
-        if ($request->referral && $request->referral != '' && $request->referral != '0') {
-            $check_hotel_subdomain = DB::connection('mysql2')->select("SELECT * FROM `users` WHERE  `hotel_code` = '" . $request->hotelCode . "'");
-        }
+        // if ($request->referral && $request->referral != '' && $request->referral != '0') {
+        //     $check_hotel_subdomain = DB::connection('mysql2')->select("SELECT * FROM `users` WHERE  `hotel_code` = '" . $request->hotelCode . "'");
+        // }
 
-        if (isset($check_hotel_subdomain) && !empty($check_hotel_subdomain)) {
-            $commisioninis = 10;
-            $paymeComm = env('INIS_VAL_PAYME_AGENT');
-        }
+        // if (isset($check_hotel_subdomain) && !empty($check_hotel_subdomain)) {
+        //     $commisioninis = 10;
+        //     $paymeComm = env('INIS_VAL_PAYME_AGENT');
+        // }
 
         $commisioninis_currency = env('INR_FEES');
 
@@ -2941,15 +2946,17 @@ class HotelController extends Controller {
 
         if ($request->referral != '' && $request->referral != '0') {
 
-            $checkrefferal = AffiliateUsers::select('user_id')->where(['referal_code' => $request->referral])->first();
-            if (isset($checkrefferal)) {
+            // $checkrefferal = AffiliateUsers::select('user_id')->where(['referal_code' => $request->referral])->first();
+            // if (isset($checkrefferal)) {
 
-                $commisioninis = env('INIS_VAL');
-                $paymeComm = env('INIS_VAL_PAYME');
-            } else {
-                $commisioninis = env('INIS_VAL');
-                $paymeComm = env('INIS_VAL_PAYME');
-            }   
+            //     $commisioninis = env('INIS_VAL');
+            //     $paymeComm = env('INIS_VAL_PAYME');
+            // } else {
+            //     $commisioninis = env('INIS_VAL');
+            //     $paymeComm = env('INIS_VAL_PAYME');
+            // }   
+            $commisioninis = env('INIS_VAL');
+            $paymeComm = env('INIS_VAL_PAYME');
         } else {
 
             $commisioninis = env('INIS_VAL');
@@ -3030,17 +3037,19 @@ class HotelController extends Controller {
         if ($request->referral != '' && $request->referral != '0') {
 
 
-            $checkrefferal = AffiliateUsers::select('user_id')->where(['referal_code' => $request
-                        ->referral])
-                    ->first();
-            if (isset($checkrefferal)) {
+            // $checkrefferal = AffiliateUsers::select('user_id')->where(['referal_code' => $request
+            //             ->referral])
+            //         ->first();
+            // if (isset($checkrefferal)) {
 
-                $commisioninis = env('INIS_VAL');
-                $paymeComm = env('INIS_VAL_PAYME');
-            } else {
-                $commisioninis = env('INIS_VAL');
-                $paymeComm = env('INIS_VAL_PAYME');
-            }
+            //     $commisioninis = env('INIS_VAL');
+            //     $paymeComm = env('INIS_VAL_PAYME');
+            // } else {
+            //     $commisioninis = env('INIS_VAL');
+            //     $paymeComm = env('INIS_VAL_PAYME');
+            // }
+            $commisioninis = env('INIS_VAL');
+            $paymeComm = env('INIS_VAL_PAYME');
         } else {
 
             $commisioninis = env('INIS_VAL');
@@ -3129,110 +3138,14 @@ class HotelController extends Controller {
             
             $roomGuest = $search_contents['request']['roomsGuests'];
 
-            $roomDetails = $this
-                ->api
-                ->hotelBlockRoom($blockRequest['hotelCode'], $blockRequest['hoteIndex'], $blockRequest['traceId'], $blockRequest['hotelName'], $blockRequest['selectedRooms'], $blockRequest['noOfRooms'], $blockRequest['guestNationality'], $blockRequest['CategoryId'], $blockRequest['isVoucherBooking']);
 
-            if ($roomDetails['BlockRoomResult']['ResponseStatus'] != 1) {
-                
-                $amt = Session::get('multiplePayments');
-
-                if(isset($amt) && $amt > 0 ){
-
-                    $walletuser = \Auth::user();
-                    $ccrcy = Session::get('CurrencyCode');
-
-                    $walletAmount = \Auth::user()->balance;
-
-                    $amt = $amt;
-
-                    $pAmount = Currency::convert($ccrcy, 'USD', round($amt));
-
-                    $walletuser->deposit($pAmount['convertedAmount'], ["description" => 'Multicard partial payment(ILS) -' . $pAmount['convertedAmount']]);
-
-                    Session::forget('multiplePayments');
-                }
-
-                $this->writeLogs(array('HotelCode' => $blockRequest['hotelCode'], 'HotelIndex' => $blockRequest['hoteIndex'], 'TraceId' => $blockRequest['traceId'], 'HotelName' => $blockRequest['hotelName'], 'selectedRooms' => $blockRequest['selectedRooms']), $roomDetails['BlockRoomResult']);
-
-                Mail::to(env('NO_RESULT_EMAIL'))->send(new NoResultsEmail(json_encode(array('HotelCode' => $blockRequest['hotelCode'], 'HotelIndex' => $blockRequest['hoteIndex'], 'TraceId' => $blockRequest['traceId'], 'HotelName' => $blockRequest['hotelName'], 'selectedRooms' => $blockRequest['selectedRooms'])), json_encode($roomDetails) ));
-
-                // return paid amount back to wallet
-
-
-                 return view('500')->with(['error' => 'This room is not available, Kindly select another room for your stay']);
-            }
-
-            $blockRoom = $roomDetails['BlockRoomResult']['HotelRoomsDetails'];
-
-            $fileName = $search_id . '_block.json';
-            $this->saveBlockRoomData($fileName, json_encode($roomDetails));
-
-            $isPackageFare = $roomDetails['BlockRoomResult']['IsPackageFare'];
-            $isPackageDetailsMandatory = $roomDetails['BlockRoomResult']['IsPackageDetailsMandatory'];
-
-            $hotel = StaticDataHotels::select('hotel_images')->where('hotel_code', $blockRequest['hotelCode'])->first();
-
-
-            StaticDataHotels::where('hotel_code', $blockRequest['hotelCode'])->update(['hotel_policy' => $roomDetails['BlockRoomResult']['HotelPolicyDetail']]);
-
-            if (isset($hotel['hotel_images']) && !empty($hotel['hotel_images'])) {
-                $hotel['hotel_images'] = json_decode($hotel['hotel_images']);
-            }
-
-
-            if ($request->referral != '' && $request->referral != '0') {
-
-
-                $checkrefferal = AffiliateUsers::select('user_id')->where(['referal_code' => $request
-                            ->referral])
-                        ->first();
-                if (isset($checkrefferal)) {
-
-                    $commisioninis = env('INIS_VAL');
-                    $paymeComm = env('INIS_VAL_PAYME');
-                } else {
-                    $commisioninis = env('INIS_VAL');
-                    $paymeComm = env('INIS_VAL_PAYME');
-                }
-            } else {
-
-                $commisioninis = env('INIS_VAL');
-                $paymeComm = env('INIS_VAL_PAYME');
-            }
-
-            if ($request->referral != '') {
-                $referral = $request->referral;
-            } else {
-                $referral = '0';
-            }
-
-
-            if ($request->referral && $request->referral != '' && $request->referral != '0') {
-                $check_hotel_subdomain = DB::connection('mysql2')->select("SELECT * FROM `users` WHERE  `hotel_code` = '" . $blockRequest['hotelCode'] . "'");
-
-                if (isset($check_hotel_subdomain) && !empty($check_hotel_subdomain)) {
-                    $commisioninis = 10;
-                    $paymeComm = env('INIS_VAL_PAYME_AGENT');
-                }
-            }
-
-            $type = preg_replace('/\s*/', '', $roomDetails['BlockRoomResult']['HotelRoomsDetails'][0]['RoomTypeName']);
-            $images = RoomImages::select('images')->where(['sub_domain' => $blockRequest['hotelCode']])->first();
-
-            $show_markup = false;
-            if (Auth::user()) {
-                $agent = AffiliateUsers::where('user_id', Auth::user()->id)->first();
-
-                if (isset($agent) && $agent['referal_code'] && $agent['referal_code'] == $referral) {
-                    $show_markup = true;
-                }
-            }
-
+            /* ILS Payment */
 
             $paidAmtILS = 0;
             $agentMarkup = 0;
             $ilsPayDetails = array();
+
+
             if(isset($queryValues['payme_sale_id']) && $queryValues['payme_sale_id'] != ''){
 
                 $saleID = $queryValues['payme_sale_id'];
@@ -3246,124 +3159,63 @@ class HotelController extends Controller {
 
                    $paymentVal = true;
                    $destinationPath=$search_id . '_payme_form_hotel.json';
-                   $ilsPay = json_decode($this->readSearchData($destinationPath), true); ///Session::get('BookRoomDetails');
-                   $ilsPayDetails = $ilsPay['request'];
-                
-                  if($ilsPayDetails['paymentMode'] == 'multiple'){
 
-                    $paidAmtILS = ($ilsPayDetails['paidAmtILS'] == 0) ? ($ilsPayDetails['partAmountILS']) + $ilsPayDetails['walletDebit'] : $ilsPayDetails['paidAmtILS'] + ($ilsPayDetails['partAmountILS']) + $ilsPayDetails['walletDebit'];
+                   $destinationPathILS=public_path()."/logs/searches/hotels/" . $search_id . '_payme_form_hotel.json';
 
-                    $paidAmtILSMultiple = ($ilsPayDetails['paidAmtILS'] == 0) ? ($payMEDetails[0]['sale_price'] / 100) + $ilsPayDetails['walletDebit'] : $ilsPayDetails['paidAmtILS'] + ($payMEDetails[0]['sale_price'] / 100) + $ilsPayDetails['walletDebit'];
 
-                    Session::put('multiplePayments', $paidAmtILSMultiple);
+                   if (file_exists($destinationPathILS)){
 
-                  }else{
+                       $ilsPay = json_decode($this->readSearchData($destinationPath), true); ///Session::get('BookRoomDetails');
+                       $ilsPayDetails = $ilsPay['request'];
                     
-                    $paidAmtILS = ($ilsPayDetails['paidAmtILS'] == 0) ? ($payMEDetails[0]['sale_price'] / 100) + $ilsPayDetails['walletDebit'] : $ilsPayDetails['paidAmtILS'] + ($payMEDetails[0]['sale_price'] / 100) + $ilsPayDetails['walletDebit'];
+                      if($ilsPayDetails['paymentMode'] == 'multiple'){
 
-                  }
+                        $paidAmtILS = ($ilsPayDetails['paidAmtILS'] == 0) ? ($ilsPayDetails['partAmountILS']) + $ilsPayDetails['walletDebit'] : $ilsPayDetails['paidAmtILS'] + ($ilsPayDetails['partAmountILS']) + $ilsPayDetails['walletDebit'];
 
-                   $pendingAmount = $ilsPayDetails['ORIGINAL_BOOKING_PRICE_PME'] - $paidAmtILS;
-                   
-                   // Deposit Paid Amount to User Account
+                        $paidAmtILSMultiple = ($ilsPayDetails['paidAmtILS'] == 0) ? ($payMEDetails[0]['sale_price'] / 100) + $ilsPayDetails['walletDebit'] : $ilsPayDetails['paidAmtILS'] + ($payMEDetails[0]['sale_price'] / 100) + $ilsPayDetails['walletDebit'];
 
-                    if(Auth::user() && $ilsPayDetails['paymentMode'] == 'single') {
+                        Session::put('multiplePayments', $paidAmtILSMultiple);
 
-                        $walletuser = \Auth::user();
-                        $ccrcy = Session::get('CurrencyCode');
-                        $pAmount = Currency::convert($ccrcy, 'USD', round($paidAmtILS));
+                      }else{
+                        
+                        $paidAmtILS = ($ilsPayDetails['paidAmtILS'] == 0) ? ($payMEDetails[0]['sale_price'] / 100) + $ilsPayDetails['walletDebit'] : $ilsPayDetails['paidAmtILS'] + ($payMEDetails[0]['sale_price'] / 100) + $ilsPayDetails['walletDebit'];
 
-                        $walletuser->deposit($pAmount['convertedAmount'], ["description" => 'Multicard partial payment(ILS) -' . $pAmount['convertedAmount']]);
-                    }
+                      }
 
-                   //$agentMarkup = 0;
+                       $pendingAmount = $ilsPayDetails['ORIGINAL_BOOKING_PRICE_PME'] - $paidAmtILS;
+                       
+                       // Deposit Paid Amount to User Account
 
-                   if(isset($ilsPayDetails['agent_makrup']) && $ilsPayDetails['agent_makrup'] != ''){
-
-                        $agentMarkup = $ilsPayDetails['agent_makrup'];
-
-                   }
-
-                   if($ilsPayDetails['walletDebit'] > 0){
-
-                        $walletuser = \Auth::user();
-                        $ccrcy = Session::get('CurrencyCode');
-                        $pAmount = Currency::convert($ccrcy, 'USD', $ilsPayDetails['walletDebit']);
-
-                        $walletuser->withdraw(round($pAmount['convertedAmount']), ['description' => "Card payment " . $ilsPayDetails['walletDebit'] . "(" . $ccrcy . ") received from card for Multiple Payment transaction_id :- " . $payMEDetails[0]['transaction_id']]);
-
-                   }
-
-
-                   if($pendingAmount <= 0) {
-
-
-                        $hotelId = $this->bookRoomILS($ilsPayDetails);
-
-                        if($ilsPayDetails['paymentMode'] == 'single'){
-
-                            if($ilsPayDetails['installments'] != '1'){
-
-                                $installmentsValue =  0.5 * $ilsPayDetails['installments'];
-
-                                $deductamount = $ilsPayDetails['ORIGINAL_BOOKING_PRICE_PME'] + ( ( $installmentsValue / 100 )  * $ilsPayDetails['ORIGINAL_BOOKING_PRICE']);
-
-                            }else{
-                                 $deductamount = $ilsPayDetails['ORIGINAL_BOOKING_PRICE_PME'];
-                            }
-                           
-                            $myCurrency = Session::get('CurrencyCode');
-                            $usercurrency = Currency::convert($myCurrency, 'USD', ($deductamount));
-                            $debitAmnt = round($usercurrency['convertedAmount']);
-
-                            $walletAmount = \Auth::user()->balance;
-
-                            if($debitAmnt > $walletAmount){
-
-                                $debitAmnt = $walletAmount;
-                            }
+                        if(Auth::user() && $ilsPayDetails['paymentMode'] == 'single') {
 
                             $walletuser = \Auth::user();
-                            $walletuser->withdraw($debitAmnt, ['BookingID' => $hotelId]);
-                            
-                            $walletAmount = \Auth::user()->balance;
-                            Session::forget('walletAmount');
+                            $ccrcy = Session::get('CurrencyCode');
+                            $pAmount = Currency::convert($ccrcy, 'USD', round($paidAmtILS));
+
+                            $walletuser->deposit($pAmount['convertedAmount'], ["description" => 'Multicard partial payment(ILS) -' . $pAmount['convertedAmount']]);
                         }
 
+                       //$agentMarkup = 0;
 
-                 
-                        if(isset($hotelId['success']) && $hotelId['success']){
+                       if(isset($ilsPayDetails['agent_makrup']) && $ilsPayDetails['agent_makrup'] != ''){
 
-                            return redirect('/thankyou/hotel/' . $hotelId['booking_id'] . '/true');
+                            $agentMarkup = $ilsPayDetails['agent_makrup'];
 
-                        }else{
+                       }
 
-                            //add oney to wallet
+                       if($ilsPayDetails['walletDebit'] > 0){
 
-                            $amt = Session::get('multiplePayments');
+                            $walletuser = \Auth::user();
+                            $ccrcy = Session::get('CurrencyCode');
+                            $pAmount = Currency::convert($ccrcy, 'USD', $ilsPayDetails['walletDebit']);
 
-                            if(isset($amt) && $amt > 0){
+                            $walletuser->withdraw(round($pAmount['convertedAmount']), ['description' => "Card payment " . $ilsPayDetails['walletDebit'] . "(" . $ccrcy . ") received from card for Multiple Payment transaction_id :- " . $payMEDetails[0]['transaction_id']]);
 
-                                $walletuser = \Auth::user();
-                                $ccrcy = Session::get('CurrencyCode');
+                       }
+                   }else{
 
-                                $walletAmount = \Auth::user()->balance;
+                     return view('500')->with(['error' => 'This room is not available, Kindly select another room for your stay']);
 
-                                $amt = $amt;
-
-                                $pAmount = Currency::convert($ccrcy, 'USD', round($amt));
-
-                                $walletuser->deposit($pAmount['convertedAmount'], ["description" => 'Multicard partial payment(ILS) -' . $pAmount['convertedAmount']]);
-
-                                Session::forget('multiplePayments');
-                            }
-
-                            // $walletuser = \Auth::user();
-                            // $pAmount = Currency::convert('ILS', 'USD', $ilsPayDetails['ORIGINAL_BOOKING_PRICE_PME']);
-                            // $walletuser->deposit($pAmount['convertedAmount'], ["description" => 'Multicard partial payment(ILS) -' . $input['amount']]);
-
-                            return view('500')->with(['error' => $hotelId['message']]);  
-                        }
 
                    }
 
@@ -3397,6 +3249,203 @@ class HotelController extends Controller {
 
                         return view('500')->with(['error' => 'Payment Failed']);
                     }
+
+                }
+            
+            }
+
+            /* Payment ENDS*/ 
+
+            $roomDetails = $this
+                ->api
+                ->hotelBlockRoom($blockRequest['hotelCode'], $blockRequest['hoteIndex'], $blockRequest['traceId'], $blockRequest['hotelName'], $blockRequest['selectedRooms'], $blockRequest['noOfRooms'], $blockRequest['guestNationality'], $blockRequest['CategoryId'], $blockRequest['isVoucherBooking']);
+
+            if ($roomDetails['BlockRoomResult']['ResponseStatus'] != 1) {
+                
+                $amt = Session::get('multiplePayments');
+
+                if(isset($amt) && $amt > 0 ){
+
+                    $walletuser = \Auth::user();
+                    $ccrcy = Session::get('CurrencyCode');
+
+                    $walletAmount = \Auth::user()->balance;
+
+                    $amt = $amt;
+
+                    $pAmount = Currency::convert($ccrcy, 'USD', round($amt));
+
+                    $walletuser->deposit($pAmount['convertedAmount'], ["description" => 'Multicard partial payment(ILS) -' . $pAmount['convertedAmount']]);
+
+                    Session::forget('multiplePayments');
+                }
+
+                $this->writeLogs(array('HotelCode' => $blockRequest['hotelCode'], 'HotelIndex' => $blockRequest['hoteIndex'], 'TraceId' => $blockRequest['traceId'], 'HotelName' => $blockRequest['hotelName'], 'selectedRooms' => $blockRequest['selectedRooms']), $roomDetails['BlockRoomResult']);
+
+                Mail::to(env('NO_RESULT_EMAIL'))->send(new NoResultsEmail(json_encode(array('HotelCode' => $blockRequest['hotelCode'], 'HotelIndex' => $blockRequest['hoteIndex'], 'TraceId' => $blockRequest['traceId'], 'HotelName' => $blockRequest['hotelName'], 'selectedRooms' => $blockRequest['selectedRooms'])), json_encode($roomDetails) ));
+
+                // return paid amount back to wallet
+
+
+                 $destinationPath=public_path()."/logs/searches/hotels/" .$search_id . '_payme_form_hotel.json';
+
+                 File::delete($destinationPath);
+
+                 return view('500')->with(['error' => 'This room is not available, Kindly select another room for your stay']);
+            }
+
+            $blockRoom = $roomDetails['BlockRoomResult']['HotelRoomsDetails'];
+
+            $fileName = $search_id . '_block.json';
+            $this->saveBlockRoomData($fileName, json_encode($roomDetails));
+
+            $isPackageFare = $roomDetails['BlockRoomResult']['IsPackageFare'];
+            $isPackageDetailsMandatory = $roomDetails['BlockRoomResult']['IsPackageDetailsMandatory'];
+
+            $hotel = StaticDataHotels::select('hotel_images')->where('hotel_code', $blockRequest['hotelCode'])->first();
+
+
+            StaticDataHotels::where('hotel_code', $blockRequest['hotelCode'])->update(['hotel_policy' => $roomDetails['BlockRoomResult']['HotelPolicyDetail']]);
+
+            if (isset($hotel['hotel_images']) && !empty($hotel['hotel_images'])) {
+                $hotel['hotel_images'] = json_decode($hotel['hotel_images']);
+            }
+
+
+            // if ($request->referral != '') {
+
+
+            //     $checkrefferal = AffiliateUsers::select('user_id')->where(['referal_code' => $request
+            //                 ->referral])
+            //             ->first();
+            //     if (isset($checkrefferal)) {
+
+            //         $commisioninis = env('INIS_VAL');
+            //         $paymeComm = env('INIS_VAL_PAYME');
+            //     } else {
+            //         $commisioninis = env('INIS_VAL');
+            //         $paymeComm = env('INIS_VAL_PAYME');
+            //     }
+            // } else {
+
+            //     $commisioninis = env('INIS_VAL');
+            //     $paymeComm = env('INIS_VAL_PAYME');
+            // }
+            $commisioninis = env('INIS_VAL');
+            $paymeComm = env('INIS_VAL_PAYME');
+
+            if ($request->referral != '') {
+                $referral = $request->referral;
+            } else {
+                $referral = '0';
+            }
+
+
+            // if ($request->referral && $request->referral != '' && $request->referral != '0') {
+            //     $check_hotel_subdomain = DB::connection('mysql2')->select("SELECT * FROM `users` WHERE  `hotel_code` = '" . $blockRequest['hotelCode'] . "'");
+
+            //     if (isset($check_hotel_subdomain) && !empty($check_hotel_subdomain)) {
+            //         $commisioninis = 10;
+            //         $paymeComm = env('INIS_VAL_PAYME_AGENT');
+            //     }
+            // }
+
+            $type = preg_replace('/\s*/', '', $roomDetails['BlockRoomResult']['HotelRoomsDetails'][0]['RoomTypeName']);
+            $images = RoomImages::select('images')->where(['sub_domain' => $blockRequest['hotelCode']])->first();
+
+            $show_markup = false;
+            if (Auth::user()) {
+                // $agent = AffiliateUsers::where('user_id', Auth::user()->id)->first();
+
+                // if (isset($agent) && $agent['referal_code'] && $agent['referal_code'] == $referral) {
+                //     $show_markup = true;
+                // }
+            }
+
+
+            
+
+            if(isset($queryValues['payme_sale_id']) && $queryValues['payme_sale_id'] != ''){
+
+                
+                if(!empty($payMEDetails)  && $payMEDetails[0]['sale_status'] == 'completed'){
+
+
+                   if($pendingAmount <= 0) {
+
+
+                        $hotelId = $this->bookRoomILS($ilsPayDetails);
+
+                        if(isset($hotelId['success']) && $hotelId['success']){
+
+                            if($ilsPayDetails['paymentMode'] == 'single'){
+
+                                if($ilsPayDetails['installments'] != '1'){
+
+                                    $installmentsValue =  0.5 * $ilsPayDetails['installments'];
+
+                                    $deductamount = $ilsPayDetails['ORIGINAL_BOOKING_PRICE_PME'] + ( ( $installmentsValue / 100 )  * $ilsPayDetails['ORIGINAL_BOOKING_PRICE']);
+
+                                }else{
+                                     $deductamount = $ilsPayDetails['ORIGINAL_BOOKING_PRICE_PME'];
+                                }
+                               
+                                $myCurrency = Session::get('CurrencyCode');
+                                $usercurrency = Currency::convert($myCurrency, 'USD', ($deductamount));
+                                $debitAmnt = round($usercurrency['convertedAmount']);
+
+                                $walletAmount = \Auth::user()->balance;
+
+                                if($debitAmnt > $walletAmount){
+
+                                    $debitAmnt = $walletAmount;
+                                }
+
+                                $walletuser = \Auth::user();
+                                $walletuser->withdraw($debitAmnt, ['BookingID' => $hotelId]);
+                                
+                                $walletAmount = \Auth::user()->balance;
+                                Session::forget('walletAmount');
+                            }
+
+
+                            return redirect('/thankyou/hotel/' . $hotelId['booking_id'] . '/true');
+
+                        }else{
+
+                            //add oney to wallet
+
+                            $amt = Session::get('multiplePayments');
+
+                            if(isset($amt) && $amt > 0){
+
+                                $walletuser = \Auth::user();
+                                $ccrcy = Session::get('CurrencyCode');
+
+                                $walletAmount = \Auth::user()->balance;
+
+                                $amt = $amt;
+
+                                $pAmount = Currency::convert($ccrcy, 'USD', round($amt));
+
+                                $walletuser->deposit($pAmount['convertedAmount'], ["description" => 'Multicard partial payment(ILS) -' . $pAmount['convertedAmount']]);
+
+                                Session::forget('multiplePayments');
+                            }
+
+                            // $walletuser = \Auth::user();
+                            // $pAmount = Currency::convert('ILS', 'USD', $ilsPayDetails['ORIGINAL_BOOKING_PRICE_PME']);
+                            // $walletuser->deposit($pAmount['convertedAmount'], ["description" => 'Multicard partial payment(ILS) -' . $input['amount']]);
+
+                             $destinationPathILSFile=public_path()."/logs/searches/hotels/" .$search_id . '_payme_form_hotel.json';
+
+                             File::delete($destinationPathILSFile);
+
+                            return view('500')->with(['error' => $hotelId['message']]);  
+                        }
+
+                   }
+
 
                 }
             
@@ -3569,19 +3618,22 @@ class HotelController extends Controller {
 
         if ($input['referral'] != '' && $input['referral'] != '0') {
 
-            $checkrefferal = AffiliateUsers::select('user_id')->where(['referal_code' => $input['referral']])->first();
+            // $checkrefferal = AffiliateUsers::select('user_id')->where(['referal_code' => $input['referral']])->first();
 
-            if (isset($checkrefferal)) {
+            // if (isset($checkrefferal)) {
 
-                $agent_id = $checkrefferal['user_id'];
-                $agentemail = User::select('email')->where(['id' => $agent_id])->first();
-                $agentemail = $agentemail['email'];
-                $commission = env('INIS_VAL');
-            } else {
-                $agentemail = '';
-                $agent_id = '';
-                $commission = env('INIS_VAL');
-            }
+            //     $agent_id = $checkrefferal['user_id'];
+            //     $agentemail = User::select('email')->where(['id' => $agent_id])->first();
+            //     $agentemail = $agentemail['email'];
+            //     $commission = env('INIS_VAL');
+            // } else {
+            //     $agentemail = '';
+            //     $agent_id = '';
+            //     $commission = env('INIS_VAL');
+            // }
+            $agentemail = '';
+            $agent_id = '';
+            $commission = env('INIS_VAL');
         } else {
 
             $agentemail = '';
@@ -3592,11 +3644,11 @@ class HotelController extends Controller {
         $this->hotelCode = $request->hotelCode;//Session::get('hotelCode');
 
         if ($input['referral'] != '' && $input['referral'] != '0') {
-            $check_hotel_subdomain = DB::connection('mysql2')->select("SELECT * FROM `users` WHERE  `hotel_code` = '" . $this->hotelCode . "'");
+            // $check_hotel_subdomain = DB::connection('mysql2')->select("SELECT * FROM `users` WHERE  `hotel_code` = '" . $this->hotelCode . "'");
 
-            if (isset($check_hotel_subdomain) && !empty($check_hotel_subdomain)) {
-                $commission = 10;
-            }
+            // if (isset($check_hotel_subdomain) && !empty($check_hotel_subdomain)) {
+            //     $commission = 10;
+            // }
         }
 
         foreach ($roomGuest as $room => $guest) {
@@ -3694,30 +3746,30 @@ class HotelController extends Controller {
         *split comission if booking from sub somain hotel
         */
         if ($input['referral'] && $input['referral'] != '' && $input['referral'] != '0') {
-            $check_hotel_subdomain = DB::connection('mysql2')->select("SELECT * FROM `users` WHERE  `hotel_code` = '" . $this->hotelCode . "'");
+            // $check_hotel_subdomain = DB::connection('mysql2')->select("SELECT * FROM `users` WHERE  `hotel_code` = '" . $this->hotelCode . "'");
 
-            if (isset($check_hotel_subdomain) && !empty($check_hotel_subdomain)) {
-                $commisioninis = 10;
+            // if (isset($check_hotel_subdomain) && !empty($check_hotel_subdomain)) {
+            //     $commisioninis = 10;
 
-                $commission_agent = (5 / 100 * $amount_temp);
-                $commission_sub_doamin = $commission_agent;
+            //     $commission_agent = (5 / 100 * $amount_temp);
+            //     $commission_sub_doamin = $commission_agent;
 
-                $add_to_subdomain = true;
-            }
+            //     $add_to_subdomain = true;
+            // }
         } else {
         /*
         *check if only sub domain is there
         */
-            $check_hotel_subdomain = DB::connection('mysql2')->select("SELECT * FROM `users` WHERE  `hotel_code` = '" . $this->hotelCode . "'");
+            // $check_hotel_subdomain = DB::connection('mysql2')->select("SELECT * FROM `users` WHERE  `hotel_code` = '" . $this->hotelCode . "'");
 
-            if (isset($check_hotel_subdomain) && !empty($check_hotel_subdomain)) {
-                $commisioninis = 5;
+            // if (isset($check_hotel_subdomain) && !empty($check_hotel_subdomain)) {
+            //     $commisioninis = 5;
 
-                $commission_agent = 0;
-                $commission_sub_doamin = (5 / 100 * $amount_temp);
+            //     $commission_agent = 0;
+            //     $commission_sub_doamin = (5 / 100 * $amount_temp);
 
-                $add_to_subdomain = true;
-            }
+            //     $add_to_subdomain = true;
+            // }
         }
 
         if ($commission_agent > 0) {
@@ -3833,68 +3885,68 @@ class HotelController extends Controller {
                     }
                // }
 
-                /* get active lottery */
-                $lottery = Lottery::where(['lotteryStatus' => 'active'])->first();
+               
+                // $lottery = Lottery::where(['lotteryStatus' => 'active'])->first();
 
-                if (isset($lottery)) {
-                    /* find all enrolled user count */
-                    $lotryNos = LotteryUsers::select(['id'])->where(['lotteryID' => $lottery->id])->get()->toArray();
-                }
+                // if (isset($lottery)) {
+               
+                //     $lotryNos = LotteryUsers::select(['id'])->where(['lotteryID' => $lottery->id])->get()->toArray();
+                // }
 
                 /* check if entry limit reach the quota to announce winner */
-                if (isset($lottery) && $lottery->entryLimit <= count($lotryNos)) {
+                // if (isset($lottery) && $lottery->entryLimit <= count($lotryNos)) {
 
-                    $tickets = [];
-                    foreach ($lotryNos as $lno) {
-                        $tickets[] = $lno['id'];
-                    }
+                //     $tickets = [];
+                //     foreach ($lotryNos as $lno) {
+                //         $tickets[] = $lno['id'];
+                //     }
 
-                    $noOfUsers = count($tickets) - 1;
+                //     $noOfUsers = count($tickets) - 1;
 
-                    /* if entry full the pick a random ticket */
-                    $luckyDraw = rand(0, $noOfUsers);
-                    $wonTicketID = $tickets[$luckyDraw];
+                //     /* if entry full the pick a random ticket */
+                //     $luckyDraw = rand(0, $noOfUsers);
+                //     $wonTicketID = $tickets[$luckyDraw];
 
-                    $winner = LotteryUsers::where(['id' => $wonTicketID])->first();
+                //     $winner = LotteryUsers::where(['id' => $wonTicketID])->first();
 
-                    /* get the winner details */
-                    $lotteryuser = User::where(['id' => $winner->userID])->first();
+                //     /* get the winner details */
+                //     $lotteryuser = User::where(['id' => $winner->userID])->first();
 
-                    /* credit won amount into winner user wallet */
-                    $lotteryuser->deposit($lottery->winAmount, ["description" => 'Lottery winner for Ticket No-' . $wonTicketID]);
+                //     /* credit won amount into winner user wallet */
+                //     $lotteryuser->deposit($lottery->winAmount, ["description" => 'Lottery winner for Ticket No-' . $wonTicketID]);
 
-                    /* close existing lottery */
-                    $closeLottery = Lottery::find($lottery->id);
-                    $closeLottery->lotteryStatus = 'draw';
-                    $closeLottery->winnerID = $winner->userID;
-                    $closeLottery->save();
+                //     /* close existing lottery */
+                //     $closeLottery = Lottery::find($lottery->id);
+                //     $closeLottery->lotteryStatus = 'draw';
+                //     $closeLottery->winnerID = $winner->userID;
+                //     $closeLottery->save();
 
-                    /* open new lottery */
-                    $lName = time();
+                //     /* open new lottery */
+                //     $lName = time();
 
-                    Mail::to($lotteryuser['email'])->send(new LotteryWonEmail($lotteryuser, $lottery, $wonTicketID));
+                //     Mail::to($lotteryuser['email'])->send(new LotteryWonEmail($lotteryuser, $lottery, $wonTicketID));
 
 
-                    $new_lottery = Lottery::create([
-                                'lotteryName' => "#" . $lName,
-                                'winAmount' => 500,
-                                'entryLimit' => 100,
-                                'entryFees' => 25,
-                                'feeCurrency' => 'USD',
-                                'lotteryStatus' => 'active'
-                    ]);
-                }
+                //     $new_lottery = Lottery::create([
+                //                 'lotteryName' => "#" . $lName,
+                //                 'winAmount' => 500,
+                //                 'entryLimit' => 100,
+                //                 'entryFees' => 25,
+                //                 'feeCurrency' => 'USD',
+                //                 'lotteryStatus' => 'active'
+                //     ]);
+                // }
 
 
                 $ltry_ID = null;
 
-                if (isset($input['buyLottery']) && $input['buyLottery'] == 'yes') {
+                // if (isset($input['buyLottery']) && $input['buyLottery'] == 'yes') {
 
-                    $lotteryuser = \Auth::user();
-                    $lotteryuser->deposit(env('LOTTERY_FEE'), ["description" => 'Lottery Participation Fees on booking id-' . $bookingDetails['BookingId']]);
-                    $lottery = Lottery::where(['lotteryStatus' => 'active'])->first();
-                    $ltry_ID = LotteryUsers::create(['paidAmount' => env('LOTTERY_FEE'), 'paymentSignature' => $input['razorpay_signature'], 'paymentID' => $input['razorpay_payment_id'], 'paymentStatus' => 'success', 'userID' => Auth::user()->id, 'lotteryID' => $lottery->id])->id;
-                }
+                //     $lotteryuser = \Auth::user();
+                //     $lotteryuser->deposit(env('LOTTERY_FEE'), ["description" => 'Lottery Participation Fees on booking id-' . $bookingDetails['BookingId']]);
+                //     $lottery = Lottery::where(['lotteryStatus' => 'active'])->first();
+                //     $ltry_ID = LotteryUsers::create(['paidAmount' => env('LOTTERY_FEE'), 'paymentSignature' => $input['razorpay_signature'], 'paymentID' => $input['razorpay_payment_id'], 'paymentStatus' => 'success', 'userID' => Auth::user()->id, 'lotteryID' => $lottery->id])->id;
+                // }
 
                 if (isset($input['walletPay']) && $input['walletPay'] == 'yes' && $input['walletDebit'] > 0) {
 
@@ -3985,7 +4037,7 @@ class HotelController extends Controller {
 
                 if ($add_to_subdomain) {
 
-                    $check_hotel_subdomain = DB::connection('mysql2')->select("INSERT INTO `main_bookings` (`booking_id`, `hotel_code`, `currency_code`, `user_id`, `agent_id`, `total_paid`, `comission_earned`, `booking_type`, `created_at`) VALUES ('" . $booking['id'] . "', '" . $this->hotelCode . "', '" . Session::get('CurrencyCode') . "', '" . Auth::user()->id . "', '" . $agent_id . "', '" . $mAmountC . "', '" . $commission_sub_doamin . "', 'hotel', '" . date('Y-m-d h:i:s') . "')");
+                    // $check_hotel_subdomain = DB::connection('mysql2')->select("INSERT INTO `main_bookings` (`booking_id`, `hotel_code`, `currency_code`, `user_id`, `agent_id`, `total_paid`, `comission_earned`, `booking_type`, `created_at`) VALUES ('" . $booking['id'] . "', '" . $this->hotelCode . "', '" . Session::get('CurrencyCode') . "', '" . Auth::user()->id . "', '" . $agent_id . "', '" . $mAmountC . "', '" . $commission_sub_doamin . "', 'hotel', '" . date('Y-m-d h:i:s') . "')");
                 }
 
                 $currency = Session::get('CurrencyCode');
@@ -4030,20 +4082,20 @@ class HotelController extends Controller {
 
                 if (isset($agent_id) && $agent_id != '') {
 
-                    $post_content = 'Booking for <b>' . $this->hotelName . '</b> city <b>' . $search_contents['request']['city_name'] . '</b> checkin <b>' . date('l, F d Y', strtotime($this->checkInDate)) . '</b> checkout <b>' . date('l, F d Y', strtotime($this->checkOutDate)) . '</b> for ' . $search_contents['request']['roomsGuests'] . '<br> Total paid amount <b>' . Session::get('CurrencyCode') . ' ' . round($amount, 2) . '</b>';
-                    //create story for profile page
-                    Posts::create(['post_type' => 'article_image',
-                        'post_content' => $post_content,
-                        'post_media' => $hotel_data['hotel_image'],
-                        'user_id' => Auth::user()->id]);
+                    // $post_content = 'Booking for <b>' . $this->hotelName . '</b> city <b>' . $search_contents['request']['city_name'] . '</b> checkin <b>' . date('l, F d Y', strtotime($this->checkInDate)) . '</b> checkout <b>' . date('l, F d Y', strtotime($this->checkOutDate)) . '</b> for ' . $search_contents['request']['roomsGuests'] . '<br> Total paid amount <b>' . Session::get('CurrencyCode') . ' ' . round($amount, 2) . '</b>';
+                    // //create story for profile page
+                    // Posts::create(['post_type' => 'article_image',
+                    //     'post_content' => $post_content,
+                    //     'post_media' => $hotel_data['hotel_image'],
+                    //     'user_id' => Auth::user()->id]);
 
 
-                    $notifications = NotificationAgents::create(['agent_id' => $agent_id,
-                                'type' => 'hotel',
-                                'description' => $post_content,
-                                'price' => 'USD ' . round($commission_agent, 2),
-                                'status' => 0
-                    ]);
+                    // $notifications = NotificationAgents::create(['agent_id' => $agent_id,
+                    //             'type' => 'hotel',
+                    //             'description' => $post_content,
+                    //             'price' => 'USD ' . round($commission_agent, 2),
+                    //             'status' => 0
+                    // ]);
                 }
 
 
@@ -4054,7 +4106,7 @@ class HotelController extends Controller {
                 Mail::to($userEmail)->send(new HotelBookingEmail($booking, $hotel_data, $path, $file_name));
 
                 if(isset($agent_id) && $agent_id != ''  && Auth::user()->email != $agentemail){
-                    Mail::to($agentemail)->send(new HotelBookingEmail($booking, $hotel_data, $path, $file_name));
+                    // Mail::to($agentemail)->send(new HotelBookingEmail($booking, $hotel_data, $path, $file_name));
                 }
 
                 if (isset($input['buyLottery']) && $input['buyLottery'] == 'yes') {
@@ -4066,6 +4118,14 @@ class HotelController extends Controller {
 
                 return redirect('/thankyou/hotel/' . $booking->id . '/true');
             } else {
+
+                $walletuser = \Auth::user();
+                $ccrcy = Session::get('CurrencyCode');
+
+                $pAmount = Currency::convert($ccrcy, 'USD', round($amount));
+
+                $walletuser->deposit($pAmount['convertedAmount'], ["description" => 'Booking failed, amount added to wallet -' . $pAmount['convertedAmount']]);
+
                 $this->writeLogs(array('checkInDate' => $this->checkInDate, 'hotelCode' => $this->hotelCode, 'hoteIndex' => $this->hoteIndex, 'TraceId' => $this->traceId, 'HotelName' => $this->hotelName, 'HotelRoomsDetails' => $HotelRoomsDetails), $bookRoomData['BookResult']);
 
                 Mail::to(env('NO_RESULT_EMAIL'))->send(new NoResultsEmail(json_encode(array('checkInDate' => $this->checkInDate, 'hotelCode' => $this->hotelCode, 'hoteIndex' => $this->hoteIndex, 'TraceId' => $this->traceId, 'HotelName' => $this->hotelName, 'HotelRoomsDetails' => $HotelRoomsDetails)), json_encode($bookRoomData) ));
@@ -4129,21 +4189,25 @@ class HotelController extends Controller {
 
         if ($input['referral'] != '' && $input['referral'] != '0') {
 
-            $checkrefferal = AffiliateUsers::select('user_id')->where(['referal_code' => $input['referral']])->first();
+            $agentemail = '';
+            $agent_id = '';
+            $commission = env('INIS_VAL');
+            $paymeComm = env('INIS_VAL_PAYME');
+            // $checkrefferal = AffiliateUsers::select('user_id')->where(['referal_code' => $input['referral']])->first();
 
-            if (isset($checkrefferal)) {
+            // if (isset($checkrefferal)) {
 
-                $agent_id = $checkrefferal['user_id'];
-                $agentemail = User::select('email')->where(['id' => $agent_id])->first();
-                $agentemail = $agentemail['email'];
-                $commission = env('INIS_VAL');
-                $paymeComm = env('INIS_VAL_PAYME');
-            } else {
-                $agentemail = '';
-                $agent_id = '';
-                $commission = env('INIS_VAL');
-                $paymeComm = env('INIS_VAL_PAYME');
-            }
+            //     $agent_id = $checkrefferal['user_id'];
+            //     $agentemail = User::select('email')->where(['id' => $agent_id])->first();
+            //     $agentemail = $agentemail['email'];
+            //     $commission = env('INIS_VAL');
+            //     $paymeComm = env('INIS_VAL_PAYME');
+            // } else {
+            //     $agentemail = '';
+            //     $agent_id = '';
+            //     $commission = env('INIS_VAL');
+            //     $paymeComm = env('INIS_VAL_PAYME');
+            // }
         } else {
 
             $agentemail = '';
@@ -4155,12 +4219,12 @@ class HotelController extends Controller {
         $this->hotelCode = $input['hotelCode'];//Session::get('hotelCode');
 
         if ($input['referral'] != '' && $input['referral'] != '0') {
-            $check_hotel_subdomain = DB::connection('mysql2')->select("SELECT * FROM `users` WHERE  `hotel_code` = '" . $this->hotelCode . "'");
+            // $check_hotel_subdomain = DB::connection('mysql2')->select("SELECT * FROM `users` WHERE  `hotel_code` = '" . $this->hotelCode . "'");
 
-            if (isset($check_hotel_subdomain) && !empty($check_hotel_subdomain)) {
-                $commission = 10;
-                $paymeComm = env('INIS_VAL_PAYME_AGENT');
-            }
+            // if (isset($check_hotel_subdomain) && !empty($check_hotel_subdomain)) {
+            //     $commission = 10;
+            //     $paymeComm = env('INIS_VAL_PAYME_AGENT');
+            // }
         }
 
         foreach ($roomGuest as $room => $guest) {
@@ -4265,30 +4329,30 @@ class HotelController extends Controller {
         *split comission if booking from sub somain hotel
         */
         if ($input['referral'] && $input['referral'] != '' && $input['referral'] != '0') {
-            $check_hotel_subdomain = DB::connection('mysql2')->select("SELECT * FROM `users` WHERE  `hotel_code` = '" . $this->hotelCode . "'");
+            // $check_hotel_subdomain = DB::connection('mysql2')->select("SELECT * FROM `users` WHERE  `hotel_code` = '" . $this->hotelCode . "'");
 
-            if (isset($check_hotel_subdomain) && !empty($check_hotel_subdomain)) {
-                $commisioninis = $paymeComm;
+            // if (isset($check_hotel_subdomain) && !empty($check_hotel_subdomain)) {
+            //     $commisioninis = $paymeComm;
 
-                $commission_agent = (5 / 100 * $amount_temp);
-                $commission_sub_doamin = $commission_agent;
+            //     $commission_agent = (5 / 100 * $amount_temp);
+            //     $commission_sub_doamin = $commission_agent;
 
-                $add_to_subdomain = true;
-            }
+            //     $add_to_subdomain = true;
+            // }
         } else {
         /*
         *check if only sub domain is there
         */
-            $check_hotel_subdomain = DB::connection('mysql2')->select("SELECT * FROM `users` WHERE  `hotel_code` = '" . $this->hotelCode . "'");
+            // $check_hotel_subdomain = DB::connection('mysql2')->select("SELECT * FROM `users` WHERE  `hotel_code` = '" . $this->hotelCode . "'");
 
-            if (isset($check_hotel_subdomain) && !empty($check_hotel_subdomain)) {
-                $commisioninis = 5;
+            // if (isset($check_hotel_subdomain) && !empty($check_hotel_subdomain)) {
+            //     $commisioninis = 5;
 
-                $commission_agent = 0;
-                $commission_sub_doamin = (5 / 100 * $amount_temp);
+            //     $commission_agent = 0;
+            //     $commission_sub_doamin = (5 / 100 * $amount_temp);
 
-                $add_to_subdomain = true;
-            }
+            //     $add_to_subdomain = true;
+            // }
         }
 
         if ($commission_agent > 0) {
@@ -4451,67 +4515,66 @@ class HotelController extends Controller {
                // }
 
                 /* get active lottery */
-                $lottery = Lottery::where(['lotteryStatus' => 'active'])->first();
+                // $lottery = Lottery::where(['lotteryStatus' => 'active'])->first();
 
-                if (isset($lottery)) {
-                    /* find all enrolled user count */
-                    $lotryNos = LotteryUsers::select(['id'])->where(['lotteryID' => $lottery->id])->get()->toArray();
-                }
+                // if (isset($lottery)) {
+                //     $lotryNos = LotteryUsers::select(['id'])->where(['lotteryID' => $lottery->id])->get()->toArray();
+                // }
 
                 /* check if entry limit reach the quota to announce winner */
-                if (isset($lottery) && $lottery->entryLimit <= count($lotryNos)) {
+                //if (isset($lottery) && $lottery->entryLimit <= count($lotryNos)) {
 
-                    $tickets = [];
-                    foreach ($lotryNos as $lno) {
-                        $tickets[] = $lno['id'];
-                    }
+                    // $tickets = [];
+                    // foreach ($lotryNos as $lno) {
+                    //     $tickets[] = $lno['id'];
+                    // }
 
-                    $noOfUsers = count($tickets) - 1;
+                    // $noOfUsers = count($tickets) - 1;
 
-                    /* if entry full the pick a random ticket */
-                    $luckyDraw = rand(0, $noOfUsers);
-                    $wonTicketID = $tickets[$luckyDraw];
+                    // /* if entry full the pick a random ticket */
+                    // $luckyDraw = rand(0, $noOfUsers);
+                    // $wonTicketID = $tickets[$luckyDraw];
 
-                    $winner = LotteryUsers::where(['id' => $wonTicketID])->first();
+                    // $winner = LotteryUsers::where(['id' => $wonTicketID])->first();
 
-                    /* get the winner details */
-                    $lotteryuser = User::where(['id' => $winner->userID])->first();
+                    // /* get the winner details */
+                    // $lotteryuser = User::where(['id' => $winner->userID])->first();
 
-                    /* credit won amount into winner user wallet */
-                    $lotteryuser->deposit($lottery->winAmount, ["description" => 'Lottery winner for Ticket No-' . $wonTicketID]);
+                    // /* credit won amount into winner user wallet */
+                    // $lotteryuser->deposit($lottery->winAmount, ["description" => 'Lottery winner for Ticket No-' . $wonTicketID]);
 
-                    /* close existing lottery */
-                    $closeLottery = Lottery::find($lottery->id);
-                    $closeLottery->lotteryStatus = 'draw';
-                    $closeLottery->winnerID = $winner->userID;
-                    $closeLottery->save();
+                    // /* close existing lottery */
+                    // $closeLottery = Lottery::find($lottery->id);
+                    // $closeLottery->lotteryStatus = 'draw';
+                    // $closeLottery->winnerID = $winner->userID;
+                    // $closeLottery->save();
 
-                    /* open new lottery */
-                    $lName = time();
+                    // /* open new lottery */
+                    // $lName = time();
 
-                    Mail::to($lotteryuser['email'])->send(new LotteryWonEmail($lotteryuser, $lottery, $wonTicketID));
+                    // Mail::to($lotteryuser['email'])->send(new LotteryWonEmail($lotteryuser, $lottery, $wonTicketID));
 
 
-                    $new_lottery = Lottery::create([
-                                'lotteryName' => "#" . $lName,
-                                'winAmount' => 500,
-                                'entryLimit' => 100,
-                                'entryFees' => 25,
-                                'feeCurrency' => 'USD',
-                                'lotteryStatus' => 'active'
-                    ]);
-                }
+                    // $new_lottery = Lottery::create([
+                    //             'lotteryName' => "#" . $lName,
+                    //             'winAmount' => 500,
+                    //             'entryLimit' => 100,
+                    //             'entryFees' => 25,
+                    //             'feeCurrency' => 'USD',
+                    //             'lotteryStatus' => 'active'
+                    // ]);
+                //}
 
 
                 $ltry_ID = null;
 
-                if (isset($input['buyLottery']) && $input['buyLottery'] == 'yes') {
+                //if (isset($input['buyLottery']) && $input['buyLottery'] == 'yes') {
 
-                    $lotteryuser = \Auth::user();
-                    $lotteryuser->deposit(env('LOTTERY_FEE'), ["description" => 'Lottery Participation Fees on booking id-' . $bookingDetails['BookingId']]);
-                    $lottery = Lottery::where(['lotteryStatus' => 'active'])->first();
-                    $ltry_ID = LotteryUsers::create(['paidAmount' => env('LOTTERY_FEE'), 'paymentSignature' => $input['razorpay_signature'], 'paymentID' => $input['razorpay_payment_id'], 'paymentStatus' => 'success', 'userID' => Auth::user()->id, 'lotteryID' => $lottery->id])->id;
-                }
+                    // $lotteryuser = \Auth::user();
+                    // $lotteryuser->deposit(env('LOTTERY_FEE'), ["description" => 'Lottery Participation Fees on booking id-' . $bookingDetails['BookingId']]);
+                    // $lottery = Lottery::where(['lotteryStatus' => 'active'])->first();
+                    // $ltry_ID = LotteryUsers::create(['paidAmount' => env('LOTTERY_FEE'), 'paymentSignature' => $input['razorpay_signature'], 'paymentID' => $input['razorpay_payment_id'], 'paymentStatus' => 'success', 'userID' => Auth::user()->id, 'lotteryID' => $lottery->id])->id;
+                //}
 
                 // if (isset($input['walletPay']) && $input['walletPay'] == 'yes' && $input['walletDebit'] > 0) {
 
@@ -4609,7 +4672,7 @@ class HotelController extends Controller {
 
                 if ($add_to_subdomain) {
 
-                    $check_hotel_subdomain = DB::connection('mysql2')->select("INSERT INTO `main_bookings` (`booking_id`, `hotel_code`, `currency_code`, `user_id`, `agent_id`, `total_paid`, `comission_earned`, `booking_type`, `created_at`) VALUES ('" . $booking['id'] . "', '" . $this->hotelCode . "', '" . Session::get('CurrencyCode') . "', '" . Auth::user()->id . "', '" . $agent_id . "', '" . $mAmountC . "', '" . $commission_sub_doamin . "', 'hotel', '" . date('Y-m-d h:i:s') . "')");
+                    // $check_hotel_subdomain = DB::connection('mysql2')->select("INSERT INTO `main_bookings` (`booking_id`, `hotel_code`, `currency_code`, `user_id`, `agent_id`, `total_paid`, `comission_earned`, `booking_type`, `created_at`) VALUES ('" . $booking['id'] . "', '" . $this->hotelCode . "', '" . Session::get('CurrencyCode') . "', '" . Auth::user()->id . "', '" . $agent_id . "', '" . $mAmountC . "', '" . $commission_sub_doamin . "', 'hotel', '" . date('Y-m-d h:i:s') . "')");
                 }
 
                 $currency = Session::get('CurrencyCode');
@@ -4654,20 +4717,20 @@ class HotelController extends Controller {
 
                 if (isset($agent_id) && $agent_id != '') {
 
-                    $post_content = 'Booking for <b>' . $this->hotelName . '</b> city <b>' . $search_contents['request']['city_name'] . '</b> checkin <b>' . date('l, F d Y', strtotime($this->checkInDate)) . '</b> checkout <b>' . date('l, F d Y', strtotime($this->checkOutDate)) . '</b> for ' . $search_contents['request']['roomsGuests'] . '<br> Total paid amount <b>' . Session::get('CurrencyCode') . ' ' . round($amount, 2) . '</b>';
-                    //create story for profile page
-                    Posts::create(['post_type' => 'article_image',
-                        'post_content' => $post_content,
-                        'post_media' => $hotel_data['hotel_image'],
-                        'user_id' => Auth::user()->id]);
+                    // $post_content = 'Booking for <b>' . $this->hotelName . '</b> city <b>' . $search_contents['request']['city_name'] . '</b> checkin <b>' . date('l, F d Y', strtotime($this->checkInDate)) . '</b> checkout <b>' . date('l, F d Y', strtotime($this->checkOutDate)) . '</b> for ' . $search_contents['request']['roomsGuests'] . '<br> Total paid amount <b>' . Session::get('CurrencyCode') . ' ' . round($amount, 2) . '</b>';
+                    // //create story for profile page
+                    // Posts::create(['post_type' => 'article_image',
+                    //     'post_content' => $post_content,
+                    //     'post_media' => $hotel_data['hotel_image'],
+                    //     'user_id' => Auth::user()->id]);
 
 
-                    $notifications = NotificationAgents::create(['agent_id' => $agent_id,
-                                'type' => 'hotel',
-                                'description' => $post_content,
-                                'price' => 'USD ' . round($commission_agent, 2),
-                                'status' => 0
-                    ]);
+                    // $notifications = NotificationAgents::create(['agent_id' => $agent_id,
+                    //             'type' => 'hotel',
+                    //             'description' => $post_content,
+                    //             'price' => 'USD ' . round($commission_agent, 2),
+                    //             'status' => 0
+                    // ]);
                 }
 
 
@@ -4678,12 +4741,12 @@ class HotelController extends Controller {
                 Mail::to($userEmail)->send(new HotelBookingEmail($booking, $hotel_data, $path, $file_name));
 
                 if(isset($agent_id) && $agent_id != ''  && Auth::user()->email != $agentemail){
-                    Mail::to($agentemail)->send(new HotelBookingEmail($booking, $hotel_data, $path, $file_name));
+                   // Mail::to($agentemail)->send(new HotelBookingEmail($booking, $hotel_data, $path, $file_name));
                 }
 
-                if (isset($input['buyLottery']) && $input['buyLottery'] == 'yes') {
-                    Mail::to($userEmail)->send(new LotteryBookingEmail($booking, $hotel_data, $ltry_ID));
-                }
+                // if (isset($input['buyLottery']) && $input['buyLottery'] == 'yes') {
+                //     Mail::to($userEmail)->send(new LotteryBookingEmail($booking, $hotel_data, $ltry_ID));
+                // }
 
 
                 $this->emptySession($search_id);
@@ -4693,6 +4756,14 @@ class HotelController extends Controller {
 
 
             } else {
+
+                $walletuser = \Auth::user();
+                $ccrcy = Session::get('CurrencyCode');
+
+                $pAmount = Currency::convert($ccrcy, 'USD', round($amount));
+
+                $walletuser->deposit($pAmount['convertedAmount'], ["description" => 'Booking failed, amount added to wallet -' . $pAmount['convertedAmount']]);
+                
                 $this->writeLogs(array('checkInDate' => $this->checkInDate, 'hotelCode' => $this->hotelCode, 'hoteIndex' => $this->hoteIndex, 'TraceId' => $this->traceId, 'HotelName' => $this->hotelName, 'HotelRoomsDetails' => $HotelRoomsDetails), $bookRoomData['BookResult']);
 
                 Mail::to(env('NO_RESULT_EMAIL'))->send(new NoResultsEmail(json_encode(array('checkInDate' => $this->checkInDate, 'hotelCode' => $this->hotelCode, 'hoteIndex' => $this->hoteIndex, 'TraceId' => $this->traceId, 'HotelName' => $this->hotelName, 'HotelRoomsDetails' => $HotelRoomsDetails)), json_encode($bookRoomData) ));

@@ -1094,295 +1094,164 @@
 <?php //echo "<pre>"; print_r($cities);?>
 <section class="top_locations">
     <div class="container">
-        <h1 class="text-center section_title">{{ __('labels.popular_locations') }}</h1>
-        <div class="row">
-            <div class="col-lg-4  col-sm-6">
-                <div class="location_box hcol">
-                    <form class="location_url" onclick="this.submit();" method="GET" name="searchForm" id="searchRoomsFormMain0" action="{{ route('search_rooms') }}"  >
-                        @csrf
-                        <input type="hidden" name="city_id"  value="">
-                        <input type="hidden" name="city_name"  value="Amsterdam">
-                        <input type="hidden" name="countryCode"  value="NL">
-                        <input type="hidden" name="countryName"  value="Netherlands">
-                        <input type="hidden" name="departdate"  value="{{ date('d-m-Y', strtotime('+4 days')) }}" />
-                        <input type="hidden" name="returndate"  value="{{ date('d-m-Y', strtotime('+6 days')) }}" />
-                        <input type="hidden" name="a1"  value="2">
-                        <input type="hidden" name="c1"  value="0">
-                        <input type="hidden" name="roomsGuests"  value="1 Room 2 Guest">
-                        <input type="hidden" name="roomCount"  value="1">
-                        <input type="hidden" name="referral" class="referral" id="referral" value="{{ $referral }}">
-                        <input type="hidden" name="Location" value="Amsterdam">
-                        <input type="hidden" name="Latitude" value="52.3675734">
-                        <input type="hidden" name="Longitude" value="4.9041389">
-                        <input type="hidden" name="Radius" id="Radius" value="20">
-                        <img class="location_photo img-responsive" src="{{ asset('images/amersdame.jpg')}}" alt="Amsterdam" >
-                        <div class="location_text" style="position: absolute;">
-                            <h3 class="location_title">{{ __('labels.hotels') }} {{ __('labels.Amsterdam') }}</h3>
-                            <p class="location_desc">{{ __('labels.Amsterdam') }} , {{ __('labels.Netherlands') }}</p>
-                        </div>
-                    </form>
-                    <form class="location_url" onclick="this.submit();" method="GET" name="searchForm" id="searchRoomsFormMain1" action="{{ route('search_rooms') }}"  >
-                        @csrf
-                        <input type="hidden" name="city_id"  value="">
-                        <input type="hidden" name="city_name"  value="Cancun">
-                        <input type="hidden" name="countryCode"  value="MX">
-                        <input type="hidden" name="countryName"  value="Mexico">
-                        <input type="hidden" name="departdate"  value="{{ date('d-m-Y', strtotime('+4 days')) }}" />
-                        <input type="hidden" name="returndate"  value="{{ date('d-m-Y', strtotime('+6 days')) }}" />
-                        <input type="hidden" name="a1"  value="2">
-                        <input type="hidden" name="c1"  value="0">
-                        <input type="hidden" name="roomsGuests"  value="1 Room 2 Guest">
-                        <input type="hidden" name="roomCount"  value="1">
-                        <input type="hidden" name="referral" class="referral" value="{{ $referral }}">
-                        <input type="hidden" name="Location" value="Cancun">
-                        <input type="hidden" name="Latitude" value="21.161908">
-                        <input type="hidden" name="Longitude" value="-86.8515279">
-                        <input type="hidden" name="Radius" id="Radius" value="20">
-                        <img class="location_photo img-responsive" src="{{ asset('images/cancun.jpg')}}" alt="Cancun" >
-                        <div class="location_text" style="position: absolute;">
-                            <h3 class="location_title">{{ __('labels.hotels') }} {{ __('labels.Cancun') }}</h3>
-                            <p class="location_desc">{{ __('labels.Cancun') }} , {{ __('labels.mexico') }}</p>
-                        </div>
-                    </form>
+        <h1 class="text-center section_title">{{ $static_data['hotel_name'] }}</h1>
+    <div class="row">
+        <section class="explore_data">
+          <div class="container">
+            <div class="row justify-content-center attr">
+              <div class="col-lg-6 col-md-12">
+                <div class="about_dubai_info">
+                  
+                  @if(isset($static_data) && isset($static_data['hotel_name']))
+                  <h2 class="hotel-name">{{$static_data['hotel_name']}}</h2>
+                  <p class="hotel-ratings">
+                    Ratings&nbsp;<span class="fa fa-star @if($static_data['start_rating'] >= 1) checked @endif"></span>
+                      <span class="fa fa-star @if($static_data['start_rating'] >= 2) checked @endif"></span>
+                      <span class="fa fa-star @if($static_data['start_rating'] >= 3) checked @endif"></span>
+                      <span class="fa fa-star @if($static_data['start_rating'] >= 4) checked @endif"></span>
+                      <span class="fa fa-star @if($static_data['start_rating'] >= 5) checked @endif"></span>
+                  </p>
+                  @if(isset($static_data) && isset($static_data['hotel_type']))
+                  <div class="safety_features">
+                     <ul class="list-inline" >
+                      @foreach($static_data['hotel_type'] as $key => $hotel_type)
+                        <li >
+                         <i class="fa fa-check" aria-hidden="true"></i> {{ isset($hotel_type['@ThemeName']) ? $hotel_type['@ThemeName'] : '' }}
+                        </li>
+                      @endforeach
+                     </ul>
+                  </div>
+                  @endif
+                  @else
+                  <h2>{{$hotelDetails['name']}}</h2>
+                  <h4>{{$hotelDetails['tag_line']}}</h4>
+                  <p>{!!html_entity_decode($hotelDetails['description'])!!}</p>
+                  @endif
+               
                 </div>
-            </div>
-            <div class="col-lg-4  col-sm-6">
-                <div class="location_box hcol">
-                    <form class="location_url" onclick="this.submit();" method="GET" name="searchForm" id="searchRoomsFormMain2" action="{{ route('search_rooms') }}"  >
-                        @csrf
-                        <input type="hidden" name="city_id"  value="">
-                        <input type="hidden" name="city_name"  value="Dubai">
-                        <input type="hidden" name="countryCode"  value="AE">
-                        <input type="hidden" name="countryName"  value="United Arab Emirates">
-                        <input type="hidden" name="departdate"  value="{{ date('d-m-Y', strtotime('+4 days')) }}" />
-                        <input type="hidden" name="returndate"  value="{{ date('d-m-Y', strtotime('+6 days')) }}" />
-                        <input type="hidden" name="a1"  value="2">
-                        <input type="hidden" name="c1"  value="0">
-                        <input type="hidden" name="roomsGuests"  value="1 Room 2 Guest">
-                        <input type="hidden" name="roomCount"  value="1">
-                        <input type="hidden" name="referral" class="referral" value="{{ $referral }}">
-                        <input type="hidden" name="Location" value="Dubai">
-                        <input type="hidden" name="Latitude" value="25.2048493">
-                        <input type="hidden" name="Longitude" value="55.2707828">
-                        <input type="hidden" name="Radius" id="Radius" value="20">
-                        <img class="location_photo img-responsive" src="{{ asset('images/dubai.jpg')}}" alt="Dubai" >
-                        <div class="location_text" style="position: absolute;">
-                            <h3 class="location_title">{{ __('labels.hotels') }} {{ __('labels.Dubai') }}</h3>
-                            <p class="location_desc">{{ __('labels.Dubai') }} , {{ __('labels.UAE') }}</p>
-                        </div>
-                    </form>
-                    <form class="location_url" onclick="this.submit();" method="GET" name="searchForm" id="searchRoomsFormMain3" action="{{ route('search_rooms') }}"  >
-                        @csrf
-                        <input type="hidden" name="city_id"  value="">
-                        <input type="hidden" name="city_name"  value="Eilat">
-                        <input type="hidden" name="countryCode"  value="IL">
-                        <input type="hidden" name="countryName"  value="Israel">
-                        <input type="hidden" name="departdate"  value="{{ date('d-m-Y', strtotime('+4 days')) }}" />
-                        <input type="hidden" name="returndate"  value="{{ date('d-m-Y', strtotime('+6 days')) }}" />
-                        <input type="hidden" name="a1"  value="2">
-                        <input type="hidden" name="c1"  value="0">
-                        <input type="hidden" name="roomsGuests"  value="1 Room 2 Guest">
-                        <input type="hidden" name="roomCount"  value="1">
-                        <input type="hidden" name="referral" class="referral" value="{{ $referral }}">
-                        <input type="hidden" name="Location" value="Eilat">
-                        <input type="hidden" name="Latitude" value="29.557669">
-                        <input type="hidden" name="Longitude" value="34.951925">
-                        <input type="hidden" name="Radius" id="Radius" value="20">
-                        <img class="location_photo img-responsive" src="{{ asset('images/eilat.jpg')}}" alt="Eilat" >
-                        <div class="location_text" style="position: absolute;">
-                            <h3 class="location_title">{{ __('labels.hotels') }} {{ __('labels.Eilat') }}</h3>
-                            <p class="location_desc">{{ __('labels.Eilat') }} , {{ __('labels.IL') }}</p>
-                        </div>
-                    </form>
+              </div>
+              <div class="col-lg-6 col-md-12">
+                <div class="about_info_img home">
+                    <div id="custCarouse1" class="carousel slide" data-ride="carousel" align="center">
+                    @if(isset($static_data) && isset($static_data['hotel_images']))
+                     <ol class="carousel-indicators">
+                       @foreach($static_data['hotel_images'] as $key => $hotelImg)
+                          <li data-target="#custCarouse1"  data-slide-to="{{ $key }}" class="@if($key == 0) active @endif"></li>
+                       @endforeach
+                     </ol>
+                    <div class="carousel-inner" >
+                       @foreach($static_data['hotel_images'] as $key => $hotelImg)
+                       <div class="carousel-item @if($key == 0) active @endif"> 
+                          <img src="{{env('AWS_BUCKET_URL')}}/{{ $hotelImg }}" class="view-hotel-image" alt="hotel">
+                       </div>
+                       @endforeach
+                    </div>
+                    @else 
+                     <img class="home-page img-fluid" src="/uploads/hotel/{{$hotelDetails['main_image']}}" alt="info data">
+                    @endif
+                 </div>
                 </div>
+              </div>
             </div>
-            <div class="col-lg-4 col-sm-12">
-                <div class="location_box vcol">
-                    <form class="location_url" onclick="this.submit();" method="GET" name="searchForm" id="searchRoomsFormMain4" action="{{ route('search_rooms') }}"  >
-                        @csrf
-                        <input type="hidden" name="city_id"  value="">
-                        <input type="hidden" name="city_name"  value="Israel">
-                        <input type="hidden" name="countryCode"  value="IL">
-                        <input type="hidden" name="countryName"  value="Israel">
-                        <input type="hidden" name="departdate"  value="{{ date('d-m-Y', strtotime('+4 days')) }}" />
-                        <input type="hidden" name="returndate"  value="{{ date('d-m-Y', strtotime('+6 days')) }}" />
-                        <input type="hidden" name="a1"  value="2">
-                        <input type="hidden" name="c1"  value="0">
-                        <input type="hidden" name="roomsGuests"  value="1 Room 2 Guest">
-                        <input type="hidden" name="roomCount"  value="1">
-                        <input type="hidden" name="referral" class="referral" value="{{ $referral }}">
-                        <input type="hidden" name="Location" value="Dead Sea Israel">
-                        <input type="hidden" name="Latitude" value="31.170348">
-                        <input type="hidden" name="Longitude" value="35.3671843">
-                        <input type="hidden" name="Radius" id="Radius" value="20">
-                        <img class="location_photo img-responsive" src="{{ asset('images/dead-sea.jpg')}}" alt="Dead Sea" >
-                        <div class="location_text" style="position: absolute;">
-                            <h3 class="location_title">{{ __('labels.hotels') }} {{ __('labels.DeadSea') }}</h3>
-                            <p class="location_desc">{{ __('labels.DeadSea') }} , {{ __('labels.IL') }}</p>
-                        </div>
-                    </form>
-                </div>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-lg-4 col-sm-12">
-                <div class="location_box vcol">
-                    <form class="location_url" onclick="this.submit();" method="GET" name="searchForm" id="searchRoomsFormMain5" action="{{ route('search_rooms') }}"  >
-                        @csrf
-                        <input type="hidden" name="city_id"  value="">
-                        <input type="hidden" name="city_name"  value="Istanbul">
-                        <input type="hidden" name="countryCode"  value="TR">
-                        <input type="hidden" name="countryName"  value="Turkey">
-                        <input type="hidden" name="departdate"  value="{{ date('d-m-Y', strtotime('+4 days')) }}" />
-                        <input type="hidden" name="returndate"  value="{{ date('d-m-Y', strtotime('+6 days')) }}" />
-                        <input type="hidden" name="a1"  value="2">
-                        <input type="hidden" name="c1"  value="0">
-                        <input type="hidden" name="roomsGuests"  value="1 Room 2 Guest">
-                        <input type="hidden" name="roomCount"  value="1">
-                        <input type="hidden" name="referral" class="referral" value="{{ $referral }}">
-                        <input type="hidden" name="Location" value="Istanbul">
-                        <input type="hidden" name="Latitude" value="41.0082376">
-                        <input type="hidden" name="Longitude" value="28.9783589">
-                        <input type="hidden" name="Radius" id="Radius" value="20">
-                        <img class="location_photo img-responsive" src="{{ asset('images/istanbul.jpg')}}" alt="Istanbul" >
-                        <div class="location_text" style="position: absolute;">
-                            <h3 class="location_title">{{ __('labels.hotels') }} {{ __('labels.Istanbul') }}</h3>
-                            <p class="location_desc">{{ __('labels.Istanbul') }} , {{ __('labels.TR') }}</p>
-                        </div>
-                    </form>
-                </div>
-            </div>
-            <div class="col-lg-4  col-sm-6">
-                <div class="location_box hcol">
-                    <form class="location_url" onclick="this.submit();" method="GET" name="searchForm" id="searchRoomsFormMain6" action="{{ route('search_rooms') }}"  >
-                        @csrf
-                        <input type="hidden" name="city_id"  value="">
-                        <input type="hidden" name="city_name"  value="Los Angeles">
-                        <input type="hidden" name="countryCode"  value="US">
-                        <input type="hidden" name="countryName"  value="United States of America">
-                        <input type="hidden" name="departdate"  value="{{ date('d-m-Y', strtotime('+4 days')) }}" />
-                        <input type="hidden" name="returndate"  value="{{ date('d-m-Y', strtotime('+6 days')) }}" />
-                        <input type="hidden" name="a1"  value="2">
-                        <input type="hidden" name="c1"  value="0">
-                        <input type="hidden" name="roomsGuests"  value="1 Room 2 Guest">
-                        <input type="hidden" name="roomCount"  value="1">
-                        <input type="hidden" name="referral" class="referral" value="{{ $referral }}">
-                        <input type="hidden" name="Location" value="Los Angeles">
-                        <input type="hidden" name="Latitude" value="34.0522342">
-                        <input type="hidden" name="Longitude" value="-118.2436849">
-                        <input type="hidden" name="Radius" id="Radius" value="20">
-                        <img class="location_photo img-responsive" src="{{ asset('images/LA.jpg')}}" alt="Los Angeles" >
-                        <div class="location_text" style="position: absolute;">
-                            <h3 class="location_title">{{ __('labels.hotels') }} {{ __('labels.LA') }}</h3>
-                            <p class="location_desc">{{ __('labels.LA') }} , {{ __('labels.USA') }}</p>
-                        </div>
-                    </form>
-                    <form class="location_url" onclick="this.submit();" method="GET" name="searchForm" id="searchRoomsFormMain7" action="{{ route('search_rooms') }}"  >
-                        @csrf
-                        <input type="hidden" name="city_id"  value="">
-                        <input type="hidden" name="city_name"  value="Paris">
-                        <input type="hidden" name="countryCode"  value="FR">
-                        <input type="hidden" name="countryName"  value="France">
-                        <input type="hidden" name="departdate"  value="{{ date('d-m-Y', strtotime('+4 days')) }}" />
-                        <input type="hidden" name="returndate"  value="{{ date('d-m-Y', strtotime('+6 days')) }}" />
-                        <input type="hidden" name="a1"  value="2">
-                        <input type="hidden" name="c1"  value="0">
-                        <input type="hidden" name="roomsGuests"  value="1 Room 2 Guest">
-                        <input type="hidden" name="roomCount"  value="1">
-                        <input type="hidden" name="referral" class="referral" value="{{ $referral }}">
-                        <input type="hidden" name="Location" value="Paris">
-                        <input type="hidden" name="Latitude" value="48.864716">
-                        <input type="hidden" name="Longitude" value="2.349014">
-                        <input type="hidden" name="Radius" id="Radius" value="20">
-                        <img class="location_photo img-responsive" src="{{ asset('images/paris.jpg')}}" alt="Paris, France" >
-                        <div class="location_text" style="position: absolute;">
-                            <h3 class="location_title">{{ __('labels.hotels') }} {{ __('labels.paris') }}</h3>
-                            <p class="location_desc">{{ __('labels.paris') }}, {{ __('labels.FR') }}</p>
-                        </div>
-                    </form>
-
-                </div>
-            </div>
-            <div class="col-lg-4  col-sm-6">
-                <div class="location_box hcol">
-                    <form class="location_url" onclick="this.submit();" method="GET" name="searchForm" id="searchRoomsFormMain8" action="{{ route('search_rooms') }}"  >
-                        @csrf
-                        <input type="hidden" name="city_id"  value="">
-                        <input type="hidden" name="city_name"  value="Prague">
-                        <input type="hidden" name="countryCode"  value="CZ">
-                        <input type="hidden" name="countryName"  value="Czech Republic">
-                        <input type="hidden" name="departdate"  value="{{ date('d-m-Y', strtotime('+4 days')) }}" />
-                        <input type="hidden" name="returndate"  value="{{ date('d-m-Y', strtotime('+6 days')) }}" />
-                        <input type="hidden" name="a1"  value="2">
-                        <input type="hidden" name="c1"  value="0">
-                        <input type="hidden" name="roomsGuests"  value="1 Room 2 Guest">
-                        <input type="hidden" name="roomCount"  value="1">
-                        <input type="hidden" name="referral" class="referral" value="{{ $referral }}">
-                        <input type="hidden" name="Location" value="Prague">
-                        <input type="hidden" name="Latitude" id="Latitude" value="50.0755381">
-                        <input type="hidden" name="Longitude" id="Longitude" value="14.4378005">
-                        <input type="hidden" name="Radius" id="Radius" value="20">
-                        <img class="location_photo img-responsive" src="{{ asset('images/prague.jpg')}}" alt="Prague" >
-                        <div class="location_text" style="position: absolute;">
-                            <h3 class="location_title">{{ __('labels.hotels') }} {{ __('labels.Prague') }}</h3>
-                            <p class="location_desc">{{ __('labels.Prague') }} , {{ __('labels.CZ') }}</p>
-                        </div>
-                    </form>
-                    <form class="location_url" onclick="this.submit();" method="GET" name="searchForm" id="searchRoomsFormMain9" action="{{ route('search_rooms') }}"  >
-                        @csrf
-                        <input type="hidden" name="city_id"  value="">
-                        <input type="hidden" name="city_name"  value="Tel Aviv">
-                        <input type="hidden" name="countryCode"  value="IL">
-                        <input type="hidden" name="countryName"  value="Israel">
-                        <input type="hidden" name="departdate"  value="{{ date('d-m-Y', strtotime('+4 days')) }}" />
-                        <input type="hidden" name="returndate"  value="{{ date('d-m-Y', strtotime('+6 days')) }}" />
-                        <input type="hidden" name="a1"  value="2">
-                        <input type="hidden" name="c1"  value="0">
-                        <input type="hidden" name="roomsGuests"  value="1 Room 2 Guest">
-                        <input type="hidden" name="roomCount"  value="1">
-                        <input type="hidden" name="referral" class="referral" value="{{ $referral }}">
-                        <input type="hidden" name="Location" value="Tel Aviv">
-                        <input type="hidden" name="Latitude" id="Latitude" value="32.0852999">
-                        <input type="hidden" name="Longitude" id="Longitude" value="34.7817676">
-                        <input type="hidden" name="Radius" id="Radius" value="20">
-                        <img class="location_photo img-responsive" src="{{ asset('images/tel-aviv.jpg')}}" alt="Tel Aviv" >
-                        <div class="location_text" style="position: absolute;">
-                            <h3 class="location_title">{{ __('labels.hotels') }} {{ __('labels.tel_aviv') }}</h3>
-                            <p class="location_desc">{{ __('labels.tel_aviv') }} , {{ __('labels.IL') }}</p>
-                        </div>
-                    </form>
-
-                </div>
-            </div>
-        </div>
+          </div>
+        </section>  
     </div>
-</section>
 
-<section class="discover-countries-section" style="display:none">
-    <div class="container">
-        <div class="row">
-            <div class="col-md-10">
-                <h1 class="section_title">Discover Other Destinations
-                </h1>
+    <div class="row">
+        <section class="explore_data">
+          <div class="container">
+            <div class="row justify-content-center attr">
+              <div class="col-lg-12 col-md-12">
+                <div class="about_dubai_info">
+                  
+                  @if(isset($static_data) && isset($static_data['hotel_description']) && isset($static_data['hotel_description'][0]))
+                    <h4>About - {{$static_data['hotel_name']}}</h4>
+                    <p>{!!html_entity_decode($static_data['hotel_description'][0])!!}</p>
+                  @else
+                    <h4>{{$hotelDetails['tag_line2']}}</h4>
+                    <p>{!!html_entity_decode($hotelDetails['description2'])!!}</p>
+                  @endif
+               
+                </div>
+              </div>
             </div>
-            <div class="col-md-2 section_title">
-                <a href="/discover/more-countries" class="explore-all">More Countries</a>
+          </div>
+        </section>  
+    </div>
+
+    <div class="row">
+        <section class="explore_data">
+          <div class="container">
+            <div class="row justify-content-center attr">
+              <div class="col-lg-12 col-md-12">
+                <div class="about_dubai_info">
+                  
+                  @if(isset($static_data) && isset($static_data['attractions']) && isset($static_data['attractions'][0]))
+                    <h4>Attraction - {{$static_data['hotel_name']}}</h4>
+                    <p>{!!html_entity_decode($static_data['attractions'][0])!!}</p>
+                  @else
+                    <h4>{{$hotelDetails['tag_line3']}}</h4>
+                    <p>{!!html_entity_decode($hotelDetails['description3'])!!}</p>
+                  @endif
+               
+                </div>
+              </div>
             </div>
-        </div>
-        <div id="discover-countries" class="owl-carousel owl-theme">
-            @foreach($countries as $key => $value)
-            <div class="listing-countries"> 
-                <a href="/discover/country/{{ $value['CountryCode']}}">
-                    <img  src="/uploads/featured_cities/{{ $value['image'] }}" class="discover-img" onerror="this.src= ''; this.src='https://via.placeholder.com/150?text=Image%20Not%20Uploaded'" /> 
-                    <span class="title_country"> {{ $value['Country']}} </span> 
-                </a>
+          </div>
+        </section> 
+    </div>
+
+    @if(isset($static_data) && isset($static_data['hotel_facilities']))
+    <div class="row">
+        <section class="explore_data">
+          <div class="container">
+            <div class="row justify-content-center attr">
+              <div class="col-lg-12 col-md-12">
+                <div class="about_dubai_info">
+                  
+                  <h2>Ameneties</h2>
+                   <div class="row">
+                       @foreach($static_data['hotel_facilities'] as $h_fac)
+                      <div class="col-md-4">
+                         <a href="javascript:void(0);" class="listing_kids_option" >
+                            {{ $h_fac }}
+                         </a>
+                      </div>
+                      @endforeach
+                   </div>
+               
+                </div>
+              </div>
             </div>
-            @endforeach
-        </div>
+          </div>
+        </section> 
+    </div>
+    @endif 
     </div>
 </section>
 
 <style>
+    .row.justify-content-center.attr {
+        box-shadow: 0px 0px 10px 0px rgb(0 0 0 / 10%);
+        padding: 15px;
+        border-radius: 5px;
+    }
+    section.explore_data {
+        padding: 20px 0px;
+        width: 100%;
+    }
+    .row {
+        display: -ms-flexbox;
+        display: flex;
+        -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+        margin-right: -15px;
+        margin-left: -15px;
+    }
+    .justify-content-center {
+        -ms-flex-pack: center!important;
+        justify-content: center!important;
+    }
     .pac-container:after {
         /* Disclaimer: not needed to show 'powered by Google' if also a Google Map is shown */
 
