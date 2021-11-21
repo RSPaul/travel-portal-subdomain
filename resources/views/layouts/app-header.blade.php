@@ -50,14 +50,14 @@
         @endif
        
         <!-- Global site tag (gtag.js) - Google Analytics -->
-        <script async src="https://www.googletagmanager.com/gtag/js?id=G-BH8JQJHE3E"></script>
+        <!-- <script async src="https://www.googletagmanager.com/gtag/js?id=G-BH8JQJHE3E"></script> -->
         <script>
-          window.dataLayer = window.dataLayer || [];
+         /* window.dataLayer = window.dataLayer || [];
           function gtag(){dataLayer.push(arguments);}
           gtag('js', new Date());
 
           gtag('config', 'G-BH8JQJHE3E');
-          gtag('config', 'UA-190132872-3');
+          gtag('config', 'UA-190132872-3');*/
         </script>
 
     </head>

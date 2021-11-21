@@ -254,167 +254,222 @@ class HomeController extends Controller {
 
     public function landing(Request $request) {
 
-        $isILS = false;
-       // $this->getAirport();
+        $this->domainData = User::where('domain', $this->sub_domain)->first();
+        $hotel_code = $this->domainData['hotel_code'];
+        $hotel = StaticDataHotels::where(['hotel_code' => $hotel_code])->first();
 
-        $referral = $request->referral;
-        // if(Auth::user()) {
-        //     $agent = AffiliateUsers::where('user_id', Auth::user()->id)->first();
-        //     if(isset($agent) && !empty($agent)) {
-        //         $referral = $agent['referal_code'];
-        //     }
-        // }
+        // $hotel_name = $request->hotel_name;
+        // $country = $request->country;
+        // $city = $request->city;
+        $referral = 0;
+        $rooms = RoomImages::where('sub_domain', $hotel_code)->get();
+        $city = Cities::where('CityId', $hotel['city_id'])->first();
+        $title = $hotel['hotel_name'].' - '. $city['CityName'] .' - ' . $city['Country'];
 
-        if (isset($request->show)) {
-            $active_tab = $request->show;
-            Session::put('active_tab', $active_tab);
-        } else {
-            Session::put('active_tab', 'hotels');
+        if (isset($hotel['hotel_images']) && !empty($hotel['hotel_images'])) {
+            $hotel['hotel_images'] = json_decode($hotel['hotel_images'],true);
         }
 
-        $country_list = array();
+        if (isset($hotel['hotel_facilities']) && !empty($hotel['hotel_facilities'])) {
+            $hotel['hotel_facilities'] = json_decode($hotel['hotel_facilities'],true);
+        }
+
+        if (isset($hotel['attractions']) && !empty($hotel['attractions'])) {
+            $hotel['attractions'] = json_decode($hotel['attractions'],true);
+        }
+
+        if (isset($hotel['hotel_description']) && !empty($hotel['hotel_description'])) {
+            $hotel['hotel_description'] = json_decode($hotel['hotel_description'],true);
+        }
+
+        if (isset($hotel['hotel_location']) && !empty($hotel['hotel_location'])) {
+            $hotel['hotel_location'] = json_decode($hotel['hotel_location'],true);
+        }
+
+        if (isset($hotel['hotel_address']) && !empty($hotel['hotel_address'])) {
+            $hotel['hotel_address'] = json_decode($hotel['hotel_address'],true);
+        }
+
+        if (isset($hotel['hotel_contact']) && !empty($hotel['hotel_contact'])) {
+            $hotel['hotel_contact'] = json_decode($hotel['hotel_contact'],true);
+        }
+
+        if (isset($hotel['hotel_time']) && !empty($hotel['hotel_time'])) {
+            $hotel['hotel_time'] = json_decode($hotel['hotel_time'],true);
+        }
+
+        if (isset($hotel['hotel_type']) && !empty($hotel['hotel_type'])) {
+            $hotel['hotel_type'] = json_decode($hotel['hotel_type'],true);
+        }
+
+        if (isset($hotel['hotel_info']) && !empty($hotel['hotel_info'])) {
+            $hotel['hotel_info'] = json_decode($hotel['hotel_info'],true);
+        }
+
+        $meta_image  = (isset($hotel['hotel_images']) && !empty($hotel['hotel_images'])) ? $hotel['hotel_images'][0] : 'https://tripheist.com/images/logo.png';
+        return view('search.hotels.view-no-price')->with(['static_data' => $hotel, 'city' => $city, 'title' => $title, 'rooms' => $rooms, 'meta_image' => $meta_image, 'referral' => $referral]);
+
+       //  $isILS = false;
+       // // $this->getAirport();
+
+       //  $referral = $request->referral;
+       //  // if(Auth::user()) {
+       //  //     $agent = AffiliateUsers::where('user_id', Auth::user()->id)->first();
+       //  //     if(isset($agent) && !empty($agent)) {
+       //  //         $referral = $agent['referal_code'];
+       //  //     }
+       //  // }
+
+       //  if (isset($request->show)) {
+       //      $active_tab = $request->show;
+       //      Session::put('active_tab', $active_tab);
+       //  } else {
+       //      Session::put('active_tab', 'hotels');
+       //  }
+
+       //  $country_list = array();
         
-        $uscities = Cities::select('CityId', 'CityName', 'Country', 'CountryCode')
-                ->where('CountryCode','US')
-                ->orderBy('CityName', 'ASC')
-                ->get();
+       //  $uscities = Cities::select('CityId', 'CityName', 'Country', 'CountryCode')
+       //          ->where('CountryCode','US')
+       //          ->orderBy('CityName', 'ASC')
+       //          ->get();
         
    
-        //get country from IP
-        if(isset($_COOKIE['th_country']) && $_COOKIE['th_country'] !='') {
+       //  //get country from IP
+       //  if(isset($_COOKIE['th_country']) && $_COOKIE['th_country'] !='') {
             
-            $location = json_decode($this->getCookie('th_country'));
+       //      $location = json_decode($this->getCookie('th_country'));
 
-        } else {
-            $location = \Location::get($this->end_user_ip);
-        }
+       //  } else {
+       //      $location = \Location::get($this->end_user_ip);
+       //  }
 
-        $this->domainData = User::where('domain', $this->sub_domain)->first();
-        $this->hotelCode = $this->domainData['hotel_code'];
+       //  $this->domainData = User::where('domain', $this->sub_domain)->first();
+       //  $this->hotelCode = $this->domainData['hotel_code'];
         
-        Session::put('domainData', $this->domainData);
-        $country = $this->domainData['country'];
-        Session::put('currency', $this->domainData['currency']);
-        Session::put('country', $country);
-        Session::put('selectedGuests', 'Rooms & Guests');
+       //  Session::put('domainData', $this->domainData);
+       //  $country = $this->domainData['country'];
+       //  Session::put('currency', $this->domainData['currency']);
+       //  Session::put('country', $country);
+       //  Session::put('selectedGuests', 'Rooms & Guests');
         
-        $hotelDetails = HotelInfos::where('sub_domain', $this->sub_domain)->first();
-        $hotelDetails['slider_images'] = unserialize($hotelDetails['slider_images']);
+       //  $hotelDetails = HotelInfos::where('sub_domain', $this->sub_domain)->first();
+       //  $hotelDetails['slider_images'] = unserialize($hotelDetails['slider_images']);
        
-        $tags = MetaTags::where('sub_domain', $this->sub_domain)->first();
-        $static_data = StaticDataHotels::where(['hotel_code' => $this->domainData['hotel_code']])->first();
+       //  $tags = MetaTags::where('sub_domain', $this->sub_domain)->first();
+       //  $static_data = StaticDataHotels::where(['hotel_code' => $this->domainData['hotel_code']])->first();
 
-        $location = \Location::get($this->end_user_ip);
-        //get user currency
-        $currencyCode = Currencies::where('code', $location->countryCode)->first();
+       //  $location = \Location::get($this->end_user_ip);
+       //  //get user currency
+       //  $currencyCode = Currencies::where('code', $location->countryCode)->first();
        
-        if(isset($static_data)) {
+       //  if(isset($static_data)) {
                 
-          $hotel['h_rating'] = ($static_data['start_rating'] != null) ? (int) $static_data['start_rating'] : 0;
+       //    $hotel['h_rating'] = ($static_data['start_rating'] != null) ? (int) $static_data['start_rating'] : 0;
 
-          if(isset($static_data['hotel_images']) && !empty($static_data['hotel_images'])) {
-            $static_data['hotel_images'] = json_decode($static_data['hotel_images']);
-          }
+       //    if(isset($static_data['hotel_images']) && !empty($static_data['hotel_images'])) {
+       //      $static_data['hotel_images'] = json_decode($static_data['hotel_images']);
+       //    }
 
-          if(isset($static_data['hotel_facilities']) && !empty($static_data['hotel_facilities'])) {
-            $static_data['hotel_facilities'] = json_decode($static_data['hotel_facilities']);
-          }
+       //    if(isset($static_data['hotel_facilities']) && !empty($static_data['hotel_facilities'])) {
+       //      $static_data['hotel_facilities'] = json_decode($static_data['hotel_facilities']);
+       //    }
 
-          if(isset($static_data['attractions']) && !empty($static_data['attractions'])) {
-            $static_data['attractions'] = json_decode($static_data['attractions']);
-          }
+       //    if(isset($static_data['attractions']) && !empty($static_data['attractions'])) {
+       //      $static_data['attractions'] = json_decode($static_data['attractions']);
+       //    }
 
-          if(isset($static_data['hotel_description']) && !empty($static_data['hotel_description'])) {
-            $static_data['hotel_description'] = json_decode($static_data['hotel_description']);
-          }
+       //    if(isset($static_data['hotel_description']) && !empty($static_data['hotel_description'])) {
+       //      $static_data['hotel_description'] = json_decode($static_data['hotel_description']);
+       //    }
 
-          if(isset($static_data['hotel_location']) && !empty($static_data['hotel_location'])) {
-            $static_data['hotel_location'] = json_decode($static_data['hotel_location']);
-          }
+       //    if(isset($static_data['hotel_location']) && !empty($static_data['hotel_location'])) {
+       //      $static_data['hotel_location'] = json_decode($static_data['hotel_location']);
+       //    }
 
-          if(isset($static_data['hotel_address']) && !empty($static_data['hotel_address'])) {
-            $static_data['hotel_address'] = json_decode($static_data['hotel_address']);
-          }
+       //    if(isset($static_data['hotel_address']) && !empty($static_data['hotel_address'])) {
+       //      $static_data['hotel_address'] = json_decode($static_data['hotel_address']);
+       //    }
 
-          if(isset($static_data['hotel_contact']) && !empty($static_data['hotel_contact'])) {
-            $static_data['hotel_contact'] = json_decode($static_data['hotel_contact']);
-          }
+       //    if(isset($static_data['hotel_contact']) && !empty($static_data['hotel_contact'])) {
+       //      $static_data['hotel_contact'] = json_decode($static_data['hotel_contact']);
+       //    }
 
-          if(isset($static_data['hotel_time']) && !empty($static_data['hotel_time'])) {
-            $static_data['hotel_time'] = json_decode($static_data['hotel_time']);
-          }
+       //    if(isset($static_data['hotel_time']) && !empty($static_data['hotel_time'])) {
+       //      $static_data['hotel_time'] = json_decode($static_data['hotel_time']);
+       //    }
 
-          if(isset($static_data['hotel_type']) && !empty($static_data['hotel_type'])) {
-            $static_data['hotel_type'] = json_decode($static_data['hotel_type'], true);
-          }
+       //    if(isset($static_data['hotel_type']) && !empty($static_data['hotel_type'])) {
+       //      $static_data['hotel_type'] = json_decode($static_data['hotel_type'], true);
+       //    }
 
-        }
+       //  }
 
-        $countryDetails = Cities::where('CityId', $static_data['city_id'])->first();
-        if (isset($location) && isset($location->countryCode)) {
+       //  $countryDetails = Cities::where('CityId', $static_data['city_id'])->first();
+       //  if (isset($location) && isset($location->countryCode)) {
 
-            if ($location->countryCode == 'IL') {
-                $isILS = true;
-                date_default_timezone_set("Israel");
-                $date = date('Y-m-d H:i:s');
+       //      if ($location->countryCode == 'IL') {
+       //          $isILS = true;
+       //          date_default_timezone_set("Israel");
+       //          $date = date('Y-m-d H:i:s');
 
-                $search_id = 'weekend_images';
-                $search_contents = json_decode($this->readSearchData($search_id.'.json'), true);
+       //          $search_id = 'weekend_images';
+       //          $search_contents = json_decode($this->readSearchData($search_id.'.json'), true);
 
-                if(isset($search_contents['banner_time'])) {
-                    $search_id = 'weekend_images';
-                    $search_contents = json_decode($this->readSearchData($search_id.'.json'), true);
-                    $now = date('Y-m-d H:i:s', strtotime($search_contents['banner_time']));
-                } else {
-                    $now = date('Y-m-d H:i:s', strtotime('2021-04-04 21:30:00'));
-                }
+       //          if(isset($search_contents['banner_time'])) {
+       //              $search_id = 'weekend_images';
+       //              $search_contents = json_decode($this->readSearchData($search_id.'.json'), true);
+       //              $now = date('Y-m-d H:i:s', strtotime($search_contents['banner_time']));
+       //          } else {
+       //              $now = date('Y-m-d H:i:s', strtotime('2021-04-04 21:30:00'));
+       //          }
 
-                if ($date > $now || $search_contents['coming_soon_mode'] == '0') {
+       //          if ($date > $now || $search_contents['coming_soon_mode'] == '0') {
 
-                    return view('landing')->with(['referral' => $referral, 'cities' => '', 'countries' => $country_list, 'isILS' => $isILS, 'static_data' => $static_data, 'countryDetails' => $countryDetails]);
+       //              return view('landing')->with(['referral' => $referral, 'cities' => '', 'countries' => $country_list, 'isILS' => $isILS, 'static_data' => $static_data, 'countryDetails' => $countryDetails]);
 
-                } else {
+       //          } else {
 
                     
 
-                    $destinationPath=public_path()."/logs/searches/weekend_image/" . $search_id . '.json';
+       //              $destinationPath=public_path()."/logs/searches/weekend_image/" . $search_id . '.json';
 
-                    if (file_exists($destinationPath)){
+       //              if (file_exists($destinationPath)){
 
-                        $search_contents = json_decode($this->readSearchData($search_id.'.json'), true);
+       //                  $search_contents = json_decode($this->readSearchData($search_id.'.json'), true);
 
-                        if(isset($search_contents['web_image'])){
+       //                  if(isset($search_contents['web_image'])){
                                 
-                            $saveImage['web_image'] = $search_contents['web_image'];
+       //                      $saveImage['web_image'] = $search_contents['web_image'];
 
-                        }else{
+       //                  }else{
 
-                            $saveImage['web_image'] = '';
-                        }
+       //                      $saveImage['web_image'] = '';
+       //                  }
 
-                        if(isset($search_contents['mobile_image'])){
+       //                  if(isset($search_contents['mobile_image'])){
                             
-                            $saveImage['mobile_image'] = $search_contents['mobile_image'];
+       //                      $saveImage['mobile_image'] = $search_contents['mobile_image'];
 
-                        }else{
+       //                  }else{
 
-                            $saveImage['mobile_image'] = '';
-                        }
-                    }else{
+       //                      $saveImage['mobile_image'] = '';
+       //                  }
+       //              }else{
 
-                        $saveImage['mobile_image'] = '';
-                        $saveImage['web_image'] = '';
+       //                  $saveImage['mobile_image'] = '';
+       //                  $saveImage['web_image'] = '';
 
-                    }
+       //              }
 
-                    return view('coming-soon')->with(['deals_off' => true, 'weekend_images' => $saveImage, 'static_data' => $static_data, 'countryDetails' => $countryDetails]);
-                }
-            } else {
-                return view('landing')->with(['referral' => $referral, 'cities' => '','uscities'=>$uscities, 'countries' => $country_list, 'isILS' => $isILS, 'static_data' => $static_data, 'countryDetails' => $countryDetails]);
-            }
-        } else {
-            return view('landing')->with(['referral' => $referral, 'cities' => '','uscities'=>$uscities,  'countries' => $country_list, 'isILS' => $isILS, 'static_data' => $static_data, 'countryDetails' => $countryDetails]);
-        }
+       //              return view('coming-soon')->with(['deals_off' => true, 'weekend_images' => $saveImage, 'static_data' => $static_data, 'countryDetails' => $countryDetails]);
+       //          }
+       //      } else {
+       //          return view('landing')->with(['referral' => $referral, 'cities' => '','uscities'=>$uscities, 'countries' => $country_list, 'isILS' => $isILS, 'static_data' => $static_data, 'countryDetails' => $countryDetails]);
+       //      }
+       //  } else {
+       //      return view('landing')->with(['referral' => $referral, 'cities' => '','uscities'=>$uscities,  'countries' => $country_list, 'isILS' => $isILS, 'static_data' => $static_data, 'countryDetails' => $countryDetails]);
+       //  }
     }
 
     public function affiliateLanding(Request $request) {

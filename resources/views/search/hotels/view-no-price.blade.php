@@ -346,7 +346,7 @@
                                     </div>
                                 </div>
                                 <div class="col-lg-4">
-                                    <div id="hotelmap" style="min-height:480px;">
+                                    <div id="hotelmap" style="min-height:536px;">
                                     
                                     </div>
                                 </div>
