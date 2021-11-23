@@ -18,9 +18,17 @@ use App\Models\User;
 
 class ReportsController extends Controller
 {   
-    
+    private $sub_domain;
+    private $domainData;
+    //
     public function __construct(Request $request) {
         $this->middleware(['auth', 'isAdmin']);
+        list($subdomain) = explode('.', $request->getHost(), 2);       
+        
+        $this->sub_domain = $subdomain;
+        $this->domainData = User::where('domain', $this->sub_domain)->first();
+        Session::put('domainData', $this->domainData);
+        
     }
 
     public function visitorsReports(Request $request) {

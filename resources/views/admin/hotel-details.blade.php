@@ -69,6 +69,18 @@
                      @endif
                   </div>
                </div>
+               <div class="col-md-6">
+                  <div class="form-group">
+                     <label>Latitude </label>
+                     <input type="text" name="lat" class="form-control" value="{{$details->lat}}">
+                  </div>
+               </div>
+               <div class="col-md-6">
+                  <div class="form-group">
+                     <label>Longitude </label>
+                     <input type="text" name="lng" class="form-control" value="{{$details->lng}}">
+                  </div>
+               </div>
                <div class="col-md-12">
                   <div class="form-group">
                      <label>Hotel Description</label>

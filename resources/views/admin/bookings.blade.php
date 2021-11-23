@@ -4,8 +4,8 @@
    <section class="maindiv">
       <div class="container">
          <div class="row headingtop">
-            <div class="col-lg-4 col-md-4 col-sm-4 col-12">
-               <h2 class="textlog">Webinars Videos</h2>
+            <div class="col-lg-6 col-md-6 col-sm-6 col-12">
+               <h2 class="textlog">Comission From Main Website</h2>
             </div>
          </div>
          <div class="row">
@@ -20,32 +20,28 @@
             </p>
             @endif
          </div>
-         <div class="form-group d-flex">  
-            <a href="/admin/web-video/add" class="btn btn-primary mr-auto" >Add Video</a>
-         </div>
+         <!-- <div class="form-group d-flex">  
+            <a href="/admin/hotel-room-images/add" class="btn btn-primary mr-auto" >Add Images</a>
+         </div> -->
           <div class="card shadow mb-4">
             <div class="card-body">
                <div class="table-responsive">
                   <table class="table table-bordered dataTable addaddress" id="dataTable" width="100%" cellspacing="0">
                      <thead>
                         <tr>
-                           <th width="10%">Title</th>
-                           <th width="20%">Description</th>
-                           <th width="10%">Media Link</th>
-                           <th width="10%">Status</th>
-                           <th width="10%">Actions</th>
+                           <th width="33%">Booking Date</th>
+                           <!-- <th width="33%">Booking Amount</th> -->
+                           <th width="33%">Comission Earned</th>
+                           <th width="33%">Booking Type</th>
                         </tr>
                      </thead>                     
                      <tbody>
-                        @foreach($videos as $video)
+                        @foreach($bookings as $booking)
                            <tr>
-                              <td>{{ $video->title }}</td>
-                              <td>{{ $video->description }}</td>
-                              <td><a href="{{ $video->media_link }}" target="_blank">{{ $video->media_link }}</a></td>
-                              <td>{{ $video->status }}</td>
-                              <td>
-                                 <a href="/admin/web-video/edit/{{$video->id}}" class="btn btn-primary">Edit</a>
-                              </td>
+                              <td>{{$booking->created_at}}</td>
+                              <!-- <td>{{$booking->currency_code}}&nbsp;{{number_format($booking->total_paid,2)}}</td> -->
+                              <td>{{$booking->currency_code}}&nbsp;{{number_format($booking->comission_earned,2)}}</td>
+                              <td>Hotel</td>
                            </tr>
                         @endforeach
                      </tbody>

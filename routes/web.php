@@ -237,6 +237,14 @@ Route::post('/admin/approve/payment', [App\Http\Controllers\Admin\PaymentsContro
 Route::get('/admin/payments', [App\Http\Controllers\Admin\PaymentsController::class, 'payments'])->name('payments');
 Route::post('/admin/approve/wallet-payment', [App\Http\Controllers\Admin\PaymentsController::class, 'approveWalletPayment'])->name('approve_wallet_payment');
 
+
+/*
+* Main Website Bookings
+*/
+Route::get('/admin/bookings', [App\Http\Controllers\Admin\AdminController::class, 'bookings'])->name('main_bookings');
+Route::get('/admin/meta', [App\Http\Controllers\Admin\AdminController::class, 'metaTags'])->name('admin_meta_tags');
+Route::post('/admin/meta', [App\Http\Controllers\Admin\AdminController::class, 'metaTags'])->name('admin_meta_tags');
+
 /*
 * User Routes
 */

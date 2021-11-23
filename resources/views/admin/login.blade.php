@@ -1,4 +1,4 @@
-@extends('layouts.app-header')
+@extends('layouts.app')
 
 @section('content')
 <div class="container">
@@ -10,7 +10,7 @@
 
                     <div class="card-body">
                         @if(Session::has('error'))
-                        <p class="alert {{ Session::get('alert-class', 'alert-danger text-center login-page') }}">
+                        <p class="alert {{ Session::get('alert-class', 'alert-danger text-center') }}">
                            {{ Session::get('error') }}
                         </p>
                         @endif
@@ -18,10 +18,10 @@
                             @csrf
 
                             <div class="form-group row">
-                                <label for="email" class="col-md-4 col-form-label text-md-right">{{ __('E-Mail Address') }}</label>
+                                <label for="email" class="col-md-4 col-form-label text-md-right">{{ __('Username') }}</label>
 
                                 <div class="col-md-6">
-                                    <input id="email" type="email" class="form-control @error('email') is-invalid @enderror" name="email" value="{{ old('email') }}" required autocomplete="email" autofocus>
+                                    <input id="email" type="text" class="form-control @error('email') is-invalid @enderror" name="email" value="{{ old('email') }}" required autocomplete="email" autofocus>
 
                                     @error('email')
                                         <span class="invalid-feedback" role="alert">

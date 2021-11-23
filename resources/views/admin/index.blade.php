@@ -34,6 +34,7 @@
                 <a class="btn btn-primary btn-lg reports-btn" href="/admin/reports/visitors">Visitors Reports</a>
                 <a class="btn btn-success btn-lg reports-btn" href="/admin/reports/sales">Sales Reports</a>
                 <a class="btn btn-warning btn-lg reports-btn" href="/admin/reports/earnings">Earnings</a>
+                <a class="btn btn-default btn-lg reports-btn" href="/admin/bookings">Bookings</a>
               </div>
           </div>
          </div>

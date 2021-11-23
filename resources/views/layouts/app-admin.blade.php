@@ -62,32 +62,15 @@
          <div id="page-content-wrapper" class="d-flex">
             <div class="bl" id="sidebar-wrapper">
                <div class="list-group list-group-flush">
-                  <a href="/admin/destinations" class="list-group-item list-group-item-action">Top Destinations</a>
-                  <a href="/admin/experiences" class="list-group-item list-group-item-action">Local Experiences</a>
-                  <a href="/admin/bank-accounts" class="list-group-item list-group-item-action">Bank Accounts</a>
-                  <a href="/admin/web-videos" class="list-group-item list-group-item-action">Webinars - Videos</a>
-                  <a href="/admin/getaways" class="list-group-item list-group-item-action">Getaways</a>
-                  <a href="/admin/countries" class="list-group-item list-group-item-action">Countries</a>
                   <!-- <a href="/admin/activities" class="list-group-item list-group-item-action">Activities</a> -->
-                  <a href="/admin/agents" class="list-group-item list-group-item-action">Agents</a>
-                  <!-- <a href="/admin/cabs" class="list-group-item list-group-item-action">Cabs</a> -->
-                  <!-- <a href="/admin/cruises" class="list-group-item list-group-item-action">Cruises</a> -->
-                  <a href="/admin/discover" class="list-group-item list-group-item-action">Discover</a>
-                  <a href="/admin/lottery" class="list-group-item list-group-item-action">Lottery</a>
+                  <a href="/admin/cruises" class="list-group-item list-group-item-action">Cruises</a>
                   <!-- <a href="/admin/packages" class="list-group-item list-group-item-action">Packages</a> -->
-                  <a href="/admin" class="list-group-item list-group-item-action">Reports</a>
-                  <a href="/admin/hotels" class="list-group-item list-group-item-action">Room Images</a>
-                  <a href="/admin/payments" class="list-group-item list-group-item-action">Payments</a>
-                  <a href="/admin/withdrawls" class="list-group-item list-group-item-action">Withdraw Requests</a>
-                  <a href="/admin/flight-booking" class="list-group-item list-group-item-action">Flight Bookings</a>
-                  <button class="dropdown-btn">Static Data 
-                   <i class="fa fa-caret-down"></i>
-                 </button>
-                 <div class="dropdown-container" style="display: none;">
-                   <a href="/admin/get-static-data" class="list-group-item list-group-item-action">City Data</a>
-                   <a href="/admin/import-static-data" class="list-group-item list-group-item-action">Hotel Data</a>
-                 </div>
-                  
+                  <a href="/admin/cabs" class="list-group-item list-group-item-action">Cabs</a>
+                  <!-- <a href="/admin/hotel/details" class="list-group-item list-group-item-action">Hotel Info</a> -->
+                  <!-- <a href="/admin/hotel-room-images" class="list-group-item list-group-item-action">Room Images</a> -->
+                  <!-- <a href="/admin/import/rooms" class="list-group-item list-group-item-action">Hotel Rooms</a> -->
+                  <a href="/admin/meta" class="list-group-item list-group-item-action">Meta Tags</a>
+                  <a href="/admin/bookings" class="list-group-item list-group-item-action">Bookings</a>
                </div>
             </div>
 

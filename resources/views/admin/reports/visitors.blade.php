@@ -39,12 +39,201 @@
               <div class="col-9">
                 <div class="tab-content" id="v-pills-tabContent">
                   <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="v-pills-home-tab">
-                     <img src="{{asset('images/reports/ReportsHome.png')}}" class="visitors-reports-img" align="Visitors Reports Home">
+                     <!-- img src="{{asset('images/reports/ReportsHome.png')}}" class="visitors-reports-img" align="Visitors Reports Home" -->
+                     From: <input type="date" name="from_date" max="" id="FromDate" />
+                     To: <input type="date" name="to_date" max="" id="ToDate" />
+                     <figure class="highcharts-figure">
+                        <div id="container"></div>
+                     </figure>
                   </div>
                   <div class="tab-pane fade" id="realtime" role="tabpanel" aria-labelledby="v-pills-realtime-tab">
-                     <img src="{{asset('images/reports/RealTimeTab.png')}}" class="visitors-reports-img" align="Real Time Reports">
+                     <div class="row">
+                        <ul class="nav nav-tabs custom-tabs">
+                            <li class="active"><a data-toggle="tab" href="#rt-overview" >Overview</a></li>
+                            <li><a data-toggle="tab" href="#rt-locations">Locations</a></li>
+                            <li><a data-toggle="tab" href="#rt-traffic">Traffic&nbsp;Sources</a></li>
+                            <li><a data-toggle="tab" href="#rt-content">Content</a></li>
+                            <li><a data-toggle="tab" href="#rt-events">Events</a></li>
+                            <li><a data-toggle="tab" href="#rt-conversions">Conversions</a></li>
+                        </ul>
+                    </div>
+                    <div class="tab-content custom">
+                      <div id="rt-overview" class="tab-view active">
+                        <div class="row">
+                        <div class="col-md-3">
+                          <p><h3>Right Now</h3></p>
+                          <p><h1 id="activeuser">0</h1></p>
+                          <p>activer users on site</p>
+                        </div>
+                        <div class="col-md-9">
+                            <h4>Page Views</h4>
+                            <figure class="highcharts-figure">
+                                <div id="rt-container"></div>
+                            </figure>
+                        </div>
+                        </div>
+                        <br>
+                        <div class="row">
+                            <div class="col-md-4">
+                            <h4>Top Referrals:</h4>
+                            <table class="table table-bordered " id="top-ref">
+                                <thead>
+                                  <tr id="">
+                                    <th>Source</th>
+                                    <th>Active Users</th>
+                                  </tr>
+                                </thead> 
+                                <tbody class="active-referral-tbody-ov">
+                                </tbody>
+                            </table>
+                            </div>
+                            <div class="col-md-8">
+                            <h4>Top Active Pages</h4>
+                            <table id="pathList">
+                              <tr id="pathData">
+                                <th>Path</th>
+                                <th>Title</th>
+                                <th>Page View</th>
+                              </tr>
+                            </table>
+                            </div>
+                        </div>
+                        <br>
+                        <div class="row">
+                            <div class="col-md-6">
+                                <h4>Top Social Traffic:</h4>
+                                <table class="table table-bordered ">
+                                    <thead>
+                                        <tr id="">
+                                        <th>Source</th>
+                                        <th>Active Users</th>
+                                      </tr>
+                                    </thead>
+                                    <tbody class="active-traffic-tbody-ov">
+                                    </tbody>
+                                </table>
+                            </div>
+                            <div class="col-md-6">
+                                 <h4>Top Keywords:</h4>
+                                <table  class="table table-bordered " id="social-traffic">
+                                    <thead>
+                                      <tr id="pathDataKeyWord">
+                                        <th>Keyword</th>
+                                        <th>Active Users</th>
+                                      </tr>
+                                    </thead>
+                                    <tbody class="active-keywords-tbody-ov">
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                        <div class="row">
+                             <div class="col-md-12">
+                                <h4>Top Locations:</h4>
+                                <div class="row"><div id="containerMap"></div></div>
+                            </div>
+                        </div>
+                      </div>
+                      <div id="rt-locations" class="tab-view">
+                          <div class="row">
+                              <div id="containerMap2"></div>
+                          </div>
+                          <div class="row">
+                            <table class="table table-bordered active-users-table">
+                                <thead>
+                                  <tr >
+                                    <th>Country</th>
+                                    <th>City</th>
+                                    <th>Active Users</th>
+                                  </tr>
+                                </thead>
+                                  <tbody class="active-users-tbody">
+                                      
+                                  </tbody>
+                            </table>
+                          <div>
+                      </div>
+                    </div>
+                    
                   </div>
-                  <div class="tab-pane fade" id="audience" role="tabpanel" aria-labelledby="v-pills-traffic-acquisition-tab">
+                      <div id="rt-traffic" class="tab-view">
+                              <div class="row">
+                                <table class="table table-bordered active-users-table">
+                                    <thead>
+                                      <tr >
+                                        <th>Source</th>
+                                        <th>Campaign</th>
+                                        <th>Page Views</th>
+                                        <th>Active Users</th>
+                                      </tr>
+                                    </thead>
+                                      <tbody class="active-traffic-tbody">
+                                          
+                                      </tbody>
+                                </table>
+                              <div>
+                          </div>
+                        </div>
+                        
+                      </div>
+                      <div id="rt-content" class="tab-view">
+                            <div class="row">
+                                <table class="table table-bordered active-users-table">
+                                    <thead>
+                                      <tr >
+                                        <th>Page</th>
+                                        <th>Page Title</th>
+                                        <th>Page Views</th>
+                                      </tr>
+                                    </thead>
+                                      <tbody class="active-content-tbody">
+                                          
+                                      </tbody>
+                                </table>
+                            <div>
+                        </div>
+                        </div>
+                        
+                      </div>
+                      <div id="rt-events" class="tab-view">
+                              <div class="row">
+                                <table class="table table-bordered active-users-table">
+                                    <thead>
+                                      <tr >
+                                        <th>Event Category</th>
+                                        <th>Event Action</th>
+                                        <th>Active Users</th>
+                                      </tr>
+                                    </thead>
+                                      <tbody class="active-events-tbody">
+                                          
+                                      </tbody>
+                                </table>
+                              <div>
+                          </div>
+                        </div>
+                        
+                      </div>
+                      <div id="rt-conversions" class="tab-view">
+                              <div class="row">
+                                <table class="table table-bordered active-users-table">
+                                    <thead>
+                                      <tr >
+                                        <th>Goal</th>
+                                        <th>Active Users</th>
+                                      </tr>
+                                    </thead>
+                                      <tbody class="active-conversions-tbody">
+                                          
+                                      </tbody>
+                                </table>
+                              <div>
+                          </div>
+                        </div>
+                        
+                      </div>
+                    </div>
+                  <div class="tab-pane fade" id="audience" role="tabpanel" aria-labelledby="v-pills-traffic-audience-tab">
                      <img src="{{asset('images/reports/Audience.png')}}" class="visitors-reports-img" align="Audience Reports">
                   </div>
                   <div class="tab-pane fade" id="traffic-acquisition" role="tabpanel" aria-labelledby="v-pills-traffic-acquisition-tab">

@@ -4,8 +4,8 @@
    <section class="maindiv">
       <div class="container">
          <div class="row headingtop">
-            <div class="col-lg-12 col-md-12 col-sm-6 col-12">
-               <h2 class="textlog">Update Room Images - {{ $hotel_name['hotel_name'] }}</h2>
+            <div class="col-lg-6 col-md-6 col-sm-6 col-12">
+               <h2 class="textlog">Update Room Images</h2>
             </div>
          </div>
          <div class="row">
@@ -33,9 +33,7 @@
                      <select class="form-control" name="parent_room_id">
                         <option value="">Select</option>
                         @foreach($rooms as $room)
-                           @if($room->id != $image['id'])
-                              <option value="{{ $room->id }}" @if($room->id == $image['parent_room_id']) selected="selected" @endif>{{ $room->name }}</option>
-                           @endif   
+                           <option value="{{ $room->id }}" @if($room->id == $image['parent_room_id']) selected="selected" @endif>{{ $room->name }}</option>
                         @endforeach
                      </select>
                   </div>
@@ -44,14 +42,10 @@
                      <input type="file" name="room_images[]" class="form-control" value="" multiple>
                      <br>
                      @if(isset($image['images']) && !empty($image['images']))
-                        @foreach($image['images'] as $key => $v)
+                        @foreach($image['images'] as $key => $image)
                            <input type="hidden" name="room_image_count" value="{{$key + 1}}">
-                           <input type="hidden" name="hidden_images[]" value="{{$v}}">
-                           @if (strpos($v, 'http') !== false)
-                              <img src="{{ $v }}" width="150px" height="100px">
-                           @else
-                              <img src="/uploads/rooms/{{ $image['sub_domain'] }}/{{$v}}" width="150px" height="100px">
-                           @endif
+                           <input type="hidden" name="hidden_images[]" value="{{$image}}">
+                           <img src="/uploads/rooms/{{$subdomain}}/{{$image}}" width="150px">
                         @endforeach
                      @endif
                   </div>
