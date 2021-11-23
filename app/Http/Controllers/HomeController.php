@@ -254,6 +254,35 @@ class HomeController extends Controller {
 
     public function landing(Request $request) {
 
+
+        $queryValues = $request->query();
+
+        $typeSearch = 'hotels';
+        Session::put('active_tab', 'hotels');
+
+        if(isset($queryValues['show']) && $queryValues['show'] == 'activities'){
+
+          $typeSearch = 'activities';
+          Session::put('active_tab', 'activities');
+
+        }else if(isset($queryValues['show']) && $queryValues['show'] == 'cabs'){
+
+          $typeSearch = 'cabs';
+          Session::put('active_tab', 'cabs');
+
+        }else if(isset($queryValues['show']) && $queryValues['show'] == 'flights'){
+
+          $typeSearch = 'flights';
+          Session::put('active_tab', 'flights');
+
+        }else{
+
+          $typeSearch = 'hotels';
+          Session::put('active_tab', 'hotels');
+
+        }
+
+
         $this->domainData = User::where('domain', $this->sub_domain)->first();
         $hotel_code = $this->domainData['hotel_code'];
         $hotel = StaticDataHotels::where(['hotel_code' => $hotel_code])->first();
@@ -307,7 +336,7 @@ class HomeController extends Controller {
         }
 
         $meta_image  = (isset($hotel['hotel_images']) && !empty($hotel['hotel_images'])) ? $hotel['hotel_images'][0] : 'https://tripheist.com/images/logo.png';
-        return view('search.hotels.view-no-price')->with(['static_data' => $hotel, 'city' => $city, 'title' => $title, 'rooms' => $rooms, 'meta_image' => $meta_image, 'referral' => $referral]);
+        return view('search.hotels.view-no-price')->with(['static_data' => $hotel, 'city' => $city, 'title' => $title, 'rooms' => $rooms, 'meta_image' => $meta_image, 'referral' => $referral, 'typeSearch' => $typeSearch ]);
 
        //  $isILS = false;
        // // $this->getAirport();

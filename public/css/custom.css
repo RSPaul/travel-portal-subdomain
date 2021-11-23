@@ -4725,7 +4725,7 @@ fb:login-button.fb_iframe_widget {
 #searchFlightsFormRound .form-group , #searchFlightsForm .form-group , #searchRoomsForm .form-group , #searchActivityForm  .form-group , #searchCabsForm  .form-group{
     background:#fff !important;
     border-radius: 8px;
-    width:100%;
+    width:98%;
     padding:0px;
 }
 
